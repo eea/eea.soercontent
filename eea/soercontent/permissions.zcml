@@ -1,0 +1,11 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  i18n_domain="eea">
+
+  <permission
+    id="eea.soercontent.add"
+    title="eea.soercontent: Add"
+    description="Add EEA SOER 2015 Content-Types"
+    />
+
+</configure>

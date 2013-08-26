@@ -1,25 +1,30 @@
-import unittest
+""" Doc tests
+"""
 import doctest
+import unittest
+from eea.soercontent.tests.base import FUNCTIONAL_TESTING
+from plone.testing import layered
 
-#from zope.testing import doctestunit
-#from zope.component import testing, eventtesting
-
-from Testing import ZopeTestCase as ztc
-
-from eea.soercontent.tests import base
-
+OPTIONFLAGS = (doctest.REPORT_ONLY_FIRST_FAILURE |
+               doctest.ELLIPSIS |
+               doctest.NORMALIZE_WHITESPACE)
 
 def test_suite():
-    return unittest.TestSuite([
-
-        # Demonstrate the main content types
-        ztc.ZopeDocFileSuite(
-            'README.txt', package='eea.soercontent',
-            test_class=base.FunctionalTestCase,
-            optionflags=doctest.REPORT_ONLY_FIRST_FAILURE |
-                doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS),
-
-        ])
-
-if __name__ == '__main__':
-    unittest.main(defaultTest='test_suite')
+    """ Suite
+    """
+    suite = unittest.TestSuite()
+    suite.addTests([
+        layered(
+            doctest.DocFileSuite(
+                'interfaces.py',
+                optionflags=OPTIONFLAGS,
+                package='eea.soercontent'),
+            layer=FUNCTIONAL_TESTING),
+        layered(
+            doctest.DocFileSuite(
+                'README.txt',
+                optionflags=OPTIONFLAGS,
+                package='eea.soercontent'),
+            layer=FUNCTIONAL_TESTING),
+    ])
+    return suite

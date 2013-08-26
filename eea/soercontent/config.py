@@ -2,10 +2,7 @@
 """
 
 PROJECTNAME = 'eea.soercontent'
-
-ADD_PERMISSIONS = {
-    # -*- extra stuff goes here -*-
-}
+ADD_PERMISSION = "eea.soercontent: Add"
 
 from zope.i18nmessageid import MessageFactory
 EEAMessageFactory = MessageFactory('eea')
