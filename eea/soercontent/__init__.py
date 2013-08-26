@@ -5,11 +5,14 @@ from eea.soercontent import config
 
 from Products.Archetypes import atapi
 from Products.CMFCore import utils
+from eea.soercontent import content
 
 
 def initialize(context):
     """Initializer called when used as a Zope 2 product.
     """
+
+    content.register()
 
     content_types, constructors, _ftis = atapi.process_types(
         atapi.listTypes(config.PROJECTNAME),

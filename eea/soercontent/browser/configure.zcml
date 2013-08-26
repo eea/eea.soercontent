@@ -3,8 +3,8 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="eea">
 
-  <include package="plone.app.contentmenu" />
-
-  <!-- -*- extra stuff goes here -*- -->
+  <browser:resourceDirectory
+    name="eea.soercontent.images"
+    directory="./img" />
 
 </configure>

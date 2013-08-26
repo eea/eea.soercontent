@@ -1,7 +1,12 @@
 """ Public interfaces
 """
-from zope.interface import Interface
+# Browser layer
+from eea.soercontent.browser.interfaces import ILayer
 
-class ILayer(Interface):
-    """ Custom layer for this package
-    """
+# Content
+from eea.soercontent.content.interfaces import IFiche
+
+__all__ = [
+    ILayer.__name__,
+    IFiche.__name__,
+]

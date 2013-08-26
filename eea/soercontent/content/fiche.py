@@ -9,7 +9,7 @@ from Products.ATContentTypes.content import schemata
 
 # -*- Message Factory Imported Here -*-
 
-from eea.soercontent.content.interfaces import IFiche
+from eea.soercontent.interfaces import IFiche
 
 FicheSchema = folder.ATFolderSchema.copy() + atapi.Schema((
 
@@ -26,8 +26,12 @@ schemata.finalizeATCTSchema(
 
 
 class Fiche(folder.ATFolder):
-    """Fiche"""
+    """ Fiche """
+
     implements(IFiche)
 
     meta_type = "Fiche"
+    portal_type = "Fiche"
+    archetypes_name = "Fiche"
+
     schema = FicheSchema

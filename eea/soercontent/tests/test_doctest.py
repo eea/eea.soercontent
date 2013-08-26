@@ -22,6 +22,18 @@ def test_suite():
             layer=FUNCTIONAL_TESTING),
         layered(
             doctest.DocFileSuite(
+                'browser/interfaces.py',
+                optionflags=OPTIONFLAGS,
+                package='eea.soercontent'),
+            layer=FUNCTIONAL_TESTING),
+        layered(
+            doctest.DocFileSuite(
+                'content/interfaces.py',
+                optionflags=OPTIONFLAGS,
+                package='eea.soercontent'),
+            layer=FUNCTIONAL_TESTING),
+        layered(
+            doctest.DocFileSuite(
                 'README.txt',
                 optionflags=OPTIONFLAGS,
                 package='eea.soercontent'),

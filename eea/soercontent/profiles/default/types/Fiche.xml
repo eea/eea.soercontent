@@ -4,9 +4,9 @@
    i18n:domain="eea" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
   <property name="title" i18n:translate="">Fiche</property>
   <property name="description"
-    i18n:translate="">SOER</property>
+    i18n:translate="">SOER 2015 Content</property>
   <property name="content_meta_type">Fiche</property>
-  <property name="content_icon">folder_icon.gif</property>
+  <property name="icon_expr">string:${portal_url}/++resource++eea.soercontent.images/icon.png</property>
   <property name="product">eea.soercontent</property>
   <property name="factory">addFiche</property>
   <property name="immediate_view">atct_edit</property>
