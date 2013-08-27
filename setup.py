@@ -36,6 +36,8 @@ setup(name=NAME,
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'eea.vocab',
+          'eea.forms',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

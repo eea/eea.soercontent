@@ -3,4 +3,5 @@ Changelog
 
 1.0-dev (unreleased)
 --------------------
-* Initial release [voineali refs #14900]
+* Initial release
+  [voineali refs #14900]

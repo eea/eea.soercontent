@@ -3,20 +3,13 @@
 
 from zope.interface import implements
 
-from Products.Archetypes import atapi
 from Products.ATContentTypes.content import folder
 from Products.ATContentTypes.content import schemata
 
-# -*- Message Factory Imported Here -*-
-
 from eea.soercontent.interfaces import IGlossary
+from eea.soercontent.content.schema import SCHEMA
 
-GlossarySchema = folder.ATFolderSchema.copy() + atapi.Schema((
-
-    # -*- Your Archetypes field definitions here ... -*-
-
-))
-
+GlossarySchema = folder.ATFolderSchema.copy() + SCHEMA.copy()
 
 schemata.finalizeATCTSchema(
     GlossarySchema,
