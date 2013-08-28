@@ -4,6 +4,14 @@ from Products.Archetypes import atapi
 from eea.soercontent.config import EEAMessageFactory as _
 
 SCHEMA = atapi.Schema((
+    atapi.ImageField(
+        name="image",
+        schemata="default",
+        sizes=None,
+        widget=atapi.ImageWidget(
+            label=_("Thumbnail"),
+            description=_("Image for thumbnail"))
+        ),
     atapi.LinesField(
         name='temporalCoverage',
         schemata="categorization",
@@ -21,6 +29,24 @@ SCHEMA = atapi.Schema((
                 "resource. Temporal coverage will typically include "
                 "a set of years or time ranges."),
             i18n_domain='eea',
+        )
+    ),
+    atapi.TextField(
+        name='license',
+        schemata="creators",
+        allowable_content_types=('text/plain',),
+        widget=atapi.TextAreaWidget(
+            label=_(u'License'),
+            description=_(u'License information')
+        )
+    ),
+    atapi.TextField(
+        name='publisher',
+        schemata="creators",
+        allowable_content_types=('text/plain',),
+        widget=atapi.TextAreaWidget(
+            label=_(u'Publisher'),
+            description=_(u'Publisher information')
         )
     ),
 ))
