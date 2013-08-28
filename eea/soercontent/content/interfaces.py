@@ -6,7 +6,11 @@
 """
 from zope.interface import Interface
 
-class IFiche(Interface):
+class ISoerContent(Interface):
+    """ Abstract interface for all SOER Content-Types
+    """
+
+class IFiche(ISoerContent):
     """ Fiche
 
         >>> fid = sandbox.invokeFactory('Fiche', id='Fiche')
@@ -16,7 +20,7 @@ class IFiche(Interface):
 
     """
 
-class IInfographic(Interface):
+class IInfographic(ISoerContent):
     """ Infographic
 
         >>> fid = sandbox.invokeFactory('Infographic', id='Infographic')
@@ -26,7 +30,7 @@ class IInfographic(Interface):
 
     """
 
-class IGlossary(Interface):
+class IGlossary(ISoerContent):
     """ Glossary
 
         >>> fid = sandbox.invokeFactory('Glossary', id='Glossary')
