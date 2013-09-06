@@ -3,13 +3,13 @@
 
 from zope.interface import implements
 
-from Products.ATContentTypes.content import folder
+from Products.ATContentTypes.content import document
 from Products.ATContentTypes.content import schemata
 
 from eea.soercontent.interfaces import IInfographic
 from eea.soercontent.content.schema import SCHEMA
 
-InfographicSchema = folder.ATFolderSchema.copy() + SCHEMA.copy()
+InfographicSchema = document.ATDocumentSchema.copy() + SCHEMA.copy()
 
 
 schemata.finalizeATCTSchema(
@@ -19,7 +19,7 @@ schemata.finalizeATCTSchema(
 )
 
 
-class Infographic(folder.ATFolder):
+class Infographic(document.ATDocument):
     """ Infographic """
 
     implements(IInfographic)

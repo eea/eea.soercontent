@@ -3,13 +3,13 @@
 
 from zope.interface import implements
 
-from Products.ATContentTypes.content import folder
+from Products.ATContentTypes.content import document
 from Products.ATContentTypes.content import schemata
 
 from eea.soercontent.interfaces import IGlossary
 from eea.soercontent.content.schema import SCHEMA
 
-GlossarySchema = folder.ATFolderSchema.copy() + SCHEMA.copy()
+GlossarySchema = document.ATDocumentSchema.copy() + SCHEMA.copy()
 
 schemata.finalizeATCTSchema(
     GlossarySchema,
@@ -18,7 +18,7 @@ schemata.finalizeATCTSchema(
 )
 
 
-class Glossary(folder.ATFolder):
+class Glossary(document.ATDocument):
     """ Glossary """
 
     implements(IGlossary)

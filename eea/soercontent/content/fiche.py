@@ -3,13 +3,13 @@
 
 from zope.interface import implements
 
-from Products.ATContentTypes.content import folder
+from Products.ATContentTypes.content import document
 from Products.ATContentTypes.content import schemata
 
 from eea.soercontent.interfaces import IFiche
 from eea.soercontent.content.schema import SCHEMA
 
-FicheSchema = folder.ATFolderSchema.copy() + SCHEMA.copy()
+FicheSchema = document.ATDocumentSchema.copy() + SCHEMA.copy()
 
 schemata.finalizeATCTSchema(
     FicheSchema,
@@ -17,7 +17,7 @@ schemata.finalizeATCTSchema(
     moveDiscussion=False
 )
 
-class Fiche(folder.ATFolder):
+class Fiche(document.ATDocument):
     """ Fiche """
 
     implements(IFiche)

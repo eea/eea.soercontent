@@ -49,4 +49,16 @@ SCHEMA = atapi.Schema((
             description=_(u'Publisher information')
         )
     ),
+    atapi.BooleanField(
+        schemata='settings',
+        name='presentation',
+        required=False,
+        languageIndependent=True,
+        widget=atapi.BooleanWidget(
+            label=_(u'help_enable_presentation', default=u'Presentation mode'),
+            description=_(u'help_enable_presentation_description',
+                default=(u"If selected, this will give users the ability to "
+                         "view the contents as presentation slides."))
+        )
+    )
 ))
