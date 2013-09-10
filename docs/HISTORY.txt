@@ -3,9 +3,13 @@ Changelog
 
 1.1-dev - (unreleased)
 ----------------------
+* Upgrade step: Within "Plone > Site setup > Add-ons" click on
+  upgrade button available for eea.soercontent
+  [voineali refs #16704]
+* Feature: Enable versioning for Fiche, Infographic and Glossary SOER ctypes
+  [voineali refs #16704]
 
 1.0 - (2013-09-06)
 ------------------
 * Initial release
   [voineali refs #14900]
-

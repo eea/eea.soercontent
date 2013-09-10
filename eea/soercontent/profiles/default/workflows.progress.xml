@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<object name="portal_workflow">
+ <object name="eea_soer_workflow">
+  <object name="retracted">
+   <property name="progress">0</property>
+  </object>
+  <object name="redraft_and_web_integration">
+   <property name="progress">90</property>
+  </object>
+  <object name="marked_for_deletion">
+   <property name="progress">0</property>
+  </object>
+  <object name="web_editing">
+   <property name="progress">40</property>
+  </object>
+  <object name="visible">
+   <property name="progress">60</property>
+  </object>
+  <object name="ready_for_eionet_review">
+   <property name="progress">50</property>
+  </object>
+  <object name="draft">
+   <property name="progress">10</property>
+  </object>
+  <object name="final_revision">
+   <property name="progress">95</property>
+  </object>
+  <object name="published">
+   <property name="progress">100</property>
+  </object>
+ </object>
+</object>
