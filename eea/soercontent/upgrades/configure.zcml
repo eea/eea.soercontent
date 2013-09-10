@@ -10,9 +10,9 @@
     profile="eea.soercontent:default">
 
     <genericsetup:upgradeDepends
-      title="Import steps with changes: difftool, repositorytool, workflow.progress"
+      title="Import steps with changes: difftool, repositorytool, workflow.progress skins typeinfo"
       import_profile="eea.soercontent:default"
-      import_steps="plone-difftool repositorytool workflow.progress.xml"
+      import_steps="plone-difftool repositorytool workflow.progress.xml skins typeinfo"
       />
 
   </genericsetup:upgradeSteps>

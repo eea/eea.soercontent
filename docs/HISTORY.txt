@@ -6,6 +6,8 @@ Changelog
 * Upgrade step: Within "Plone > Site setup > Add-ons" click on
   upgrade button available for eea.soercontent
   [voineali refs #16704]
+* Feature: Add custom views for SOER content-types
+  [voineali refs #16704]
 * Feature: Enable versioning for Fiche, Infographic and Glossary SOER ctypes
   [voineali refs #16704]
 

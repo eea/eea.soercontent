@@ -9,13 +9,13 @@
   <property name="icon_expr">string:${portal_url}/++resource++eea.soercontent.images/icon.png</property>
   <property name="product">eea.soercontent</property>
   <property name="factory">addGlossary</property>
-  <property name="immediate_view">document_view</property>
+  <property name="immediate_view">glossary_view</property>
   <property name="global_allow">True</property>
   <property name="filter_content_types">False</property>
   <property name="allow_discussion">True</property>
-  <property name="default_view">document_view</property>
+  <property name="default_view">glossary_view</property>
   <property name="view_methods">
-    <element value="document_view" />
+    <element value="glossary_view" />
   </property>
   <alias from="(Default)" to="(dynamic view)" />
   <alias from="edit" to="atct_edit" />
