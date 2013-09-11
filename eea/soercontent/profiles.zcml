@@ -23,4 +23,9 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:importStep
+    name="eea.soercontent.various"
+    title="EEA Soer Content Setup" description="Setup EEA Soer Content"
+    handler="eea.soercontent.setuphandlers.setupVarious" />
+
 </configure>
