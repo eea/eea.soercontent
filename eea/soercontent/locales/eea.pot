@@ -1,0 +1,83 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2013-09-18 07:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: eea\n"
+
+#: ../../soercontent/profiles/default/types/Infographic.xml
+msgid "EEA SOER"
+msgstr ""
+
+#: ../../soercontent/profiles/default/types/Glossary.xml
+msgid "EEA SOER 2015"
+msgstr ""
+
+#: ../../soercontent/profiles/default/types/Fiche.xml
+msgid "Fiche"
+msgstr ""
+
+#: ../../soercontent/profiles/default/types/Glossary.xml
+msgid "Glossary"
+msgstr ""
+
+#: ../../soercontent/content/schema.py:59
+msgid "If selected, this will give users the ability to view the contents as presentation slides."
+msgstr ""
+
+#: ../../soercontent/content/schema.py:13
+msgid "Image for thumbnail"
+msgstr ""
+
+#: ../../soercontent/profiles/default/types/Infographic.xml
+msgid "Infographic"
+msgstr ""
+
+#: ../../soercontent/content/schema.py:39
+msgid "License"
+msgstr ""
+
+#: ../../soercontent/content/schema.py:40
+msgid "License information"
+msgstr ""
+
+#: ../../soercontent/content/schema.py:58
+msgid "Presentation mode"
+msgstr ""
+
+#: ../../soercontent/content/schema.py:48
+msgid "Publisher"
+msgstr ""
+
+#: ../../soercontent/content/schema.py:49
+msgid "Publisher information"
+msgstr ""
+
+#: ../../soercontent/profiles/default/types/Fiche.xml
+msgid "SOER 2015 Content"
+msgstr ""
+
+#: ../../soercontent/content/schema.py:26
+msgid "Temporal coverage"
+msgstr ""
+
+#: ../../soercontent/content/schema.py:27
+msgid "The temporal scope of the content of the data resource. Temporal coverage will typically include a set of years or time ranges."
+msgstr ""
+
+#: ../../soercontent/content/schema.py:12
+msgid "Thumbnail"
+msgstr ""
+

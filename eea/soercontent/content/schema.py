@@ -55,10 +55,9 @@ SCHEMA = atapi.Schema((
         required=False,
         languageIndependent=True,
         widget=atapi.BooleanWidget(
-            label=_(u'help_enable_presentation', default=u'Presentation mode'),
-            description=_(u'help_enable_presentation_description',
-                default=(u"If selected, this will give users the ability to "
-                         "view the contents as presentation slides."))
+            label=_(u'Presentation mode'),
+            description=_(u"If selected, this will give users the ability to "
+                          u"view the contents as presentation slides.")
         )
     )
 ))
