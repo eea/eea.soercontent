@@ -10,18 +10,20 @@
 
 <metal:content-core fill-slot="content-core">
 <metal:content-core define-macro="content-core">
+<div class="fiche-body">
 
-  <metal:img tal:condition="context/getImage|nothing">
+  <div class="fiche-thumbnail" tal:condition="context/getImage|nothing">
     <a tal:define="here_url context/@@plone_context_state/object_url"
       tal:attributes="href string:$here_url/image/image_view_fullscreen">
       <img tal:attributes="src string:$here_url/image_large" style="min-width: 100%; width: 100%;" />
     </a>
-  </metal:img>
+  </div>
 
   <metal:field use-macro="python:context.widget('text', mode='view')">
       Body text
   </metal:field>
 
+</div>
 </metal:content-core>
 </metal:content-core>
 

@@ -10,9 +10,13 @@
     profile="eea.soercontent:default">
 
     <genericsetup:upgradeDepends
-      title="Import steps with changes: difftool, repositorytool, workflow.progress skins typeinfo catalog eea.soercontent.various"
+      title="Import all steps from collective.sendaspdf"
+      import_profile="collective.sendaspdf:default"
+      />
+
+    <genericsetup:upgradeDepends
+      title="Import all steps from eea.soercontent"
       import_profile="eea.soercontent:default"
-      import_steps="plone-difftool repositorytool workflow.progress.xml skins typeinfo catalog eea.soercontent.various"
       />
 
   </genericsetup:upgradeSteps>

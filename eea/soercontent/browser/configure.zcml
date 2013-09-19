@@ -1,10 +1,15 @@
 <configure
-    xmlns="http://namespaces.zope.org/zope"
-    xmlns:browser="http://namespaces.zope.org/browser"
-    i18n_domain="eea">
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  i18n_domain="eea">
 
   <browser:resourceDirectory
     name="eea.soercontent.images"
     directory="./img" />
+
+  <browser:resource
+    name="eea.soercontent.print.css"
+    file="css/print.css"
+   />
 
 </configure>
