@@ -4,6 +4,14 @@ body {
   padding: 0px;
 }
 
+img {
+  max-width: 99%;
+}
+
+iframe {
+  display: none;
+}
+
 .portal-logo {
   display: none;
 }

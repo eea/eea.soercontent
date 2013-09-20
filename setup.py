@@ -39,6 +39,7 @@ setup(name=NAME,
           'collective.sendaspdf',
           'eea.vocab',
           'eea.forms',
+          'eea.converter',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

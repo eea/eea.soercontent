@@ -12,4 +12,12 @@
     file="css/print.css"
    />
 
+  <browser:page
+    for="eea.soercontent.content.interfaces.ISoerContent"
+    name="pdf.cover"
+    class="eea.converter.browser.app.pdfview.Cover"
+    template="zpt/pdf.cover.pt"
+    permission="zope2.View"
+    />
+
 </configure>

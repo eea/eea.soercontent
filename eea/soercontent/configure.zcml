@@ -12,7 +12,6 @@
   <include package=".browser" />
   <include package=".catalog" />
   <include package=".content" />
-  <include package=".pdf" />
   <include package=".upgrades" />
 
 </configure>
