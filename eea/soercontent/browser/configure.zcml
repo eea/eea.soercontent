@@ -13,14 +13,6 @@
    />
 
   <browser:page
-    for="eea.soercontent.content.interfaces.ISoerContent"
-    name="pdf.cover"
-    class="eea.converter.browser.app.pdfview.Cover"
-    template="zpt/pdf.cover.pt"
-    permission="zope2.View"
-    />
-
-  <browser:page
     for="eea.soercontent.content.interfaces.IFiche"
     name="fiche_view"
     template="zpt/fiche_view.pt"
