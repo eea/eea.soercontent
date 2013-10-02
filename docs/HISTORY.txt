@@ -3,6 +3,8 @@ Changelog
 
 1.2-dev - (unreleased)
 ----------------------
+* Feature: epub export available as action
+  [simiamih refs #16799]
 
 1.1 - (2013-09-23)
 ------------------

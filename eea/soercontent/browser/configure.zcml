@@ -19,4 +19,12 @@
     permission="zope2.View"
     />
 
+  <browser:page
+    for="eea.soercontent.content.interfaces.IFiche"
+    name="epub_view"
+    class="eea.soercontent.browser.export.EPubView"
+    permission="zope.Public"
+    allowed_interface="eea.epub.browser.interfaces.IExportView"
+    />
+
 </configure>

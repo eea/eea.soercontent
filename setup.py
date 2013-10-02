@@ -40,6 +40,7 @@ setup(name=NAME,
           'eea.vocab',
           'eea.forms',
           'eea.converter',
+          'eea.epub',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

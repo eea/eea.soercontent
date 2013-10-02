@@ -16,5 +16,15 @@
     <element value="Modify portal content"/>
    </property>
   </object>
+  <object name="download_as_epub" meta_type="CMF Action">
+   <property name="title">Download as ePub</property>
+   <property name="url_expr">string:$object_url/epub_view</property>
+   <property
+      name="icon_expr">string:$portal_url/++resource++eea.soercontent.images/download-epub.png</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
  </object>
 </object>
