@@ -4,17 +4,21 @@
     <head>
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
         <title tal:content="python:context.Title()">[Title]</title>
-        <link rel="stylesheet" href="css/main.css" type="text/css" />
+        <link rel="stylesheet" href="Css/main.css" type="text/css" />
     </head>
-    <body>
+    <body tal:define="context_state context/@@plone_context_state;
+                      wf_state context_state/workflow_state;
+                      here_url context_state/object_url">
         <h1 tal:content="python:context.Title().decode('utf-8')"></h1>
-        <div tal:replace="structure python:context.Description().decode('utf-8')">
+        <div tal:content="structure python:context.Description().decode('utf-8')">
             ...
         </div>
-        <div class="fiche-thumbnail" tal:condition="context/getImage|nothing" tal:define="here_url context/@@plone_context_state/object_url">
+        <div class="fiche-thumbnail" tal:condition="context/getImage|nothing">
             <img tal:attributes="src string:$here_url/image_large" />
         </div>
-        <div tal:replace="structure python:context.getText().decode('utf-8')">
+        <div id="content"
+             tal:attributes="class python:wf_state and ('documentContent wf-state-' + str(wf_state)) or 'documentContent'"
+             tal:content="structure python:context.getText().decode('utf-8')">
             ...
         </div>
     </body>

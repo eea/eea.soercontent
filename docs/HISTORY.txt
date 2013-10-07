@@ -3,6 +3,9 @@ Changelog
 
 1.3-dev - (unreleased)
 ----------------------
+* Upgrade step: Within "Plone > Site setup > Add-ons" click on
+  upgrade button available for eea.soercontent
+  [simiamih refs #16799]
 
 1.2 - (2013-10-04)
 ------------------
