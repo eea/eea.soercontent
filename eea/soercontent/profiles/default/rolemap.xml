@@ -2,6 +2,7 @@
 <rolemap>
   <permissions>
     <permission name="eea.soercontent: Add" acquire="True">
+      <role name="Contributor" />
       <role name="Manager"/>
       <role name="Owner"/>
       <role name="Editor"/>
