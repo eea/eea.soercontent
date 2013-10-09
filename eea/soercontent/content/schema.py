@@ -10,8 +10,18 @@ SCHEMA = atapi.Schema((
         sizes=None,
         widget=atapi.ImageWidget(
             label=_("Thumbnail"),
-            description=_("Image for thumbnail"))
+            description=_("Image for thumbnail")),
+            i18n_domain='eea',
         ),
+    atapi.StringField(
+        name='imageCopyright',
+        schemata="default",
+        widget=atapi.StringWidget(
+            label=_("Image Copyright"),
+            description=_("Enter the copyright information for this image."),
+            i18n_domain='eea',
+        )
+    ),
     atapi.LinesField(
         name='temporalCoverage',
         schemata="categorization",

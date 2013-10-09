@@ -3,6 +3,8 @@ Changelog
 
 1.4-dev - (unreleased)
 ----------------------
+* Feature: Added image copyright field for SOER ctypes
+  [voineali refs #17009]
 
 1.3 - (2013-10-07)
 ------------------
