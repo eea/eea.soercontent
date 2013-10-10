@@ -18,7 +18,7 @@
     </div>
     <p class="figure-source-copyright fiche-copyright" tal:condition="context/getImageCopyright|nothing">
       &copy;
-      <tal:copyright tal:content="context/getImageCopyright" i18n:translate="">
+      <tal:copyright tal:content="context/getImageCopyright">
         Additional source and copyright information
       </tal:copyright>
     </p>

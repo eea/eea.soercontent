@@ -15,6 +15,12 @@
         </div>
         <div class="fiche-thumbnail" tal:condition="context/getImage|nothing">
             <img tal:attributes="src string:$here_url/image_large" />
+            <p class="figure-source-copyright fiche-copyright">
+            &copy;
+                <tal:copyright tal:content="python:context.getImageCopyright() or 'EEA'">
+                    Additional source and copyright information
+                </tal:copyright>
+            </p>
         </div>
         <div id="content"
              tal:attributes="class python:wf_state and ('documentContent wf-state-' + str(wf_state)) or 'documentContent'"
