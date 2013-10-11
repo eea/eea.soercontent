@@ -15,8 +15,9 @@
   <browser:page
     for="eea.soercontent.content.interfaces.IFiche"
     name="fiche_view"
-    template="zpt/fiche_view.pt"
+    class=".app.view.FicheView"
     permission="zope2.View"
+    template="zpt/fiche_view.pt"
     />
 
   <browser:page

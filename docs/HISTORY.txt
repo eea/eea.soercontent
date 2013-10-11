@@ -3,6 +3,9 @@ Changelog
 
 1.4-dev - (unreleased)
 ----------------------
+* Bug fix: added FicheView BrowserView class in order to provide macros 
+  property that renders the preview of page when using versions_history_form
+  [ichimdav fixes #17037]
 * Feature: Added image copyright field for SOER ctypes
   [voineali refs #17009]
 
