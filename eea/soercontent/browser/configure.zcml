@@ -17,7 +17,6 @@
     name="fiche_view"
     class=".app.view.FicheView"
     permission="zope2.View"
-    template="zpt/fiche_view.pt"
     />
 
   <browser:page
