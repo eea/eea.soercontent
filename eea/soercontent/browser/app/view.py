@@ -16,3 +16,6 @@ class FicheView(BrowserView):
             any preview of content when using versions_history_form page
         """
         return self.index.macros
+
+    def __call__(self, **kwargs):
+        return self.index()
