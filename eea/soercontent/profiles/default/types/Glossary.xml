@@ -11,7 +11,15 @@
   <property name="factory">addGlossary</property>
   <property name="immediate_view">glossary_view</property>
   <property name="global_allow">True</property>
-  <property name="filter_content_types">False</property>
+  <property name="filter_content_types">True</property>
+  <property name="allowed_content_types">
+    <element value="DavizVisualization"/>
+    <element value="EEAFigure"/>
+    <element value="File"/>
+    <element value="Folder"/>
+    <element value="Image"/>
+    <element value="KeyMessage"/>
+  </property>
   <property name="allow_discussion">True</property>
   <property name="default_view">glossary_view</property>
   <property name="view_methods">

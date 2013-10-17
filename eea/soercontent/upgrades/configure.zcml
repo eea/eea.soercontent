@@ -3,7 +3,26 @@
   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
   i18n_domain="eea">
 
-    <!-- Upgrades steps goes here -->
+    <!-- 1.4 -->
+  <genericsetup:upgradeSteps
+    source="1.2"
+    destination="1.4"
+    profile="eea.soercontent:default">
+
+    <genericsetup:upgradeStep
+      title="#17128: Make SOER ctypes folderish"
+      handler="eea.soercontent.upgrades.evolve14.migrate2folderish"
+      />
+
+    <genericsetup:upgradeDepends
+      title="Import steps with changes: typeinfo"
+      import_profile="eea.soercontent:default"
+      import_steps="typeinfo"
+      />
+
+  </genericsetup:upgradeSteps>
+
+    <!-- 1.2 -->
   <genericsetup:upgradeSteps
     source="1.1"
     destination="1.2"
@@ -17,7 +36,7 @@
 
   </genericsetup:upgradeSteps>
 
-  <!-- Upgrades steps goes here -->
+  <!-- 1.1 -->
   <genericsetup:upgradeSteps
     source="1.0"
     destination="1.1"

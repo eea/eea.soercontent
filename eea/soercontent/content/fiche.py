@@ -1,23 +1,11 @@
-"""Definition of the Fiche content type
+""" Definition of the Fiche content type
 """
 
 from zope.interface import implements
-
-from Products.ATContentTypes.content import document
-from Products.ATContentTypes.content import schemata
-
 from eea.soercontent.interfaces import IFiche
-from eea.soercontent.content.schema import SCHEMA
+from eea.soercontent.content.schema import SoerContent
 
-FicheSchema = document.ATDocumentSchema.copy() + SCHEMA.copy()
-
-schemata.finalizeATCTSchema(
-    FicheSchema,
-    folderish=True,
-    moveDiscussion=False
-)
-
-class Fiche(document.ATDocument):
+class Fiche(SoerContent):
     """ Fiche """
 
     implements(IFiche)
@@ -25,5 +13,4 @@ class Fiche(document.ATDocument):
     meta_type = "Fiche"
     portal_type = "Fiche"
     archetypes_name = "Fiche"
-
-    schema = FicheSchema
+    schema = SoerContent.schema.copy()

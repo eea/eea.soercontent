@@ -4,9 +4,9 @@
    >>> sandbox = portal['sandbox']
 
 """
-from zope.interface import Interface
+from Products.ATContentTypes.interfaces import IATDocument
 
-class ISoerContent(Interface):
+class ISoerContent(IATDocument):
     """ Abstract interface for all SOER Content-Types
     """
 

@@ -1,7 +1,12 @@
 """ Custom schema
 """
+from zope.interface import implements
 from Products.Archetypes import atapi
 from eea.soercontent.config import EEAMessageFactory as _
+from Products.GenericSetup.interfaces import IDAVAware
+from Products.ATContentTypes.content import folder
+from Products.ATContentTypes.content import document
+from eea.soercontent.content.interfaces import ISoerContent
 
 SCHEMA = atapi.Schema((
     atapi.ImageField(
@@ -71,3 +76,17 @@ SCHEMA = atapi.Schema((
         )
     )
 ))
+
+class SoerContent(folder.ATFolder, document.ATDocumentBase):
+    """ Abstract SOER content-type
+    """
+    implements(ISoerContent, IDAVAware)
+
+    assocFileExt = ('txt', 'stx', 'rst', 'rest', 'py',)
+    assocMimetypes = ('application/xhtml+xml', 'message/rfc822', 'text/*',)
+
+    schema = (
+        folder.ATFolderSchema.copy() +
+        document.ATDocumentSchema.copy() +
+        SCHEMA.copy()
+    )

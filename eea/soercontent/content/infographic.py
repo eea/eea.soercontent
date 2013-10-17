@@ -1,25 +1,11 @@
-"""Definition of the Infographic content type
+""" Definition of the Infographic content type
 """
 
 from zope.interface import implements
-
-from Products.ATContentTypes.content import document
-from Products.ATContentTypes.content import schemata
-
 from eea.soercontent.interfaces import IInfographic
-from eea.soercontent.content.schema import SCHEMA
+from eea.soercontent.content.schema import SoerContent
 
-InfographicSchema = document.ATDocumentSchema.copy() + SCHEMA.copy()
-
-
-schemata.finalizeATCTSchema(
-    InfographicSchema,
-    folderish=True,
-    moveDiscussion=False
-)
-
-
-class Infographic(document.ATDocument):
+class Infographic(SoerContent):
     """ Infographic """
 
     implements(IInfographic)
@@ -28,4 +14,4 @@ class Infographic(document.ATDocument):
     portal_type = "Infographic"
     archetypes_name = "Infographic"
 
-    schema = InfographicSchema
+    schema = SoerContent.schema.copy()
