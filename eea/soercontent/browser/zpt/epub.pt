@@ -15,9 +15,9 @@
         </div>
         <div class="fiche-thumbnail" tal:condition="context/getImage|nothing">
             <img tal:attributes="src string:$here_url/image_large" />
-            <p class="figure-source-copyright fiche-copyright">
+            <p class="figure-source-copyright fiche-copyright" tal:condition="context/getImageCopyright|nothing">
             &copy;
-                <tal:copyright tal:content="python:context.getImageCopyright() or 'EEA'">
+                <tal:copyright tal:content="python:context.getImageCopyright()">
                     Additional source and copyright information
                 </tal:copyright>
             </p>
