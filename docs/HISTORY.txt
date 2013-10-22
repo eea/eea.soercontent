@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.4-dev - (unreleased)
-----------------------
+1.4 - (2013-10-22)
+------------------
 * Feature: Made SOER content-types folderish
   [voineali refs #17128]
 * Bug fix: added FicheView BrowserView class in order to provide macros
