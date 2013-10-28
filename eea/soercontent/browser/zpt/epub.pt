@@ -27,5 +27,23 @@
              tal:content="structure python:context.getText().decode('utf-8')">
             ...
         </div>
+        <tal:relatedItems tal:define="related context/@@document_related/other"
+                          tal:condition="related">
+            <div class="visualClear" id="clear-space-before-relatedItemBox"><!-- --></div>
+            <h2 >Related content</h2>
+            <ul class="visualNoMarker">
+                <tal:related tal:repeat="item related">
+                <li>
+                    <span>
+                    <a href="" class=""
+                        tal:attributes="href item/url"
+                        tal:content="item/title">
+                        Related Item
+                    </a>
+                    </span>
+                </li>
+                </tal:related>
+            </ul>
+        </tal:relatedItems>
     </body>
 </html>
