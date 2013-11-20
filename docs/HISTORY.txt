@@ -1,6 +1,9 @@
 Changelog
 =========
 
+1.6-dev - (unreleased)
+----------------------
+
 1.5 - (2013-11-20)
 ------------------
 * Feature: included related items in epub
