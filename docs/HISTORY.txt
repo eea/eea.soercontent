@@ -3,6 +3,8 @@ Changelog
 
 1.6-dev - (unreleased)
 ----------------------
+* Change: removed the Infographic content type
+  [ichimdav refs #17505]
 
 1.5 - (2013-11-20)
 ------------------

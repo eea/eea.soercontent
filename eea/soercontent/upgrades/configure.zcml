@@ -3,6 +3,18 @@
   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
   i18n_domain="eea">
 
+    <genericsetup:upgradeSteps
+            source="*"
+            destination="1.6"
+            profile="eea.soercontent:default">
+
+        <genericsetup:upgradeDepends
+                title="Remove Infographic ContentType within 1.60 profile"
+                import_profile="eea.soercontent:upgrade_160"
+                />
+
+    </genericsetup:upgradeSteps>
+
     <!-- 1.4 -->
   <genericsetup:upgradeSteps
     source="1.2"
