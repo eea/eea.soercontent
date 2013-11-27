@@ -20,16 +20,6 @@ class IFiche(ISoerContent):
 
     """
 
-class IInfographic(ISoerContent):
-    """ Infographic
-
-        >>> fid = sandbox.invokeFactory('Infographic', id='Infographic')
-        >>> doc = sandbox._getOb(fid)
-        >>> doc
-        <Infographic at...>
-
-    """
-
 class IGlossary(ISoerContent):
     """ Glossary
 

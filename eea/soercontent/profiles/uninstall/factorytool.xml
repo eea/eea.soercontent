@@ -2,5 +2,9 @@
 <object name="portal_factory">
   <factorytypes>
     <!-- -*- uninstall extra stuff goes here -*- -->
+      <type portal_type="Infographic" remove="True" />
+
+      <type portal_type="Fiche" remove="True"/>
+      <type portal_type="Glossary" remove="True" />
   </factorytypes>
 </object>
