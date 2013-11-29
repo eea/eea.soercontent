@@ -3,9 +3,6 @@ Changelog
 
 1.6-dev - (unreleased)
 ----------------------
-* Change: inherit from IEEAContent of Products.EEAContentTypes if available
-  for extra base fields
-  [ichimdav refs #17610]
 * Change: removed license, temporalCoverage and publisher fields from
   the base SoerContent schema
   [ichimdav refs #17610]
