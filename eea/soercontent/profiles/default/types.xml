@@ -2,7 +2,5 @@
 <object name="portal_types">
   <object name="Fiche"
     meta_type="Factory-based Type Information with dynamic views"/>
-  <object name="Glossary"
-    meta_type="Factory-based Type Information with dynamic views"/>
 </object>
 

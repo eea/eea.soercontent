@@ -5,8 +5,5 @@
   <type type_id="Fiche">
    <bound-workflow workflow_id="eea_soer_workflow"/>
   </type>
-  <type type_id="Glossary">
-   <bound-workflow workflow_id="eea_soer_workflow"/>
-  </type>
  </bindings>
 </object>

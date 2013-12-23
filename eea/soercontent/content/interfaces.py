@@ -19,13 +19,3 @@ class IFiche(ISoerContent):
         <Fiche at...>
 
     """
-
-class IGlossary(ISoerContent):
-    """ Glossary
-
-        >>> fid = sandbox.invokeFactory('Glossary', id='Glossary')
-        >>> doc = sandbox._getOb(fid)
-        >>> doc
-        <Glossary at...>
-
-    """

@@ -2,6 +2,5 @@
 <object name="portal_factory">
   <factorytypes>
     <type portal_type="Fiche"/>
-    <type portal_type="Glossary"/>
   </factorytypes>
 </object>

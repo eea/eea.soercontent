@@ -4,8 +4,5 @@
   <type portal_type="Fiche">
    <field name="any" difftype="Compound Diff for AT types"/>
   </type>
-  <type portal_type="Glossary">
-   <field name="any" difftype="Compound Diff for AT types"/>
-  </type>
  </difftypes>
 </object>

@@ -5,9 +5,5 @@
    <policy name="at_edit_autoversion"/>
    <policy name="version_on_revert"/>
   </type>
-  <type name="Glossary">
-   <policy name="at_edit_autoversion"/>
-   <policy name="version_on_revert"/>
-  </type>
  </policymap>
 </repositorytool>

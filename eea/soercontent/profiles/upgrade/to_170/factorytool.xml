@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <object name="portal_factory">
   <factorytypes>
-      <type portal_type="Fiche" remove="True"/>
+      <type portal_type="Glossary" remove="True" />
   </factorytypes>
 </object>

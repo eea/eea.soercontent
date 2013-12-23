@@ -4,7 +4,19 @@
   i18n_domain="eea">
 
     <genericsetup:upgradeSteps
-            source="*"
+            source="1.6"
+            destination="1.7"
+            profile="eea.soercontent:default">
+
+        <genericsetup:upgradeDepends
+                title="Remove Glossary ContentType within 1.70 profile"
+                import_profile="eea.soercontent:upgrade_170"
+                />
+
+    </genericsetup:upgradeSteps>
+
+    <genericsetup:upgradeSteps
+            source="1.4"
             destination="1.6"
             profile="eea.soercontent:default">
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-09-18 07:42+0000\n"
+"POT-Creation-Date: 2013-12-20 17:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,67 +14,35 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ../../soercontent/profiles/default/types/Infographic.xml
-msgid "EEA SOER"
-msgstr ""
-
-#: ../../soercontent/profiles/default/types/Glossary.xml
-msgid "EEA SOER 2015"
+#: ../../soercontent/content/schema.py:27
+msgid "Enter the copyright information for this image."
 msgstr ""
 
 #: ../../soercontent/profiles/default/types/Fiche.xml
 msgid "Fiche"
 msgstr ""
 
-#: ../../soercontent/profiles/default/types/Glossary.xml
-msgid "Glossary"
-msgstr ""
-
-#: ../../soercontent/content/schema.py:59
+#: ../../soercontent/content/schema.py:38
 msgid "If selected, this will give users the ability to view the contents as presentation slides."
 msgstr ""
 
-#: ../../soercontent/content/schema.py:13
+#: ../../soercontent/content/schema.py:26
+msgid "Image Copyright"
+msgstr ""
+
+#: ../../soercontent/content/schema.py:19
 msgid "Image for thumbnail"
 msgstr ""
 
-#: ../../soercontent/profiles/default/types/Infographic.xml
-msgid "Infographic"
-msgstr ""
-
-#: ../../soercontent/content/schema.py:39
-msgid "License"
-msgstr ""
-
-#: ../../soercontent/content/schema.py:40
-msgid "License information"
-msgstr ""
-
-#: ../../soercontent/content/schema.py:58
+#: ../../soercontent/content/schema.py:37
 msgid "Presentation mode"
-msgstr ""
-
-#: ../../soercontent/content/schema.py:48
-msgid "Publisher"
-msgstr ""
-
-#: ../../soercontent/content/schema.py:49
-msgid "Publisher information"
 msgstr ""
 
 #: ../../soercontent/profiles/default/types/Fiche.xml
 msgid "SOER 2015 Content"
 msgstr ""
 
-#: ../../soercontent/content/schema.py:26
-msgid "Temporal coverage"
-msgstr ""
-
-#: ../../soercontent/content/schema.py:27
-msgid "The temporal scope of the content of the data resource. Temporal coverage will typically include a set of years or time ranges."
-msgstr ""
-
-#: ../../soercontent/content/schema.py:12
+#: ../../soercontent/content/schema.py:18
 msgid "Thumbnail"
 msgstr ""
 

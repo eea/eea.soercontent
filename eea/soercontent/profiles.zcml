@@ -23,17 +23,25 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-    <genericsetup:registerProfile
-        name="upgrade_160"
-        title="Upgrade profile for EEA SOER 2015 1.60"
-        directory="profiles/upgrade/to_160"
-        description="This profile contains configuration changes for 1.60"
-        provides="Products.GenericSetup.interfaces.EXTENSION"
-        />
+  <genericsetup:registerProfile
+      name="upgrade_160"
+      title="Upgrade profile for EEA SOER 2015 1.60"
+      directory="profiles/upgrade/to_160"
+      description="This profile contains configuration changes for 1.60"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="upgrade_170"
+      title="Upgrade profile for EEA SOER 2015 1.70"
+      directory="profiles/upgrade/to_170"
+      description="This profile contains configuration changes for 1.70"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
 
   <genericsetup:importStep
-    name="eea.soercontent.various"
-    title="EEA Soer Content Setup" description="Setup EEA Soer Content"
-    handler="eea.soercontent.setuphandlers.setupVarious" />
+      name="eea.soercontent.various"
+      title="EEA Soer Content Setup" description="Setup EEA Soer Content"
+      handler="eea.soercontent.setuphandlers.setupVarious" />
 
 </configure>

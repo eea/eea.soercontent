@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<object>
+    <difftypes>
+        <type portal_type="Glossary" remove="True">
+        </type>
+    </difftypes>
+</object>
