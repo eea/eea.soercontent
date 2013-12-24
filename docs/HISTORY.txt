@@ -3,6 +3,10 @@ Changelog
 
 1.7-dev - (unreleased)
 ----------------------
+* Upgrade step: Within "Plone > Site setup > Add-ons" click on
+  upgrade button available for eea.soercontent
+* Cleanup: Remove unused Glossary content-type
+  [voineali refs #17736]
 
 1.6 - (2013-12-10)
 ------------------
