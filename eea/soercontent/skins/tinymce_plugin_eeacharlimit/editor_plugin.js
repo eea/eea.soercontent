@@ -26,7 +26,7 @@ to be defined.
                     }
                 } else {
                     var over_threshold = char_num - threshold;
-                    message = 'You need to delete ' + over_threshold + ' characters.';
+                    message = 'Please remove ' + over_threshold + ' characters.';
 
                     if (!status_box.hasClass('charlimit-exceeded')) {
                         status_box.addClass('charlimit-exceeded');
