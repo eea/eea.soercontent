@@ -1,0 +1,7 @@
+.charlimit-info {
+    color: green;
+}
+
+.charlimit-exceeded {
+    color: red;
+}

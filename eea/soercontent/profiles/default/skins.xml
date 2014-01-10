@@ -2,7 +2,18 @@
 <object name="portal_skins">
   <object name="soercontent" meta_type="Filesystem Directory View"
     directory="eea.soercontent:skins/soercontent" />
+
   <skin-path name="*">
     <layer name="soercontent" insert-after="custom" />
   </skin-path>
+
+  <object name="tinymce_plugin_eeacharlimit"
+    meta_type="Filesystem Directory View"
+    directory="eea.soercontent:skins/tinymce_plugin_eeacharlimit"/>
+
+ <skin-path name="*">
+  <layer name="tinymce_plugin_eeacharlimit"
+     insert-before="tinymce"/>
+ </skin-path>
+
 </object>
