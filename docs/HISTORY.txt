@@ -3,6 +3,8 @@ Changelog
 
 1.7-dev - (unreleased)
 ----------------------
+* Feature: Added upgrade step for the tinymce settings and new skins profile
+  [olimpiu #17135]
 * Feature: Added tinymce plugin for counting characters in fiche CT edit
   [olimpiu #17135]
 * Upgrade step: Within "Plone > Site setup > Add-ons" click on
