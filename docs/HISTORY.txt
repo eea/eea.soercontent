@@ -3,6 +3,8 @@ Changelog
 
 1.7-dev - (unreleased)
 ----------------------
+* Change: Changed the styling of the text displayed in the status_box
+  [olimpiu #17135]
 * Change: Moved the status_box under the tinymce's toolbar
   [olimpiu #17135]
 * Change: Moved the status_box on top of tinymce; Enable plugin in fullscreen
