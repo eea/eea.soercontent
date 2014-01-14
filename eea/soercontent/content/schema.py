@@ -54,3 +54,5 @@ class SoerContent(folder.ATFolder, document.ATDocumentBase):
         document.ATDocumentSchema.copy() +
         SCHEMA.copy()
     )
+    schema['text'].widget.helper_js = ("eeacharlimit_enabled.js",)
+    schema['text'].widget.helper_css = ("eeacharlimit.css",)

@@ -3,6 +3,17 @@ Changelog
 
 1.7-dev - (unreleased)
 ----------------------
+* Change: Changed the styling of the text displayed in the status_box
+  [olimpiu #17135]
+* Change: Moved the status_box under the tinymce's toolbar
+  [olimpiu #17135]
+* Change: Moved the status_box on top of tinymce; Enable plugin in fullscreen
+  mode; Changed default threshold to 7500
+  [olimpiu #17135]
+* Feature: Added upgrade step for the tinymce settings and new skins profile
+  [olimpiu #17135]
+* Feature: Added tinymce plugin for counting characters in fiche CT edit
+  [olimpiu #17135]
 * Upgrade step: Within "Plone > Site setup > Add-ons" click on
   upgrade button available for eea.soercontent
 * Cleanup: Remove unused Glossary content-type
