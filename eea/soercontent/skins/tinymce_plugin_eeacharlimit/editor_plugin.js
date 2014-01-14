@@ -83,7 +83,7 @@ if (!Array.prototype.indexOf) {
                             if (tinymce_row.length === 0) {
                                 tinymce_row = jQuery('<tr />', {
                                     'class': 'charlimit-row',
-                                    'id': 'charlimit-row-' + field_id,
+                                    'id': 'charlimit-row-' + field_id
                                 });
                             }
 
