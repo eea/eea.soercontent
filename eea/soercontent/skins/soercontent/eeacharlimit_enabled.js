@@ -11,5 +11,5 @@ if(window.eeacharlimit_options === undefined){
 eeacharlimit_options.fiche = {
     ctype: 'fiche',
     fields:['text'],
-    threshold: 15000
+    threshold: 7500
 };

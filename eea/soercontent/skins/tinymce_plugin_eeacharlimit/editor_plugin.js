@@ -6,8 +6,20 @@ In order for the plugin to be active, a eeacharlimit_options javascript object
 needs to be present and the content type, richwidget fields and threshold need 
 to be defined.
  */
+/*global jQuery, tinymce, eeacharlimit_options */
+
+if (!Array.prototype.indexOf) {
+    Array.prototype.indexOf = function(obj, start) {
+         'use strict';
+         for (var i = (start || 0), j = this.length; i < j; i++) {
+             if (this[i] === obj) { return i; }
+         }
+         return -1;
+    };
+}
 
 (function() {
+    'use strict';
     tinymce.create('tinymce.plugins.EEACharLimitPlugin', {
         init : function(ed) {
             var self = this;
@@ -44,19 +56,31 @@ to be defined.
                     jQuery.each(eeacharlimit_options, function( index, value ) {
                         var body_class = jQuery('body').attr('class');
                         var marker = 'portaltype-' + value.ctype;
+                        var field_id = ed.editorId;
+                        var suffix = '';
+
+                        //If we're in fullscreen mode, check which field we're editing
+                        if (ed.getParam('fullscreen_is_enabled')) {
+                            field_id = ed.getParam('fullscreen_editor_id');
+                            suffix = '-fullscreen';
+                        }
 
                         //Check if we should activate for this CT and field
-                        if (body_class.indexOf(marker) >= 0 && value.fields.indexOf(ed.editorId) >=0 ) {
+                        if (body_class.indexOf(marker) >= 0 && value.fields.indexOf(field_id) >=0 ) {
                             var threshold = value.threshold;
-                            var fields = value.fields;
+                            var char_left = threshold - self.getCountCharacters();
 
                             var status_box = jQuery('<div />', {
                                 'class': 'charlimit-info',
-                                'id': 'info-' + ed.editorId,
-                                'text': threshold + ' characters left.'
-                            }).insertAfter(jQuery('#' + ed.editorId).parent());
+                                'id': 'info-' + field_id + suffix,
+                                'text': char_left + ' characters left.'
+                            }).insertBefore(jQuery('#' + ed.editorId));
 
                             ed.onKeyUp.add(function() {
+                                status_update(status_box, threshold);
+                            });
+
+                            ed.onActivate.add(function() {
                                 status_update(status_box, threshold);
                             });
                         }
