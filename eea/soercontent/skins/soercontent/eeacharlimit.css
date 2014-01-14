@@ -1,7 +1,7 @@
-.charlimit-info {
+.ploneSkin .charlimit-info {
     color: green;
 }
 
-.charlimit-exceeded {
+.ploneSkin .charlimit-exceeded {
     color: red;
 }

@@ -48,6 +48,13 @@ if (!Array.prototype.indexOf) {
                 status_box.text(message);
             }
 
+            function add_placeholder(parent_id, elem) {
+                var parent = jQuery('#' + parent_id);
+                var tiny_table = parent.find(jQuery('table[role="presentation"][class~="mceLayout"'));
+
+                tiny_table.find('tr[class="mceFirst"]').after(elem);
+            }
+
             ed.onInit.add(function() {
 
                 //Check for eeacharlimit_options object
@@ -57,31 +64,54 @@ if (!Array.prototype.indexOf) {
                         var body_class = jQuery('body').attr('class');
                         var marker = 'portaltype-' + value.ctype;
                         var field_id = ed.editorId;
-                        var suffix = '';
+                        var row_id = 'charlimit-row-' + field_id;
 
                         //If we're in fullscreen mode, check which field we're editing
                         if (ed.getParam('fullscreen_is_enabled')) {
                             field_id = ed.getParam('fullscreen_editor_id');
-                            suffix = '-fullscreen';
+                            row_id = 'charlimit-row-' + field_id;
                         }
 
                         //Check if we should activate for this CT and field
                         if (body_class.indexOf(marker) >= 0 && value.fields.indexOf(field_id) >=0 ) {
                             var threshold = value.threshold;
                             var char_left = threshold - self.getCountCharacters();
+                            var tinymce_row = jQuery('#' + row_id);
+                            var status_box = jQuery('#info-' + field_id);
 
-                            var status_box = jQuery('<div />', {
-                                'class': 'charlimit-info',
-                                'id': 'info-' + field_id + suffix,
-                                'text': char_left + ' characters left.'
-                            }).insertBefore(jQuery('#' + ed.editorId));
+                            // Check if we have our custom row
+                            if (tinymce_row.length === 0) {
+                                tinymce_row = jQuery('<tr />', {
+                                    'class': 'charlimit-row',
+                                    'id': 'charlimit-row-' + field_id,
+                                });
+                            }
+
+                            // Check if we have our status_box
+                            if (status_box.length === 0) {
+                                status_box = jQuery('<div />', {
+                                    'class': 'charlimit-info',
+                                    'id': 'info-' + field_id,
+                                    'text': char_left + ' characters left.'
+                                });
+                                tinymce_row.append(status_box);
+                            }
+                            
+                            add_placeholder(ed.editorContainer, tinymce_row);
 
                             ed.onKeyUp.add(function() {
                                 status_update(status_box, threshold);
                             });
 
-                            ed.onActivate.add(function() {
-                                status_update(status_box, threshold);
+                            // Redraw our custom tinymce table row when exiting fullscreen
+                            ed.onBeforeExecCommand.add(function(ed, cmd) {
+                                if (cmd === 'mceFullScreen') {
+                                    if (ed.getParam('fullscreen_is_enabled')) {
+                                        var orig_field = ed.getParam('fullscreen_editor_id');
+                                        var container = tinymce.getInstanceById(orig_field).editorContainer;
+                                        add_placeholder(container, tinymce_row);
+                                    }
+                                }
                             });
                         }
                     });
