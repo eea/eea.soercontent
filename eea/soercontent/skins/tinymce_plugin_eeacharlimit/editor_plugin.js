@@ -50,7 +50,7 @@ if (!Array.prototype.indexOf) {
 
             function add_placeholder(parent_id, elem) {
                 var parent = jQuery('#' + parent_id);
-                var tiny_table = parent.find(jQuery('table[role="presentation"][class~="mceLayout"'));
+                var tiny_table = parent.find(jQuery('.mceLayout'));
 
                 tiny_table.find('tr[class="mceFirst"]').after(elem);
             }

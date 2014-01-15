@@ -3,6 +3,8 @@ Changelog
 
 1.7-dev - (unreleased)
 ----------------------
+* Bug fix: fixed counting characters tinyMCE plugin when using it with Firefox
+  [ichimdav #17135]
 * Change: Changed the styling of the text displayed in the status_box
   [olimpiu #17135]
 * Change: Moved the status_box under the tinymce's toolbar
