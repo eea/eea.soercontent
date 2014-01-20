@@ -5,7 +5,8 @@
  <permission>Modify portal content</permission>
  <permission>View</permission>
  <state state_id="draft" title="First draft">
-  <description>This is the first state when a new item is created</description>
+  <description>Adding content, not yet copy edited. Authors enter content and submit for further editing and web integration.</description>
+  <exit-transition transition_id="retract"/>
   <exit-transition transition_id="submitForWebEditing"/>
   <permission-map name="Access contents information" acquired="True">
    <permission-role>Authenticated</permission-role>
@@ -28,10 +29,19 @@
    <permission-role>Owner</permission-role>
    <permission-role>Reader</permission-role>
   </permission-map>
+  <group-map name="SOERContactAuthors">
+   <group-role>Editor</group-role>
+  </group-map>
   <group-map name="SOERContributors">
    <group-role>Editor</group-role>
   </group-map>
+  <group-map name="SOERCoordinators">
+   <group-role>Editor</group-role>
+  </group-map>
   <group-map name="SOERCopyEditors">
+   <group-role>Editor</group-role>
+  </group-map>
+  <group-map name="SOERData">
    <group-role>Editor</group-role>
   </group-map>
   <group-map name="SOERLeadAuthors">
@@ -43,8 +53,12 @@
   <group-map name="WebReviewers">
    <group-role>Editor</group-role>
   </group-map>
+  <group-map name="proofReader">
+   <group-role>Editor</group-role>
+  </group-map>
  </state>
- <state state_id="final_revision" title="Final revision">
+ <state state_id="final_revision" title="Sign-off">
+  <description>This state indicates that the content is under the final review and ready for sign-off by the coordinator. Content is than made public by the web manager.</description>
   <exit-transition transition_id="publish"/>
   <exit-transition transition_id="retract"/>
   <permission-map name="Access contents information" acquired="True">
@@ -73,6 +87,10 @@
    <permission-role>Reviewer</permission-role>
    <permission-role>WebReviewer</permission-role>
   </permission-map>
+  <group-map name="SOERCoordinators">
+   <group-role>Editor</group-role>
+   <group-role>Reviewer</group-role>
+  </group-map>
   <group-map name="SOERLeadAuthorsCoordinators">
    <group-role>Editor</group-role>
    <group-role>Reviewer</group-role>
@@ -99,26 +117,54 @@
    <permission-role>Reader</permission-role>
   </permission-map>
  </state>
+ <state state_id="proofreading" title="Layout check">
+  <description>Layout is checked in all formats (Web, PDF, print and presentation mode).
+As part of this, content is also re-checked for typos and consistency with EEA style guidelines.</description>
+  <exit-transition transition_id="submitForFinalSignoff"/>
+  <permission-map name="Access contents information" acquired="True">
+  </permission-map>
+  <permission-map name="Delete objects" acquired="True">
+  </permission-map>
+  <permission-map name="Modify portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="True">
+  </permission-map>
+  <group-map name="SOERContactAuthors">
+   <group-role>Editor</group-role>
+  </group-map>
+  <group-map name="SOERCoordinators">
+   <group-role>Editor</group-role>
+  </group-map>
+  <group-map name="proofReader">
+   <group-role>Editor</group-role>
+  </group-map>
+ </state>
  <state state_id="published" title="Published">
-  <exit-transition transition_id="retract"/>
   <permission-map name="Access contents information" acquired="True">
    <permission-role>Anonymous</permission-role>
   </permission-map>
   <permission-map name="Delete objects" acquired="True">
   </permission-map>
   <permission-map name="Modify portal content" acquired="False">
-   <permission-role>ContentManager</permission-role>
    <permission-role>Editor</permission-role>
-   <permission-role>Manager</permission-role>
-   <permission-role>Owner</permission-role>
    <permission-role>Reviewer</permission-role>
+   <permission-role>Site Administrator</permission-role>
    <permission-role>WebReviewer</permission-role>
   </permission-map>
   <permission-map name="View" acquired="True">
    <permission-role>Anonymous</permission-role>
   </permission-map>
+  <group-map name="SOERCoordinators">
+   <group-role>Editor</group-role>
+  </group-map>
+  <group-map name="WebReviewers">
+   <group-role>Editor</group-role>
+  </group-map>
  </state>
- <state state_id="ready_for_eionet_review" title="Ready for Eionet Review">
+ <state state_id="ready_for_eionet_review" title="Approve for review">
+  <description>SOER Coordinator checks the content and decides whether it is ready for Eionet review. Note that he can require content changes and improvements from authors.
+</description>
   <exit-transition transition_id="signoffForEionetReview"/>
   <permission-map name="Access contents information" acquired="True">
    <permission-role>Authenticated</permission-role>
@@ -136,24 +182,20 @@
    <permission-role>Editor</permission-role>
    <permission-role>Reader</permission-role>
   </permission-map>
-  <group-map name="SOERContributors">
+  <group-map name="SOERContactAuthors">
    <group-role>Editor</group-role>
   </group-map>
-  <group-map name="SOERCopyEditors">
-   <group-role>Editor</group-role>
-  </group-map>
-  <group-map name="SOERLeadAuthors">
-   <group-role>Editor</group-role>
-  </group-map>
-  <group-map name="SOERLeadAuthorsCoordinators">
+  <group-map name="SOERCoordinators">
    <group-role>Editor</group-role>
   </group-map>
   <group-map name="WebReviewers">
    <group-role>Editor</group-role>
   </group-map>
  </state>
- <state state_id="redraft_and_web_integration" title="Redrafting and web integration">
-  <exit-transition transition_id="signoffForLayout"/>
+ <state state_id="redraft_and_web_integration" title="Re-draft">
+  <description>All work together to finalize the content and adjusting according to received feedback in previous review phase. When copy editors and authors are done, the copy editors mark the fiche as "Editing done."
+</description>
+  <exit-transition transition_id="submitForWebIntegration"/>
   <permission-map name="Access contents information" acquired="True">
    <permission-role>Authenticated</permission-role>
    <permission-role>Editor</permission-role>
@@ -170,10 +212,19 @@
    <permission-role>Editor</permission-role>
    <permission-role>Reader</permission-role>
   </permission-map>
+  <group-map name="SOERContactAuthors">
+   <group-role>Editor</group-role>
+  </group-map>
   <group-map name="SOERContributors">
    <group-role>Editor</group-role>
   </group-map>
+  <group-map name="SOERCoordinators">
+   <group-role>Editor</group-role>
+  </group-map>
   <group-map name="SOERCopyEditors">
+   <group-role>Editor</group-role>
+  </group-map>
+  <group-map name="SOERData">
    <group-role>Editor</group-role>
   </group-map>
   <group-map name="SOERLeadAuthors">
@@ -212,10 +263,19 @@
    <permission-role>Reviewer</permission-role>
    <permission-role>WebReviewer</permission-role>
   </permission-map>
+  <group-map name="SOERContactAuthors">
+   <group-role>Reader</group-role>
+  </group-map>
   <group-map name="SOERContributors">
    <group-role>Reader</group-role>
   </group-map>
+  <group-map name="SOERCoordinators">
+   <group-role>Reader</group-role>
+  </group-map>
   <group-map name="SOERCopyEditors">
+   <group-role>Reader</group-role>
+  </group-map>
+  <group-map name="SOERData">
    <group-role>Reader</group-role>
   </group-map>
   <group-map name="SOERLeadAuthors">
@@ -227,9 +287,12 @@
   <group-map name="WebReviewers">
    <group-role>Reader</group-role>
   </group-map>
+  <group-map name="proofReader">
+   <group-role>Reader</group-role>
+  </group-map>
  </state>
- <state state_id="visible" title="Eionet review (visible with direct link)">
-  <description>Item still visible with direct link, but hidden is searches and listings on the site. Usable for external light reviews with no login required.</description>
+ <state state_id="visible" title="Under review">
+  <description>Content is now frozen for editing and open for comments. Anyone with Eionet password may log in and enter comments. Content is available for anonymous to see by knowing the link.</description>
   <exit-transition transition_id="openForRedrafting"/>
   <permission-map name="Access contents information" acquired="True">
    <permission-role>Anonymous</permission-role>
@@ -240,6 +303,7 @@
   <permission-map name="Delete objects" acquired="False">
   </permission-map>
   <permission-map name="Modify portal content" acquired="False">
+   <permission-role>Editor</permission-role>
    <permission-role>Manager</permission-role>
    <permission-role>Reviewer</permission-role>
    <permission-role>WebReviewer</permission-role>
@@ -250,25 +314,24 @@
    <permission-role>Manager</permission-role>
    <permission-role>Reader</permission-role>
   </permission-map>
-  <group-map name="SOERContributors">
-   <group-role>Reader</group-role>
+  <group-map name="SOERContactAuthors">
+   <group-role>Editor</group-role>
   </group-map>
-  <group-map name="SOERCopyEditors">
-   <group-role>Reader</group-role>
-  </group-map>
-  <group-map name="SOERLeadAuthors">
-   <group-role>Reader</group-role>
-  </group-map>
-  <group-map name="SOERLeadAuthorsCoordinators">
-   <group-role>Reader</group-role>
+  <group-map name="SOERCoordinators">
+   <group-role>Editor</group-role>
    <group-role>Reviewer</group-role>
   </group-map>
   <group-map name="WebReviewers">
-   <group-role>Reader</group-role>
+   <group-role>Editor</group-role>
   </group-map>
  </state>
- <state state_id="web_editing" title="web editing">
+ <state state_id="web_editing" title="First web edit">
+  <description>Copy editing and light web editing to make it ready for Eionet review.
+Figures are also added in this step.
+This step may be not fully completed here. Copy editing, web layout and integration then take place after the Eionet review.</description>
+  <exit-transition transition_id="editingPhaseDone"/>
   <exit-transition transition_id="markReadyForEionet"/>
+  <exit-transition transition_id="retract"/>
   <permission-map name="Access contents information" acquired="True">
    <permission-role>Authenticated</permission-role>
    <permission-role>ContentManager</permission-role>
@@ -297,10 +360,19 @@
    <permission-role>Reviewer</permission-role>
    <permission-role>WebReviewer</permission-role>
   </permission-map>
+  <group-map name="SOERContactAuthors">
+   <group-role>Editor</group-role>
+  </group-map>
   <group-map name="SOERContributors">
    <group-role>Editor</group-role>
   </group-map>
+  <group-map name="SOERCoordinators">
+   <group-role>Editor</group-role>
+  </group-map>
   <group-map name="SOERCopyEditors">
+   <group-role>Editor</group-role>
+  </group-map>
+  <group-map name="SOERData">
    <group-role>Editor</group-role>
   </group-map>
   <group-map name="SOERLeadAuthors">
@@ -313,9 +385,40 @@
    <group-role>Editor</group-role>
   </group-map>
  </state>
- <transition transition_id="editingPhaseDone" title="Editing phase done" new_state="" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Editing phase done</action>
+ <state state_id="web_integration" title="Final web edit">
+  <description>Content is checked and further web integration takes place: i.e. consistency, data visualisation and traceability. Until this stage ends, data and indicators updates will be possible.
+
+When data and visualisation integrators are done, they mark the fiche as "data &amp; visualisation integration done."
+</description>
+  <exit-transition transition_id="submitForProofreading"/>
+  <permission-map name="Access contents information" acquired="True">
+   <permission-role>Authenticated</permission-role>
+  </permission-map>
+  <permission-map name="Delete objects" acquired="True">
+  </permission-map>
+  <permission-map name="Modify portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="True">
+   <permission-role>Authenticated</permission-role>
+  </permission-map>
+  <group-map name="SOERContactAuthors">
+   <group-role>Editor</group-role>
+  </group-map>
+  <group-map name="SOERCoordinators">
+   <group-role>Editor</group-role>
+  </group-map>
+  <group-map name="SOERData">
+   <group-role>Editor</group-role>
+  </group-map>
+  <group-map name="WebReviewers">
+   <group-role>Editor</group-role>
+  </group-map>
+ </state>
+ <transition transition_id="editingPhaseDone" title="Copy-edit done" new_state="" trigger="USER" before_script="" after_script="">
+  <action url="" category="workflow" icon="">Copy-edit done</action>
   <guard>
+   <guard-group>SOERCopyEditors</guard-group>
   </guard>
  </transition>
  <transition transition_id="enable" title="Enable" new_state="draft" trigger="USER" before_script="" after_script="">
@@ -323,29 +426,29 @@
   <action url="" category="workflow" icon="">Enable</action>
   <guard>
    <guard-group>WebReviewers</guard-group>
-   <guard-group>SOERLeadAuthorsCoordinators</guard-group>
+   <guard-group>SOERCoordinators</guard-group>
   </guard>
  </transition>
  <transition transition_id="markForDeletion" title="Mark for deletion" new_state="marked_for_deletion" trigger="USER" before_script="" after_script="">
   <description>Mark this content to be deleted.</description>
   <action url="" category="workflow" icon="">Mark for deletion</action>
   <guard>
-   <guard-role>Reviewer</guard-role>
    <guard-role>WebReviewer</guard-role>
+   <guard-role>Reviewer</guard-role>
    <guard-role>Owner</guard-role>
   </guard>
  </transition>
- <transition transition_id="markReadyForEionet" title="mark Ready for Eionet Review" new_state="ready_for_eionet_review" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">mark ready for Eionet Review</action>
+ <transition transition_id="markReadyForEionet" title="Submit for approval for review" new_state="ready_for_eionet_review" trigger="USER" before_script="" after_script="">
+  <action url="" category="workflow" icon="">Submit for approval for review</action>
   <guard>
    <guard-role>WebReviewer</guard-role>
   </guard>
  </transition>
- <transition transition_id="openForRedrafting" title="Open for redrafting" new_state="redraft_and_web_integration" trigger="USER" before_script="" after_script="">
+ <transition transition_id="openForRedrafting" title="Submit for redrafting" new_state="redraft_and_web_integration" trigger="USER" before_script="" after_script="">
   <description>Close the Eionet review and open content for redrafting phase.</description>
-  <action url="" category="workflow" icon="">Open for redrafting</action>
+  <action url="" category="workflow" icon="">Submit for redrafting</action>
   <guard>
-   <guard-group>SOERLeadAuthorsCoordinators</guard-group>
+   <guard-group>SOERCoordinators</guard-group>
   </guard>
  </transition>
  <transition transition_id="publish" title="Publish" new_state="published" trigger="USER" before_script="" after_script="">
@@ -355,28 +458,48 @@
   </guard>
  </transition>
  <transition transition_id="retract" title="Retract" new_state="retracted" trigger="USER" before_script="" after_script="">
+  <description>Retract and cancel the publishing of this item.</description>
   <action url="" category="workflow" icon="">Retract</action>
   <guard>
-   <guard-role>Manager</guard-role>
+   <guard-group>WebReviewers</guard-group>
+   <guard-group>SOERCoordinators</guard-group>
   </guard>
  </transition>
- <transition transition_id="signoffForEionetReview" title="Sign-off for Eionet Review" new_state="visible" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Sign-off for Eionet Review</action>
+ <transition transition_id="signoffForEionetReview" title="Submit for Eionet review" new_state="visible" trigger="USER" before_script="" after_script="">
+  <action url="" category="workflow" icon="">Submit for Eionet review</action>
   <guard>
-   <guard-group>SOERLeadAuthorsCoordinators</guard-group>
+   <guard-group>SOERCoordinators</guard-group>
   </guard>
  </transition>
  <transition transition_id="signoffForLayout" title="Set as final revision for layout" new_state="final_revision" trigger="USER" before_script="" after_script="">
   <description>Sign-off content for final layout and restricted editing.</description>
   <action url="" category="workflow" icon="">Set as final revision for layout</action>
   <guard>
-   <guard-group>SOERLeadAuthorsCoordinators</guard-group>
+   <guard-group>SOERCoordinators</guard-group>
   </guard>
  </transition>
- <transition transition_id="submitForWebEditing" title="submit for Web Editing" new_state="web_editing" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">submit for Web Editing</action>
+ <transition transition_id="submitForFinalSignoff" title="Submit for final sign-off" new_state="final_revision" trigger="USER" before_script="" after_script="">
+  <action url="" category="workflow" icon="">Submit for final sign-off</action>
   <guard>
-   <guard-role>Editor</guard-role>
+  </guard>
+ </transition>
+ <transition transition_id="submitForProofreading" title="Submit for layout check" new_state="proofreading" trigger="USER" before_script="" after_script="">
+  <action url="" category="workflow" icon="">Submit for layout check</action>
+  <guard>
+   <guard-group>WebReviewers</guard-group>
+  </guard>
+ </transition>
+ <transition transition_id="submitForWebEditing" title="Submit for first web edit" new_state="web_editing" trigger="USER" before_script="" after_script="">
+  <action url="" category="workflow" icon="">Submit for first web edit</action>
+  <guard>
+   <guard-group>SOERContributors</guard-group>
+   <guard-group>SOERContactAuthors</guard-group>
+  </guard>
+ </transition>
+ <transition transition_id="submitForWebIntegration" title="Submit for final web edit" new_state="web_integration" trigger="USER" before_script="" after_script="">
+  <action url="" category="workflow" icon="">Submit for final web edit</action>
+  <guard>
+   <guard-group>SOERContactAuthors</guard-group>
   </guard>
  </transition>
  <variable variable_id="action" for_catalog="False" for_status="True" update_always="True">
