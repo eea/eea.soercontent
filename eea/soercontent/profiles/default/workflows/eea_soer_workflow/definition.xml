@@ -4,6 +4,7 @@
  <permission>Delete objects</permission>
  <permission>Modify portal content</permission>
  <permission>View</permission>
+ <permission>eea.annotator: Edit</permission>
  <state state_id="draft" title="First draft">
   <description>Adding content, not yet copy edited. Authors enter content and submit for further editing and web integration.</description>
   <exit-transition transition_id="retract"/>
@@ -116,6 +117,9 @@
    <permission-role>Manager</permission-role>
    <permission-role>Reader</permission-role>
   </permission-map>
+  <permission-map name="eea.annotator: Edit" acquired="False">
+   <permission-role>Manager</permission-role>
+  </permission-map>
  </state>
  <state state_id="proofreading" title="Layout check">
   <description>Layout is checked in all formats (Web, PDF, print and presentation mode).
@@ -129,6 +133,9 @@ As part of this, content is also re-checked for typos and consistency with EEA s
    <permission-role>Editor</permission-role>
   </permission-map>
   <permission-map name="View" acquired="True">
+  </permission-map>
+  <permission-map name="eea.annotator: Edit" acquired="False">
+   <permission-role>Editor</permission-role>
   </permission-map>
   <group-map name="SOERContactAuthors">
    <group-role>Editor</group-role>
@@ -154,6 +161,9 @@ As part of this, content is also re-checked for typos and consistency with EEA s
   </permission-map>
   <permission-map name="View" acquired="True">
    <permission-role>Anonymous</permission-role>
+  </permission-map>
+  <permission-map name="eea.annotator: Edit" acquired="False">
+   <permission-role>Editor</permission-role>
   </permission-map>
   <group-map name="SOERCoordinators">
    <group-role>Editor</group-role>
@@ -181,6 +191,9 @@ As part of this, content is also re-checked for typos and consistency with EEA s
    <permission-role>Authenticated</permission-role>
    <permission-role>Editor</permission-role>
    <permission-role>Reader</permission-role>
+  </permission-map>
+  <permission-map name="eea.annotator: Edit" acquired="False">
+   <permission-role>Editor</permission-role>
   </permission-map>
   <group-map name="SOERContactAuthors">
    <group-role>Editor</group-role>
@@ -211,6 +224,9 @@ As part of this, content is also re-checked for typos and consistency with EEA s
    <permission-role>Authenticated</permission-role>
    <permission-role>Editor</permission-role>
    <permission-role>Reader</permission-role>
+  </permission-map>
+  <permission-map name="eea.annotator: Edit" acquired="False">
+   <permission-role>Editor</permission-role>
   </permission-map>
   <group-map name="SOERContactAuthors">
    <group-role>Editor</group-role>
@@ -402,6 +418,9 @@ When data and visualisation integrators are done, they mark the fiche as "data &
   <permission-map name="View" acquired="True">
    <permission-role>Authenticated</permission-role>
   </permission-map>
+  <permission-map name="eea.annotator: Edit" acquired="False">
+   <permission-role>Editor</permission-role>
+  </permission-map>
   <group-map name="SOERContactAuthors">
    <group-role>Editor</group-role>
   </group-map>
@@ -505,7 +524,7 @@ When data and visualisation integrators are done, they mark the fiche as "data &
  <variable variable_id="action" for_catalog="False" for_status="True" update_always="True">
   <description>The last transition</description>
   <default>
-
+   
    <expression>transition/getId|nothing</expression>
   </default>
   <guard>
@@ -514,7 +533,7 @@ When data and visualisation integrators are done, they mark the fiche as "data &
  <variable variable_id="actor" for_catalog="False" for_status="True" update_always="True">
   <description>The ID of the user who performed the last transition</description>
   <default>
-
+   
    <expression>user/getId</expression>
   </default>
   <guard>
@@ -523,7 +542,7 @@ When data and visualisation integrators are done, they mark the fiche as "data &
  <variable variable_id="comments" for_catalog="False" for_status="True" update_always="True">
   <description>Comments about the last transition</description>
   <default>
-
+   
    <expression>python:state_change.kwargs.get('comment', '')</expression>
   </default>
   <guard>
@@ -532,7 +551,7 @@ When data and visualisation integrators are done, they mark the fiche as "data &
  <variable variable_id="review_history" for_catalog="False" for_status="False" update_always="False">
   <description>Provides access to workflow history</description>
   <default>
-
+   
    <expression>state_change/getHistory</expression>
   </default>
   <guard>
@@ -543,10 +562,18 @@ When data and visualisation integrators are done, they mark the fiche as "data &
  <variable variable_id="time" for_catalog="False" for_status="True" update_always="True">
   <description>Time of the last transition</description>
   <default>
-
+   
    <expression>state_change/getDateTime</expression>
   </default>
   <guard>
   </guard>
  </variable>
+ <script script_id="fake_transition" type="External Method" filename="" module="eea.workflow.workflow_scripts" function="fake_transition"/>
+ <script script_id="publish" type="External Method" filename="" module="EEAPloneAdmin.frontpage_workflow_scripts" function="publish"/>
+ <script script_id="reject" type="External Method" filename="" module="EEAPloneAdmin.frontpage_workflow_scripts" function="reject"/>
+ <script script_id="self-qa" type="External Method" filename="" module="Products.EEAPloneAdmin.workflow_scripts" function="check_selfqa"/>
+ <script script_id="sendWorkflowEmail" type="External Method" filename="" module="EEAPloneAdmin.frontpage_workflow_scripts" function="sendWorkflowEmail"/>
+ <script script_id="submitForContentReview" type="External Method" filename="" module="EEAPloneAdmin.frontpage_workflow_scripts" function="submitForContentReview"/>
+ <script script_id="submitForProofReading" type="External Method" filename="" module="EEAPloneAdmin.frontpage_workflow_scripts" function="submitForProofReading"/>
+ <script script_id="submitForWebQA" type="External Method" filename="" module="EEAPloneAdmin.frontpage_workflow_scripts" function="submitForWebQA"/>
 </dc-workflow>
