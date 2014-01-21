@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.7-dev - (unreleased)
-----------------------
+1.7 - (2014-01-21)
+------------------
 * Change: Remove unneeded script references from workflow definition
   [olimpiurob #18000]
 * Feature: Added permission for inline comments in our workflow states
