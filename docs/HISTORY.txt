@@ -1,6 +1,9 @@
 Changelog
 =========
 
+1.8-dev - (unreleased)
+----------------------
+
 1.7 - (2014-01-21)
 ------------------
 * Change: Remove unneeded script references from workflow definition
