@@ -108,7 +108,7 @@ if (!Array.prototype.indexOf) {
                             if (status_box.length === 0) {
                                 status_box = jQuery('<div />', {
                                     'class': 'charlimit-info',
-                                    'id': 'info-' + field_id,
+                                    'id': 'info-' + field_id
                                 });
                                 tinymce_row.append(status_box);
                             }
