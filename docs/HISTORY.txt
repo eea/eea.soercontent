@@ -3,6 +3,8 @@ Changelog
 
 1.8-dev - (unreleased)
 ----------------------
+* Change: Added intermediary warning limit for character counter plugin
+  [olimpiurob #18578]
 
 1.7 - (2014-01-21)
 ------------------

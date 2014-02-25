@@ -3,8 +3,8 @@ http://adamscheller.com/tinymce-count-characters-plugin/
 
 This plugin is counting the characters entered in a fiche's RichWidget fields.
 In order for the plugin to be active, a eeacharlimit_options javascript object
-needs to be present and the content type, richwidget fields and threshold need 
-to be defined.
+needs to be present and the content type, richwidget fields and threshold limits
+need to be defined.
  */
 /*global jQuery, tinymce, eeacharlimit_options */
 
@@ -25,27 +25,44 @@ if (!Array.prototype.indexOf) {
             var self = this;
 
             //Update the status_box with the required info
-            function status_update(status_box, threshold) {
+            function status_update(status_box, low_threshold, high_threshold) {
                 var message;
                 var char_num = self.getCountCharacters();
+                var default_text = 'Tot ' + char_num + ' characters.';
 
-                if (char_num <= threshold) {
-                    var under_threshold = threshold - char_num;
-                    message = under_threshold + ' characters left.';
+                if (char_num <= low_threshold) {
+                    var under_threshold = low_threshold - char_num;
+                    message = ' (' + under_threshold + ' left)';
 
+                    if (status_box.hasClass('charlimit-warn')) {
+                        status_box.removeClass('charlimit-warn');
+                    }
                     if (status_box.hasClass('charlimit-exceeded')) {
                         status_box.removeClass('charlimit-exceeded');
                     }
+                } else if (char_num > low_threshold && char_num <= high_threshold) {
+                    message = ' (warning, we aim for 8000 characters)';
+                    
+                    if (status_box.hasClass('charlimit-exceeded')) {
+                        status_box.removeClass('charlimit-exceeded');
+                    }
+                    if (!status_box.hasClass('charlimit-warn')) {
+                        status_box.addClass('charlimit-warn');
+                    }
                 } else {
-                    var over_threshold = char_num - threshold;
-                    message = 'Please remove ' + over_threshold + ' characters.';
+                    var over_threshold = char_num - high_threshold;
+                    message = ' (too much text, please remove at least ' +
+                                    over_threshold + ' characters)';
 
+                    if (status_box.hasClass('charlimit-warn')) {
+                        status_box.removeClass('charlimit-warn');
+                    }
                     if (!status_box.hasClass('charlimit-exceeded')) {
                         status_box.addClass('charlimit-exceeded');
                     }
                 }
 
-                status_box.text(message);
+                status_box.text(default_text + message);
             }
 
             function add_placeholder(parent_id, elem) {
@@ -74,8 +91,8 @@ if (!Array.prototype.indexOf) {
 
                         //Check if we should activate for this CT and field
                         if (body_class.indexOf(marker) >= 0 && value.fields.indexOf(field_id) >=0 ) {
-                            var threshold = value.threshold;
-                            var char_left = threshold - self.getCountCharacters();
+                            var high_threshold = value.high_threshold;
+                            var low_threshold = value.low_threshold;
                             var tinymce_row = jQuery('#' + row_id);
                             var status_box = jQuery('#info-' + field_id);
 
@@ -92,15 +109,16 @@ if (!Array.prototype.indexOf) {
                                 status_box = jQuery('<div />', {
                                     'class': 'charlimit-info',
                                     'id': 'info-' + field_id,
-                                    'text': char_left + ' characters left.'
                                 });
                                 tinymce_row.append(status_box);
                             }
                             
                             add_placeholder(ed.editorContainer, tinymce_row);
+                            // Update the character count after creation
+                            status_update(status_box, low_threshold, high_threshold);
 
                             ed.onKeyUp.add(function() {
-                                status_update(status_box, threshold);
+                                status_update(status_box, low_threshold, high_threshold);
                             });
 
                             // Redraw our custom tinymce table row when exiting fullscreen
