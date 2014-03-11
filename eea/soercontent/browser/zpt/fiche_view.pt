@@ -24,9 +24,19 @@
     </p>
   </div>
 
+  <metal:field use-macro="python:context.widget('summary', mode='view')">
+    Long summary
+  </metal:field>
+
   <metal:field use-macro="python:context.widget('text', mode='view')">
       Body text
   </metal:field>
+
+  <div class="fiche-notes">
+    <metal:field use-macro="python:context.widget('notes', mode='view')">
+      Notes
+    </metal:field>
+  </div>
 
 </div>
 </metal:content-core>

@@ -3,6 +3,8 @@ Changelog
 
 1.9-dev - (unreleased)
 ----------------------
+* Feature: Added long summary an notes fields to Fiche schema
+  [voineali refs #18825]
 
 1.8 - (2014-03-10)
 ------------------
