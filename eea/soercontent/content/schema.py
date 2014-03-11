@@ -15,11 +15,11 @@ SCHEMA = atapi.Schema((
           required=False,
           default_output_type="text/x-html-safe",
           widget=atapi.RichWidget(
-              label=_(u'Long summary'),
-              description=_(u'Detailed summary or key messages'),
+              label=_(u'Long summary and key messages'),
+              description=_(u'Enter a list of key messages working as a summary'),
               rows=25)
     ),
-    atapi.TextField("notes",
+    atapi.TextField("endnotes",
           schemata="default",
           required=False,
           default_output_type="text/x-html-safe",
@@ -34,8 +34,8 @@ SCHEMA = atapi.Schema((
         schemata="default",
         sizes=None,
         widget=atapi.ImageWidget(
-            label=_("Thumbnail"),
-            description=_("Image for thumbnail")),
+            label=_("Image"),
+            description=_("Image used for cover, thumbnail and listings")),
             i18n_domain='eea',
         ),
     atapi.StringField(
