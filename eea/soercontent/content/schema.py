@@ -15,9 +15,10 @@ SCHEMA = atapi.Schema((
           required=False,
           default_output_type="text/x-html-safe",
           widget=atapi.RichWidget(
-              label=_(u'Long summary and key messages'),
-              description=_(u'Enter a list of key messages working as a summary'),
-              rows=25)
+              label=_(u'Key messages (summary)'),
+              description=_(u'Please provide a summary, '
+                            u'including the key messages, in this section.'),
+              rows=10)
     ),
     atapi.TextField("endnotes",
           schemata="default",
