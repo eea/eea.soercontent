@@ -3,6 +3,9 @@ Changelog
 
 1.9-dev - (unreleased)
 ----------------------
+* Upgrade step: Within "Plone > Site setup > Add-ons" click on
+  upgrade button available for eea.soercontent
+  [voineali refs #18825]
 * Change: relabelling of fields and shorter field for keymessages
   [demarant refs #18825]
 * Feature: Added keymessages an endnotes fields to Fiche schema
