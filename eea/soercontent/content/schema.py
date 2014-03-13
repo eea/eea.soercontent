@@ -82,4 +82,4 @@ class SoerContent(folder.ATFolder, document.ATDocumentBase):
     schema['text'].widget.helper_js = ("eeacharlimit_enabled.js",)
     schema['text'].widget.helper_css = ("eeacharlimit.css",)
 
-    schema.moveField('notes', after='text')
+    schema.moveField('endnotes', after='text')

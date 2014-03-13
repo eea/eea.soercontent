@@ -22,10 +22,14 @@
                 </tal:copyright>
             </p>
         </div>
+        <div id="summary" class="fiche-summary"
+             tal:content="structure python:context.getSummary().decode('utf-8')">
+            Summary
+        </div>
         <div id="content"
              tal:attributes="class python:wf_state and ('documentContent wf-state-' + str(wf_state)) or 'documentContent'"
              tal:content="structure python:context.getText().decode('utf-8')">
-            ...
+            Body text
         </div>
         <tal:relatedItems tal:define="related context/@@document_related/other"
                           tal:condition="related">
