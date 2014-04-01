@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<object name="portal_skins">
+  <object name="soercontent" remove="True" />
+
+  <skin-path name="*">
+    <layer name="soercontent" remove="True" />
+  </skin-path>
+
+  <object name="tinymce_plugin_eeacharlimit" remove="True"/>
+
+ <skin-path name="*">
+  <layer name="tinymce_plugin_eeacharlimit" remove="True"/>
+ </skin-path>
+
+</object>

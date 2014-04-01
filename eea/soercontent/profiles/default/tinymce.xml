@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<object>
- <resourcetypes purge="False">
-  <customplugins purge="False">
-    <element value="eeacharlimit|portal_skins/tinymce_plugin_eeacharlimit/editor_plugin.js"/>
-  </customplugins>
- </resourcetypes>
-</object>

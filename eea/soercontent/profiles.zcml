@@ -44,4 +44,12 @@
       title="EEA Soer Content Setup" description="Setup EEA Soer Content"
       handler="eea.soercontent.setuphandlers.setupVarious" />
 
+  <genericsetup:registerProfile
+      name="upgrade_200"
+      title="Upgrade profile for EEA SOER 2015 2.0"
+      directory="profiles/upgrade/to_200"
+      description="This profile contains configuration changes for 2.0"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
 </configure>

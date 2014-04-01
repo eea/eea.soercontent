@@ -4,6 +4,18 @@
   i18n_domain="eea">
 
   <genericsetup:upgradeSteps
+    source="1.9"
+    destination="2.0"
+    profile="eea.soercontent:default">
+
+    <genericsetup:upgradeDepends
+      title="Remove unneeded eeacharlimit plugin"
+      import_profile="eea.soercontent:upgrade_200"
+      />
+
+  </genericsetup:upgradeSteps>
+
+  <genericsetup:upgradeSteps
     source="1.8"
     destination="1.9"
     profile="eea.soercontent:default">
