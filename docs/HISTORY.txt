@@ -3,6 +3,9 @@ Changelog
 
 1.9-dev - (unreleased)
 ----------------------
+* Upgrade step: (optional) Review and enable Inline comments content-rules
+  within Site Setup > Content Rules
+  [voineali refs #19096]
 * Upgrade step: Within "Plone > Site setup > Add-ons" click on
   upgrade button available for eea.soercontent
   [voineali refs #18825]
