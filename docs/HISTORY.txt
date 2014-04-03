@@ -11,11 +11,14 @@ Changelog
   [voineali refs #18825]
 * Feature: Send emails on inline comments events: add/reply/close/re-open
   [voineali refs #19096]
-* Change: Removed eeacharlimit plugin through upgrade step. Within
-  "Plone > Site setup > Add-ons" click on upgrade button available
-  for eea.soercontent. The automatic upgrade step would not remove the
-  eeacharlimit plugin from @@tinymce-controlpanel > Resource Types, therefore a
-  manual upgrade step is required to remove it.
+* Upgrade step: within "Plone > Site setup > Add-ons" click on upgrade button
+  available for eea.soercontent.
+  [olimpiurob refs #18641]
+* Change: Removed eeacharlimit plugin from eea.soercontent. It is moved to
+  eea.tinymce
+  [olimpiurob refs #18641]
+* Upgrade step (manual): Remove eeacharlimit plugin from 
+  @@tinymce-controlpanel > Resource Types.
   [olimpiurob refs #18641]
 * Change: relabelling of fields and shorter field for keymessages
   [demarant refs #18825]
