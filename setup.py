@@ -41,6 +41,7 @@ setup(name=NAME,
           'eea.forms',
           'eea.converter',
           'eea.epub',
+          'eea.annotator',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
