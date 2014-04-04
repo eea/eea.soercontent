@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-12-20 17:25+0000\n"
+"POT-Creation-Date: 2014-04-04 15:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ../../soercontent/content/schema.py:27
+#: ../../soercontent/content/schema.py:47
 msgid "Enter the copyright information for this image."
 msgstr ""
 
@@ -22,27 +22,47 @@ msgstr ""
 msgid "Fiche"
 msgstr ""
 
-#: ../../soercontent/content/schema.py:38
+#: ../../soercontent/content/schema.py:58
 msgid "If selected, this will give users the ability to view the contents as presentation slides."
 msgstr ""
 
-#: ../../soercontent/content/schema.py:26
+#: ../../soercontent/content/schema.py:38
+msgid "Image"
+msgstr ""
+
+#: ../../soercontent/content/schema.py:46
 msgid "Image Copyright"
 msgstr ""
 
-#: ../../soercontent/content/schema.py:19
-msgid "Image for thumbnail"
+#: ../../soercontent/content/schema.py:39
+msgid "Image used for cover, thumbnail and listings"
 msgstr ""
 
-#: ../../soercontent/content/schema.py:37
+#: ../../soercontent/content/schema.py:18
+msgid "Key messages (summary)"
+msgstr ""
+
+#: ../../soercontent/content/schema.py:19
+msgid "Please provide a summary, including the key messages, in this section."
+msgstr ""
+
+#: ../../soercontent/content/schema.py:57
 msgid "Presentation mode"
+msgstr ""
+
+#: ../../soercontent/content/schema.py:28
+msgid "References and endnotes"
+msgstr ""
+
+#: ../../soercontent/content/schema.py:29
+msgid "References, endnotes, footnotes, abbreviations and definitions"
 msgstr ""
 
 #: ../../soercontent/profiles/default/types/Fiche.xml
 msgid "SOER 2015 Content"
 msgstr ""
 
-#: ../../soercontent/content/schema.py:18
-msgid "Thumbnail"
+#: ../../soercontent/content/schema.py:78
+msgid "Short summary"
 msgstr ""
 
