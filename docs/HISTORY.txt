@@ -3,6 +3,9 @@ Changelog
 
 1.9-dev - (unreleased)
 ----------------------
+* Feature: added scripts to create various statistics for Fiches.
+  Upgrade step: update the scripts in 0maintenance folder.
+  [demarant]
 * Upgrade step: (optional) Review and enable Inline comments content-rules
   within Site Setup > Content Rules
   [voineali refs #19096]
