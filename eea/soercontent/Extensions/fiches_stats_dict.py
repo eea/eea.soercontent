@@ -19,7 +19,7 @@ def fichesStatsDict(context):
     """ Return a list of dictionary with Fiche statistics.
     """
     cat = getToolByName(context, 'portal_catalog', None)
-    acl_users = getToolByName(context, 'acl_users', None)
+    #acl_users = getToolByName(context, 'acl_users', None)
     wf  = getToolByName(context, 'portal_workflow', None)
     pubs=cat.searchResults({ 'meta_type' : ['Fiche'], 'review_state':['web_editing', 'ready_for_eionet_review','visible','published_eionet'], 'path':'/www/SITE/soer-2015/','show_inactive': True, 'language':'ALL' })
 
