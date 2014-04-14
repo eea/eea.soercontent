@@ -1,10 +1,10 @@
 """
-A python implementation of https://github.com/DaveChild/Text-Statistics/. I saw it
-and really liked the idea.
+A python implementation of https://github.com/DaveChild/Text-Statistics/.
+I saw it and really liked the idea.
 
 All functions take a string and return a Decimal score.
-
 """
+
 from decimal import Decimal as D
 #Commented below because Counter is available first in python 2.7
 #instead added ported version in this file at end.
@@ -29,7 +29,7 @@ def normalise_text(text):
     """
     # Replace commas, hyphens etc (count them as spaces)
     textclean = text.translate(string.maketrans("[]{}()'/-:;,", "            "))
-    
+
     # unify terminators
     textclean = textclean.replace('?','.')
     textclean = textclean.replace('!','.')
@@ -54,16 +54,17 @@ def flesch_kincaid_reading_ease(text):
     206.835 - 1.015 * (words / sentences) - 84.6 * (syllables / words)
     """
     text = clean_text(text)
-    
+
     words = _count_words(text)
     sentences = _count_sentences(text)
     syllables = _count_syllables(text)
-    
+
     words_over_sentences = words / sentences
     syllables_over_words = syllables / words
-    
-    score = D('206.835') - (D('1.015') * words_over_sentences) - (D('84.6') * syllables_over_words)
-    
+
+    score = D('206.835') - (D('1.015') * words_over_sentences) - \
+                    (D('84.6') * syllables_over_words)
+
     return score
 
 def flesch_kincaid_grade_level(text):
@@ -71,16 +72,17 @@ def flesch_kincaid_grade_level(text):
     0.39 * (words / sentences) + 11.8 * (syllables / words) - 15.59
     """
     text = clean_text(text)
-    
+
     words = _count_words(text)
     sentences = _count_sentences(text)
     syllables = _count_syllables(text)
-    
+
     words_over_sentences = words / sentences
     syllables_over_words = syllables / words
-    
-    score = (D('0.39') * words_over_sentences) + (D('11.8') * syllables_over_words) - D('15.59')
-    
+
+    score = (D('0.39') * words_over_sentences) + (D('11.8') * \
+                    syllables_over_words) - D('15.59')
+
     return score
 
 def gunning_fog_score(text):
@@ -88,99 +90,113 @@ def gunning_fog_score(text):
     0.4 * ((words / sentences) + 100 * (complex_words / words))
     """
     text = clean_text(text)
-    
+
     words = _count_words(text)
     sentences = _count_sentences(text)
     complex_words = _count_complex_words(text)
-    
+
     words_over_sentences = words / sentences
     complex_over_normal = complex_words / words
-    
+
     score = D('0.4') * (words_over_sentences + (100 * complex_over_normal))
-    
+
     return score
 
 def coleman_liau_index(text):
     """https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index
     Lower = Easier to read
-    
+
     L = average number of letters per 100 words
     S = average number of sentences per 100 words
     (0.0588 * L) - (0.296 * S) - 15.8
     """
     text = clean_text(text)
-    
+
     words = _count_words(text)
     sentences = _count_sentences(text)
     letters = _count_letters(text)
-    
+
     L = (letters / words) * D('100')
     S = (sentences / words) * D('100')
-    
+
     score = (D('0.0588') * L) - (D('0.296') * S) - D('15.8')
-    
+
     return score
 
 def smog_index(text):
     """https://en.wikipedia.org/wiki/SMOG
-    
+
     1.043 * sqrt(polysyllables * (30 / sentences) + 3.1291)
     """
     text = clean_text(text)
-    
+
     sentences = _count_sentences(text)
     polysyllables = _count_complex_words(text)
-    
-    score = D('1.043') * D(sqrt(polysyllables * (D('30') / sentences) + D('3.1291')))
-    
+
+    score = D('1.043') * D(sqrt(polysyllables * (D('30') / sentences) + \
+                    D('3.1291')))
+
     return score
 
 def automated_readability_index(text):
     """https://en.wikipedia.org/wiki/Automated_Readability_Index
-    
+
     4.71 * (characters / words) + 0.5 * (words / sentences) - 21.43
     """
     text = clean_text(text)
-    
+
     words = _count_words(text)
     sentences = _count_sentences(text)
     letters = _count_letters(text)
-    
-    score = D('4.71') * (letters / words) + (D('0.5') * (words / sentences)) - D('21.43')
-    
+
+    score = D('4.71') * (letters / words) + (D('0.5') * \
+                    (words / sentences)) - D('21.43')
+
     return score
 
 def clean_text(text):
-     return text
-     #static $clean = array();
+    """ Clean text
+    """
 
-     #if (isset($clean[$strText])) {
-     #    return $clean[$strText];
-     #}
+    return text
+    #static $clean = array();
 
-     #$key = $strText;
+    #if (isset($clean[$strText])) {
+    #    return $clean[$strText];
+    #}
 
-     #// all these tags should be preceeded by a full stop.
-     #$fullStopTags = array('li', 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'dd');
-     #foreach ($fullStopTags as $tag) {
-     #    $strText = str_ireplace('</'.$tag.'>', '.', $strText);
-     #}
-     #$strText = strip_tags($strText);
-     #$strText = preg_replace('/[",:;()-]/', ' ', $strText); // Replace commas, hyphens, quotes etc (count them as spaces)
-     #$strText = preg_replace('/[\.!?]/', '.', $strText); // Unify terminators
-     #$strText = trim($strText) . '.'; // Add final terminator, just in case it's missing.
-     #$strText = preg_replace('/[ ]*(\n|\r\n|\r)[ ]*/', ' ', $strText); // Replace new lines with spaces
-     #$strText = preg_replace('/([\.])[\. ]+/', '$1', $strText); // Check for duplicated terminators
-     #$strText = trim(preg_replace('/[ ]*([\.])/', '$1 ', $strText)); // Pad sentence terminators
-     #$strText = preg_replace('/ [0-9]+ /', ' ', ' ' . $strText . ' '); // Remove "words" comprised only of numbers
-     #$strText = preg_replace('/[ ]+/', ' ', $strText); // Remove multiple spaces
-     #$strText = preg_replace_callback('/\. [^ ]+/', create_function('$matches', 'return strtolower($matches[0]);'), $strText); // Lower case all words following terminators (for gunning fog score)
+    #$key = $strText;
 
-     #$strText = trim($strText);
+    #// all these tags should be preceeded by a full stop.
+    #$fullStopTags = array('li', 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'dd');
+    #foreach ($fullStopTags as $tag) {
+    #    $strText = str_ireplace('</'.$tag.'>', '.', $strText);
+    #}
+    #$strText = strip_tags($strText);
+    #// Replace commas, hyphens, quotes etc (count them as spaces)
+    #$strText = preg_replace('/[",:;()-]/', ' ', $strText);
+    #// Unify terminators
+    #$strText = preg_replace('/[\.!?]/', '.', $strText);
+    #// Add final terminator, just in case it's missing.
+    #$strText = trim($strText) . '.';
+    #// Replace new lines with spaces
+    #$strText = preg_replace('/[ ]*(\n|\r\n|\r)[ ]*/', ' ', $strText);
+    #// Check for duplicated terminators
+    #$strText = preg_replace('/([\.])[\. ]+/', '$1', $strText);
+    #// Pad sentence terminators
+    #$strText = trim(preg_replace('/[ ]*([\.])/', '$1 ', $strText));
+    #// Remove "words" comprised only of numbers
+    #$strText = preg_replace('/ [0-9]+ /', ' ', ' ' . $strText . ' ');
+    #// Remove multiple spaces
+    #$strText = preg_replace('/[ ]+/', ' ', $strText);
+    #// Lower case all words following terminators (for gunning fog score)
+    #$strText = preg_replace_callback('/\. [^ ]+/', create_function('$matches', 'return strtolower($matches[0]);'), $strText);
 
-     #// Cache it and return
-     #$clean[$key] = $strText;
-     #return text.strip()
+    #$strText = trim($strText);
+
+    #// Cache it and return
+    #$clean[$key] = $strText;
+    #return text.strip()
 
 _re_count_sentences = re.compile(r'[^\.!?]')
 _re_remove_fake_sentences = (
@@ -188,25 +204,32 @@ _re_remove_fake_sentences = (
     re.compile(r'Mr\.'),
 )
 def _count_sentences(text):
+    """ Count sentences
+    """
     if len(text) == 0:
         return 0
-    
+
     # Remove "words" such as U.K. and Mr.
     for remover in _re_remove_fake_sentences:
         text = remover.sub('', text)
-    
+
     return D(max(1, len(_re_count_sentences.sub('', text))))
 
 _re_count_words = re.compile(r'[^ ]')
 def _count_words(text):
+    """ Count words
+    """
     if len(text) == 0:
         return 0
-    
-    # Will be tripped by em dashes with spaces either side, among other similar characters
-    # Space count + 1 is word count
+
+    # Will be tripped by em dashes with spaces either side, among other
+    #     similar characters.
+    # Space count + 1 is word count.
     return D(1 + len(_re_count_words.sub('', text)))
 
 def average_words_per_sentence(text):
+    """ Average words per sentence
+    """
     raise Exception("Not implemented")
 
 def _count_syllables(text):
@@ -214,19 +237,23 @@ def _count_syllables(text):
     return D(sum(map(syllable_count, words)))
 
 def _count_complex_words(text):
-    """Words with 3 or more syllables"""
-    
+    """ Words with 3 or more syllables
+    """
+
     words = text.split(' ')
-    
+
     long_words = len(tuple(filter(
         lambda w: _count_syllables(w) >= 3,
         words
     )))
-    
+
     return D(long_words)/D(len(words))
 
 _re_letters_and_digits = re.compile(r'[^a-zA-Z0-9]')
+
 def _count_letters(text):
+    """ Count letters
+    """
     text = _re_letters_and_digits.sub('', text)
     return len(text)
 
@@ -290,55 +317,60 @@ _syllable_prefix_suffix = (
 _re_syllable_non_word_chars = re.compile(r'[^a-z]')
 _re_syllable_word_parts = re.compile(r'[^aeiouy]+')
 def syllable_count(text):
-    """This is not an easy problem to solve: https://stackoverflow.com/questions/405161/detecting-syllables-in-a-word
-    The accepted answer links to a thesis on the problem: http://www.tug.org/docs/liang/
+    """ This is not an easy problem to solve:
+    https://stackoverflow.com/questions/405161/detecting-syllables-in-a-word
+        The accepted answer links to a thesis on the problem:
+    http://www.tug.org/docs/liang/
     """
-    
-    if len(text) == 0: return 0
-    
-    # We don't care about case, we can assume lowercase for everything make it easier
+
+    if len(text) == 0:
+        return 0
+
+    # We don't care about case, we can assume lowercase for everything make
+    # it easier
     text = text.lower()
-    
+
     # Remove all non alpha characters
     text = _re_letters_and_digits.sub('', text)
-    
-    syllable_count = 0
-    
-    # Specific common exceptions that don't follow the rule set below are handled individually
-    # array of problem words (with word as key, syllable count as value)
+
+    syllable_count_index = 0
+
+    # Specific common exceptions that don't follow the rule set below are
+    # handled individually array of problem words (with word as key, syllable
+    # count as value)
     if text in _syllable_problem_words:
         return _syllable_problem_words[text]
-    
+
     # Remove prefixes and suffixes and count how many were taken
     # Interestingly this is a longer piece of code than the PHP version
     prefix_suffix_count = 0
     for pf in _syllable_prefix_suffix:
         prefix_suffix_count += len(pf.findall(text))
         text = pf.sub('', text)
-    
+
     # Remove non-word characters from word
     text = _re_syllable_non_word_chars.sub('', text)
     word_parts = _re_syllable_word_parts.split(text)
-    
-    word_part_count = 0;
+
+    word_part_count = 0
     for word_part in word_parts:
         if word_part != '':
             word_part_count += 1
-    
+
     # Some syllables do not follow normal rules
-    syllable_count = word_part_count + prefix_suffix_count
+    syllable_count_index = word_part_count + prefix_suffix_count
     for re_syllable in _sub_syllables:
         if re_syllable.search(text):
-            syllable_count -= 1
-    
+            syllable_count_index -= 1
+
     for re_syllable in _add_syllables:
         if re_syllable.search(text):
-            syllable_count += 1
-    
-    if syllable_count == 0:
-        syllable_count = 1
-    
-    return D(syllable_count)
+            syllable_count_index += 1
+
+    if syllable_count_index == 0:
+        syllable_count_index = 1
+
+    return D(syllable_count_index)
 
 if __name__ == '__main__':
     sentence = sys.argv[1]
@@ -347,8 +379,8 @@ if __name__ == '__main__':
 
 # Below ported version of Counter added in collections module in Python 2.7
 # so that it runs on Python 2.5 or later.
-# Recipe taken from 
-# http://code.activestate.com/recipes/576611-counter-class/ 
+# Recipe taken from
+# http://code.activestate.com/recipes/576611-counter-class/
 #
 # Original Counter code for Python 2.7 is
 # http://docs.python.org/dev/library/collections.html#counter-objects
@@ -379,7 +411,7 @@ class Counter(dict):
         >>> c = Counter({'a': 4, 'b': 2})           # a new counter from a mapping
         >>> c = Counter(a=4, b=2)                   # a new counter from keyword args
 
-        '''        
+        '''
         self.update(iterable, **kwds)
 
     def __missing__(self, key):
@@ -392,7 +424,7 @@ class Counter(dict):
         >>> Counter('abracadabra').most_common(3)
         [('a', 5), ('r', 2), ('b', 2)]
 
-        '''        
+        '''
         if n is None:
             return sorted(self.iteritems(), key=itemgetter(1), reverse=True)
         return nlargest(n, self.iteritems(), key=itemgetter(1))
@@ -416,6 +448,8 @@ class Counter(dict):
 
     @classmethod
     def fromkeys(cls, iterable, v=None):
+        """ Get from keys
+        """
         raise NotImplementedError(
             'Counter.fromkeys() is undefined.  Use Counter(iterable) instead.')
 
@@ -431,7 +465,7 @@ class Counter(dict):
         >>> c['h']                      # four 'h' in which, witch, and watch
         4
 
-        '''        
+        '''
         if iterable is not None:
             if hasattr(iterable, 'iteritems'):
                 if self:
@@ -439,7 +473,8 @@ class Counter(dict):
                     for elem, count in iterable.iteritems():
                         self[elem] = self_get(elem, 0) + count
                 else:
-                    dict.update(self, iterable) # fast path when counter is empty
+                    # fast path when counter is empty
+                    dict.update(self, iterable)
             else:
                 self_get = self.get
                 for elem in iterable:
@@ -448,11 +483,14 @@ class Counter(dict):
             self.update(kwds)
 
     def copy(self):
-        'Like dict.copy() but returns a Counter instance instead of a dict.'
+        """ Like dict.copy() but returns a Counter instance instead of a dict.
+        """
         return Counter(self)
 
     def __delitem__(self, elem):
-        'Like dict.__delitem__() but does not raise KeyError for missing values.'
+        """ Like dict.__delitem__() but does not raise KeyError for
+            missing values.
+        """
         if elem in self:
             dict.__delitem__(self, elem)
 
