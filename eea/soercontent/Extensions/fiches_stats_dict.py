@@ -89,7 +89,7 @@ def fichesStatsDict(context):
         #textdots = context.html_to_text(context,htmldots)
 
         # Replace commas, hyphens etc (count them as spaces)
-        textclean = context.normalise_text(text)
+        #textclean = context.normalise_text(text)
 
         #characters, #sentences, #words, #flesch-index
         count_characters = len(text)
