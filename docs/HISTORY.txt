@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.9-dev - (unreleased)
-----------------------
+1.9 - (2014-04-15)
+------------------
 * Feature: added scripts to create various statistics for Fiches.
   Upgrade step: update the scripts in 0maintenance folder.
   [demarant]
