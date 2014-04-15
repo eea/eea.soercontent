@@ -1,6 +1,9 @@
 Changelog
 =========
 
+2.0-dev - (unreleased)
+----------------------
+
 1.9 - (2014-04-15)
 ------------------
 * Feature: added scripts to create various statistics for Fiches.
