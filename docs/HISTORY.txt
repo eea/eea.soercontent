@@ -20,7 +20,7 @@ Changelog
 * Change: Removed eeacharlimit plugin from eea.soercontent. It is moved to
   eea.tinymce
   [olimpiurob refs #18641]
-* Upgrade step (manual): Remove eeacharlimit plugin from 
+* Upgrade step (manual): Remove eeacharlimit plugin from
   @@tinymce-controlpanel > Resource Types.
   [olimpiurob refs #18641]
 * Change: relabelling of fields and shorter field for keymessages
