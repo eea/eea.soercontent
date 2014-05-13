@@ -1,8 +1,8 @@
 Changelog
 =========
 
-2.1-dev - (unreleased)
-----------------------
+2.1 - (2014-05-13)
+------------------
 * Change: dummy egg release in order to bump package version
   [ichimdav refs #19536]
 
