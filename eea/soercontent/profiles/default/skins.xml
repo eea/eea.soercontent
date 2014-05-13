@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<object name="portal_skins">
+
+    <object name="eea_soercontent_images" meta_type="Filesystem Directory View"
+            directory="eea.soercontent:skins/eea_soercontent/images" />
+
+    <object name="eea_soercontent_styles" meta_type="Filesystem Directory View"
+            directory="eea.soercontent:skins/eea_soercontent/stylesheets" />
+
+    <object name="eea_soercontent_templates" meta_type="Filesystem Directory View"
+            directory="eea.soercontent:skins/eea_soercontent/templates" />
+
+    <object name="eea_soercontent_javascripts" meta_type="Filesystem Directory View"
+            directory="eea.soercontent:skins/eea_soercontent/javascripts" />
+
+    <skin-path name="*">
+        <layer name="eea_soercontent_styles" insert-after="custom" />
+    </skin-path>
+
+</object>
