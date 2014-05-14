@@ -1,0 +1,237 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ xmlns:tal="http://xml.zope.org/namespaces/tal"
+ xmlns:metal="http://xml.zope.org/namespaces/metal"
+ xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+ lang="en" metal:use-macro="context/main_template/macros/master"
+ i18n:domain="plone">
+ <body>
+  <metal:content-core fill-slot="content-core">
+   <metal:content-core define-macro="content-core">
+   <div id="content" class="documentContent panels wf-state-published_eionet">
+
+
+   <div id="parent-title">
+       <h1 id="parent-fieldname-title" class="documentFirstHeading">
+           SOER 2015 - The European environment - State and Outlook
+       </h1>
+
+       <div class="documentDescription">SOER 2015 provides a set of assessments of the current state of Europe's
+           environment
+       </div>
+   </div>
+
+   <div id="content-core">
+   <!--? SOER2015 Template-->
+
+   <!--? Tabbed navigation -->
+   <div class="top-highlights">
+       <ul class="eea-tabs">
+           <li>Synthesis report</li>
+           <li>Global Megatrends</li>
+           <li>Cross-country comparisons</li>
+           <li>Thematic briefing</li>
+           <li>Regions & Countries</li>
+       </ul>
+       <div class="eea-tabs-panels">
+
+           <div class="eea-tabs-panel">
+               Content for first tab
+           </div>
+           <div class="eea-tabs-panel">
+               Content for second tab
+           </div>
+
+           <div class="eea-tabs-panel">
+               Content for third tab
+           </div>
+       </div>
+   </div>
+   <!--? END Tabbed navigation -->
+
+   <!--? Gallery & Navigation -->
+   <div class="lower-highlights">
+       <div id="promo-gallery-wrapper">
+           <div id="gallery-content-outer">
+               <div class="gallery-slider-wrapper" style="width: 100%;">
+                   <ul id="promo-gallery-content" class="lof-opacity">
+
+                       <li style="opacity: 0; z-index: 1;">
+                           <a href="http://www.eea.europa.eu/media/audiovisuals/the-waste-dump-of-our/video_popup_view"
+                              title="The waste dump of our planet - a look at Marine Litter"
+                              class="video-fancybox cloudvideo">
+                               <img alt="The waste dump of our planet - a look at Marine Litter"
+                                    src="http://wwws4.eea.europa.eu/media/audiovisuals/the-waste-dump-of-our/image_preview"
+                                    title="The waste dump of our planet - a look at Marine Litter">
+                           </a>
+
+                           <div class="promo-item-desc">
+                               <h3>
+                                   <a href="http://www.eea.europa.eu/media/audiovisuals/the-waste-dump-of-our/video_popup_view"
+                                      class="video-fancybox">The waste dump of our planet - a look at Marine
+                                       Litter</a></h3>
+                           </div>
+                       </li>
+
+                       <li style="opacity: 0; z-index: 1;">
+                           <a href="http://www.eea.europa.eu/media/audiovisuals/europes-environment-your-wellbeing-the/video_popup_view"
+                              title="Europe's environment, your wellbeing - the European Environment Agency"
+                              class="video-fancybox cloudvideo">
+                               <img alt="Europe's environment, your wellbeing - the European Environment Agency"
+                                    src="http://wwws1.eea.europa.eu/media/audiovisuals/europes-environment-your-wellbeing-the/image_preview"
+                                    title="Europe's environment, your wellbeing - the European Environment Agency">
+                           </a>
+                           <div class="promo-item-desc">
+                               <h3>
+                                   <a href="http://www.eea.europa.eu/media/audiovisuals/europes-environment-your-wellbeing-the/video_popup_view"
+                                      class="video-fancybox">Europe's environment, your wellbeing - the
+                                       European Environment Agency</a></h3>
+                           </div>
+                       </li>
+                       <li style="opacity: 1; z-index: 3;">
+                           <a href="http://www.eea.europa.eu/media/audiovisuals/the-air-you-breathe/video_popup_view"
+                              title="The air you breathe" class="video-fancybox cloudvideo">
+                               <img alt="The air you breathe"
+                                    src="http://wwws4.eea.europa.eu/media/audiovisuals/the-air-you-breathe/image_preview"
+                                    title="The air you breathe">
+                           </a>
+                           <div class="promo-item-desc">
+                               <h3>
+                                   <a href="http://www.eea.europa.eu/media/audiovisuals/the-air-you-breathe/video_popup_view"
+                                      class="video-fancybox">The air you breathe</a></h3>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+
+           <!-- navigation outer -->
+           <div class="controls">
+               <a href="#" id="prev-promo"></a>
+               <a href="#" id="next-promo"></a>
+               <a href="#" id="play-pause" title="Pause/Play slideshow" class="promo-gallery-pause"
+                  aria-pressed="true" role="button"></a>
+           </div>
+       </div>
+
+       <dl class="portlet portletNavigationTree">
+
+           <dt class="portletHeader" id="firstHeader">
+               <a href="http://localhost:8081/www/SITE/soer-2015">SOER 2015 - The European environment -
+                   State and Outlook</a>
+           </dt>
+
+           <dt class="portletSubMenuHeader">
+               <span class="title eea-icon-right-container">Menu<span class="eea-icon eea-icon-right"></span></span>
+           </dt>
+
+           <dd class="portletItem lastItem">
+               <ul class="navTree navTreeLevel0">
+
+
+                   <li class="navTreeItem visualNoMarker navTreeFolderish section-global">
+
+
+                       <a href="http://localhost:8081/www/SITE/soer-2015/global"
+                          class="state-published_eionet navTreeFolderish contenttype-folder" title="">
+
+                           <!-- show icons in CMS only -->
+                           <img width="16" height="16" src="http://localhost:8081/www/folder_icon.gif"
+                                alt="Folder">
+
+
+                           <span>Global megatrend fiches</span>
+                       </a>
+
+
+                   </li>
+
+
+                   <li class="navTreeItem visualNoMarker navTreeFolderish section-europe">
+
+
+                       <a href="http://localhost:8081/www/SITE/soer-2015/europe"
+                          class="state-published_eionet navTreeFolderish contenttype-folder" title="">
+
+                           <!-- show icons in CMS only -->
+                           <img width="16" height="16" src="http://localhost:8081/www/folder_icon.gif"
+                                alt="Folder">
+
+
+                           <span>European thematic fiches</span>
+                       </a>
+
+
+                   </li>
+
+
+                   <li class="navTreeItem visualNoMarker navTreeFolderish section-countries-comparison">
+
+
+                       <a href="http://localhost:8081/www/SITE/soer-2015/countries-comparison"
+                          class="state-published_eionet navTreeFolderish contenttype-folder" title="">
+
+                           <!-- show icons in CMS only -->
+                           <img width="16" height="16" src="http://localhost:8081/www/folder_icon.gif"
+                                alt="Folder">
+
+
+                           <span>Cross-country comparison fiches</span>
+                       </a>
+
+
+                   </li>
+
+
+                   <li class="navTreeItem visualNoMarker navTreeFolderish section-countries">
+
+
+                       <a href="http://localhost:8081/www/SITE/soer-2015/countries"
+                          class="state-published_eionet navTreeFolderish contenttype-folder" title="">
+
+                           <!-- show icons in CMS only -->
+                           <img width="16" height="16" src="http://localhost:8081/www/folder_icon.gif"
+                                alt="Folder">
+
+
+                           <span>Country fiches</span>
+                       </a>
+
+
+                   </li>
+
+
+                   <li class="navTreeItem visualNoMarker navTreeFolderish section-progress-monitoring">
+                       <a href="http://localhost:8081/www/SITE/soer-2015/progress-monitoring"
+                          class="state-published_internally navTreeFolderish contenttype-folder" title="">
+
+                           <!-- show icons in CMS only -->
+                           <img width="16" height="16" src="http://localhost:8081/www/folder_icon.gif"
+                                alt="Folder">
+
+
+                           <span>Workflow progress monitoring</span>
+                       </a>
+                   </li>
+                   <li class="navTreeItem visualNoMarker navTreeFolderish section-help">
+                       <a href="http://localhost:8081/www/SITE/soer-2015/help"
+                          class="state-published_internally navTreeFolderish contenttype-folder" title="">
+                           <!-- show icons in CMS only -->
+                           <img width="16" height="16" src="http://localhost:8081/www/folder_icon.gif"
+                                alt="Folder Pascal source code">
+                           <span>Help</span>
+                       </a>
+                   </li>
+               </ul>
+           </dd>
+       </dl>
+   </div>
+   <!--? END Gallery & Navigation -->
+   </div>
+
+   </div
+
+   </metal:content-core>
+  </metal:content-core>
+ </body>
+</html>
+

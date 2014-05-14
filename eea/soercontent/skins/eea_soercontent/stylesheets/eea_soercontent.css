@@ -1,1 +1,32 @@
+/* Base styles */
+body {
+  background-color: #e8f0fb;
+  box-sizing: border-box; }
+
+h1 {
+  color: #00839c; }
+
+/* Overrides */
+#content.wf-state-visible, #content.wf-state-published_eionet, #content.wf-state-new, #content.wf-state-closed, #content.wf-state-content_pending, #content.wf-state-draft, #content.wf-state-in-progress, #content.wf-state-private, #content.wf-state-rejected, #content.wf-state-retracted, #content.wf-state-submitted, #content.wf-state-webqa_pending.progresstrail {
+  background: none; }
+
+#edit-bar {
+  display: none; }
+
+#portal-breadcrumbs {
+  background: transparent; }
+
+#content h1#parent-fieldname-title {
+  width: 100%;
+  padding-right: 0; }
+
+/* Content Styles */
+#parent-title {
+  background-color: #faf3e9;
+  padding: 1em;
+  margin-bottom: 2em; }
+
+.top-highlights {
+  margin-bottom: 2em; }
+
 /*# sourceMappingURL=eea_soercontent.css.map */
