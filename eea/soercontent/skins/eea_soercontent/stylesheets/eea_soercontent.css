@@ -3,7 +3,7 @@ body {
   background-color: #e8f0fb;
   box-sizing: border-box; }
 
-h1 {
+a, h1, #content a {
   color: #00839c;
   border: none; }
 
@@ -13,6 +13,9 @@ h1 {
 
 #edit-bar {
   display: none; }
+
+.state-published {
+  color: #00839c !important; }
 
 #portal-breadcrumbs {
   background: transparent; }
@@ -24,6 +27,10 @@ h1 {
 .featured, .portlet {
   background-color: white; }
 
+.eea-tabs-panels, .eea-tabs-panel {
+  background-color: transparent;
+  border: 0; }
+
 /* Content Styles */
 #parent-title {
   background-color: white;
@@ -34,5 +41,8 @@ h1 {
   margin-bottom: 2em;
   background-color: white;
   overflow: hidden; }
+
+.eea-tabs-panel a {
+  font-weight: bold; }
 
 /*# sourceMappingURL=eea_soercontent.css.map */
