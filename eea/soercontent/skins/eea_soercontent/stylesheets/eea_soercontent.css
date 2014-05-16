@@ -7,6 +7,16 @@ a, h1, #content a {
   color: #00839c;
   border: none; }
 
+/* column sizes for eea-tabs panels */
+.eea-two-columns {
+  width: 47%; }
+
+.eea-three-columns {
+  width: 30%; }
+
+.eea-four-columns {
+  width: 22%; }
+
 /* Overrides */
 #content.wf-state-visible, #content.wf-state-published_eionet, #content.wf-state-new, #content.wf-state-closed, #content.wf-state-content_pending, #content.wf-state-draft, #content.wf-state-in-progress, #content.wf-state-private, #content.wf-state-rejected, #content.wf-state-retracted, #content.wf-state-submitted, #content.wf-state-webqa_pending.progresstrail {
   background: none; }
@@ -24,12 +34,25 @@ a, h1, #content a {
   width: 100%;
   padding-right: 0; }
 
+.column-area {
+  width: 64%; }
+
+.right-column-area {
+  width: 33.5%; }
+
 .featured, .portlet {
   background-color: white; }
 
 .eea-tabs-panels, .eea-tabs-panel {
   background-color: transparent;
   border: 0; }
+
+.eea-tabs-panel {
+  padding: 10px;
+  overflow: hidden; }
+  .eea-tabs-panel ul {
+    float: left;
+    margin-left: 1.2em; }
 
 /* Content Styles */
 #parent-title {
