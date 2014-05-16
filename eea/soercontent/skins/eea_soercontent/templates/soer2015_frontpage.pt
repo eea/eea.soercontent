@@ -183,7 +183,35 @@ i18n:domain="plone">
                         </ul>
                     </div>
                     <div class="eea-tabs-panel">
-                        Thematic briefing
+                        <ul>
+                            <li><a href="#">Air</a></li>
+                            <li><a href="#">Biodiversity</a></li>
+                            <li><a href="#">Climate change adaptation</a></li>
+                            <li><a href="#">Forests</a></li>
+                            <li><a href="#">Freshwater</a></li>
+                            <li><a href="#">Soil</a></li>
+                            <li><a href="#">Marine and coastal environment</a></li>
+                            <li><a href="#">Mitigation climate change</a></li>
+                            <li><a href="#">Noise</a></li>
+                            <li><a href="#">Water</a></li>
+                            <li><a href="#">Agriculture</a></li>
+                            <li><a href="#">Consumption</a></li>
+                            <li><a href="#">Energy</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Industry</a></li>
+                            <li><a href="#">Marine activities</a></li>
+                            <li><a href="#">Tourism</a></li>
+                            <li><a href="#">Transport</a></li>
+                            <li><a href="#">Health and the environment</a></li>
+                            <li><a href="#">Resource efficiency</a></li>
+                            <li><a href="#">Green economy</a></li>
+                            <li><a href="#">Natural capital and ecosystem services</a></li>
+                            <li><a href="#">Land system</a></li>
+                            <li><a href="#">Hydrolical systems</a></li>
+                            <li><a href="#">The air and climate system</a></li>
+                            <li><a href="#">Urban systems</a></li>
+                        </ul>
                     </div>
                     <div class="eea-tabs-panel">
                         <ul>
