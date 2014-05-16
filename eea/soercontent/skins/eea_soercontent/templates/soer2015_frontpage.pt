@@ -23,15 +23,15 @@ i18n:domain="plone">
         <!--? SOER2015 Template-->
         <!--? Tabbed navigation -->
         <div class="top-highlights">
-            <ul class="eea-tabs">
-                <li>Synthesis report</li>
-                <li>Global Megatrends</li>
-                <li>Cross-country comparisons</li>
-                <li>Thematic briefing</li>
-                <li>Regions & Countries</li>
+            <ul class="eea-tabs eea-tabs-soer">
+                <li><a href="#tab-synthesis-report" id="tab-synthesis-report"><span class="eea-icon eea-icon-clipboard eea-icon-2x"></span> Synthesis reports</a></li>
+                <li><a href="#tab-global-megatrends" id="tab-synthesis-report"><span class="eea-icon eea-icon-globe eea-icon-2x"></span> Global Megatrends</a></li>
+                <li><a href="#tab-cross-country-comparisons" id="tab-cross-country-comparisons"><span class="eea-icon eea-icon-map-marker eea-icon-2x"></span> Cross-country comparisons</a></li>
+                <li><a href="#tab-thematic-briefing" id="tab-thematic-briefing"><span class="eea-icon eea-icon-rotate-right eea-icon-2x"></span> Thematic briefing</a></li>
+                <li><a href="#tab-regions-countries" id="tab-regions-countries"><span class="eea-icon eea-icon-globe eea-icon-2x"></span> Regions & Countries</a></li>
             </ul>
             <div class="column-area">
-                <div class="eea-tabs-panels">
+                <div class="eea-tabs-panels eea-tabs-panels-soer">
                     <div class="eea-tabs-panel">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci animi aperiam assumenda at corporis earum eum magni! Ab aliquam animi asperiores eaque esse facere fugit officia quo repellendus voluptatibus.</p>
                         <ul>
@@ -1611,6 +1611,7 @@ i18n:domain="plone">
         </div>
         <!--? END Gallery & Navigation -->
     </div>
+</div>
 
 </div>
 

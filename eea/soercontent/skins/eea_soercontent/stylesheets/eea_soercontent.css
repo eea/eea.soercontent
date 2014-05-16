@@ -24,6 +24,9 @@ a, h1, #content a {
 #edit-bar {
   display: none; }
 
+#content .documentDescription, #content #description {
+  color: #5e6464; }
+
 .state-published {
   color: #00839c !important; }
 
@@ -64,6 +67,28 @@ a, h1, #content a {
   margin-bottom: 2em;
   background-color: white;
   overflow: hidden; }
+
+#visual-portal-wrapper ul.eea-tabs.eea-tabs-soer {
+  background-color: transparent;
+  padding: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0; }
+  #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li {
+    width: 195px;
+    text-align: center;
+    height: 60px;
+    background-color: pink;
+    margin-right: 5px; }
+    #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li > a {
+      padding: 0.8em 2em 1em 0.8em;
+      white-space: normal;
+      word-wrap: break-word; }
+  #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer .eea-icon {
+    float: left;
+    display: block;
+    line-height: 1.5; }
 
 .eea-tabs-panel a {
   font-weight: bold; }
