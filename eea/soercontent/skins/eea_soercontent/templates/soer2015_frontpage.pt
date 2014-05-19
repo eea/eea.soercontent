@@ -95,6 +95,8 @@ i18n:domain="plone">
                             </a></span>
                             </li>
                         </ul>
+
+                        <div class="eea-footer-right visualClear pull-right">Download Synthesis report <a class="download-pdf" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-2x"></span></a></div>
                     </div>
                     <div class="eea-tabs-panel">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores cum cumque debitis delectus excepturi, illum ipsum itaque nam omnis placeat, quod ratione repellat suscipit tempore voluptas voluptatum. Asperiores, modi.</p>
@@ -170,6 +172,7 @@ i18n:domain="plone">
                             </a>
                             </li>
                         </ul>
+                        <div class="eea-footer-right visualClear pull-right">Download all Global megatrends <a class="download-pdf" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-2x"></span></a></div>
                     </div>
                     <div class="eea-tabs-panel">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam cumque dolore eos quibusdam repudiandae sint tempore. Corporis doloribus dolorum error facilis, libero mollitia quaerat veritatis vitae voluptatem voluptatibus, voluptatum?</p>
@@ -184,6 +187,7 @@ i18n:domain="plone">
                             <li><a href="#">Transport</a></li>
                             <li><a href="#">Resource efficiency</a></li>
                         </ul>
+                        <div class="eea-footer-right visualClear pull-right">Download all Cross-country fiches <a class="download-pdf" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-2x"></span></a></div>
                     </div>
                     <div class="eea-tabs-panel">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid beatae blanditiis esse, est itaque libero nostrum numquam odio quia sit, voluptate voluptatem! Architecto et quas quos recusandae? Quisquam, unde.</p>
@@ -216,6 +220,7 @@ i18n:domain="plone">
                             <li><a href="#">The air and climate system</a></li>
                             <li><a href="#">Urban systems</a></li>
                         </ul>
+                        <div class="eea-footer-right visualClear pull-right">Download all Thematic briefing fiches <a class="download-pdf" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-2x"></span></a></div>
                     </div>
                     <div class="eea-tabs-panel">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam cumque dolore eos quibusdam repudiandae sint tempore. Corporis doloribus dolorum error facilis, libero mollitia quaerat veritatis vitae voluptatem voluptatibus, voluptatum?</p>
@@ -263,6 +268,7 @@ i18n:domain="plone">
                             <li><a href="#">Baltic</a></li>
                             <li><a href="#">Mediterranean</a></li>
                         </ul>
+                        <div class="eea-footer-right visualClear pull-right">Download all Regions and Countries fiches <a class="download-pdf" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-2x"></span></a></div>
                     </div>
                 </div>
                 <!--? eea-tabs-panels -->
