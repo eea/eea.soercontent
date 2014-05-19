@@ -78,17 +78,59 @@ a, h1, #content a {
   #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li {
     width: 195px;
     text-align: center;
-    height: 60px;
-    background-color: pink;
+    height: 65px;
+    background-color: transparent;
     margin-right: 5px; }
     #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li > a {
       padding: 0.8em 2em 1em 0.8em;
       white-space: normal;
-      word-wrap: break-word; }
+      word-wrap: break-word;
+      text-shadow: 0 0;
+      color: #FFF !important; }
+      #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li > a:hover {
+        color: #FFF !important;
+        text-shadow: 1px 1px #000; }
   #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer .eea-icon {
     float: left;
     display: block;
-    line-height: 1.5; }
+    line-height: 1.5;
+    opacity: 0.8; }
+
+#visual-portal-wrapper .current {
+  position: relative; }
+
+.eea-tabs-soer a.current:after {
+  top: 100%;
+  left: 50%;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border: 15px solid transparent;
+  border-top-color: #212759;
+  margin-left: -10px; }
+
+#visual-portal-wrapper #tab-synthesis-report {
+  background-color: #212759; }
+  #visual-portal-wrapper #tab-synthesis-report.current:after {
+    border-top-color: #212759; }
+#visual-portal-wrapper #tab-global-megatrends {
+  background-color: #825282; }
+  #visual-portal-wrapper #tab-global-megatrends.current:after {
+    border-top-color: #825282; }
+#visual-portal-wrapper #tab-cross-country-comparisons {
+  background-color: #017c8b; }
+  #visual-portal-wrapper #tab-cross-country-comparisons.current:after {
+    border-top-color: #017c8b; }
+#visual-portal-wrapper #tab-thematic-briefing {
+  background-color: #80a643; }
+  #visual-portal-wrapper #tab-thematic-briefing.current:after {
+    border-top-color: #80a643; }
+#visual-portal-wrapper #tab-regions-countries {
+  background-color: #f15e2b; }
+  #visual-portal-wrapper #tab-regions-countries.current:after {
+    border-top-color: #f15e2b; }
 
 .eea-tabs-panel a {
   font-weight: bold; }
