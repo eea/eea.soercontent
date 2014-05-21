@@ -1488,7 +1488,7 @@ i18n:domain="plone">
                             State and Outlook</a>
                         </dt>
                         <dt class="portletSubMenuHeader">
-                        <span class="title eea-icon-right-container">Menu</span></span>
+                        <span class="title eea-icon-right-container">Menu</span>
                         </dt>
                         <dd class="portletItem lastItem">
                         <ul class="navTree navTreeLevel0">
