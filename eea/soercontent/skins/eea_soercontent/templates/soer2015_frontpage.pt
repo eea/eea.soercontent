@@ -568,7 +568,7 @@ i18n:domain="plone">
                                         <a href="http://www.eea.europa.eu/soer/europe/land-use/key-messages/land-use-2014-message-3" title="Read more of the key fact" class="moreLink link-plain">more</a>
                                     </span>
                                     </dd>
-                                    <dd class="portletItem selected" style="left: 0px;">
+                                    <dd class="portletItem" style="left: -700px;">
                                     <span>
                                         Land use decisions involve trade-offs between the current high attention to food and energy security, and more policy emphasis on multi-functionality taking into account ecosystem and natural resource management objectives. The diversity of...
                                         <a href="http://www.eea.europa.eu/soer/europe/land-use/key-messages/land-use-2014-message-5" title="Read more of the key fact" class="moreLink link-plain">more</a>
@@ -1488,7 +1488,7 @@ i18n:domain="plone">
                             State and Outlook</a>
                         </dt>
                         <dt class="portletSubMenuHeader">
-                        <span class="title eea-icon-right-container">Menu</span>
+                        <span class="title eea-icon-right-container">Menu</span></span>
                         </dt>
                         <dd class="portletItem lastItem">
                         <ul class="navTree navTreeLevel0">

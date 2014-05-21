@@ -43,6 +43,9 @@ a, h1, #content a {
 .state-published {
   color: #00839c !important; }
 
+#content a:link, dl.portlet a:link {
+  color: #00839c; }
+
 #portal-breadcrumbs {
   background: transparent; }
 
@@ -85,6 +88,9 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
     float: left;
     margin-left: 1.2em; }
 
+#keyfacts-slider .keyfactsImgContainer {
+  height: 330px; }
+
 /* Content Styles */
 #parent-title {
   background-color: white;
@@ -112,7 +118,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
     background-color: transparent;
     margin-right: 5px; }
     #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li.last-child {
-      width: 20%;
+      width: 19.9%;
       margin-right: 0; }
     #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li:first-child > a {
       -webkit-border-radius: 0;
@@ -120,6 +126,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
       -ms-border-radius: 0;
       border-radius: 0; }
     #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li > a {
+      height: 40px;
       padding: 0.8em 2em 1em 0.8em;
       white-space: normal;
       word-wrap: break-word;
