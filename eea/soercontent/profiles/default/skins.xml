@@ -15,6 +15,7 @@
 
     <skin-path name="*">
         <layer name="eea_soercontent_styles" insert-after="custom" />
+        <layer name="eea_soercontent_templates" insert-before="eea_soercontent_styles" />
     </skin-path>
 
 </object>

@@ -7,6 +7,19 @@ a, h1, #content a {
   color: #00839c;
   border: none; }
 
+/* grids */
+.eea-grids {
+  margin-left: -15px; }
+
+/* helper classes */
+.border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.left-gutter {
+  margin-left: 1em; }
+
 /* column sizes for eea-tabs panels */
 .eea-two-columns {
   width: 47%; }
@@ -35,13 +48,28 @@ a, h1, #content a {
 
 #content h1#parent-fieldname-title {
   width: 100%;
-  padding-right: 0; }
+  padding: 0;
+  margin: 0; }
+
+dl.portlet dt, div.portletAssignments div.portletHeader {
+  background-color: transparent; }
 
 .column-area {
-  width: 64%; }
+  width: 65%; }
 
 .right-column-area {
-  width: 33.5%; }
+  width: 35%; }
+  .right-column-area .portlet {
+    padding: 2em; }
+
+.column-area, .right-column-area {
+  padding: 0 0 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#content-core .right-column-area dd {
+  margin: 0em; }
 
 .featured, .portlet {
   background-color: white; }
@@ -67,6 +95,8 @@ a, h1, #content a {
   margin-bottom: 2em;
   background-color: white;
   overflow: hidden; }
+  .top-highlights .portlet {
+    padding-top: 2em; }
 
 #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer {
   background-color: transparent;
@@ -76,11 +106,19 @@ a, h1, #content a {
   -ms-border-radius: 0;
   border-radius: 0; }
   #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li {
-    width: 195px;
+    width: 19.5%;
     text-align: center;
     height: 65px;
     background-color: transparent;
     margin-right: 5px; }
+    #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li.last-child {
+      width: 20%;
+      margin-right: 0; }
+    #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li:first-child > a {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0; }
     #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li > a {
       padding: 0.8em 2em 1em 0.8em;
       white-space: normal;
