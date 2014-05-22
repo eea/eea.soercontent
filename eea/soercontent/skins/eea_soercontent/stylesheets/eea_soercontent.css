@@ -31,11 +31,29 @@ a, h1, #content a {
   width: 22%; }
 
 /* Overrides */
+div.width-3\:4 {
+  width: 62%; }
+
+.width-3\:4.position-0 {
+  margin-left: -100%; }
+
+#portal-column-content {
+  min-width: 635px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #FFF;
+  padding: 1.5em; }
+
+.template-soer2015_frontpage #portal-column-content {
+  padding: 0;
+  background-color: transparent; }
+
 #content.wf-state-visible, #content.wf-state-published_eionet, #content.wf-state-new, #content.wf-state-closed, #content.wf-state-content_pending, #content.wf-state-draft, #content.wf-state-in-progress, #content.wf-state-private, #content.wf-state-rejected, #content.wf-state-retracted, #content.wf-state-submitted, #content.wf-state-webqa_pending.progresstrail {
   background: none; }
 
-#edit-bar {
-  display: none; }
+#content {
+  margin: 0; }
 
 #content .documentDescription, #content #description {
   color: #5e6464; }
@@ -74,8 +92,15 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 #content-core .right-column-area dd {
   margin: 0em; }
 
+#portal-column-two {
+  margin-top: 35px; }
+
+#portal-column-two .portlet {
+  padding: 1.5em; }
+
 .featured, .portlet {
-  background-color: white; }
+  background-color: white;
+  padding: 1.5em; }
 
 .eea-tabs-panels, .eea-tabs-panel {
   background-color: transparent;
@@ -92,6 +117,16 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   height: 330px; }
 
 /* Content Styles */
+#viewlet-above-content {
+  margin: -22px -18px 15px -18px;
+  background-color: #e8f0fb;
+  padding: 0em 1.5em 0em 1.5em;
+  min-width: 1000px;
+  height: 3em; }
+
+.template-soer2015_frontpage #viewlet-above-content {
+  margin: 0; }
+
 #parent-title {
   background-color: white;
   padding: 1em;
@@ -179,5 +214,13 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 
 .eea-tabs-panel a {
   font-weight: bold; }
+
+/* media queries rules */
+@media (max-width: 1140px) {
+  div.position-3\:4 {
+    margin-left: -35.1%; }
+
+  div.width-1\:4 {
+    width: 35%; } }
 
 /*# sourceMappingURL=eea_soercontent.css.map */
