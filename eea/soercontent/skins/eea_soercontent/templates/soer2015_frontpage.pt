@@ -9,7 +9,7 @@ i18n:domain="plone">
 <body>
 <metal:content-core fill-slot="main">
 <metal:content-core define-macro="main">
-<div id="content" class="documentContent panels wf-state-published_eionet">
+<div id="content" class="documentContent panels">
     <div id="parent-title">
         <h1 id="parent-fieldname-title" class="documentFirstHeading">
             SOER 2015 - The European environment - State and Outlook
