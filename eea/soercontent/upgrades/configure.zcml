@@ -10,7 +10,7 @@
 
     <genericsetup:upgradeDepends
       title="Import changes: skins"
-      import_steps="skins"
+      import_steps="skins cssregistry"
       />
 
   </genericsetup:upgradeSteps>
