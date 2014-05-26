@@ -99,17 +99,6 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   background-color: white;
   padding: 1.5em; }
 
-.eea-tabs-panels, .eea-tabs-panel {
-  background-color: transparent;
-  border: 0; }
-
-.eea-tabs-panel {
-  padding: 10px;
-  overflow: hidden; }
-  .eea-tabs-panel ul {
-    float: left;
-    margin-left: 1.2em; }
-
 #keyfacts-slider .keyfactsImgContainer {
   height: 330px; }
 
@@ -136,38 +125,38 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   .top-highlights .portlet {
     padding-top: 2em; }
 
-#visual-portal-wrapper ul.eea-tabs.eea-tabs-soer {
+#visual-portal-wrapper .eea-tabs.eea-tabs-soer {
   background-color: transparent;
   padding: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0; }
-  #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li {
+  #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li {
     width: 19.5%;
     text-align: center;
     height: 65px;
     background-color: transparent;
     margin-right: 5px; }
-    #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li.last-child {
+    #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li.last-child {
       width: 19.9%;
       margin-right: 0; }
-    #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li:first-child > a {
+    #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li:first-child > a {
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       -ms-border-radius: 0;
       border-radius: 0; }
-    #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li > a {
+    #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li > a {
       height: 40px;
       padding: 0.8em 2em 1em 0.8em;
       white-space: normal;
       word-wrap: break-word;
       text-shadow: 0 0;
       color: #FFF !important; }
-      #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer > li > a:hover {
+      #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li > a:hover {
         color: #FFF !important;
         text-shadow: 1px 1px #000; }
-  #visual-portal-wrapper ul.eea-tabs.eea-tabs-soer .eea-icon {
+  #visual-portal-wrapper .eea-tabs.eea-tabs-soer .eea-icon {
     float: left;
     display: block;
     line-height: 1.5;
@@ -185,32 +174,42 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   position: absolute;
   pointer-events: none;
   border: 15px solid transparent;
-  border-top-color: #212759;
+  border-top-color: #202854;
   margin-left: -10px; }
 
 #visual-portal-wrapper #tab-synthesis-report {
-  background-color: #212759; }
+  background-color: #202854; }
   #visual-portal-wrapper #tab-synthesis-report.current:after {
-    border-top-color: #212759; }
+    border-top-color: #202854; }
 #visual-portal-wrapper #tab-global-megatrends {
-  background-color: #825282; }
+  background-color: #7e407e; }
   #visual-portal-wrapper #tab-global-megatrends.current:after {
-    border-top-color: #825282; }
+    border-top-color: #7e407e; }
 #visual-portal-wrapper #tab-cross-country-comparisons {
-  background-color: #017c8b; }
+  background-color: #007385; }
   #visual-portal-wrapper #tab-cross-country-comparisons.current:after {
-    border-top-color: #017c8b; }
+    border-top-color: #007385; }
 #visual-portal-wrapper #tab-thematic-briefing {
-  background-color: #80a643; }
+  background-color: #76a830; }
   #visual-portal-wrapper #tab-thematic-briefing.current:after {
-    border-top-color: #80a643; }
+    border-top-color: #76a830; }
 #visual-portal-wrapper #tab-regions-countries {
-  background-color: #f15e2b; }
+  background-color: #f14825; }
   #visual-portal-wrapper #tab-regions-countries.current:after {
-    border-top-color: #f15e2b; }
+    border-top-color: #f14825; }
 
-.eea-tabs-panel a {
-  font-weight: bold; }
+.eea-tabs-panels.eea-tabs-panels-soer, .eea-tabs-panels-soer .eea-tabs-panel {
+  background-color: transparent;
+  border: 0; }
+
+.eea-tabs-panels-soer .eea-tabs-panel {
+  padding: 10px;
+  overflow: hidden; }
+  .eea-tabs-panels-soer .eea-tabs-panel > ul {
+    float: left;
+    margin-left: 1.2em; }
+    .eea-tabs-panels-soer .eea-tabs-panel > ul a {
+      font-weight: bold; }
 
 /* media queries rules */
 @media (max-width: 1140px) {
