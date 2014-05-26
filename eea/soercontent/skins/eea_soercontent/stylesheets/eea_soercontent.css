@@ -115,7 +115,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 
 #parent-title {
   background-color: white;
-  padding: 1em;
+  padding: 2em;
   margin-bottom: 2em; }
 
 .top-highlights {
@@ -125,38 +125,38 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   .top-highlights .portlet {
     padding-top: 2em; }
 
-#visual-portal-wrapper .eea-tabs.eea-tabs-soer {
+#visual-portal-wrapper .eea-tabs-soer {
   background-color: transparent;
   padding: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0; }
-  #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li {
+  #visual-portal-wrapper .eea-tabs-soer > li {
     width: 19.5%;
     text-align: center;
     height: 65px;
     background-color: transparent;
     margin-right: 5px; }
-    #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li.last-child {
+    #visual-portal-wrapper .eea-tabs-soer > li.last-child {
       width: 19.9%;
       margin-right: 0; }
-    #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li:first-child > a {
+    #visual-portal-wrapper .eea-tabs-soer > li:first-child > a {
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       -ms-border-radius: 0;
       border-radius: 0; }
-    #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li > a {
+    #visual-portal-wrapper .eea-tabs-soer > li > a {
       height: 40px;
       padding: 0.8em 2em 1em 0.8em;
       white-space: normal;
       word-wrap: break-word;
       text-shadow: 0 0;
-      color: #FFF !important; }
-      #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li > a:hover {
+      color: #FFF; }
+      #visual-portal-wrapper .eea-tabs-soer > li > a:hover, #visual-portal-wrapper .eea-tabs-soer > li > a.current, #visual-portal-wrapper .eea-tabs-soer > li > a.current:hover {
         color: #FFF !important;
         text-shadow: 1px 1px #000; }
-  #visual-portal-wrapper .eea-tabs.eea-tabs-soer .eea-icon {
+  #visual-portal-wrapper .eea-tabs-soer .eea-icon {
     float: left;
     display: block;
     line-height: 1.5;
@@ -165,7 +165,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 #visual-portal-wrapper .current {
   position: relative; }
 
-.eea-tabs-soer a.current:after {
+.eea-tabs-soer .current:after {
   top: 100%;
   left: 50%;
   content: " ";
@@ -198,18 +198,18 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   #visual-portal-wrapper #tab-regions-countries.current:after {
     border-top-color: #f14825; }
 
-.eea-tabs-panels.eea-tabs-panels-soer, .eea-tabs-panels-soer .eea-tabs-panel {
+.eea-tabs-panels-soer, .eea-tabs-panels-soer .eea-tabs-panel {
   background-color: transparent;
-  border: 0; }
+  border: 0;
+  padding: 1em; }
 
 .eea-tabs-panels-soer .eea-tabs-panel {
-  padding: 10px;
   overflow: hidden; }
   .eea-tabs-panels-soer .eea-tabs-panel > ul {
     float: left;
     margin-left: 1.2em; }
-    .eea-tabs-panels-soer .eea-tabs-panel > ul a {
-      font-weight: bold; }
+  .eea-tabs-panels-soer .eea-tabs-panel a {
+    font-weight: bold; }
 
 /* media queries rules */
 @media (max-width: 1140px) {
