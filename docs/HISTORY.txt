@@ -3,6 +3,8 @@ Changelog
 
 2.2-dev - (unreleased)
 ----------------------
+* Bug fix: Fix check_id script permissions
+  [voineali refs #19841]
 * Change: Silently log missing review_state attribute for review_title index
   [avoinea]
 
