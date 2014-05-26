@@ -1,17 +1,7 @@
 /* <dtml-with base_properties> */
 /* <dtml-with soer_properties>   */
 /* <dtml-call "REQUEST.set('portal_url', portal_url())"> */
-/*
-  COLORS:
-  dtml-linkColor: &dtml-soerLinkColor;;
-  dtml-soerBackgroundColor: &dtml-soerBackgroundColor;;
-  dtml-soerMegatrendsSectionColor: &dtml-soerMegatrendsSectionColor;;
-  dtml-soerSynthesysSectionColor: &dtml-soerSynthesysSectionColor;;
-  dtml-soerCountrySectionColor: &dtml-soerCountrySectionColor;;
-  dtml-soerCountrySectionColor: &dtml-soerCountrySectionColor;;
-  dtml-soerThematicSectionColor: &dtml-soerThematicSectionColor;;
-  dtml-soerRegionsSectionColor: &dtml-soerRegionsSectionColor;;
-*/
+
 /* helper classes */
 .border-box {
   -webkit-box-sizing: border-box;
@@ -238,5 +228,3 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
     width: 35%; } }
 /* </dtml-with> */
 /* </dtml-with> */
-
-/*# sourceMappingURL=eea_soercontent.css.dtml.map */
