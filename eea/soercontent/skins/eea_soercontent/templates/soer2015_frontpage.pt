@@ -193,7 +193,7 @@ i18n:domain="plone">
                         </div>
                         <div class="eea-tabs-panel">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid beatae blanditiis esse, est itaque libero nostrum numquam odio quia sit, voluptate voluptatem! Architecto et quas quos recusandae? Quisquam, unde.</p>
-                            <ul class="eea-two-columns">
+                            <ul class="eea-columns eea-two-columns">
                                 <li><a href="#">Air</a></li>
                                 <li><a href="#">Biodiversity</a></li>
                                 <li><a href="#">Climate change adaptation</a></li>
@@ -208,7 +208,7 @@ i18n:domain="plone">
                                 <li><a href="#">Consumption</a></li>
                                 <li><a href="#">Energy</a></li>
                             </ul>
-                            <ul class="eea-two-columns">
+                            <ul class="eea-columns eea-two-columns">
                                 <li><a href="#">Industry</a></li>
                                 <li><a href="#">Marine activities</a></li>
                                 <li><a href="#">Tourism</a></li>
@@ -226,7 +226,7 @@ i18n:domain="plone">
                         </div>
                         <div class="eea-tabs-panel">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam cumque dolore eos quibusdam repudiandae sint tempore. Corporis doloribus dolorum error facilis, libero mollitia quaerat veritatis vitae voluptatem voluptatibus, voluptatum?</p>
-                            <ul class="eea-four-columns">
+                            <ul class="eea-columns eea-four-columns">
                                 <li><a href="#">Austria</a></li>
                                 <li><a href="#">Belgium</a></li>
                                 <li><a href="#">Bulgaria</a></li>
@@ -240,7 +240,7 @@ i18n:domain="plone">
                                 <li><a href="#">Germany</a></li>
                                 <li><a href="#">Greece</a></li>
                             </ul>
-                            <ul class="eea-four-columns">
+                            <ul class="eea-columns eea-four-columns">
                                 <li><a href="#">Hungary</a></li>
                                 <li><a href="#">Iceland</a></li>
                                 <li><a href="#">Ireland</a></li>
@@ -254,7 +254,7 @@ i18n:domain="plone">
                                 <li><a href="#">Norway</a></li>
                                 <li><a href="#">Poland</a></li>
                             </ul>
-                            <ul class="eea-four-columns">
+                            <ul class="eea-columns eea-four-columns">
                                 <li><a href="#">Portugal</a></li>
                                 <li><a href="#">Romania</a></li>
                                 <li><a href="#">Slovakia</a></li>
@@ -265,7 +265,7 @@ i18n:domain="plone">
                                 <li><a href="#">Turkey</a></li>
                                 <li><a href="#">United Kingdom</a></li>
                             </ul>
-                            <ul class="eea-four-columns">
+                            <ul class="eea-columns eea-four-columns">
                                 <li><a href="#">Artic</a></li>
                                 <li><a href="#">Baltic</a></li>
                                 <li><a href="#">Mediterranean</a></li>
