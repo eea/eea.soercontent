@@ -15,5 +15,5 @@ def review_title(obj, **kwargs):
         review_state = wftool.getInfoFor(obj, 'review_state')
         return wftool.getTitleForStateOnType(review_state, obj.portal_type)
     except Exception, err:
-        logger.exception(err)
+        logger.debug(err)
         raise AttributeError
