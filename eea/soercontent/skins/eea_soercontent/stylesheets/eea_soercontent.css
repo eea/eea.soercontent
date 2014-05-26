@@ -1,16 +1,14 @@
-/* Base styles */
-body {
-  background-color: #e8f0fb;
-  box-sizing: border-box; }
-
-a, h1, #content a {
-  color: #00839c;
-  border: none; }
-
-/* grids */
-.eea-grids {
-  margin-left: -15px; }
-
+/*
+  COLORS:
+  dtml-linkColor: #007385;
+  dtml-soerBackgroundColor: #e8f0fb;
+  dtml-soerMegatrendsSectionColor: #7e407e;
+  dtml-soerSynthesysSectionColor: #202854;
+  dtml-soerCountrySectionColor: #007385;
+  dtml-soerCountrySectionColor: #007385;
+  dtml-soerThematicSectionColor: #76a830;
+  dtml-soerRegionsSectionColor: #f14825;
+*/
 /* helper classes */
 .border-box {
   -webkit-box-sizing: border-box;
@@ -18,7 +16,26 @@ a, h1, #content a {
   box-sizing: border-box; }
 
 .left-gutter {
-  margin-left: 1em; }
+  margin-left: 15px; }
+
+/* Base styles && base overrides */
+body {
+  background-color: #e8f0fb;
+  box-sizing: border-box; }
+
+a, h1, #content a {
+  color: #007385;
+  border: none; }
+
+#content a:link, dl.portlet a:link {
+  color: #007385; }
+
+.state-published {
+  color: #007385 !important; }
+
+/* grids */
+.eea-grids {
+  margin-left: -15px; }
 
 /* column sizes for eea-tabs panels */
 .eea-two-columns {
@@ -54,12 +71,6 @@ div.width-3\:4 {
 
 #content .documentDescription, #content #description {
   color: #5e6464; }
-
-.state-published {
-  color: #00839c !important; }
-
-#content a:link, dl.portlet a:link {
-  color: #00839c; }
 
 #portal-breadcrumbs {
   background: transparent; }
@@ -125,6 +136,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   .top-highlights .portlet {
     padding-top: 2em; }
 
+/* eea-tabs-soer theme style */
 #visual-portal-wrapper .eea-tabs-soer {
   background-color: transparent;
   padding: 0;
@@ -198,6 +210,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   #visual-portal-wrapper #tab-regions-countries.current:after {
     border-top-color: #f14825; }
 
+/* eea-tabs-panels-soer */
 .eea-tabs-panels-soer, .eea-tabs-panels-soer .eea-tabs-panel {
   background-color: transparent;
   border: 0;
@@ -212,6 +225,8 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
     font-weight: bold; }
 
 /* media queries rules */
+/* shrink the right column when screen size is smaller than 1280px
+   avoiding the columns from overlapping */
 @media (max-width: 1140px) {
   div.position-3\:4 {
     margin-left: -35.1%; }
