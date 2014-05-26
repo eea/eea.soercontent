@@ -3,6 +3,8 @@ Changelog
 
 2.2-dev - (unreleased)
 ----------------------
+* Change: Silently log missing review_state attribute for review_title index
+  [avoinea]
 
 2.1 - (2014-05-13)
 ------------------
