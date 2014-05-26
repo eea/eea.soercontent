@@ -1,13 +1,16 @@
+/* <dtml-with base_properties> */
+/* <dtml-with soer_properties>   */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> */
 /*
   COLORS:
-  dtml-linkColor: #007385;
-  dtml-soerBackgroundColor: #e8f0fb;
-  dtml-soerMegatrendsSectionColor: #7e407e;
-  dtml-soerSynthesysSectionColor: #202854;
-  dtml-soerCountrySectionColor: #007385;
-  dtml-soerCountrySectionColor: #007385;
-  dtml-soerThematicSectionColor: #76a830;
-  dtml-soerRegionsSectionColor: #f14825;
+  dtml-linkColor: &dtml-soerLinkColor;;
+  dtml-soerBackgroundColor: &dtml-soerBackgroundColor;;
+  dtml-soerMegatrendsSectionColor: &dtml-soerMegatrendsSectionColor;;
+  dtml-soerSynthesysSectionColor: &dtml-soerSynthesysSectionColor;;
+  dtml-soerCountrySectionColor: &dtml-soerCountrySectionColor;;
+  dtml-soerCountrySectionColor: &dtml-soerCountrySectionColor;;
+  dtml-soerThematicSectionColor: &dtml-soerThematicSectionColor;;
+  dtml-soerRegionsSectionColor: &dtml-soerRegionsSectionColor;;
 */
 /* helper classes */
 .border-box {
@@ -20,18 +23,18 @@
 
 /* Base styles && base overrides */
 body {
-  background-color: #e8f0fb;
+  background-color: &dtml-soerBackgroundColor;;
   box-sizing: border-box; }
 
 a, h1, #content a {
-  color: #007385;
+  color: &dtml-soerLinkColor;;
   border: none; }
 
 #content a:link, dl.portlet a:link {
-  color: #007385; }
+  color: &dtml-soerLinkColor;; }
 
 .state-published {
-  color: #007385 !important; }
+  color: &dtml-soerLinkColor; !important; }
 
 /* grids */
 .eea-grids {
@@ -186,29 +189,29 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   position: absolute;
   pointer-events: none;
   border: 15px solid transparent;
-  border-top-color: #202854;
+  border-top-color: &dtml-soerSynthesysSectionColor;;
   margin-left: -10px; }
 
 #visual-portal-wrapper #tab-synthesis-report {
-  background-color: #202854; }
+  background-color: &dtml-soerSynthesysSectionColor;; }
   #visual-portal-wrapper #tab-synthesis-report.current:after {
-    border-top-color: #202854; }
+    border-top-color: &dtml-soerSynthesysSectionColor;; }
 #visual-portal-wrapper #tab-global-megatrends {
-  background-color: #7e407e; }
+  background-color: &dtml-soerMegatrendsSectionColor;; }
   #visual-portal-wrapper #tab-global-megatrends.current:after {
-    border-top-color: #7e407e; }
+    border-top-color: &dtml-soerMegatrendsSectionColor;; }
 #visual-portal-wrapper #tab-cross-country-comparisons {
-  background-color: #007385; }
+  background-color: &dtml-soerCountrySectionColor;; }
   #visual-portal-wrapper #tab-cross-country-comparisons.current:after {
-    border-top-color: #007385; }
+    border-top-color: &dtml-soerCountrySectionColor;; }
 #visual-portal-wrapper #tab-thematic-briefing {
-  background-color: #76a830; }
+  background-color: &dtml-soerThematicSectionColor;; }
   #visual-portal-wrapper #tab-thematic-briefing.current:after {
-    border-top-color: #76a830; }
+    border-top-color: &dtml-soerThematicSectionColor;; }
 #visual-portal-wrapper #tab-regions-countries {
-  background-color: #f14825; }
+  background-color: &dtml-soerRegionsSectionColor;; }
   #visual-portal-wrapper #tab-regions-countries.current:after {
-    border-top-color: #f14825; }
+    border-top-color: &dtml-soerRegionsSectionColor;; }
 
 /* eea-tabs-panels-soer */
 .eea-tabs-panels-soer, .eea-tabs-panels-soer .eea-tabs-panel {
@@ -233,5 +236,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 
   div.width-1\:4 {
     width: 35%; } }
+/* </dtml-with> */
+/* </dtml-with> */
 
-/*# sourceMappingURL=eea_soercontent.css.map */
+/*# sourceMappingURL=eea_soercontent.css.dtml.map */
