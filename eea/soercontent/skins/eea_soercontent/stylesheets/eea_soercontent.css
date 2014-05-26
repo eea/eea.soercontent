@@ -49,9 +49,6 @@ div.width-3\:4 {
   padding: 0;
   background-color: transparent; }
 
-#content.wf-state-visible, #content.wf-state-published_eionet, #content.wf-state-new, #content.wf-state-closed, #content.wf-state-content_pending, #content.wf-state-draft, #content.wf-state-in-progress, #content.wf-state-private, #content.wf-state-rejected, #content.wf-state-retracted, #content.wf-state-submitted, #content.wf-state-webqa_pending.progresstrail {
-  background: none; }
-
 #content {
   margin: 0; }
 
