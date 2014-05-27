@@ -47,6 +47,11 @@ a, h1, #content a {
   width: 25%; }
 
 /* Overrides */
+
+.template-soer2015_frontpage .wf-state-visible {
+    background: none;
+}
+
 div.width-3\:4 {
   width: 62%; }
 
@@ -232,3 +237,4 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 /* </dtml-with> */
 /* </dtml-with> */
 
+/*# sourceMappingURL=eea_soercontent.css.dtml.map */
