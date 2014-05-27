@@ -1484,7 +1484,7 @@ i18n:domain="plone">
                 <div class="right-column-area">
                     <dl class="portlet portletNavigationTree">
                         <dt class="portletHeader" id="firstHeader">
-                        <a href="http://localhost:8081/www/SITE/soer-2015">SOER 2015 - The European environment -
+                        <a tal:attributes="href string:$portal_url/soer-2015">SOER 2015 - The European environment -
                             State and Outlook</a>
                         </dt>
                         <dt class="portletSubMenuHeader">
@@ -1493,55 +1493,55 @@ i18n:domain="plone">
                         <dd class="portletItem lastItem">
                         <ul class="navTree navTreeLevel0">
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-global">
-                            <a href="http://localhost:8081/www/SITE/soer-2015/global"
+                            <a tal:attributes="href string:$portal_url/soer-2015/global"
                                 class="state-published_eionet navTreeFolderish contenttype-folder" title="">
                                 <!-- show icons in CMS only -->
-                                <img width="16" height="16" src="http://localhost:8081/www/folder_icon.gif"
+                                <img width="16" height="16" tal:attributes="src string:$portal_url/folder_icon.gif"
                                 alt="Folder">
                                 <span>Global megatrend fiches</span>
                             </a>
                             </li>
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-europe">
-                            <a href="http://localhost:8081/www/SITE/soer-2015/europe"
+                            <a tal:attributes="href string:$portal_url/soer-2015/europe"
                                 class="state-published_eionet navTreeFolderish contenttype-folder" title="">
                                 <!-- show icons in CMS only -->
-                                <img width="16" height="16" src="http://localhost:8081/www/folder_icon.gif"
+                                <img width="16" height="16" tal:attributes="src string:$portal_url/folder_icon.gif"
                                 alt="Folder">
                                 <span>European thematic fiches</span>
                             </a>
                             </li>
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-countries-comparison">
-                            <a href="http://localhost:8081/www/SITE/soer-2015/countries-comparison"
+                            <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison"
                                 class="state-published_eionet navTreeFolderish contenttype-folder" title="">
                                 <!-- show icons in CMS only -->
-                                <img width="16" height="16" src="http://localhost:8081/www/folder_icon.gif"
+                                <img width="16" height="16" tal:attributes="src string:$portal_url/folder_icon.gif"
                                 alt="Folder">
                                 <span>Cross-country comparison fiches</span>
                             </a>
                             </li>
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-countries">
-                            <a href="http://localhost:8081/www/SITE/soer-2015/countries"
+                            <a tal:attributes="href string:$portal_url/soer-2015/countries"
                                 class="state-published_eionet navTreeFolderish contenttype-folder" title="">
                                 <!-- show icons in CMS only -->
-                                <img width="16" height="16" src="http://localhost:8081/www/folder_icon.gif"
+                                <img width="16" height="16" tal:attributes="src string:$portal_url/folder_icon.gif"
                                 alt="Folder">
                                 <span>Country fiches</span>
                             </a>
                             </li>
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-progress-monitoring">
-                            <a href="http://localhost:8081/www/SITE/soer-2015/progress-monitoring"
+                            <a tal:attributes="href string:$portal_url/soer-2015/progress-monitoring"
                                 class="state-published_internally navTreeFolderish contenttype-folder" title="">
                                 <!-- show icons in CMS only -->
-                                <img width="16" height="16" src="http://localhost:8081/www/folder_icon.gif"
+                                <img width="16" height="16" tal:attributes="src string:$portal_url/folder_icon.gif"
                                 alt="Folder">
                                 <span>Workflow progress monitoring</span>
                             </a>
                             </li>
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-help">
-                            <a href="http://localhost:8081/www/SITE/soer-2015/help"
+                            <a tal:attributes="href string:$portal_url/soer-2015/help"
                                 class="state-published_internally navTreeFolderish contenttype-folder" title="">
                                 <!-- show icons in CMS only -->
-                                <img width="16" height="16" src="http://localhost:8081/www/folder_icon.gif"
+                                <img width="16" height="16" tal:attributes="src string:$portal_url/folder_icon.gif"
                                 alt="Folder Pascal source code">
                                 <span>Help</span>
                             </a>
