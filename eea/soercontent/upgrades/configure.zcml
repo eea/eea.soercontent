@@ -9,7 +9,7 @@
     profile="eea.soercontent:default">
 
     <genericsetup:upgradeDepends
-      title="Import changes: skins"
+      title="Import changes: skins cssregistry"
       import_steps="skins cssregistry"
       />
 
