@@ -48,7 +48,7 @@ a, h1, #content a {
 
 /* Overrides */
 
-.template-soer2015_frontpage .wf-state-visible {
+.template-soer2015_frontpage #content.wf-state-visible {
     background: none;
 }
 
