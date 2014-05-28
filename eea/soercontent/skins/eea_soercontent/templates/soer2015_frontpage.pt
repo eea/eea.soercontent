@@ -139,96 +139,99 @@ i18n:domain="plone">
                         <div class="eea-tabs-panel">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam cumque dolore eos quibusdam repudiandae sint tempore. Corporis doloribus dolorum error facilis, libero mollitia quaerat veritatis vitae voluptatem voluptatibus, voluptatum?</p>
                             <ul>
-                                <li><a href="#">Air</a></li>
-                                <li><a href="#">Agriculture</a></li>
-                                <li><a href="#">Biodiversity</a></li>
-                                <li><a href="#">Freshwater</a></li>
-                                <li><a href="#">Mitigate climate change</a></li>
-                                <li><a href="#">Waste</a></li>
-                                <li><a href="#">Energy</a></li>
-                                <li><a href="#">Transport</a></li>
-                                <li><a href="#">Resource efficiency</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/air">Air</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/climate-change-mitigation">Climate change mitigation</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/energy">Energy</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/transport">Transport</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/biodiversity">Biodiversity</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/agriculture">Agriculture</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/freshwater">Freshwater</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/resource-efficiency">Resource efficiency</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/waste">Waste</a></li>
                             </ul>
                             <div class="eea-footer-right visualClear pull-right"><p class="pull-left">Download all Cross-country fiches</p> <a class="download-pdf pull-left" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
                         </div>
                         <div class="eea-tabs-panel">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid beatae blanditiis esse, est itaque libero nostrum numquam odio quia sit, voluptate voluptatem! Architecto et quas quos recusandae? Quisquam, unde.</p>
                             <ul class="eea-columns eea-two-columns">
-                                <li><a href="#">Air</a></li>
-                                <li><a href="#">Biodiversity</a></li>
-                                <li><a href="#">Climate change adaptation</a></li>
-                                <li><a href="#">Forests</a></li>
-                                <li><a href="#">Freshwater</a></li>
-                                <li><a href="#">Soil</a></li>
-                                <li><a href="#">Marine and coastal environment</a></li>
-                                <li><a href="#">Mitigation climate change</a></li>
-                                <li><a href="#">Noise</a></li>
-                                <li><a href="#">Water</a></li>
-                                <li><a href="#">Agriculture</a></li>
-                                <li><a href="#">Consumption</a></li>
-                                <li><a href="#">Energy</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/air">Air</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/biodiversity">Biodiversity</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/climate-change-impacts-and-adaptation">Climate change impacts and adaptation</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/forests">Forests</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/freshwater">Freshwater</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/soil">Soil</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/marine-and-costal">Marine and coastal environment</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/mitigation-climate-change">Mitigation climate change</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/noise">Noise</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/water">Water</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/agriculture">Agriculture</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/consumption">Consumption</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/energy">Energy</a></li>
                             </ul>
                             <ul class="eea-columns eea-two-columns">
-                                <li><a href="#">Industry</a></li>
-                                <li><a href="#">Marine activities</a></li>
-                                <li><a href="#">Tourism</a></li>
-                                <li><a href="#">Transport</a></li>
-                                <li><a href="#">Health and the environment</a></li>
-                                <li><a href="#">Resource efficiency</a></li>
-                                <li><a href="#">Green economy</a></li>
-                                <li><a href="#">Natural capital and ecosystem services</a></li>
-                                <li><a href="#">Land system</a></li>
-                                <li><a href="#">Hydrolical systems</a></li>
-                                <li><a href="#">The air and climate system</a></li>
-                                <li><a href="#">Urban systems</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/industry">Industry</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/maritime-activities">Maritime activities</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/tourism">Tourism</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/transport">Transport</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/health-and-environment">Health and environment</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/resource-efficiency">Resource efficiency</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/green-economy">Green economy</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/natural-capital-and-ecosystem-services">Natural capital and ecosystem services</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/land">Land systems</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/hydrolical-systems">Hydrolical systems</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/the-air-and-climate-system">The air and climate system</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/urban-systems">Urban systems</a></li>
                             </ul>
                             <div class="eea-footer-right visualClear pull-right"><p class="pull-left">Download all Thematic briefing fiches</p> <a class="download-pdf pull-left" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
                         </div>
                         <div class="eea-tabs-panel">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam cumque dolore eos quibusdam repudiandae sint tempore. Corporis doloribus dolorum error facilis, libero mollitia quaerat veritatis vitae voluptatem voluptatibus, voluptatum?</p>
                             <ul class="eea-columns eea-four-columns">
-                                <li><a href="#">Austria</a></li>
-                                <li><a href="#">Belgium</a></li>
-                                <li><a href="#">Bulgaria</a></li>
-                                <li><a href="#">Croatia</a></li>
-                                <li><a href="#">Cyprus</a></li>
-                                <li><a href="#">Czech Republic</a></li>
-                                <li><a href="#">Denmark</a></li>
-                                <li><a href="#">Estonia</a></li>
-                                <li><a href="#">Finland</a></li>
-                                <li><a href="#">France</a></li>
-                                <li><a href="#">Germany</a></li>
-                                <li><a href="#">Greece</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/austria">Austria</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/albania">Albania</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/belgium">Belgium</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/bulgaria">Bulgaria</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/croatia">Croatia</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/cyprus">Cyprus</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/czech-republic">Czech Republic</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/denmark">Denmark</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/estonia">Estonia</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/finland">Finland</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/france">France</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/germany">Germany</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/greece">Greece</a></li>
                             </ul>
                             <ul class="eea-columns eea-four-columns">
-                                <li><a href="#">Hungary</a></li>
-                                <li><a href="#">Iceland</a></li>
-                                <li><a href="#">Ireland</a></li>
-                                <li><a href="#">Italy</a></li>
-                                <li><a href="#">Latvia</a></li>
-                                <li><a href="#">Liechtenstein</a></li>
-                                <li><a href="#">Lithuania</a></li>
-                                <li><a href="#">Luxemburg</a></li>
-                                <li><a href="#">Malta</a></li>
-                                <li><a href="#">Netherlands</a></li>
-                                <li><a href="#">Norway</a></li>
-                                <li><a href="#">Poland</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/hungary">Hungary</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/iceland">Iceland</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/ireland">Ireland</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/italy">Italy</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/kosovo">Kosovo under UN SCR 1244/99</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/latvia">Latvia</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/liechtenstein">Liechtenstein</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/lithuania">Lithuania</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/luxembourg">Luxembourg</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/malta">Malta</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/the-netherlands">The Netherlands</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/norway">Norway</a></li>
                             </ul>
                             <ul class="eea-columns eea-four-columns">
-                                <li><a href="#">Portugal</a></li>
-                                <li><a href="#">Romania</a></li>
-                                <li><a href="#">Slovakia</a></li>
-                                <li><a href="#">Slovenia</a></li>
-                                <li><a href="#">Spain</a></li>
-                                <li><a href="#">Sweden</a></li>
-                                <li><a href="#">Switzerland</a></li>
-                                <li><a href="#">Turkey</a></li>
-                                <li><a href="#">United Kingdom</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/poland">Poland</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/portugal">Portugal</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/romania">Romania</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/slovakia">Slovakia</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/slovenia">Slovenia</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/spain">Spain</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/sweden">Sweden</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/switzerland">Switzerland</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/the-former-yugoslav-republic-of-macedonia">The Former Yugoslav Republic of Macedonia</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/turkey">Turkey</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/united-kingdom">United Kingdom</a></li>
                             </ul>
                             <ul class="eea-columns eea-four-columns">
-                                <li><a href="#">Artic</a></li>
-                                <li><a href="#">Baltic</a></li>
-                                <li><a href="#">Mediterranean</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/artic">Artic</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/baltic">Baltic</a></li>
+                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/mediterranean">Mediterranean</a></li>
                             </ul>
                             <div class="eea-footer-right visualClear pull-right"><p class="pull-left">Download all Regions and Countries fiches</p> <a class="download-pdf pull-left" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
                         </div>
