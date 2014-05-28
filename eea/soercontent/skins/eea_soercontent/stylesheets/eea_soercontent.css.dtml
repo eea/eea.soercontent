@@ -116,9 +116,6 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   background-color: white;
   padding: 1.5em; }
 
-#keyfacts-slider .keyfactsImgContainer {
-  height: 330px; }
-
 /* Content Styles */
 #viewlet-above-content {
   margin: -22px -18px 15px -18px;

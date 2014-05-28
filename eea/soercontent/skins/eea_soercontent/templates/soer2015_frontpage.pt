@@ -268,7 +268,7 @@ i18n:domain="plone">
             <div class="eea-grids">
                 <div class="column-area">
                     <div id="keyfacts-slider" class="figure keyFactsSlider">
-                        <div class="keyfactsImgContainer"><img class="keyfacts-bgimg" src="http://wwws3.eea.europa.eu/soer/intropage/image_large"></div>
+                        <div class="keyfactsImgContainer js-adoptHeight" data-target-element=".portletNavigationTree"><img class="keyfacts-bgimg" src="http://wwws3.eea.europa.eu/soer/intropage/image_large"></div>
                         <div id="boxes">
                             <div id="soer-top-area">
                                 <!-- all key facts and messages -->
