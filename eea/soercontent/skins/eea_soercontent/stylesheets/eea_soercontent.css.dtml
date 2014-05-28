@@ -16,8 +16,7 @@ body {
   box-sizing: border-box; }
 
 a, h1, #content a {
-  color: &dtml-soerLinkColor;;
-  border: none; }
+  color: &dtml-soerLinkColor;; }
 
 #content a:link, dl.portlet a:link {
   color: &dtml-soerLinkColor;; }
@@ -34,7 +33,8 @@ a, h1, #content a {
   padding-left: 1.5em;
   float: left; }
 
-#region-content .eea-columns {
+#region-content .eea-columns,
+#region-content .navTreeLevel0 {
   margin: 0; }
 
 .eea-two-columns {
@@ -47,11 +47,6 @@ a, h1, #content a {
   width: 25%; }
 
 /* Overrides */
-
-.template-soer2015_frontpage #content.wf-state-visible {
-    background: none;
-}
-
 div.width-3\:4 {
   width: 62%; }
 
@@ -72,6 +67,9 @@ div.width-3\:4 {
 
 #content {
   margin: 0; }
+
+.template-soer2015_frontpage #content.wf-state-visible {
+  background: none; }
 
 #content .documentDescription, #content #description {
   color: #5e6464; }
@@ -109,6 +107,10 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 
 #portal-column-two .portlet {
   padding: 1.5em; }
+
+#firstHeader {
+  display: none;
+  /* navigtion title doesn't appear within new soer design */ }
 
 .featured, .portlet {
   background-color: white;
