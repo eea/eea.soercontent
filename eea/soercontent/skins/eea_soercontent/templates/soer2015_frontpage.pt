@@ -30,7 +30,7 @@ i18n:domain="plone">
                 <li><a href="#tab-thematic-briefing" id="tab-thematic-briefing"><span class="eea-icon eea-icon-rotate-right eea-icon-2x"></span> Thematic briefing</a></li>
                 <li><a href="#tab-regions-countries" id="tab-regions-countries"><span class="eea-icon eea-icon-globe eea-icon-2x"></span> Regions & Countries</a></li>
             </ul>
-            <div class="eea-grids">
+            <div class="eea-row">
                 <div class="column-area">
                     <div class="eea-tabs-panels eea-tabs-panels-soer">
                         <div class="eea-tabs-panel">
@@ -265,7 +265,7 @@ i18n:domain="plone">
         <!--? Gallery & Navigation -->
         <div class="lower-highlights">
             <!--? Key facts -->
-            <div class="eea-grids">
+            <div class="eea-row">
                 <div class="column-area">
                     <div id="keyfacts-slider" class="figure keyFactsSlider">
                         <div class="keyfactsImgContainer js-adoptHeight" data-target-element=".portletNavigationTree"><img class="keyfacts-bgimg" src="http://wwws3.eea.europa.eu/soer/intropage/image_large"></div>
