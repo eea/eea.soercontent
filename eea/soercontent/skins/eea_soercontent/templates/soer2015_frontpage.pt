@@ -153,7 +153,7 @@ i18n:domain="plone">
                         </div>
                         <div class="eea-tabs-panel">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid beatae blanditiis esse, est itaque libero nostrum numquam odio quia sit, voluptate voluptatem! Architecto et quas quos recusandae? Quisquam, unde.</p>
-                            <ul class="eea-columns eea-two-columns">
+                            <ul class="eea-list-columns eea-two-columns">
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/europe/air">Air</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/europe/biodiversity">Biodiversity</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/europe/climate-change-impacts-and-adaptation">Climate change impacts and adaptation</a></li>
@@ -168,7 +168,7 @@ i18n:domain="plone">
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/europe/consumption">Consumption</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/europe/energy">Energy</a></li>
                             </ul>
-                            <ul class="eea-columns eea-two-columns">
+                            <ul class="eea-list-columns eea-two-columns">
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/europe/industry">Industry</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/europe/maritime-activities">Maritime activities</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/europe/tourism">Tourism</a></li>
@@ -186,7 +186,7 @@ i18n:domain="plone">
                         </div>
                         <div class="eea-tabs-panel">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam cumque dolore eos quibusdam repudiandae sint tempore. Corporis doloribus dolorum error facilis, libero mollitia quaerat veritatis vitae voluptatem voluptatibus, voluptatum?</p>
-                            <ul class="eea-columns eea-four-columns">
+                            <ul class="eea-list-columns eea-four-columns">
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/austria">Austria</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/albania">Albania</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/belgium">Belgium</a></li>
@@ -201,7 +201,7 @@ i18n:domain="plone">
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/germany">Germany</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/greece">Greece</a></li>
                             </ul>
-                            <ul class="eea-columns eea-four-columns">
+                            <ul class="eea-list-columns eea-four-columns">
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/hungary">Hungary</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/iceland">Iceland</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/ireland">Ireland</a></li>
@@ -215,7 +215,7 @@ i18n:domain="plone">
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/the-netherlands">The Netherlands</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/norway">Norway</a></li>
                             </ul>
-                            <ul class="eea-columns eea-four-columns">
+                            <ul class="eea-list-columns eea-four-columns">
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/poland">Poland</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/portugal">Portugal</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/romania">Romania</a></li>
@@ -228,7 +228,7 @@ i18n:domain="plone">
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/turkey">Turkey</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/united-kingdom">United Kingdom</a></li>
                             </ul>
-                            <ul class="eea-columns eea-four-columns">
+                            <ul class="eea-list-columns eea-four-columns">
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/artic">Artic</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/baltic">Baltic</a></li>
                                 <li><a tal:attributes="href string:$portal_url/soer-2015/countries/mediterranean">Mediterranean</a></li>

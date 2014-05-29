@@ -2,7 +2,7 @@
 /* <dtml-with soer_properties>   */
 /* <dtml-call "REQUEST.set('portal_url', portal_url())"> */
 /* helper classes */
-.border-box, .eea-columns {
+.border-box, .eea-list-columns {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -29,11 +29,11 @@ a, h1, #content a {
   margin-left: -15px; }
 
 /* column sizes for eea-tabs panels */
-.eea-columns {
+.eea-list-columns {
   padding-left: 1.5em;
   float: left; }
 
-#region-content .eea-columns,
+#region-content .eea-list-columns,
 #region-content .navTreeLevel0 {
   margin: 0; }
 
@@ -71,12 +71,12 @@ div.width-3\:4 {
 .template-soer2015_frontpage #content.wf-state-visible {
   background: none; }
 
-#content .documentDescription, #content #description {
-  color: #5e6464; }
-
 #parent-fieldname-title {
   padding: 0;
   margin: 0; }
+
+#content .documentDescription, #content #description {
+  color: #5e6464; }
 
 .column-area {
   width: 65%; }
@@ -100,7 +100,7 @@ div.width-3\:4 {
 
 /* portlet style overrides */
 #portal-column-two .portlet {
-  padding: 1.5em; }
+  padding: 15px; }
 
 #firstHeader {
   display: none;
