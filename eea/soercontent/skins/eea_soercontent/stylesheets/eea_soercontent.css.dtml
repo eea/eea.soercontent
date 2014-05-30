@@ -7,6 +7,52 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* SOER-2015 section styles */
+.brand-synthesis {
+  background-color: &dtml-soerSynthesysSectionFullColor;; }
+
+.brand-thematic {
+  background-color: &dtml-soerThematicSectionFullColor;; }
+
+.brand-regions {
+  background-color: &dtml-soerRegionsSectionFullColor;; }
+
+.brand-megatrends {
+  background-color: &dtml-soerMegatrendsSectionFullColor;; }
+
+.brand-country {
+  background-color: &dtml-soerCountrySectionFullColor;; }
+
+.brand-synthesis-medium {
+  background-color: &dtml-soerSynthesysSectionMediumColor;; }
+
+.brand-thematic-medium {
+  background-color: &dtml-soerThematicSectionMediumColor;; }
+
+.brand-regions-medium {
+  background-color: &dtml-soerRegionsSectionMediumColor;; }
+
+.brand-megatrends-medium {
+  background-color: &dtml-soerMegatrendsSectionMediumColor;; }
+
+.brand-country-medium {
+  background-color: &dtml-soerCountrySectionFullColor;; }
+
+.brand-synthesis-light {
+  background-color: &dtml-soerSynthesysSectionLightColor;; }
+
+.brand-thematic-light {
+  background-color: &dtml-soerThematicSectionLightColor;; }
+
+.brand-regions-light {
+  background-color: &dtml-soerRegionsSectionLightColor;; }
+
+.brand-megatrends-light {
+  background-color: &dtml-soerMegatrendsSectionLightColor;; }
+
+.brand-country-light {
+  background-color: &dtml-soerCountrySectionLightColor;; }
+
 .left-gutter {
   margin-left: 15px; }
 
@@ -188,29 +234,29 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   position: absolute;
   pointer-events: none;
   border: 15px solid transparent;
-  border-top-color: &dtml-soerSynthesysSectionColor;;
+  border-top-color: &dtml-soerSynthesysSectionFullColor;;
   margin-left: -10px; }
 
 #visual-portal-wrapper #tab-synthesis-report {
-  background-color: &dtml-soerSynthesysSectionColor;; }
+  background-color: &dtml-soerSynthesysSectionFullColor;; }
   #visual-portal-wrapper #tab-synthesis-report.current:after {
-    border-top-color: &dtml-soerSynthesysSectionColor;; }
+    border-top-color: &dtml-soerSynthesysSectionFullColor;; }
 #visual-portal-wrapper #tab-global-megatrends {
-  background-color: &dtml-soerMegatrendsSectionColor;; }
+  background-color: &dtml-soerMegatrendsSectionFullColor;; }
   #visual-portal-wrapper #tab-global-megatrends.current:after {
-    border-top-color: &dtml-soerMegatrendsSectionColor;; }
+    border-top-color: &dtml-soerMegatrendsSectionFullColor;; }
 #visual-portal-wrapper #tab-cross-country-comparisons {
-  background-color: &dtml-soerCountrySectionColor;; }
+  background-color: &dtml-soerCountrySectionFullColor;; }
   #visual-portal-wrapper #tab-cross-country-comparisons.current:after {
-    border-top-color: &dtml-soerCountrySectionColor;; }
+    border-top-color: &dtml-soerCountrySectionFullColor;; }
 #visual-portal-wrapper #tab-thematic-briefing {
-  background-color: &dtml-soerThematicSectionColor;; }
+  background-color: &dtml-soerThematicSectionFullColor;; }
   #visual-portal-wrapper #tab-thematic-briefing.current:after {
-    border-top-color: &dtml-soerThematicSectionColor;; }
+    border-top-color: &dtml-soerThematicSectionFullColor;; }
 #visual-portal-wrapper #tab-regions-countries {
-  background-color: &dtml-soerRegionsSectionColor;; }
+  background-color: &dtml-soerRegionsSectionFullColor;; }
   #visual-portal-wrapper #tab-regions-countries.current:after {
-    border-top-color: &dtml-soerRegionsSectionColor;; }
+    border-top-color: &dtml-soerRegionsSectionFullColor;; }
 
 /* eea-tabs-panels-soer */
 .eea-tabs-panels-soer, .eea-tabs-panels-soer .eea-tabs-panel {
