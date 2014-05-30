@@ -1,307 +1,301 @@
 <html>
 <body>
-<dl class="portlet portletNavigationTree portletNavigationSoer" metal:define-macro="portlet">
-<dt class="portletHeader" id="firstHeader">
-    <a href="http://localhost:8081/www/SITE/soer-2015">SOER 2015 - The European environment - State and Outlook</a>
-</dt>
-<dt class="portletSubMenuHeader">
-    <span class="title eea-icon-right-container">Menu</span>
-</dt>
-<dd class="portletItem lastItem" style="display: none;">
-    <ul class="navTree navTreeLevel0">
-        <li class="navTreeItem visualNoMarker navTreeFolderish section-europe">
-            <a href="http://localhost:8081/www/SITE/soer-2015/europe"
-               class=" navTreeFolderish contenttype-folder" title="">
-                <span>European thematic fiches</span>
-            </a>
-        </li>
-        <li class="navTreeItem visualNoMarker navTreeFolderish section-countries-comparison">
-            <a href="http://localhost:8081/www/SITE/soer-2015/countries-comparison"
-               class=" navTreeFolderish contenttype-folder" title="">
-                <span>Cross-country comparison fiches</span>
-            </a>
-        </li>
-        <li class="navTreeItem visualNoMarker navTreeFolderish section-countries">
-            <a href="http://localhost:8081/www/SITE/soer-2015/countries"
-               class=" navTreeFolderish contenttype-folder" title="">
-                <span>Country fiches</span>
-            </a>
-        </li>
-        <li class="navTreeItem visualNoMarker navTreeFolderish section-progress-monitoring">
-            <a href="http://localhost:8081/www/SITE/soer-2015/progress-monitoring"
-               class=" navTreeFolderish contenttype-folder" title="">
-                <span>Workflow progress monitoring</span>
-            </a>
-        </li>
-        <li class="navTreeItem visualNoMarker navTreeFolderish section-help">
-            <a href="http://localhost:8081/www/SITE/soer-2015/help"
-               class=" navTreeFolderish contenttype-folder" title="">
-                <span>Help</span>
-            </a>
-        </li>
-    </ul>
-</dd>
-<dt class="portletSubMenuHeader current">
-    <span class="title eea-icon-right-container">Global Megatrends</span>
-</dt>
-<dd class="portletItem lastItem" style="display: block;">
-<ul class="navTree navTreeLevel0">
-<li class="navTreeItem visualNoMarker navTreeCurrentNode navTreeFolderish section-global">
-<a href="http://localhost:8081/www/SITE/soer-2015/global"
-   class=" navTreeCurrentItem navTreeCurrentNode navTreeFolderish contenttype-folder" title="">
-    <span>Global megatrend fiches</span>
-</a>
-<ul class="navTree navTreeLevel1">
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-demography">
-        <a href="http://localhost:8081/www/SITE/soer-2015/global/demography" class=" navTreeFolderish contenttype-fiche"
-           title="">
-            <span>Demography</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-urbanisation">
-        <a href="http://localhost:8081/www/SITE/soer-2015/global/urbanisation"
-           class=" navTreeFolderish contenttype-fiche"
-           title="Over the last decades, continuous urban expansion at rates much higher than population growth has resulted in a massive urban footprint on Europe.">
-            <span>Urban growth</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-health">
-        <a href="http://localhost:8081/www/SITE/soer-2015/global/health" class=" navTreeFolderish contenttype-fiche"
-           title="">
-            <span>Health</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-technology">
-        <a href="http://localhost:8081/www/SITE/soer-2015/global/technology" class=" navTreeFolderish contenttype-fiche"
-           title="">
-            <span>Technology</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-economic">
-        <a href="http://localhost:8081/www/SITE/soer-2015/global/economic" class=" navTreeFolderish contenttype-fiche"
-           title="">
-            <span>Economic</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-trade">
-        <a href="http://localhost:8081/www/SITE/soer-2015/global/trade" class=" navTreeFolderish contenttype-fiche"
-           title="">
-            <span>Trade</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-competition">
-        <a href="http://localhost:8081/www/SITE/soer-2015/global/competition" class=" navTreeFolderish contenttype-fiche"
-           title="">
-            <span>Competition</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-resources">
-        <a href="http://localhost:8081/www/SITE/soer-2015/global/resources" class=" navTreeFolderish contenttype-fiche"
-           title="">
-            <span>Ecosystems</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-climate">
-        <a href="http://localhost:8081/www/SITE/soer-2015/global/climate" class=" navTreeFolderish contenttype-fiche"
-           title="">
-            <span>Climate</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-pollution">
-        <a href="http://localhost:8081/www/SITE/soer-2015/global/pollution" class=" navTreeFolderish contenttype-fiche"
-           title="">
-            <span>Pollution</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-governance">
-        <a href="http://localhost:8081/www/SITE/soer-2015/global/governance" class=" navTreeFolderish contenttype-fiche"
-           title="">
-            <span>Governance</span>
-        </a>
-    </li>
-</ul>
-</li>
-</ul>
-</dd>
+<div class="eea-accordion-panels eea-accordion-panels-soer" metal:define-macro="portlet"
+        tal:define="plone_view context/@@plone;
+        view nocall:plone_view;
+        body_class python:plone_view.bodyClass(template, view);">
+
+    <!--? Synthesis report -->
+    <div class="eea-accordion-panel">
+        <h3 class="eea-accordion-title">
+            <span class="title" >Synthesis report</span>
+        </h3>
+        <div class="pane">
+            <ul>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/europe">
+                        <span>European thematic fiches</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/countries-comparison">
+                        <span>Cross-country comparison fiches</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/countries">
+                        <span>Country fiches</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/progress-monitoring">
+                        <span>Workflow progress monitoring</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/help">
+                        <span>Help</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--? Global megatrends -->
+    <div class="eea-accordion-panel">
+        <h3 class="eea-accordion-title current">
+            <span class="title eea-icon-right-container">Global Megatrends</span>
+        </h3>
+        <div class="pane">
+            <ul>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/global/demography">
+                        <span>Demography</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/global/urbanisation"
+                       title="Over the last decades, continuous urban expansion at rates much higher than population growth has resulted in a massive urban footprint on Europe.">
+                        <span>Urban growth</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/global/health">
+                        <span>Health</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/global/technology">
+                        <span>Technology</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/global/economic">
+                        <span>Economic</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/global/trade">
+                        <span>Trade</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/global/competition">
+                        <span>Competition</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/global/resources">
+                        <span>Ecosystems</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/global/climate">
+                        <span>Climate</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/global/pollution">
+                        <span>Pollution</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8081/www/SITE/soer-2015/global/governance">
+                        <span>Governance</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <!--? Cross country -->
-    <dt class="portletSubMenuHeader">
-        <span class="title eea-icon-right-container">Cross Country</span>
-    </dt>
-<dd class="portletItem">
-<ul class="navTree navTreeLevel0">
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-air">
-        <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/air" class=" navTreeFolderish contenttype-fiche" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on substances that contribute to acidification, eutrophication, formation of ground-level ozone and secondary particulate matter. ">
-            <span>Air pollution (a country comparison)</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-climate-change-mitigation">
-        <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/climate-change-mitigation" class=" navTreeFolderish contenttype-fiche" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on greenhouse gas emissions.">
-            <span>Climate change mitigation (a country comparison) </span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-energy">
-        <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/energy" class=" navTreeFolderish contenttype-fiche" title="">
-            <span>Energy (a country comparison) </span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-transport">
-        <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/transport" class=" navTreeFolderish contenttype-fiche" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on passenger transport demand and modal split. ">
-            <span>Transport (a country comparison)</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-biodiversity">
-        <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/biodiversity" class=" navTreeFolderish contenttype-fiche" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on protected areas. ">
-            <span>Biodiversity (a country comparison)</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-agriculture">
-        <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/agriculture" class=" navTreeFolderish contenttype-fiche" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on organic farming.">
-            <span>Agriculture (a country comparison) </span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-freshwater">
-        <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/freshwater" class=" navTreeFolderish contenttype-fiche" title="">
-            <span>Freshwater (a country comparison)</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-resource-efficiency">
-        <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/resource-efficiency" class=" navTreeFolderish contenttype-fiche" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on resource use and resource productivity.">
-            <span>Resource efficiency (a country comparison)</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-waste">
-        <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/waste" class=" navTreeFolderish contenttype-fiche" title="IMPORTANT: This fiche provides a cross-country comparison focusing only municipal solid waste generation and management.">
-            <span>Waste (a country comparison)  </span>
-        </a>
-    </li>
-</ul>
- </dd>
+    <div class="eea-accordion-panel">
+        <h3 class="eea-accordion-title">
+            <span class="title">Cross Country</span>
+        </h3>
+        <div class="pane">
+            <ul>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/air" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on substances that contribute to acidification, eutrophication, formation of ground-level ozone and secondary particulate matter. ">
+                        <span>Air pollution</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/climate-change-mitigation" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on greenhouse gas emissions.">
+                        <span>Climate change mitigation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/energy">
+                        <span>Energy</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/transport" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on passenger transport demand and modal split. ">
+                        <span>Transport</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/biodiversity" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on protected areas. ">
+                        <span>Biodiversity</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/agriculture" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on organic farming.">
+                        <span>Agriculture</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/freshwater">
+                        <span>Freshwater</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/resource-efficiency" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on resource use and resource productivity.">
+                        <span>Resource efficiency</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/waste" title="IMPORTANT: This fiche provides a cross-country comparison focusing only municipal solid waste generation and management.">
+                        <span>Waste</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <!--? european thematic -->
-    <dt class="portletSubMenuHeader">
-        <span class="title eea-icon-right-container">Thematic</span>
-    </dt>
-    <dd class="portletItem">
-    <ul class="navTree navTreeLevel0">
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-air">
-        <a href="http://www.eea.europa.eu/soer-2015/europe/air" class=" navTreeFolderish contenttype-fiche" title="">
-            <span>Air</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-mitigating-climate-change">
-        <a href="http://www.eea.europa.eu/soer-2015/europe/mitigating-climate-change" class=" navTreeFolderish contenttype-fiche" title="">
-            <span>Mitigating climate change</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-the-air-and-climate-system">
-        <a href="http://www.eea.europa.eu/soer-2015/europe/the-air-and-climate-system" class=" navTreeFolderish contenttype-fiche" title="">
-            <span>The air and climate system</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-biodiversity">
-        <a href="http://www.eea.europa.eu/soer-2015/europe/biodiversity" class=" navTreeFolderish contenttype-fiche" title="">
-            <span>Biodiversity</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-forests">
-        <a href="http://www.eea.europa.eu/soer-2015/europe/forests" class=" navTreeFolderish contenttype-fiche" title="">
-            <span>Forests</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-agriculture">
-        <a href="http://www.eea.europa.eu/soer-2015/europe/agriculture" class=" navTreeFolderish contenttype-fiche" title="">
-            <span>Agriculture</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-freshwater">
-        <a href="http://www.eea.europa.eu/soer-2015/europe/freshwater" class=" navTreeFolderish contenttype-fiche" title="">
-            <span>Freshwater</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-maritime-activities">
-        <a href="http://www.eea.europa.eu/soer-2015/europe/maritime-activities" class=" navTreeFolderish contenttype-fiche" title="">
-            <span>Maritime activities</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-marine-and-coastal">
-        <a href="http://www.eea.europa.eu/soer-2015/europe/marine-and-coastal" class=" navTreeFolderish contenttype-fiche" title="">
-            <span>Marine and coastal environment</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker navTreeFolderish section-hydrological-systems">
-        <a href="http://www.eea.europa.eu/soer-2015/europe/hydrological-systems" class=" navTreeFolderish contenttype-fiche" title="">
-            <span>Hydrological systems and sustainable water management</span>
-        </a>
-    </li>
-    <li class="navTreeItem visualNoMarker section-list-all">
-        <a href="http://www.eea.europa.eu/soer-2015/europe/folder_listing" class=" contenttype-document" title="List all items">
-            <span>List all</span>
-        </a>
-    </li>
-    </ul>
-    </dd>
-<!--? regions & countries -->
-<dt class="portletSubMenuHeader">
-    <span class="title eea-icon-right-container">Regions & Countries</span>
-</dt>
-<dd class="portletItem">
-<ul class="navTree navTreeLevel1">
-<li class="navTreeItem visualNoMarker navTreeFolderish section-austria">
-    <a href="http://www.eea.europa.eu/soer-2015/countries/austria" class=" navTreeFolderish contenttype-fiche" title="">
-        <span>Austria</span>
-    </a>
-</li>
-<li class="navTreeItem visualNoMarker navTreeFolderish section-albania">
-    <a href="http://www.eea.europa.eu/soer-2015/countries/albania" class=" navTreeFolderish contenttype-fiche" title="">
-        <span>Albania</span>
-    </a>
-</li>
-<li class="navTreeItem visualNoMarker navTreeFolderish section-belgium">
-    <a href="http://www.eea.europa.eu/soer-2015/countries/belgium" class=" navTreeFolderish contenttype-fiche" title="">
-        <span>Belgium</span>
-    </a>
-</li>
-<li class="navTreeItem visualNoMarker navTreeFolderish section-bulgaria">
-    <a href="http://www.eea.europa.eu/soer-2015/countries/bulgaria" class=" navTreeFolderish contenttype-fiche" title="">
-        <span>Bulgaria</span>
-    </a>
-</li>
-<li class="navTreeItem visualNoMarker navTreeFolderish section-croatia">
-    <a href="http://www.eea.europa.eu/soer-2015/countries/croatia" class=" navTreeFolderish contenttype-fiche" title="">
-        <span>Croatia</span>
-    </a>
-</li>
-<li class="navTreeItem visualNoMarker navTreeFolderish section-cyprus">
-    <a href="http://www.eea.europa.eu/soer-2015/countries/cyprus" class=" navTreeFolderish contenttype-fiche" title="">
-        <span>Cyprus</span>
-    </a>
-</li>
-<li class="navTreeItem visualNoMarker navTreeFolderish section-czech-republic">
-    <a href="http://www.eea.europa.eu/soer-2015/countries/czech-republic" class=" navTreeFolderish contenttype-fiche" title="">
-        <span>Czech Republic</span>
-    </a>
-</li>
-<li class="navTreeItem visualNoMarker navTreeFolderish section-denmark">
-    <a href="http://www.eea.europa.eu/soer-2015/countries/denmark" class=" navTreeFolderish contenttype-fiche" title="">
-        <span>Denmark</span>
-    </a>
-</li>
-<li class="navTreeItem visualNoMarker navTreeFolderish section-estonia">
-    <a href="http://www.eea.europa.eu/soer-2015/countries/estonia" class=" navTreeFolderish contenttype-fiche" title="">
-        <span>Estonia</span>
-    </a>
-</li>
-<li class="navTreeItem visualNoMarker navTreeFolderish section-kosovo">
-    <a href="http://www.eea.europa.eu/soer-2015/countries/kosovo" class=" navTreeFolderish contenttype-fiche" title="">
-        <span>Kosovo under UN SCR 1244/99</span>
-    </a>
-</li>
-<li class="navTreeItem visualNoMarker section-list-all">
-    <a href="http://www.eea.europa.eu/soer-2015/countries/folder_listing" class=" contenttype-document" title="List all items">
-        <span>List all</span>
-    </a>
-</li>
-</ul>
-</dd>
-</dl>
+    <div class="eea-accordion-panel">
+        <h3 class="eea-accordion-title">
+            <span class="title eea-icon-right-container">Thematic</span>
+        </h3>
+        <div class="pane">
+            <ul>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/europe/air">
+                        <span>Air</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/europe/mitigating-climate-change">
+                        <span>Mitigating climate change</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/europe/the-air-and-climate-system">
+                        <span>The air and climate system</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/europe/biodiversity">
+                        <span>Biodiversity</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/europe/forests">
+                        <span>Forests</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/europe/agriculture">
+                        <span>Agriculture</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/europe/freshwater">
+                        <span>Freshwater</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/europe/maritime-activities">
+                        <span>Maritime activities</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/europe/marine-and-coastal">
+                        <span>Marine and coastal environment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/europe/hydrological-systems">
+                        <span>Hydrological systems and sustainable water management</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/europe/folder_listing" title="List all items">
+                        <span>List all</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--? regions & countries -->
+    <div class="eea-accordion-panel">
+        <h3 class="eea-accordion-title">
+            <span class="title eea-icon-right-container">Regions & Countries</span>
+        </h3>
+        <div class="pane">
+            <ul>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries/austria">
+                        <span>Austria</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries/albania">
+                        <span>Albania</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries/belgium">
+                        <span>Belgium</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries/bulgaria">
+                        <span>Bulgaria</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries/croatia">
+                        <span>Croatia</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries/cyprus">
+                        <span>Cyprus</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries/czech-republic">
+                        <span>Czech Republic</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries/denmark">
+                        <span>Denmark</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries/estonia">
+                        <span>Estonia</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries/kosovo">
+                        <span>Kosovo under UN SCR 1244/99</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.eea.europa.eu/soer-2015/countries/folder_listing" title="List all items">
+                        <span>List all</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
