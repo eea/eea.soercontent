@@ -36,7 +36,7 @@ setup(name=NAME,
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'collective.sendaspdf',
+          'eea.pdf',
           'eea.vocab',
           'eea.forms',
           'eea.converter',
