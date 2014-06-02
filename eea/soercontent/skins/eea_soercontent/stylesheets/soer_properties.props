@@ -3,6 +3,8 @@ soerLinkColor:string=#007385
 soerBackgroundColor:string=#e8f0fb
 
 soerSynthesysSectionFullColor:string=#202854
+soerSynthesysSectionMediumColor:string=#959fd1
+soerSynthesysSectionLightColor:string=#c6ccea
 
 soerMegatrendsSectionFullColor:string=#7e407e
 soerMegatrendsSectionMediumColor:string=#c3a2c6

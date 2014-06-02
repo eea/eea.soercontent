@@ -8,43 +8,64 @@
   box-sizing: border-box; }
 
 /* SOER-2015 section styles */
-.bg-soer-synthesis {
+.bg-soer-synthesis,
+.bg-soer-synthesis.current {
   background-color: &dtml-soerSynthesysSectionFullColor;; }
 
-.bg-soer-thematic {
+.bg-soer-thematic,
+.bg-soer-thematic.current {
   background-color: &dtml-soerThematicSectionFullColor;; }
 
-.bg-soer-regions {
+.bg-soer-regions,
+.bg-soer-regions.current {
   background-color: &dtml-soerRegionsSectionFullColor;; }
 
-.bg-soer-megatrends {
+.bg-soer-megatrends,
+.bg-soer-megatrends.current {
   background-color: &dtml-soerMegatrendsSectionFullColor;; }
 
-.bg-soer-country {
+.bg-soer-country,
+.bg-soer-country.current {
   background-color: &dtml-soerCountrySectionFullColor;; }
 
-.bg-soer-thematic-medium {
+.bg-soer-synthesis-medium,
+.bg-soer-synthesis-medium.current {
+  background-color: &dtml-soerSynthesysSectionMediumColor;; }
+
+.bg-soer-thematic-medium,
+.bg-soer-thematic-medium.current {
   background-color: &dtml-soerThematicSectionMediumColor;; }
 
-.bg-soer-regions-medium {
+.bg-soer-regions-medium,
+.bg-soer-regions-medium.current {
   background-color: &dtml-soerRegionsSectionMediumColor;; }
 
-.bg-soer-megatrends-medium {
+.bg-soer-megatrends-medium,
+.bg-soer-megatrends-medium.current {
   background-color: &dtml-soerMegatrendsSectionMediumColor;; }
 
-.bg-soer-country-medium {
+.bg-soer-country-medium,
+.bg-soer-country-medium.current {
   background-color: &dtml-soerCountrySectionMediumColor;; }
 
-.bg-soer-thematic-light {
+.bg-soer-synthesis-light,
+.bg-soer-synthesis-light.current {
+  background-color: &dtml-soerSynthesysSectionLightColor;; }
+
+.bg-soer-thematic-light,
+.bg-soer-thematic-light.current {
   background-color: &dtml-soerThematicSectionLightColor;; }
 
-.bg-soer-regions-light {
+.bg-soer-regions-light,
+.bg-soer-regions-light.current {
   background-color: &dtml-soerRegionsSectionLightColor;; }
 
-.bg-soer-megatrends-light {
+.bg-soer-megatrends-light,
+.bg-soer-megatrends-light.current {
   background-color: &dtml-soerMegatrendsSectionLightColor;; }
 
-.bg-soer-country-light {
+.bg-soer-country-light,
+.bg-soer-country-light.current {
   background-color: &dtml-soerCountrySectionLightColor;; }
 
 .left-gutter {
@@ -262,6 +283,18 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   overflow: hidden; }
   .eea-tabs-panels-soer .eea-tabs-panel a {
     font-weight: bold; }
+
+/* eea-accordion-panels-soer */
+.eea-accordion-panels-soer a {
+  color: #000;
+  font-weight: bold; }
+.eea-accordion-panels-soer li {
+  display: block; }
+.eea-accordion-panels-soer .eea-accordion-title {
+  color: #FFF;
+  text-shadow: none; }
+  .eea-accordion-panels-soer .eea-accordion-title:hover {
+    background-color: inherit; }
 
 /* media queries rules */
 /* shrink the right column when screen size is smaller than 1280px

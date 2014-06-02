@@ -7,8 +7,8 @@
 
     <!--? Synthesis report -->
     <div class="eea-accordion-panel bg-soer-synthesis-medium">
-        <h3 class="eea-accordion-title">
-            <span class="title" >Synthesis report</span>
+        <h3 class="eea-accordion-title bg-soer-synthesis">
+        <span class="title" >Synthesis report</span>
         </h3>
         <div class="pane">
             <ul>
@@ -43,7 +43,7 @@
 
     <!--? Global megatrends -->
     <div class="eea-accordion-panel bg-soer-megatrends-medium">
-        <h3 class="eea-accordion-title current">
+        <h3 class="eea-accordion-title current bg-soer-megatrends">
             <span class="title eea-icon-right-container">Global Megatrends</span>
         </h3>
         <div class="pane">
@@ -110,7 +110,7 @@
 
     <!--? Cross country -->
     <div class="eea-accordion-panel bg-soer-country-medium">
-        <h3 class="eea-accordion-title">
+        <h3 class="eea-accordion-title bg-soer-country">
             <span class="title">Cross Country</span>
         </h3>
         <div class="pane">
@@ -166,7 +166,7 @@
 
     <!--? european thematic -->
     <div class="eea-accordion-panel bg-soer-thematic-medium">
-        <h3 class="eea-accordion-title">
+        <h3 class="eea-accordion-title bg-soer-thematic">
             <span class="title eea-icon-right-container">Thematic</span>
         </h3>
         <div class="pane">
@@ -232,7 +232,7 @@
 
     <!--? regions & countries -->
     <div class="eea-accordion-panel bg-soer-regions-medium">
-        <h3 class="eea-accordion-title">
+        <h3 class="eea-accordion-title bg-soer-regions">
             <span class="title eea-icon-right-container">Regions & Countries</span>
         </h3>
         <div class="pane">
