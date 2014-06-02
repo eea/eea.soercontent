@@ -2,13 +2,11 @@
 soerLinkColor:string=#007385
 soerBackgroundColor:string=#e8f0fb
 
+soerSynthesysSectionFullColor:string=#202854
+
 soerMegatrendsSectionFullColor:string=#7e407e
 soerMegatrendsSectionMediumColor:string=#c3a2c6
 soerMegatrendsSectionLightColor:string=#e0cde2
-
-soerSynthesysSectionFullColor:string=#202854
-soerSynthesysSectionMediumColor:string=#202854
-soerSynthesysSectionLightColor:string=#202854
 
 soerCountrySectionFullColor:string=#007385
 soerCountrySectionMediumColor:string=#86c1c4

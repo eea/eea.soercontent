@@ -8,49 +8,43 @@
   box-sizing: border-box; }
 
 /* SOER-2015 section styles */
-.brand-synthesis {
+.bg-soer-synthesis {
   background-color: &dtml-soerSynthesysSectionFullColor;; }
 
-.brand-thematic {
+.bg-soer-thematic {
   background-color: &dtml-soerThematicSectionFullColor;; }
 
-.brand-regions {
+.bg-soer-regions {
   background-color: &dtml-soerRegionsSectionFullColor;; }
 
-.brand-megatrends {
+.bg-soer-megatrends {
   background-color: &dtml-soerMegatrendsSectionFullColor;; }
 
-.brand-country {
+.bg-soer-country {
   background-color: &dtml-soerCountrySectionFullColor;; }
 
-.brand-synthesis-medium {
-  background-color: &dtml-soerSynthesysSectionMediumColor;; }
-
-.brand-thematic-medium {
+.bg-soer-thematic-medium {
   background-color: &dtml-soerThematicSectionMediumColor;; }
 
-.brand-regions-medium {
+.bg-soer-regions-medium {
   background-color: &dtml-soerRegionsSectionMediumColor;; }
 
-.brand-megatrends-medium {
+.bg-soer-megatrends-medium {
   background-color: &dtml-soerMegatrendsSectionMediumColor;; }
 
-.brand-country-medium {
-  background-color: &dtml-soerCountrySectionFullColor;; }
+.bg-soer-country-medium {
+  background-color: &dtml-soerCountrySectionMediumColor;; }
 
-.brand-synthesis-light {
-  background-color: &dtml-soerSynthesysSectionLightColor;; }
-
-.brand-thematic-light {
+.bg-soer-thematic-light {
   background-color: &dtml-soerThematicSectionLightColor;; }
 
-.brand-regions-light {
+.bg-soer-regions-light {
   background-color: &dtml-soerRegionsSectionLightColor;; }
 
-.brand-megatrends-light {
+.bg-soer-megatrends-light {
   background-color: &dtml-soerMegatrendsSectionLightColor;; }
 
-.brand-country-light {
+.bg-soer-country-light {
   background-color: &dtml-soerCountrySectionLightColor;; }
 
 .left-gutter {

@@ -6,7 +6,7 @@
         body_class python:plone_view.bodyClass(template, view);">
 
     <!--? Synthesis report -->
-    <div class="eea-accordion-panel brand-synthesis-medium">
+    <div class="eea-accordion-panel bg-soer-synthesis-medium">
         <h3 class="eea-accordion-title">
             <span class="title" >Synthesis report</span>
         </h3>
@@ -42,7 +42,7 @@
     </div>
 
     <!--? Global megatrends -->
-    <div class="eea-accordion-panel brand-megatrends-medium">
+    <div class="eea-accordion-panel bg-soer-megatrends-medium">
         <h3 class="eea-accordion-title current">
             <span class="title eea-icon-right-container">Global Megatrends</span>
         </h3>
@@ -109,7 +109,7 @@
     </div>
 
     <!--? Cross country -->
-    <div class="eea-accordion-panel brand-country-medium">
+    <div class="eea-accordion-panel bg-soer-country-medium">
         <h3 class="eea-accordion-title">
             <span class="title">Cross Country</span>
         </h3>
@@ -165,7 +165,7 @@
     </div>
 
     <!--? european thematic -->
-    <div class="eea-accordion-panel brand-thematic-medium">
+    <div class="eea-accordion-panel bg-soer-thematic-medium">
         <h3 class="eea-accordion-title">
             <span class="title eea-icon-right-container">Thematic</span>
         </h3>
@@ -231,7 +231,7 @@
     </div>
 
     <!--? regions & countries -->
-    <div class="eea-accordion-panel brand-regions-medium">
+    <div class="eea-accordion-panel bg-soer-regions-medium">
         <h3 class="eea-accordion-title">
             <span class="title eea-icon-right-container">Regions & Countries</span>
         </h3>
