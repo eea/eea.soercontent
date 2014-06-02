@@ -7,6 +7,15 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* CSS OBJECTS for greater style reusability */
+.block-list {
+  list-style: none none;
+  margin-left: 0; }
+  .block-list > li {
+    display: list-item; }
+    .block-list > li > a {
+      display: block; }
+
 /* SOER-2015 section styles */
 .bg-soer-synthesis,
 .bg-soer-synthesis.current {
@@ -285,16 +294,19 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
     font-weight: bold; }
 
 /* eea-accordion-panels-soer */
+.eea-accordion-panels-soer .eea-accordion-title {
+  color: #FFF;
+  text-shadow: none;
+  padding: 0 15px; }
+  .eea-accordion-panels-soer .eea-accordion-title:hover {
+    background-color: inherit; }
+.eea-accordion-panels-soer .pane {
+  padding: 15px; }
 .eea-accordion-panels-soer a {
   color: #000;
   font-weight: bold; }
-.eea-accordion-panels-soer li {
-  display: block; }
-.eea-accordion-panels-soer .eea-accordion-title {
-  color: #FFF;
-  text-shadow: none; }
-  .eea-accordion-panels-soer .eea-accordion-title:hover {
-    background-color: inherit; }
+  .eea-accordion-panels-soer a:hover {
+    text-decoration: underline; }
 
 /* media queries rules */
 /* shrink the right column when screen size is smaller than 1280px
