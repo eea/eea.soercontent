@@ -1,39 +1,41 @@
 <html>
 <body>
-<div class="eea-accordion-panels eea-accordion-panels-soer" metal:define-macro="portlet"
-        tal:define="plone_view context/@@plone;
+<div class="eea-accordion-panels eea-accordion-panels-soer" metal:define-macro="portlet">
+<tal:defines tal:define="plone_view context/@@plone;
+        portal_state context/@@plone_portal_state;
+        portal_url portal_state/portal_url;
         view nocall:plone_view;
         body_class python:plone_view.bodyClass(template, view);">
 
     <!--? Synthesis report -->
     <div class="eea-accordion-panel bg-soer-synthesis-medium">
         <h3 class="eea-accordion-title bg-soer-synthesis">
-        <span class="title" >Synthesis report</span>
+        <span class="title">Synthesis report</span>
         </h3>
         <div class="pane">
-            <ul>
+            <ul class="block-list">
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/europe">
+                    <a tal:attributes="href string:$portal_url/soer-2015/europe">
                         <span>European thematic fiches</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/countries-comparison">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison">
                         <span>Cross-country comparison fiches</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/countries">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries">
                         <span>Country fiches</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/progress-monitoring">
+                    <a tal:attributes="href string:$portal_url/soer-2015/progress-monitoring">
                         <span>Workflow progress monitoring</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/help">
+                    <a tal:attributes="href string:$portal_url/soer-2015/help">
                         <span>Help</span>
                     </a>
                 </li>
@@ -47,60 +49,60 @@
             <span class="title eea-icon-right-container">Global Megatrends</span>
         </h3>
         <div class="pane">
-            <ul>
+            <ul class="block-list">
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/global/demography">
+                    <a tal:attributes="href string:$portal_url/soer-2015/global/demography">
                         <span>Demography</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/global/urbanisation"
+                    <a tal:attributes="href string:$portal_url/soer-2015/global/urbanisation"
                        title="Over the last decades, continuous urban expansion at rates much higher than population growth has resulted in a massive urban footprint on Europe.">
                         <span>Urban growth</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/global/health">
+                    <a tal:attributes="href string:$portal_url/soer-2015/global/health">
                         <span>Health</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/global/technology">
+                    <a tal:attributes="href string:$portal_url/soer-2015/global/technology">
                         <span>Technology</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/global/economic">
+                    <a tal:attributes="href string:$portal_url/soer-2015/global/economic">
                         <span>Economic</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/global/trade">
+                    <a tal:attributes="href string:$portal_url/soer-2015/global/trade">
                         <span>Trade</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/global/competition">
+                    <a tal:attributes="href string:$portal_url/soer-2015/global/competition">
                         <span>Competition</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/global/resources">
+                    <a tal:attributes="href string:$portal_url/soer-2015/global/resources">
                         <span>Ecosystems</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/global/climate">
+                    <a tal:attributes="href string:$portal_url/soer-2015/global/climate">
                         <span>Climate</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/global/pollution">
+                    <a tal:attributes="href string:$portal_url/soer-2015/global/pollution">
                         <span>Pollution</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost:8081/www/SITE/soer-2015/global/governance">
+                    <a tal:attributes="href string:$portal_url/soer-2015/global/governance">
                         <span>Governance</span>
                     </a>
                 </li>
@@ -114,49 +116,49 @@
             <span class="title">Cross Country</span>
         </h3>
         <div class="pane">
-            <ul>
+            <ul class="block-list">
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/air" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on substances that contribute to acidification, eutrophication, formation of ground-level ozone and secondary particulate matter. ">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/air" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on substances that contribute to acidification, eutrophication, formation of ground-level ozone and secondary particulate matter. ">
                         <span>Air pollution</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/climate-change-mitigation" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on greenhouse gas emissions.">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/climate-change-mitigation" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on greenhouse gas emissions.">
                         <span>Climate change mitigation</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/energy">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/energy">
                         <span>Energy</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/transport" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on passenger transport demand and modal split. ">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/transport" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on passenger transport demand and modal split. ">
                         <span>Transport</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/biodiversity" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on protected areas. ">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/biodiversity" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on protected areas. ">
                         <span>Biodiversity</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/agriculture" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on organic farming.">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/agriculture" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on organic farming.">
                         <span>Agriculture</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/freshwater">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/freshwater">
                         <span>Freshwater</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/resource-efficiency" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on resource use and resource productivity.">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/resource-efficiency" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on resource use and resource productivity.">
                         <span>Resource efficiency</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries-comparison/waste" title="IMPORTANT: This fiche provides a cross-country comparison focusing only municipal solid waste generation and management.">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/waste" title="IMPORTANT: This fiche provides a cross-country comparison focusing only municipal solid waste generation and management.">
                         <span>Waste</span>
                     </a>
                 </li>
@@ -170,59 +172,59 @@
             <span class="title eea-icon-right-container">Thematic</span>
         </h3>
         <div class="pane">
-            <ul>
+            <ul class="block-list">
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/europe/air">
+                    <a tal:attributes="href string:$portal_url/soer-2015/europe/air">
                         <span>Air</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/europe/mitigating-climate-change">
+                    <a tal:attributes="href string:$portal_url/soer-2015/europe/mitigating-climate-change">
                         <span>Mitigating climate change</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/europe/the-air-and-climate-system">
+                    <a tal:attributes="href string:$portal_url/soer-2015/europe/the-air-and-climate-system">
                         <span>The air and climate system</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/europe/biodiversity">
+                    <a tal:attributes="href string:$portal_url/soer-2015/europe/biodiversity">
                         <span>Biodiversity</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/europe/forests">
+                    <a tal:attributes="href string:$portal_url/soer-2015/europe/forests">
                         <span>Forests</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/europe/agriculture">
+                    <a tal:attributes="href string:$portal_url/soer-2015/europe/agriculture">
                         <span>Agriculture</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/europe/freshwater">
+                    <a tal:attributes="href string:$portal_url/soer-2015/europe/freshwater">
                         <span>Freshwater</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/europe/maritime-activities">
+                    <a tal:attributes="href string:$portal_url/soer-2015/europe/maritime-activities">
                         <span>Maritime activities</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/europe/marine-and-coastal">
+                    <a tal:attributes="href string:$portal_url/soer-2015/europe/marine-and-coastal">
                         <span>Marine and coastal environment</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/europe/hydrological-systems">
+                    <a tal:attributes="href string:$portal_url/soer-2015/europe/hydrological-systems">
                         <span>Hydrological systems and sustainable water management</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/europe/folder_listing" title="List all items">
+                    <a tal:attributes="href string:$portal_url/soer-2015/europe/folder_listing" title="List all items">
                         <span>List all</span>
                     </a>
                 </li>
@@ -236,59 +238,59 @@
             <span class="title eea-icon-right-container">Regions & Countries</span>
         </h3>
         <div class="pane">
-            <ul>
+            <ul class="block-list">
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries/austria">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries/austria">
                         <span>Austria</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries/albania">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries/albania">
                         <span>Albania</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries/belgium">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries/belgium">
                         <span>Belgium</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries/bulgaria">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries/bulgaria">
                         <span>Bulgaria</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries/croatia">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries/croatia">
                         <span>Croatia</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries/cyprus">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries/cyprus">
                         <span>Cyprus</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries/czech-republic">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries/czech-republic">
                         <span>Czech Republic</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries/denmark">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries/denmark">
                         <span>Denmark</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries/estonia">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries/estonia">
                         <span>Estonia</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries/kosovo">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries/kosovo">
                         <span>Kosovo under UN SCR 1244/99</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.eea.europa.eu/soer-2015/countries/folder_listing" title="List all items">
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries/folder_listing" title="List all items">
                         <span>List all</span>
                     </a>
                 </li>
@@ -296,6 +298,8 @@
         </div>
     </div>
 
+</tal:defines>
 </div>
+
 </body>
 </html>
