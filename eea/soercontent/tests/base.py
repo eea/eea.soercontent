@@ -15,8 +15,11 @@ class EEAFixture(PloneSandboxLayer):
     def setUpZope(self, app, configurationContext):
         """ Setup Zope
         """
+        import eea.pdf
         import eea.soercontent
+        self.loadZCML(package=eea.pdf)
         self.loadZCML(package=eea.soercontent)
+        z2.installProduct(app, 'eea.pdf')
         z2.installProduct(app, 'eea.soercontent')
 
     def tearDownZope(self, app):
