@@ -4,6 +4,23 @@
   i18n_domain="eea">
 
   <genericsetup:upgradeSteps
+    source="2.2"
+    destination="2.3"
+    profile="eea.soercontent:default">
+
+    <genericsetup:upgradeDepends
+      title="Install eea.pdf add-on"
+      import_profile="eea.pdf:default"
+      />
+
+    <genericsetup:upgradeDepends
+      title="Import changes: pdf.xml"
+      import_steps="pdf.xml"
+      />
+
+  </genericsetup:upgradeSteps>
+
+  <genericsetup:upgradeSteps
     source="2.1"
     destination="2.2"
     profile="eea.soercontent:default">
