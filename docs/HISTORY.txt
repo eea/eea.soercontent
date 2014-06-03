@@ -3,6 +3,8 @@ Changelog
 
 2.3-dev - (unreleased)
 ----------------------
+* Change: Moved PDF related images and actions to eea.pdf
+  [voineali refs #19881]
 * Feature: Use Modern theme to PDF Export Fiche content-types
   [voineali refs #19882]
 * Bug fix: Fix check_id script permissions
