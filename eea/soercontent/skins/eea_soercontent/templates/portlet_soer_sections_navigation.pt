@@ -9,8 +9,9 @@
 
     <!--? Synthesis report -->
     <div class="eea-accordion-panel bg-soer-synthesis-medium">
-        <h3 class="eea-accordion-title bg-soer-synthesis">
+        <h3 class="eea-accordion-title-manual-icons bg-soer-synthesis">
         <span class="title">Synthesis report</span>
+           <span class="eea-icon eea-icon-clipboard eea-icon-lg eea-icon-right"></span>
         </h3>
         <div class="pane">
             <ul class="block-list">
@@ -45,8 +46,9 @@
 
     <!--? Global megatrends -->
     <div class="eea-accordion-panel bg-soer-megatrends-medium">
-        <h3 class="eea-accordion-title current bg-soer-megatrends">
-            <span class="title eea-icon-right-container">Global Megatrends</span>
+        <h3 class="eea-accordion-title-manual-icons current bg-soer-megatrends">
+            <span class="title">Global Megatrends</span>
+            <span class="eea-icon eea-icon-globe eea-icon-lg eea-icon-right"></span>
         </h3>
         <div class="pane">
             <ul class="block-list">
@@ -112,8 +114,9 @@
 
     <!--? Cross country -->
     <div class="eea-accordion-panel bg-soer-country-medium">
-        <h3 class="eea-accordion-title bg-soer-country">
+        <h3 class="eea-accordion-title-manual-icons bg-soer-country">
             <span class="title">Cross Country</span>
+            <span class="eea-icon eea-icon-map-marker eea-icon-lg eea-icon-right"></span>
         </h3>
         <div class="pane">
             <ul class="block-list">
@@ -168,8 +171,9 @@
 
     <!--? european thematic -->
     <div class="eea-accordion-panel bg-soer-thematic-medium">
-        <h3 class="eea-accordion-title bg-soer-thematic">
-            <span class="title eea-icon-right-container">Thematic</span>
+        <h3 class="eea-accordion-title-manual-icons bg-soer-thematic">
+            <span class="title">Thematic</span>
+            <span class="eea-icon eea-icon-rotate-right eea-icon-lg eea-icon-right"></span>
         </h3>
         <div class="pane">
             <ul class="block-list">
@@ -234,8 +238,9 @@
 
     <!--? regions & countries -->
     <div class="eea-accordion-panel bg-soer-regions-medium">
-        <h3 class="eea-accordion-title bg-soer-regions">
-            <span class="title eea-icon-right-container">Regions & Countries</span>
+        <h3 class="eea-accordion-title-manual-icons bg-soer-regions">
+            <span class="title">Regions & Countries</span>
+            <span class="eea-icon eea-icon-globe eea-icon-lg eea-icon-right"></span>
         </h3>
         <div class="pane">
             <ul class="block-list">
