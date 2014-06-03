@@ -240,7 +240,7 @@
     <div class="eea-accordion-panel bg-soer-regions-medium">
         <h3 class="eea-accordion-title-manual-icons bg-soer-regions">
             <span class="title">Regions & Countries</span>
-            <span class="eea-icon eea-icon-globe eea-icon-lg eea-icon-right eea-icon-fw"></span>
+            <span class="eea-icon eea-icon-flag eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
             <ul class="block-list">
