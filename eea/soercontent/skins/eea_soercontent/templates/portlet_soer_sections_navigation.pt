@@ -9,7 +9,8 @@
 
     <!--? Synthesis report -->
     <div class="eea-accordion-panel bg-soer-synthesis-medium">
-        <h3 class="eea-accordion-title-manual-icons bg-soer-synthesis">
+        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-synthesis '"
+            tal:attributes="class python:klass + 'current' if 'section-synthesis' in body_class else klass">
         <span class="title">Synthesis report</span>
            <span class="eea-icon eea-icon-clipboard eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
@@ -46,7 +47,8 @@
 
     <!--? Global megatrends -->
     <div class="eea-accordion-panel bg-soer-megatrends-medium">
-        <h3 class="eea-accordion-title-manual-icons current bg-soer-megatrends">
+        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-megatrends '"
+            tal:attributes="class python:klass + 'current' if 'section-global' in body_class else klass">
             <span class="title">Global Megatrends</span>
             <span class="eea-icon eea-icon-globe eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
@@ -114,7 +116,8 @@
 
     <!--? Cross country -->
     <div class="eea-accordion-panel bg-soer-country-medium">
-        <h3 class="eea-accordion-title-manual-icons bg-soer-country">
+        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-country '"
+            tal:attributes="class python:klass + 'current' if 'section-countries-comparison' in body_class else klass">
             <span class="title">Cross-country comparisons</span>
             <span class="eea-icon eea-icon-bar-chart-o eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
@@ -171,7 +174,8 @@
 
     <!--? european thematic -->
     <div class="eea-accordion-panel bg-soer-thematic-medium">
-        <h3 class="eea-accordion-title-manual-icons bg-soer-thematic">
+        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-thematic '"
+            tal:attributes="class python:klass + 'current' if 'section-europe' in body_class else klass">
             <span class="title">Thematic briefings</span>
             <span class="eea-icon eea-icon-flask eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
@@ -238,7 +242,8 @@
 
     <!--? regions & countries -->
     <div class="eea-accordion-panel bg-soer-regions-medium">
-        <h3 class="eea-accordion-title-manual-icons bg-soer-regions">
+        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-regions '"
+            tal:attributes="class python:klass + 'current' if 'section-countries ' in body_class else klass">
             <span class="title">Country briefings</span>
             <span class="eea-icon eea-icon-map-marker eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>

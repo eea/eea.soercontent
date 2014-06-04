@@ -293,8 +293,10 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
     font-weight: bold; }
 
 /* eea-accordion-panels-soer */
-.eea-accordion-panels-soer .eea-accordion-title-manual-icons {
-  color: #FFF; }
+.eea-accordion-panels-soer {
+  margin-bottom: 1em; }
+  .eea-accordion-panels-soer .eea-accordion-title-manual-icons {
+    color: #FFF; }
 
 .eea-accordion-panels-soer .pane {
   padding: 15px; }
