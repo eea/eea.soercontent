@@ -285,7 +285,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 .eea-tabs-panels-soer, .eea-tabs-panels-soer .eea-tabs-panel {
   background-color: transparent;
   border: 0;
-  padding: 1em; }
+  padding: 1em 0 1em 1em; }
 
 .eea-tabs-panels-soer .eea-tabs-panel {
   overflow: hidden; }

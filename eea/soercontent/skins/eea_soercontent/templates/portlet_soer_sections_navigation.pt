@@ -115,8 +115,8 @@
     <!--? Cross country -->
     <div class="eea-accordion-panel bg-soer-country-medium">
         <h3 class="eea-accordion-title-manual-icons bg-soer-country">
-            <span class="title">Cross Country</span>
-            <span class="eea-icon eea-icon-map-marker eea-icon-lg eea-icon-right eea-icon-fw"></span>
+            <span class="title">Cross-country comparisons</span>
+            <span class="eea-icon eea-icon-bar-chart-o eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
             <ul class="block-list">
@@ -172,8 +172,8 @@
     <!--? european thematic -->
     <div class="eea-accordion-panel bg-soer-thematic-medium">
         <h3 class="eea-accordion-title-manual-icons bg-soer-thematic">
-            <span class="title">Thematic</span>
-            <span class="eea-icon eea-icon-rotate-right eea-icon-lg eea-icon-right eea-icon-fw"></span>
+            <span class="title">Thematic briefings</span>
+            <span class="eea-icon eea-icon-flask eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
             <ul class="block-list">
@@ -239,8 +239,8 @@
     <!--? regions & countries -->
     <div class="eea-accordion-panel bg-soer-regions-medium">
         <h3 class="eea-accordion-title-manual-icons bg-soer-regions">
-            <span class="title">Regions & Countries</span>
-            <span class="eea-icon eea-icon-flag eea-icon-lg eea-icon-right eea-icon-fw"></span>
+            <span class="title">Country briefings</span>
+            <span class="eea-icon eea-icon-map-marker eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
             <ul class="block-list">
