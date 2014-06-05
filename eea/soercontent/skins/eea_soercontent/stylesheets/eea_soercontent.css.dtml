@@ -25,7 +25,8 @@
   border-bottom: 1px solid &dtml-soerSynthesysSectionFullColor;; }
 
 .section-synthesis #viewlet-below-content h2 {
-  color: &dtml-soerSynthesysSectionFullColor;; }
+  color: &dtml-soerSynthesysSectionFullColor;;
+  border-bottom: 1px solid &dtml-soerSynthesysSectionFullColor;; }
 
 .section-europe #region-content h1, .section-europe #region-content h2, .section-europe #region-content h3, .section-europe #region-content h4, .section-europe #region-content h5, .section-europe #region-content h6, .section-europe #region-content .documentDescription, .section-europe #region-content #description {
   color: &dtml-soerThematicSectionFullColor;; }
@@ -33,7 +34,8 @@
   border-bottom: 1px solid &dtml-soerThematicSectionFullColor;; }
 
 .section-europe #viewlet-below-content h2 {
-  color: &dtml-soerThematicSectionFullColor;; }
+  color: &dtml-soerThematicSectionFullColor;;
+  border-bottom: 1px solid &dtml-soerThematicSectionFullColor;; }
 
 .section-countries #region-content h1, .section-countries #region-content h2, .section-countries #region-content h3, .section-countries #region-content h4, .section-countries #region-content h5, .section-countries #region-content h6, .section-countries #region-content .documentDescription, .section-countries #region-content #description {
   color: &dtml-soerRegionsSectionFullColor;; }
@@ -41,7 +43,8 @@
   border-bottom: 1px solid &dtml-soerRegionsSectionFullColor;; }
 
 .section-countries #viewlet-below-content h2 {
-  color: &dtml-soerRegionsSectionFullColor;; }
+  color: &dtml-soerRegionsSectionFullColor;;
+  border-bottom: 1px solid &dtml-soerRegionsSectionFullColor;; }
 
 .section-global #region-content h1, .section-global #region-content h2, .section-global #region-content h3, .section-global #region-content h4, .section-global #region-content h5, .section-global #region-content h6, .section-global #region-content .documentDescription, .section-global #region-content #description {
   color: &dtml-soerMegatrendsSectionFullColor;; }
@@ -49,7 +52,8 @@
   border-bottom: 1px solid &dtml-soerMegatrendsSectionFullColor;; }
 
 .section-global #viewlet-below-content h2 {
-  color: &dtml-soerMegatrendsSectionFullColor;; }
+  color: &dtml-soerMegatrendsSectionFullColor;;
+  border-bottom: 1px solid &dtml-soerMegatrendsSectionFullColor;; }
 
 .section-countries-comparison #region-content h1, .section-countries-comparison #region-content h2, .section-countries-comparison #region-content h3, .section-countries-comparison #region-content h4, .section-countries-comparison #region-content h5, .section-countries-comparison #region-content h6, .section-countries-comparison #region-content .documentDescription, .section-countries-comparison #region-content #description {
   color: &dtml-soerCountrySectionFullColor;; }
@@ -57,7 +61,8 @@
   border-bottom: 1px solid &dtml-soerCountrySectionFullColor;; }
 
 .section-countries-comparison #viewlet-below-content h2 {
-  color: &dtml-soerCountrySectionFullColor;; }
+  color: &dtml-soerCountrySectionFullColor;;
+  border-bottom: 1px solid &dtml-soerCountrySectionFullColor;; }
 
 /* portal messages */
 .section-synthesis .portalMessage, .section-synthesis .keyFact {
