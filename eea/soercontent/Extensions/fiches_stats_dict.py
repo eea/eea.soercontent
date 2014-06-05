@@ -25,13 +25,14 @@ def fichesStatsDict(context):
     cat = getToolByName(context, 'portal_catalog', None)
     #acl_users = getToolByName(context, 'acl_users', None)
     wf  = getToolByName(context, 'portal_workflow', None)
-    pubs=cat.searchResults({ 'meta_type' : ['Fiche'],
-                             'review_state':['web_editing',
+    pubs = cat.searchResults({ 'meta_type': ['Fiche'],
+                             'review_state': ['web_editing',
                                              'ready_for_eionet_review',
                                              'visible','published_eionet'],
                                              'path':'/www/SITE/soer-2015/',
                                              'show_inactive': True,
-                                              'language':'ALL' })
+                                              'language':'ALL'
+    })
 
     fiches = []
 
@@ -47,7 +48,7 @@ def fichesStatsDict(context):
         if ref_starts > 0:
             ref_html = html[ref_starts-1:]
             html = html[:ref_starts]
-            ref_text = context.html_to_text(context,ref_html)
+            ref_text = context.html_to_text(context, ref_html)
 
         #strip all html from text
         text = context.html_to_text(context, html)

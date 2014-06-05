@@ -7,6 +7,8 @@ class Footer(BrowserView):
     """ PDF Footer
     """
     def breadcrumbs(self):
+        """ Breadcrumbs
+        """
         root = getApplicationRoot(self.context)
 
         parent = self.context

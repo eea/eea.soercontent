@@ -190,7 +190,8 @@ def clean_text(text):
     #// Remove multiple spaces
     #$strText = preg_replace('/[ ]+/', ' ', $strText);
     #// Lower case all words following terminators (for gunning fog score)
-    #$strText = preg_replace_callback('/\. [^ ]+/', create_function('$matches', 'return strtolower($matches[0]);'), $strText);
+    #$strText = preg_replace_callback('/\. [^ ]+/', create_function('$matches',
+    #                           'return strtolower($matches[0]);'), $strText);
 
     #$strText = trim($strText);
 
@@ -233,6 +234,8 @@ def average_words_per_sentence(text):
     raise Exception("Not implemented")
 
 def _count_syllables(text):
+    """ Count sylables
+    """
     words = text.split(' ')
     return D(sum(map(syllable_count, words)))
 
@@ -406,10 +409,10 @@ class Counter(dict):
         from an input iterable.  Or, initialize the count from another mapping
         of elements to their counts.
 
-        >>> c = Counter()                           # a new, empty counter
-        >>> c = Counter('gallahad')                 # a new counter from an iterable
-        >>> c = Counter({'a': 4, 'b': 2})           # a new counter from a mapping
-        >>> c = Counter(a=4, b=2)                   # a new counter from keyword args
+        >>> c = Counter()                      # a new, empty counter
+        >>> c = Counter('gallahad')            # a new counter from an iterable
+        >>> c = Counter({'a': 4, 'b': 2})      # a new counter from a mapping
+        >>> c = Counter(a=4, b=2)              # a new counter from keyword args
 
         '''
         self.update(iterable, **kwds)
