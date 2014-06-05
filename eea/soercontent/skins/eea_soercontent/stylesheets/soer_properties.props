@@ -5,19 +5,24 @@ soerBackgroundColor:string=#e8f0fb
 soerSynthesysSectionFullColor:string=#202854
 soerSynthesysSectionMediumColor:string=#959fd1
 soerSynthesysSectionLightColor:string=#c6ccea
+soerSynthesysSectionBoxColor:string=#B7C2E0
 
 soerMegatrendsSectionFullColor:string=#7e407e
 soerMegatrendsSectionMediumColor:string=#c3a2c6
 soerMegatrendsSectionLightColor:string=#e0cde2
+soerMegatrendsSectionBoxColor:string=#d1b7d4
 
 soerCountrySectionFullColor:string=#007385
 soerCountrySectionMediumColor:string=#86c1c4
 soerCountrySectionLightColor:string=#bfdfdf
+soerCountrySectionBoxColor:string=#a2cfd1
 
 soerThematicSectionFullColor:string=#76a830
 soerThematicSectionMediumColor:string=#c3da9c
 soerThematicSectionLightColor:string=#e0ecca
+soerThematicSectionBoxColor:string=#d1e3b2
 
 soerRegionsSectionFullColor:string=#f14825
 soerRegionsSectionMediumColor:string=#f9ae8d
 soerRegionsSectionLightColor:string=#fcd5c1
+soerRegionsSectionBoxColor:string=#fbc2a6

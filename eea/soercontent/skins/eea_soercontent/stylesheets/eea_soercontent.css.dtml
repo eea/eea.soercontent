@@ -36,19 +36,19 @@
 
 /* portal messages */
 .section-synthesis .portalMessage {
-  background-color: &dtml-soerSynthesysSectionMediumColor;; }
+  background-color: &dtml-soerSynthesysSectionBoxColor;; }
 
 .section-europe .portalMessage {
-  background-color: &dtml-soerThematicSectionMediumColor;; }
+  background-color: &dtml-soerThematicSectionBoxColor;; }
 
 .section-countries .portalMessage {
-  background-color: &dtml-soerRegionsSectionMediumColor;; }
+  background-color: &dtml-soerRegionsSectionBoxColor;; }
 
 .section-global .portalMessage {
-  background-color: &dtml-soerMegatrendsSectionMediumColor;; }
+  background-color: &dtml-soerMegatrendsSectionBoxColor;; }
 
 .section-countries-comparison .portalMessage {
-  background-color: &dtml-soerCountrySectionMediumColor;; }
+  background-color: &dtml-soerCountrySectionBoxColor;; }
 
 /* @end @group Section color overrides */
 .bg-soer-synthesis,
@@ -110,6 +110,22 @@
 .bg-soer-country-light,
 .bg-soer-country-light.current {
   background-color: &dtml-soerCountrySectionLightColor;; }
+
+.bg-soer-thematic-box,
+.bg-soer-thematic-box.current {
+  background-color: &dtml-soerThematicSectionBoxColor;; }
+
+.bg-soer-regions-box,
+.bg-soer-regions-box.current {
+  background-color: &dtml-soerRegionsSectionBoxColor;; }
+
+.bg-soer-megatrends-box,
+.bg-soer-megatrends-box.current {
+  background-color: &dtml-soerMegatrendsSectionBoxColor;; }
+
+.bg-soer-country-box,
+.bg-soer-country-box.current {
+  background-color: &dtml-soerCountrySectionBoxColor;; }
 
 .left-gutter {
   margin-left: 15px; }
