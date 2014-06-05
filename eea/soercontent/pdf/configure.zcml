@@ -13,11 +13,26 @@
 
   <browser:page
     name="pdf.title"
-    layer="eea.soercontent.interfaces.ILayer"
     for="eea.soercontent.interfaces.IFiche"
     template="title.pt"
     class=".title.Title"
     permission="zope2.View"
+    />
+
+  <browser:page
+    name="pdf.footer"
+    for="eea.soercontent.interfaces.IFiche"
+    template="footer.pt"
+    class=".footer.Footer"
+    permission="zope.Public"
+    />
+
+  <browser:page
+    name="pdf.header"
+    for="eea.soercontent.interfaces.IFiche"
+    template="header.pt"
+    class=".header.Header"
+    permission="zope.Public"
     />
 
 </configure>

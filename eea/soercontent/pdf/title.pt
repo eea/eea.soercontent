@@ -7,13 +7,13 @@
             tal:attributes="src string:${context/portal_url}/${logo}" />
   </div>
   <div class="fiche-title">
-    <h1 class="documentFirstHeading" tal:content="root/Title"></h1>
+    <span tal:content="root/Title">Root title</span>
   </div>
 </div>
 
 <div class="pdf-fiche-title" tal:define="parent nocall:view/parent">
-  <h1 class="documentFirstHeading" tal:content="parent/Title">Parent title</h1>
-  <h1 class="documentFirstHeading" tal:content="context/Title">Title</h1>
+  <div class="fiche-section" tal:content="parent/Title">Parent title</div>
+  <h1 class="documentFirstHeading" tal:content="context/Title">Context Title</h1>
 </div>
 
 <div class="pdf-fiche-image">
