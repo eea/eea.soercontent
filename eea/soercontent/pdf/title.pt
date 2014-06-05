@@ -1,0 +1,20 @@
+<div class="pdf-fiche-first-page" tal:define="root nocall:view/root">
+  <div class="cover-logo"
+          tal:condition="exists:context/++resource++eea.translations.images/pdflogo-en.png">
+    <img tal:define="
+            lang  context/@@plone_portal_state/language;
+            logo python:'++resource++eea.translations.images/pdflogo-%s.png' % lang"
+            tal:attributes="src string:${context/portal_url}/${logo}" />
+  </div>
+  <div class="fiche-title">
+    <h1 class="documentFirstHeading" tal:content="root/Title"></h1>
+  </div>
+</div>
+
+<div class="pdf-fiche-title" tal:define="parent nocall:view/parent">
+  <h1 class="documentFirstHeading" tal:content="parent/Title">Parent title</h1>
+  <h1 class="documentFirstHeading" tal:content="context/Title">Title</h1>
+</div>
+
+<div class="pdf-fiche-image">
+</div>

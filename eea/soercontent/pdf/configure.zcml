@@ -1,0 +1,23 @@
+<configure
+  xmlns:browser="http://namespaces.zope.org/browser"
+  i18n_domain="eea">
+
+  <browser:page
+    name="pdf.body"
+    layer="eea.soercontent.interfaces.ILayer"
+    for="eea.soercontent.interfaces.IFiche"
+    template="body.pt"
+    class=".body.Body"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="pdf.title"
+    layer="eea.soercontent.interfaces.ILayer"
+    for="eea.soercontent.interfaces.IFiche"
+    template="title.pt"
+    class=".title.Title"
+    permission="zope2.View"
+    />
+
+</configure>
