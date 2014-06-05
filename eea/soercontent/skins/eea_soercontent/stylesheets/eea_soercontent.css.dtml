@@ -35,20 +35,30 @@
   color: &dtml-soerCountrySectionFullColor;; }
 
 /* portal messages */
-.section-synthesis .portalMessage {
+.section-synthesis .portalMessage, .section-synthesis .keyFact {
   background-color: &dtml-soerSynthesysSectionBoxColor;; }
+.section-synthesis .keyFact {
+  border-left: 1em solid &dtml-soerSynthesysSectionFullColor;; }
 
-.section-europe .portalMessage {
+.section-europe .portalMessage, .section-europe .keyFact {
   background-color: &dtml-soerThematicSectionBoxColor;; }
+.section-europe .keyFact {
+  border-left: 1em solid &dtml-soerThematicSectionFullColor;; }
 
-.section-countries .portalMessage {
+.section-countries .portalMessage, .section-countries .keyFact {
   background-color: &dtml-soerRegionsSectionBoxColor;; }
+.section-countries .keyFact {
+  border-left: 1em solid &dtml-soerRegionsSectionFullColor;; }
 
-.section-global .portalMessage {
+.section-global .portalMessage, .section-global .keyFact {
   background-color: &dtml-soerMegatrendsSectionBoxColor;; }
+.section-global .keyFact {
+  border-left: 1em solid &dtml-soerMegatrendsSectionFullColor;; }
 
-.section-countries-comparison .portalMessage {
+.section-countries-comparison .portalMessage, .section-countries-comparison .keyFact {
   background-color: &dtml-soerCountrySectionBoxColor;; }
+.section-countries-comparison .keyFact {
+  border-left: 1em solid &dtml-soerCountrySectionFullColor;; }
 
 /* @end @group Section color overrides */
 .bg-soer-synthesis,
