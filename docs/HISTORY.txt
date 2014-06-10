@@ -5,6 +5,8 @@ Changelog
 ----------------------
 * Change: updated section page font and portalMessage colors
   [ichimdav refs #19875]
+* Change: Add home icon on soer side nav.
+  [demarant]
 * Change: adjusted soer frontpage and menu, labels, ordering.
   [demarant refs #19536]
 
