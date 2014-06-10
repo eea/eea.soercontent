@@ -3,6 +3,8 @@ Changelog
 
 2.4-dev - (unreleased)
 ----------------------
+* Change: adjusted soer frontpage and menu, labels, ordering.
+  [demarant refs #19536]
 
 2.3 - (2014-06-06)
 ------------------

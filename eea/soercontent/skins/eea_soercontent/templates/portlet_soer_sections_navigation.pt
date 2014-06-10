@@ -114,63 +114,6 @@
         </div>
     </div>
 
-    <!--? Cross country -->
-    <div class="eea-accordion-panel bg-soer-country-medium">
-        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-country '"
-            tal:attributes="class python:klass + 'current' if 'section-countries-comparison' in body_class else klass">
-            <span class="title">Cross-country comparisons</span>
-            <span class="eea-icon eea-icon-bar-chart-o eea-icon-lg eea-icon-right eea-icon-fw"></span>
-        </h3>
-        <div class="pane">
-            <ul class="block-list">
-                <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/air" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on substances that contribute to acidification, eutrophication, formation of ground-level ozone and secondary particulate matter. ">
-                        <span>Air pollution</span>
-                    </a>
-                </li>
-                <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/climate-change-mitigation" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on greenhouse gas emissions.">
-                        <span>Climate change mitigation</span>
-                    </a>
-                </li>
-                <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/energy">
-                        <span>Energy</span>
-                    </a>
-                </li>
-                <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/transport" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on passenger transport demand and modal split. ">
-                        <span>Transport</span>
-                    </a>
-                </li>
-                <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/biodiversity" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on protected areas. ">
-                        <span>Biodiversity</span>
-                    </a>
-                </li>
-                <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/agriculture" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on organic farming.">
-                        <span>Agriculture</span>
-                    </a>
-                </li>
-                <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/freshwater">
-                        <span>Freshwater</span>
-                    </a>
-                </li>
-                <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/resource-efficiency" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on resource use and resource productivity.">
-                        <span>Resource efficiency</span>
-                    </a>
-                </li>
-                <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/waste" title="IMPORTANT: This fiche provides a cross-country comparison focusing only municipal solid waste generation and management.">
-                        <span>Waste</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
 
     <!--? european thematic -->
     <div class="eea-accordion-panel bg-soer-thematic-medium">
@@ -240,7 +183,66 @@
         </div>
     </div>
 
-    <!--? regions & countries -->
+    <!--? Cross country -->
+    <div class="eea-accordion-panel bg-soer-country-medium">
+        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-country '"
+            tal:attributes="class python:klass + 'current' if 'section-countries-comparison' in body_class else klass">
+            <span class="title">Cross-country comparisons</span>
+            <span class="eea-icon eea-icon-bar-chart-o eea-icon-lg eea-icon-right eea-icon-fw"></span>
+        </h3>
+        <div class="pane">
+            <ul class="block-list">
+                <li>
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/air" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on substances that contribute to acidification, eutrophication, formation of ground-level ozone and secondary particulate matter. ">
+                        <span>Air pollution</span>
+                    </a>
+                </li>
+                <li>
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/climate-change-mitigation" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on greenhouse gas emissions.">
+                        <span>Climate change mitigation</span>
+                    </a>
+                </li>
+                <li>
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/energy">
+                        <span>Energy</span>
+                    </a>
+                </li>
+                <li>
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/transport" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on passenger transport demand and modal split. ">
+                        <span>Transport</span>
+                    </a>
+                </li>
+                <li>
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/biodiversity" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on protected areas. ">
+                        <span>Biodiversity</span>
+                    </a>
+                </li>
+                <li>
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/agriculture" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on organic farming.">
+                        <span>Agriculture</span>
+                    </a>
+                </li>
+                <li>
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/freshwater">
+                        <span>Freshwater</span>
+                    </a>
+                </li>
+                <li>
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/resource-efficiency" title="IMPORTANT: This fiche provides a cross-country comparison focusing only on resource use and resource productivity.">
+                        <span>Resource efficiency</span>
+                    </a>
+                </li>
+                <li>
+                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/waste" title="IMPORTANT: This fiche provides a cross-country comparison focusing only municipal solid waste generation and management.">
+                        <span>Waste</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--? countries -->
     <div class="eea-accordion-panel bg-soer-regions-medium">
         <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-regions '"
             tal:attributes="class python:klass + 'current' if 'section-countries ' in body_class else klass">
