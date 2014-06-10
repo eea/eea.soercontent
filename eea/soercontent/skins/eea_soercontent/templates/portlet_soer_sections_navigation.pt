@@ -12,7 +12,7 @@
     <dt class="portletHeader">
         <span class="portletTopLeft"></span>
         <span>
-          <a tal:attributes="href string:$portal_url/soer-2015">SOER 2015</a>
+          <a class="eea-icon eea-icon-home eea-icon-lg" tal:attributes="href string:$portal_url/soer-2015">SOER 2015</a>
         </span>
         <span class="portletTopRight"></span>
     </dt>
