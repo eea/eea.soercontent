@@ -7,6 +7,16 @@
         view nocall:plone_view;
         body_class python:plone_view.bodyClass(template, view);">
 
+
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span>
+          <a tal:attributes="href string:$portal_url/soer-2015">SOER 2015</a>
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
     <!--? Synthesis report -->
     <div class="eea-accordion-panel bg-soer-synthesis-medium">
         <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-synthesis '"
@@ -17,28 +27,23 @@
         <div class="pane">
             <ul class="block-list">
                 <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015/europe">
-                        <span>European thematic fiches</span>
+                    <a tal:attributes="href string:$portal_url/soer-2015">
+                        <span>Key messages</span>
                     </a>
                 </li>
                 <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison">
-                        <span>Cross-country comparison fiches</span>
+                    <a tal:attributes="href string:$portal_url/soer-2015">
+                        <span>Chapter 1: the state of the environment in Europe</span>
                     </a>
                 </li>
                 <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015/countries">
-                        <span>Country fiches</span>
+                    <a tal:attributes="href string:$portal_url/soer-2015">
+                        <span>Chapter 2: climate change</span>
                     </a>
                 </li>
                 <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015/progress-monitoring">
-                        <span>Workflow progress monitoring</span>
-                    </a>
-                </li>
-                <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015/help">
-                        <span>Help</span>
+                    <a tal:attributes="href string:$portal_url/soer-2015">
+                        <span>Chapter ...</span>
                     </a>
                 </li>
             </ul>
