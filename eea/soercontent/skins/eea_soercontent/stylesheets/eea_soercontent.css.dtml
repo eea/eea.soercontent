@@ -175,15 +175,6 @@ body {
   background-color: &dtml-soerBackgroundColor;;
   box-sizing: border-box; }
 
-a, h1, #content a {
-  color: &dtml-soerLinkColor;; }
-
-#content a:link, dl.portlet a:link {
-  color: &dtml-soerLinkColor;; }
-
-.state-published {
-  color: &dtml-soerLinkColor; !important; }
-
 /* grids */
 .eea-row {
   margin-left: -15px; }
