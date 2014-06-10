@@ -65,27 +65,27 @@
   border-bottom: 1px solid &dtml-soerCountrySectionFullColor;; }
 
 /* portal messages */
-.subsection-synthesis .portalMessage, .subsection-synthesis .keyFact {
+.subsection-synthesis .keyFact {
   background-color: &dtml-soerSynthesysSectionBoxColor;; }
 .subsection-synthesis .keyFact {
   border-left: 1em solid &dtml-soerSynthesysSectionFullColor;; }
 
-.subsection-europe .portalMessage, .subsection-europe .keyFact {
+.subsection-europe .keyFact {
   background-color: &dtml-soerThematicSectionBoxColor;; }
 .subsection-europe .keyFact {
   border-left: 1em solid &dtml-soerThematicSectionFullColor;; }
 
-.subsection-countries .portalMessage, .subsection-countries .keyFact {
+.subsection-countries .keyFact {
   background-color: &dtml-soerRegionsSectionBoxColor;; }
 .subsection-countries .keyFact {
   border-left: 1em solid &dtml-soerRegionsSectionFullColor;; }
 
-.subsection-global .portalMessage, .subsection-global .keyFact {
+.subsection-global .keyFact {
   background-color: &dtml-soerMegatrendsSectionBoxColor;; }
 .subsection-global .keyFact {
   border-left: 1em solid &dtml-soerMegatrendsSectionFullColor;; }
 
-.subsection-countries-comparison .portalMessage, .subsection-countries-comparison .keyFact {
+.subsection-countries-comparison .keyFact {
   background-color: &dtml-soerCountrySectionBoxColor;; }
 .subsection-countries-comparison .keyFact {
   border-left: 1em solid &dtml-soerCountrySectionFullColor;; }
