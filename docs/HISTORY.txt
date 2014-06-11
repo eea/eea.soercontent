@@ -3,6 +3,8 @@ Changelog
 
 2.5-dev - (unreleased)
 ----------------------
+* Change: Moved check_id.py.metadata to a better place
+  [voineali refs #20010]
 
 2.4 - (2014-06-10)
 ------------------
