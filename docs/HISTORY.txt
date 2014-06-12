@@ -3,6 +3,8 @@ Changelog
 
 2.5-dev - (unreleased)
 ----------------------
+* Change: updated soer2015 section full colors
+  [ichim-david refs #19875]
 * Change: Moved check_id.py.metadata to a better place
   [voineali refs #20010]
 
