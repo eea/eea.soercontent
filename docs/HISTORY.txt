@@ -1,8 +1,13 @@
 Changelog
 =========
 
-2.4-dev - (unreleased)
+2.5-dev - (unreleased)
 ----------------------
+* Change: Moved check_id.py.metadata to a better place
+  [voineali refs #20010]
+
+2.4 - (2014-06-10)
+------------------
 * Change: updated section page font and portalMessage colors
   [ichimdav refs #19875]
 * Change: Add home icon on soer side nav.
