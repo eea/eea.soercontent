@@ -42,14 +42,16 @@ class SOERContentView(BrowserView):
         :return:
         :rtype:
         """
+        res = []
         parent = self.get_parent(parent_id)
         if not parent:
             return
-        obj = parent[0].getObject().restrictedTraverse(object_id)
+        obj = parent[0].getObject().restrictedTraverse(object_id, None)
+        if not obj:
+            return res
         children = self.context.portal_catalog(
             {'path': '/'.join(obj.getPhysicalPath()), 'depth': 1},
             portal_type='Fiche')
-        res = []
         for brain in children:
             res.append({
                 'url': brain.getURL(),
