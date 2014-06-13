@@ -3,6 +3,7 @@
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 from Products.Five.browser import BrowserView
+from plone.memoize.view import memoize
 
 
 class FicheView(BrowserView):
@@ -30,13 +31,15 @@ class SOERContentView(BrowserView):
 
     def get_parent(self, parent_id=None):
         """
-        :param parent_id:
-        :return: :rtype:
+        :param parent_id: string id used for searching the portal_catalog
+        :return: :rtype: list of brains
         """
         return self.context.portal_catalog(id=parent_id)
 
-    def content(self, parent_id=None, object_id=None):
+    @memoize
+    def content(self, parent_id=None, object_id=None, ptype=None):
         """
+        :param ptype: optional portal_type for catalog search
         :param parent_id:
         :param object_id:
         :return:
@@ -51,7 +54,7 @@ class SOERContentView(BrowserView):
             return res
         children = self.context.portal_catalog(
             {'path': '/'.join(obj.getPhysicalPath()), 'depth': 1},
-            portal_type='Fiche')
+            portal_type=ptype or 'Fiche')
         for brain in children:
             res.append({
                 'url': brain.getURL(),

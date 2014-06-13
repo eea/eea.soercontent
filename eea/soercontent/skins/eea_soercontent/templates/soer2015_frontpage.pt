@@ -8,7 +8,8 @@ lang="en" metal:use-macro="context/main_template/macros/master"
 i18n:domain="plone">
 <body>
 <metal:content-core fill-slot="main">
-<metal:content-core define-macro="main">
+<metal:content-core define-macro="main"
+        tal:define="cview nocall:context/@@soercontent_view;">
     <div id="parent-title">
         <h1 id="parent-fieldname-title" class="documentFirstHeading">
             SOER 2015 - The European environment - State and Outlook
@@ -112,138 +113,100 @@ i18n:domain="plone">
                         </div>
                         <div class="eea-tabs-panel">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores cum cumque debitis delectus excepturi, illum ipsum itaque nam omnis placeat, quod ratione repellat suscipit tempore voluptas voluptatum. Asperiores, modi.</p>
-                            <ul>
-                                <li>
-                                    <a tal:attributes="href string:$portal_url/soer-2015/global/demography" class="state-web_editing contenttype-fiche" title="">Shifting global population trends</a>
-                                </li>
-                                <li>
-                                    <a tal:attributes="href string:$portal_url/soer-2015/global/urbanisation" class="state-web_editing contenttype-fiche" title="">Living in an urban world</a>
-                                </li>
-                                <li>
-                                    <a tal:attributes="href string:$portal_url/soer-2015/global/health" class="state-web_editing contenttype-fiche" title="">Changing disease burdens and ongoing risks of pandemics</a>
-                                </li>
-                                <li>
-                                    <a tal:attributes="href string:$portal_url/soer-2015/global/technology" class="state-web_editing contenttype-fiche" title="">Accelerating technological change: racing into the unknown</a>
-                                </li>
-                                <li>
-                                    <a tal:attributes="href string:$portal_url/soer-2015/global/trade" class="state-web_editing contenttype-fiche" title="">Continued economic growth</a>
-                                </li>
-                                <li>
-                                    <a tal:attributes="href string:$portal_url/soer-2015/global/economic" class="state-web_editing contenttype-fiche" title="">From a unipolar to a multipolar world</a>
-                                </li>
-                                <li>
-                                    <a tal:attributes="href string:$portal_url/soer-2015/global/competition" class="state-web_editing contenttype-fiche" title="">Intensified global competition for resources</a>
-                                </li>
-                                <li>
-                                    <a tal:attributes="href string:$portal_url/soer-2015/global/resources" class="state-web_editing contenttype-fiche" title="">Growing demands on ecosystems</a>
-                                </li>
-                                <li>
-                                    <a tal:attributes="href string:$portal_url/soer-2015/global/climate" class="state-web_editing contenttype-fiche" title="">The increasingly severe consequences of climate change</a>
-                                </li>
-                                <li>
-                                    <a tal:attributes="href string:$portal_url/soer-2015/global/pollution" class="state-web_editing contenttype-fiche" title="">The increasing environmental pollution load</a>
-                                </li>
-                            </ul>
+
+                             <tal:global tal:define="results python:cview.content(parent_id='soer-2015', object_id='global')">
+                                 <ul>
+                                     <li tal:repeat="result results">
+                                         <a tal:attributes="href result/url">
+                                             <span tal:content="result/title">Global</span>
+                                         </a>
+                                     </li>
+                                 </ul>
+                             </tal:global>
+
                             <div class="eea-footer-right visualClear pull-right"><p class="pull-left">Download all Global megatrends</p> <a class="download-pdf pull-left" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
                         </div>
                        <div class="eea-tabs-panel">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid beatae blanditiis esse, est itaque libero nostrum numquam odio quia sit, voluptate voluptatem! Architecto et quas quos recusandae? Quisquam, unde.</p>
-                            <ul class="eea-list-columns eea-two-columns">
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/air">Air</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/biodiversity">Biodiversity</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/climate-change-impacts-and-adaptation">Climate change impacts and adaptation</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/forests">Forests</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/freshwater">Freshwater</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/soil">Soil</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/marine-and-costal">Marine and coastal environment</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/mitigation-climate-change">Mitigation climate change</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/noise">Noise</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/water">Water</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/agriculture">Agriculture</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/consumption">Consumption</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/energy">Energy</a></li>
-                            </ul>
-                            <ul class="eea-list-columns eea-two-columns">
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/industry">Industry</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/maritime-activities">Maritime activities</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/tourism">Tourism</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/transport">Transport</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/health-and-environment">Health and environment</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/resource-efficiency">Resource efficiency</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/green-economy">Green economy</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/natural-capital-and-ecosystem-services">Natural capital and ecosystem services</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/land">Land systems</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/hydrolical-systems">Hydrolical systems</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/the-air-and-climate-system">The air and climate system</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/europe/urban-systems">Urban systems</a></li>
-                            </ul>
+
+                            <tal:europe tal:define="results python:cview.content(parent_id='soer-2015', object_id='europe');
+                                           results_length python:len(results);
+                                           one_column python: results_length <= 12">
+                               <ul class="eea-list-columns eea-two-columns">
+                                   <li tal:repeat="result python:results if one_column else results[0:12]">
+                                       <a tal:attributes="href result/url">
+                                           <span tal:content="result/title">Countries Comparison</span>
+                                       </a>
+                                   </li>
+                               </ul>
+                                <ul class="eea-list-columns eea-two-columns" tal:condition="python:not one_column">
+                                    <tal:defines tal:define="res python:results[12:]">
+                                    <li tal:repeat="result res">
+                                        <a tal:attributes="href result/url">
+                                            <span tal:content="result/title">Countries Comparison</span>
+                                        </a>
+                                    </li>
+                                    </tal:defines>
+                                </ul>
+                            </tal:europe>
+
                             <div class="eea-footer-right visualClear pull-right"><p class="pull-left">Download all Thematic briefing fiches</p> <a class="download-pdf pull-left" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
                         </div>
-                    <div class="eea-tabs-panel">
+
+                        <div class="eea-tabs-panel">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam cumque dolore eos quibusdam repudiandae sint tempore. Corporis doloribus dolorum error facilis, libero mollitia quaerat veritatis vitae voluptatem voluptatibus, voluptatum?</p>
-                            <ul>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/air">Air</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/climate-change-mitigation">Climate change mitigation</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/energy">Energy</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/transport">Transport</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/biodiversity">Biodiversity</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/agriculture">Agriculture</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/freshwater">Freshwater</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/resource-efficiency">Resource efficiency</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries-comparison/waste">Waste</a></li>
-                            </ul>
+
+                            <tal:countries-comparison tal:define="results python:cview.content(parent_id='soer-2015', object_id='countries-comparison')">
+                                <ul>
+                                    <li tal:repeat="result results">
+                                        <a tal:attributes="href result/url">
+                                            <span tal:content="result/title">Countries Comparison</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </tal:countries-comparison>
+
                             <div class="eea-footer-right visualClear pull-right"><p class="pull-left">Download all cross-country comparisons</p> <a class="download-pdf pull-left" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
                         </div>
      
                         <div class="eea-tabs-panel">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam cumque dolore eos quibusdam repudiandae sint tempore. Corporis doloribus dolorum error facilis, libero mollitia quaerat veritatis vitae voluptatem voluptatibus, voluptatum?</p>
-                            <ul class="eea-list-columns eea-three-columns">
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/austria">Austria</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/albania">Albania</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/belgium">Belgium</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/bulgaria">Bulgaria</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/croatia">Croatia</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/cyprus">Cyprus</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/czech-republic">Czech Republic</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/denmark">Denmark</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/estonia">Estonia</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/finland">Finland</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/france">France</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/germany">Germany</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/greece">Greece</a></li>
-                            </ul>
-                            <ul class="eea-list-columns eea-three-columns">
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/hungary">Hungary</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/iceland">Iceland</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/ireland">Ireland</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/italy">Italy</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/kosovo">Kosovo under UN SCR 1244/99</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/latvia">Latvia</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/liechtenstein">Liechtenstein</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/lithuania">Lithuania</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/luxembourg">Luxembourg</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/malta">Malta</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/the-netherlands">The Netherlands</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/norway">Norway</a></li>
-                            </ul>
-                            <ul class="eea-list-columns eea-three-columns">
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/poland">Poland</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/portugal">Portugal</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/romania">Romania</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/slovakia">Slovakia</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/slovenia">Slovenia</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/spain">Spain</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/sweden">Sweden</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/switzerland">Switzerland</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/the-former-yugoslav-republic-of-macedonia">The Former Yugoslav Republic of Macedonia</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/turkey">Turkey</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/united-kingdom">United Kingdom</a></li>
-                            </ul>
-                            <!--ul class="eea-list-columns eea-three-columns">
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/artic">Artic</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/baltic">Baltic</a></li>
-                                <li><a tal:attributes="href string:$portal_url/soer-2015/countries/mediterranean">Mediterranean</a></li>
-                            </ul-->
+
+                            <tal:countries tal:define="results python:cview.content(parent_id='soer-2015', object_id='countries');
+                                    results_length python:len(results);
+                                    one_column python: results_length <= 12;
+                                    two_column python: results_length <= 24;
+                                    three_column python: results_length > 24;
+                                    column_class python: 'eea-list-columns eea-three-columns' if three_column else 'eea-list-columns eea-two-columns'">
+                                <ul tal:attributes="class column_class">
+                                    <li tal:repeat="result python:results if one_column else results[0:12]">
+                                        <a tal:attributes="href result/url">
+                                            <span tal:content="result/title">Countries Comparison</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul tal:attributes="class column_class" tal:condition="python:not one_column">
+                                    <tal:defines tal:define="res python:results[12:]">
+                                        <li tal:repeat="result res">
+                                            <a tal:attributes="href result/url">
+                                                <span tal:content="result/title">Countries Comparison</span>
+                                            </a>
+                                        </li>
+                                    </tal:defines>
+                                </ul>
+
+                                <ul tal:attributes="class column_class" tal:condition="python:not two_column">
+                                    <tal:defines tal:define="res python:results[24:]">
+                                        <li tal:repeat="result res">
+                                            <a tal:attributes="href result/url">
+                                                <span tal:content="result/title">Countries Comparison</span>
+                                            </a>
+                                        </li>
+                                    </tal:defines>
+                                </ul>
+                            </tal:countries>
+
                             <div class="eea-footer-right visualClear pull-right"><p class="pull-left">Download all country briefings</p> <a class="download-pdf pull-left" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
                         </div>
                     </div>
