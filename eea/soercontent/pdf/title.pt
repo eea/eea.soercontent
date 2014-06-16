@@ -13,7 +13,7 @@
 
 <div class="pdf-fiche-title" tal:define="parent nocall:view/parent">
   <div class="fiche-section" tal:content="parent/Title">Parent title</div>
-  <h1 class="documentFirstHeading" tal:content="context/Title">Context Title</h1>
+  <h1 class="documentFirstHeading" >DAVID Title</h1>
 </div>
 
 <div class="pdf-fiche-image">

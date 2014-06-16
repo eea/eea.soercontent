@@ -3,40 +3,40 @@
   xmlns:metal="http://xml.zope.org/namespaces/metal"
   xmlns:i18n="http://xml.zope.org/namespaces/i18n"
   lang="en"
-  metal:use-macro="context/main_template/macros/master"
   i18n:domain="eea">
+<head>
 
-<body>
+    <link rel="stylesheet" type="text/css"
+            tal:attributes="href string:${context/absolute_url}/eea_soercontent.css">
+</head>
+<body tal:define="
+plone_view nocall:context/@@plone;
+body_class python:plone_view.bodyClass(template, view);"
+        tal:attributes="class body_class">
+<div id="region-content">
+        <div class="pdf-fiche-header" style="height: 20pt; padding-top: 10pt">
+            <div class="pdf-fiche-breadcrumbs" tal:define="breadcrumbs view/breadcrumbs;">
+                <span tal:content="structure python:' &gt; '.join(breadcrumbs)" />
+            </div>
+            <div class="pdf-fiche-page page"></div>
+        </div>
 
-<metal:column metal:fill-slot="column_one_slot"></metal:column>
-<metal:column metal:fill-slot="column_two_slot"></metal:column>
+        <script type="text/javascript">
+            function subst() {
+                var vars={};
+                var x=document.location.search.substring(1).split('&');
+                for(var i in x) {
+                    var z=x[i].split('=',2);vars[z[0]] = unescape(z[1]);
+                }
+                var x=['frompage','topage','page','webpage','section','subsection','subsubsection'];
+                for(var i in x) {
+                    var y = document.getElementsByClassName(x[i]);
+                    for(var j=0; j<y.length; ++j) y[j].textContent = vars[x[i]];
+                }
+            };
 
-<metal:content-core fill-slot="content">
-
-  <div class="pdf-fiche-header" style="height: 20pt; padding-top: 10pt">
-      <div class="pdf-fiche-breadcrumbs" tal:define="breadcrumbs view/breadcrumbs;">
-        <span tal:content="structure python:' &gt; '.join(breadcrumbs)" />
-      </div>
-      <div class="pdf-fiche-page page"></div>
-  </div>
-
-  <script type="text/javascript">
-        function subst() {
-          var vars={};
-          var x=document.location.search.substring(1).split('&');
-          for(var i in x) {
-            var z=x[i].split('=',2);vars[z[0]] = unescape(z[1]);
-          }
-          var x=['frompage','topage','page','webpage','section','subsection','subsubsection'];
-          for(var i in x) {
-            var y = document.getElementsByClassName(x[i]);
-            for(var j=0; j<y.length; ++j) y[j].textContent = vars[x[i]];
-          }
-        };
-
-        subst();
-  </script>
-</metal:content-core>
-
+            subst();
+        </script>
+</div>
 </body>
 </html>
