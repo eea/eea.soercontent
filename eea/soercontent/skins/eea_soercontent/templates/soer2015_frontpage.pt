@@ -98,13 +98,13 @@ i18n:domain="plone">
                             </ul>
 
                             <div class="eea-footer-right visualClear pull-right">
-                               <div style="display:none">
-                                 <div id="pdf-language-choice" style="width:250px;height:150px">
+                               <div class="visualHidden">
+                                 <div id="pdf-language-choice">
                                      <span class="eea-icon eea-icon-language eea-icon-2x"></span>Here we display the list of Synthesis PDF in different languages.
                                  </div>
                                </div>
-                                <div style="display:none">
-                                 <div id="epub-language-choice" style="width:250px;height:150px">
+                                <div class="visualHidden">
+                                 <div id="epub-language-choice">
                                      <span class="eea-icon eea-icon-language eea-icon-2x"></span>Here we display the list of Synthesis Epub in different languages.
                                  </div>
                                </div>
