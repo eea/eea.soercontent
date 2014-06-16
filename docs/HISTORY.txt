@@ -3,6 +3,9 @@ Changelog
 
 2.5-dev - (unreleased)
 ----------------------
+* Feature: soer2015_frontpage and portlet_soer_sections_navigation
+  retrieve the section content dynamically
+  [ichimdav refs #20024]
 * Change: updated soer2015 section full colors
   [ichim-david refs #19875]
 * Change: Moved check_id.py.metadata to a better place

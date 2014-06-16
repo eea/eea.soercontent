@@ -23,7 +23,7 @@ class FicheView(BrowserView):
 
 
 class SOERContentView(BrowserView):
-    """ Content page
+    """ Content browser page
     """
 
     def __init__(self, context, request):
@@ -42,13 +42,13 @@ class SOERContentView(BrowserView):
         :param ptype: optional portal_type for catalog search
         :param parent_id:
         :param object_id:
-        :return:
-        :rtype:
+        :return: list of dicts with title and url of given ptypes
+        :rtype: list
         """
         res = []
         parent = self.get_parent(parent_id)
         if not parent:
-            return
+            return res
         obj = parent[0].getObject().restrictedTraverse(object_id, None)
         if not obj:
             return res
