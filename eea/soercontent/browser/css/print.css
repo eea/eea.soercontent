@@ -1,3 +1,8 @@
 .fiche-endnotes {
   display: none;
 }
+
+.body-print {
+    background-color: transparent;
+}
+

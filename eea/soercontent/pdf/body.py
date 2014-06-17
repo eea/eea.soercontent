@@ -18,6 +18,14 @@ class Body(PDFBody):
             description.extract()
         return soup.find_all('html')[0].decode()
 
+    def fix_body_class(self, html):
+        """ Append print body class
+        """
+        soup = BeautifulSoup(html)
+        body = soup.find('body')
+        body.attrs['class'].append('body-print')
+        return soup.find_all('html')[0].decode()
+
     def fix_title(self, html):
         """ Replace title
         """
@@ -32,6 +40,7 @@ class Body(PDFBody):
     def __call__(self, **kwargs):
         html = super(Body, self).__call__(**kwargs)
         try:
+            html = self.fix_body_class(html)
             html = self.fix_description(html)
             html = self.fix_title(html)
         except Exception, err:

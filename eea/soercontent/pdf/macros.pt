@@ -1,0 +1,15 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+        i18n:domain="eea">
+<metal:styles metal:define-macro="styles"
+        tal:define="portal_url context/@@plone_portal_state/portal_url;">
+
+    <link rel="stylesheet" type="text/css"
+            tal:attributes="href string:${portal_url}/eea_soercontent.css">
+    <link rel="stylesheet" type="text/css"
+            tal:attributes="href string:${portal_url}/++resource++eea.soercontent.print.css">
+</metal:styles>
+</html>

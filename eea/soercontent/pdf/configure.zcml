@@ -29,9 +29,16 @@
 
   <browser:page
     name="pdf.header"
-    for="eea.soercontent.interfaces.IFiche"
+    for="eea.soercontent.interfaces.ifiche"
     template="header.pt"
     class=".header.Header"
+    permission="zope.Public"
+    />
+
+  <browser:page
+    for="*"
+    name="pdf.macros"
+    template="macros.pt"
     permission="zope.Public"
     />
 

@@ -5,16 +5,14 @@
   lang="en"
   i18n:domain="eea">
 <head>
-
-    <link rel="stylesheet" type="text/css"
-            tal:attributes="href string:${context/absolute_url}/eea_soercontent.css">
+     <metal:styles metal:use-macro="context/@@pdf.macros/styles"></metal:styles>
 </head>
 <body tal:define="
 plone_view nocall:context/@@plone;
 body_class python:plone_view.bodyClass(template, view);"
-        tal:attributes="class body_class">
+        tal:attributes="class python: body_class + ' body-print'">
 <div id="region-content">
-        <div class="pdf-fiche-header" style="height: 20pt; padding-top: 10pt">
+        <div class="pdf-fiche-header">
             <div class="pdf-fiche-breadcrumbs" tal:define="breadcrumbs view/breadcrumbs;">
                 <span tal:content="structure python:' &gt; '.join(breadcrumbs)" />
             </div>
