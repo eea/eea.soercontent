@@ -2,11 +2,11 @@
     display: none; }
 
 .body-print {
-    background-color: transparent; }
-
+    background-color: transparent;
+}
 /* footer styling */
 .pdf-fiche-page {
-    padding: 5px 10px;
+    padding: 2px 4px;
     color: #fff; }
 
 .section-synthesis .pdf-fiche-page {
@@ -24,3 +24,8 @@
 .section-countries-comparison .pdf-fiche-page {
     background-color: #007a86; }
 
+.pdf-fiche-header {
+    font-size: 75%;
+    width: 585px;
+    margin: 0 auto;
+    height: 30px; }

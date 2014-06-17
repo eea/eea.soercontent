@@ -13,7 +13,7 @@
         body_class python:plone_view.bodyClass(template, view);"
         tal:attributes="class python: body_class + ' body-print'">
 <div id="region-content">
-  <h2 class="pdf-header-title"></h2>
+  <h2 class="pdf-header-title" tal:content="view/title">Header title</h2>
 </div>
 </body>
 </html>

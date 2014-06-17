@@ -29,7 +29,7 @@
 
   <browser:page
     name="pdf.header"
-    for="eea.soercontent.interfaces.ifiche"
+    for="eea.soercontent.interfaces.IFiche"
     template="header.pt"
     class=".header.Header"
     permission="zope.Public"
