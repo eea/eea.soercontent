@@ -13,10 +13,11 @@ body_class python:plone_view.bodyClass(template, view);"
         tal:attributes="class python: body_class + ' body-print'">
 <div id="region-content">
         <div class="pdf-fiche-header">
-            <div class="pdf-fiche-breadcrumbs" tal:define="breadcrumbs view/breadcrumbs;">
+            <h4 class="pdf-fiche-breadcrumbs pull-left" tal:define="breadcrumbs view/breadcrumbs;">
                 <span tal:content="structure python:' &gt; '.join(breadcrumbs)" />
-            </div>
-            <div class="pdf-fiche-page page"></div>
+            </h4>
+            <p class="pdf-fiche-page page pull-right"></p>
+
         </div>
 
         <script type="text/javascript">

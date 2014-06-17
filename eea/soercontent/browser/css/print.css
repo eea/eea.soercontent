@@ -1,8 +1,26 @@
 .fiche-endnotes {
-  display: none;
-}
+    display: none; }
 
 .body-print {
-    background-color: transparent;
-}
+    background-color: transparent; }
+
+/* footer styling */
+.pdf-fiche-page {
+    padding: 5px 10px;
+    color: #fff; }
+
+.section-synthesis .pdf-fiche-page {
+    background-color: #272b57; }
+
+.section-europe .pdf-fiche-page {
+    background-color: #637e22; }
+
+.section-countries .pdf-fiche-page {
+    background-color: #ba3c0d; }
+
+.section-global .pdf-fiche-page {
+    background-color: #733d85; }
+
+.section-countries-comparison .pdf-fiche-page {
+    background-color: #007a86; }
 
