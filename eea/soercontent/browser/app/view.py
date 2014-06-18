@@ -54,7 +54,8 @@ class SOERContentView(BrowserView):
             return res
         children = self.context.portal_catalog(
             {'path': '/'.join(obj.getPhysicalPath()), 'depth': 1},
-            portal_type=ptype or 'Fiche')
+            portal_type=ptype or 'Fiche',
+            sort_on="getObjPositionInParent")
         for brain in children:
             res.append({
                 'url': brain.getURL(),
