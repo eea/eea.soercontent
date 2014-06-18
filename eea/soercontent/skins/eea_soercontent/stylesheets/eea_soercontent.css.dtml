@@ -25,75 +25,75 @@
 /* SOER-2015 section styles */
 /* @group Section color overrides */
 /* headers and description */
-.section-synthesis #region-content h1, .section-synthesis #region-content h2, .section-synthesis #region-content h3, .section-synthesis #region-content h4, .section-synthesis #region-content h5, .section-synthesis #region-content h6, .section-synthesis #region-content .documentDescription, .section-synthesis #region-content #description {
+.subsection-synthesis #region-content h1, .subsection-synthesis #region-content h2, .subsection-synthesis #region-content h3, .subsection-synthesis #region-content h4, .subsection-synthesis #region-content h5, .subsection-synthesis #region-content h6, .subsection-synthesis #region-content .documentDescription, .subsection-synthesis #region-content #description {
   color: &dtml-soerSynthesysSectionFullColor;; }
-.section-synthesis #region-content h1, .section-synthesis #region-content h2, .section-synthesis #region-content h3 {
+.subsection-synthesis #region-content h1, .subsection-synthesis #region-content h2, .subsection-synthesis #region-content h3 {
   border-bottom: 1px solid &dtml-soerSynthesysSectionFullColor;; }
 
-.section-synthesis #viewlet-below-content h2 {
+.subsection-synthesis #viewlet-below-content h2 {
   color: &dtml-soerSynthesysSectionFullColor;;
   border-bottom: 1px solid &dtml-soerSynthesysSectionFullColor;; }
 
-.section-europe #region-content h1, .section-europe #region-content h2, .section-europe #region-content h3, .section-europe #region-content h4, .section-europe #region-content h5, .section-europe #region-content h6, .section-europe #region-content .documentDescription, .section-europe #region-content #description {
+.subsection-europe #region-content h1, .subsection-europe #region-content h2, .subsection-europe #region-content h3, .subsection-europe #region-content h4, .subsection-europe #region-content h5, .subsection-europe #region-content h6, .subsection-europe #region-content .documentDescription, .subsection-europe #region-content #description {
   color: &dtml-soerThematicSectionFullColor;; }
-.section-europe #region-content h1, .section-europe #region-content h2, .section-europe #region-content h3 {
+.subsection-europe #region-content h1, .subsection-europe #region-content h2, .subsection-europe #region-content h3 {
   border-bottom: 1px solid &dtml-soerThematicSectionFullColor;; }
 
-.section-europe #viewlet-below-content h2 {
+.subsection-europe #viewlet-below-content h2 {
   color: &dtml-soerThematicSectionFullColor;;
   border-bottom: 1px solid &dtml-soerThematicSectionFullColor;; }
 
-.section-countries #region-content h1, .section-countries #region-content h2, .section-countries #region-content h3, .section-countries #region-content h4, .section-countries #region-content h5, .section-countries #region-content h6, .section-countries #region-content .documentDescription, .section-countries #region-content #description {
+.subsection-countries #region-content h1, .subsection-countries #region-content h2, .subsection-countries #region-content h3, .subsection-countries #region-content h4, .subsection-countries #region-content h5, .subsection-countries #region-content h6, .subsection-countries #region-content .documentDescription, .subsection-countries #region-content #description {
   color: &dtml-soerRegionsSectionFullColor;; }
-.section-countries #region-content h1, .section-countries #region-content h2, .section-countries #region-content h3 {
+.subsection-countries #region-content h1, .subsection-countries #region-content h2, .subsection-countries #region-content h3 {
   border-bottom: 1px solid &dtml-soerRegionsSectionFullColor;; }
 
-.section-countries #viewlet-below-content h2 {
+.subsection-countries #viewlet-below-content h2 {
   color: &dtml-soerRegionsSectionFullColor;;
   border-bottom: 1px solid &dtml-soerRegionsSectionFullColor;; }
 
-.section-global #region-content h1, .section-global #region-content h2, .section-global #region-content h3, .section-global #region-content h4, .section-global #region-content h5, .section-global #region-content h6, .section-global #region-content .documentDescription, .section-global #region-content #description {
+.subsection-global #region-content h1, .subsection-global #region-content h2, .subsection-global #region-content h3, .subsection-global #region-content h4, .subsection-global #region-content h5, .subsection-global #region-content h6, .subsection-global #region-content .documentDescription, .subsection-global #region-content #description {
   color: &dtml-soerMegatrendsSectionFullColor;; }
-.section-global #region-content h1, .section-global #region-content h2, .section-global #region-content h3 {
+.subsection-global #region-content h1, .subsection-global #region-content h2, .subsection-global #region-content h3 {
   border-bottom: 1px solid &dtml-soerMegatrendsSectionFullColor;; }
 
-.section-global #viewlet-below-content h2 {
+.subsection-global #viewlet-below-content h2 {
   color: &dtml-soerMegatrendsSectionFullColor;;
   border-bottom: 1px solid &dtml-soerMegatrendsSectionFullColor;; }
 
-.section-countries-comparison #region-content h1, .section-countries-comparison #region-content h2, .section-countries-comparison #region-content h3, .section-countries-comparison #region-content h4, .section-countries-comparison #region-content h5, .section-countries-comparison #region-content h6, .section-countries-comparison #region-content .documentDescription, .section-countries-comparison #region-content #description {
+.subsection-countries-comparison #region-content h1, .subsection-countries-comparison #region-content h2, .subsection-countries-comparison #region-content h3, .subsection-countries-comparison #region-content h4, .subsection-countries-comparison #region-content h5, .subsection-countries-comparison #region-content h6, .subsection-countries-comparison #region-content .documentDescription, .subsection-countries-comparison #region-content #description {
   color: &dtml-soerCountrySectionFullColor;; }
-.section-countries-comparison #region-content h1, .section-countries-comparison #region-content h2, .section-countries-comparison #region-content h3 {
+.subsection-countries-comparison #region-content h1, .subsection-countries-comparison #region-content h2, .subsection-countries-comparison #region-content h3 {
   border-bottom: 1px solid &dtml-soerCountrySectionFullColor;; }
 
-.section-countries-comparison #viewlet-below-content h2 {
+.subsection-countries-comparison #viewlet-below-content h2 {
   color: &dtml-soerCountrySectionFullColor;;
   border-bottom: 1px solid &dtml-soerCountrySectionFullColor;; }
 
 /* portal messages */
-.section-synthesis .keyFact {
+.subsection-synthesis .keyFact {
   background-color: &dtml-soerSynthesysSectionBoxColor;; }
-.section-synthesis .keyFact {
+.subsection-synthesis .keyFact {
   border-left: 1em solid &dtml-soerSynthesysSectionFullColor;; }
 
-.section-europe .keyFact {
+.subsection-europe .keyFact {
   background-color: &dtml-soerThematicSectionBoxColor;; }
-.section-europe .keyFact {
+.subsection-europe .keyFact {
   border-left: 1em solid &dtml-soerThematicSectionFullColor;; }
 
-.section-countries .keyFact {
+.subsection-countries .keyFact {
   background-color: &dtml-soerRegionsSectionBoxColor;; }
-.section-countries .keyFact {
+.subsection-countries .keyFact {
   border-left: 1em solid &dtml-soerRegionsSectionFullColor;; }
 
-.section-global .keyFact {
+.subsection-global .keyFact {
   background-color: &dtml-soerMegatrendsSectionBoxColor;; }
-.section-global .keyFact {
+.subsection-global .keyFact {
   border-left: 1em solid &dtml-soerMegatrendsSectionFullColor;; }
 
-.section-countries-comparison .keyFact {
+.subsection-countries-comparison .keyFact {
   background-color: &dtml-soerCountrySectionBoxColor;; }
-.section-countries-comparison .keyFact {
+.subsection-countries-comparison .keyFact {
   border-left: 1em solid &dtml-soerCountrySectionFullColor;; }
 
 /* @end @group Section color overrides */
