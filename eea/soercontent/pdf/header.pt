@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
   xmlns:tal="http://xml.zope.org/namespaces/tal"
   xmlns:metal="http://xml.zope.org/namespaces/metal"
@@ -11,7 +12,7 @@
 <body tal:define="
         plone_view nocall:context/@@plone;
         body_class python:plone_view.bodyClass(template, view);"
-        tal:attributes="class python: body_class + ' body-print'">
+        tal:attributes="class python: body_class + ' body-print'" onload="subst()">
 <div id="region-content">
   <h2 class="pdf-header-title" tal:content="view/title">Header title</h2>
 </div>
