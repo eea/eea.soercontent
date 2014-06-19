@@ -31,10 +31,15 @@ class Body(PDFBody):
         """
         newTitle = queryMultiAdapter(
             (self.context, self.request), name='pdf.title')
-        newTitle = BeautifulSoup(newTitle())
+        # use the python default html.parser in order to
+        # avoid adding extra html and body tags which
+        # lxml would normally add in order to convert the
+        # title output to proper html which we don't need
+        # since we are replacing headers from the body
+        title_output = BeautifulSoup(newTitle(), "html.parser")
         soup = BeautifulSoup(html)
         for title in soup.find_all('h1', {'class': 'documentFirstHeading'}):
-            title.replaceWith(newTitle)
+            title.replaceWith(title_output)
         return soup.find_all('html')[0].decode()
 
     def __call__(self, **kwargs):

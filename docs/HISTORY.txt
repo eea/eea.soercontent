@@ -3,6 +3,9 @@ Changelog
 
 2.5-dev - (unreleased)
 ----------------------
+* Bug fix: title replacing no longer appends extra html tags which
+  made the pdf output contain invalid html
+  [ichim-david refs #19880]
 * Feature: soer2015_frontpage and portlet_soer_sections_navigation
   retrieve the section content dynamically
   [ichimdav refs #20024]
