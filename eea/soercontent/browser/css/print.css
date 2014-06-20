@@ -4,8 +4,9 @@
   display: none; }
 
 /* body */
-.body-print {
-  background-color: transparent; }
+.body-print,
+#viewlet-above-content {
+  background-color: transparent !important; }
 
 /* pdf header section */
 .pdf-header {
@@ -48,3 +49,4 @@
 
 .section-countries-comparison .pdf-fiche-page {
   background-color: #007a86; }
+

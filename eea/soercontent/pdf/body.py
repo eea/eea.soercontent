@@ -47,7 +47,7 @@ class Body(PDFBody):
         try:
             html = self.fix_body_class(html)
             html = self.fix_description(html)
-            html = self.fix_title(html)
+            # html = self.fix_title(html)
         except Exception, err:
             logger.exception(err)
         return html
