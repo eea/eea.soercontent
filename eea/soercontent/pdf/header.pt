@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
-  xmlns:tal="http://xml.zope.org/namespaces/tal"
-  xmlns:metal="http://xml.zope.org/namespaces/metal"
-  xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-  lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
 
-  i18n:domain="eea">
+        i18n:domain="eea">
 <head>
     <metal:styles metal:use-macro="context/@@pdf.macros/styles"></metal:styles>
 </head>
 <body tal:define="
         plone_view nocall:context/@@plone;
         body_class python:plone_view.bodyClass(template, view);"
-        tal:attributes="class python: body_class + ' body-print'" onload="subst()">
-<div id="region-content">
-  <h2 class="pdf-header-title" tal:content="view/title">Header title</h2>
+        tal:attributes="class python: body_class + ' body-print'">
+
+<div id="region-content"
+        tal:define="page python:request.get('page')">
+    <div class="pdf-header">
+        <tal:nologo tal:condition="python: not page or page and page != '1'">
+            <h2 class="pdf-header-title" tal:content="view/title">Header title</h2>
+        </tal:nologo>
+        <tal:logo tal:condition="python:page == '1'">
+            <h2 class="pdf-header-title" tal:content="view/title">Header title</h2>
+            <img tal:define="
+                    lang  context/@@plone_portal_state/language;
+                    logo python:'++resource++eea.translations.images/pdflogo-%s.png' % lang"
+                    tal:attributes="src string:${context/portal_url}/${logo}"
+                    width="232" height="48"
+                    class="logo-header"  />
+        </tal:logo>
+    </div>
 </div>
+
 </body>
 </html>
