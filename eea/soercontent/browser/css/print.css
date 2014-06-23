@@ -9,24 +9,22 @@
   background-color: transparent !important; }
 
 /* pdf header section */
-.pdf-header {
-  position: relative;
-  padding-top: 5px;
-  height: 60px; }
-
 .pdf-fiche-header {
   font-size: 75%;
   width: 585px;
   margin: 0 auto;
-  height: 30px; }
+  height: 60px;
+  position: relative; }
 
 .pdf-header-title {
-  padding-bottom: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   margin-bottom: 0.5em; }
 
 .logo-header {
   position: absolute;
-  top: 10px;
+  top: 0;
+  margin-top: 2px;
   right: 0; }
 
 /* pdf Footer section */

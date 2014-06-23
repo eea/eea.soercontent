@@ -16,7 +16,7 @@
 
 <div id="region-content"
         tal:define="page python:request.get('page')">
-    <div class="pdf-header">
+    <div class="pdf-header pdf-fiche-header">
         <tal:nologo tal:condition="python: not page or page and page != '1'">
             <h2 class="pdf-header-title" tal:content="view/title">Header title</h2>
         </tal:nologo>
