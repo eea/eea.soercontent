@@ -36,7 +36,8 @@ class Body(PDFBody):
         # lxml would normally add in order to convert the
         # title output to proper html which we don't need
         # since we are replacing headers from the body
-        title_output = BeautifulSoup(newTitle(), "html.parser")
+        title_output = BeautifulSoup(newTitle())
+        title_output = title_output.find('body').contents[0]
         soup = BeautifulSoup(html)
         for title in soup.find_all('h1', {'class': 'documentFirstHeading'}):
             title.replaceWith(title_output)
@@ -47,7 +48,7 @@ class Body(PDFBody):
         try:
             html = self.fix_body_class(html)
             html = self.fix_description(html)
-            # html = self.fix_title(html)
+            html = self.fix_title(html)
         except Exception, err:
             logger.exception(err)
         return html

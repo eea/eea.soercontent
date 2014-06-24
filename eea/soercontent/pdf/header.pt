@@ -21,7 +21,7 @@
             <h2 class="pdf-header-title" tal:content="view/title">Header title</h2>
         </tal:nologo>
         <tal:logo tal:condition="python:page == '1'">
-            <h2 class="pdf-header-title" tal:content="view/title">Header title</h2>
+            <h2 class="pdf-header-title documentFirstHeading" tal:content="view/title">Header title</h2>
             <img tal:define="
                     lang  context/@@plone_portal_state/language;
                     logo python:'++resource++eea.translations.images/pdflogo-%s.png' % lang"
