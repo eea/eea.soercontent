@@ -5,7 +5,14 @@
       i18n:domain="eea">
 
     <metal:styles metal:define-macro="styles"
-            tal:define="portal_url context/@@plone_portal_state/portal_url;">
+            tal:define="
+            portal context/@@plone_portal_state/portal;
+            portal_url context/@@plone_portal_state/portal_url;">
+
+        <link rel="stylesheet"
+                tal:attributes="href string:${portal_url}/print.css">
+        <link rel="stylesheet" tal:condition="exists:portal/pdf.print.css" type="text/css"
+                tal:attributes="href string:${portal_url}/pdf.print.css">
         <link rel="stylesheet" type="text/css"
               tal:attributes="href string:${portal_url}/eea_soercontent.css">
         <link rel="stylesheet" type="text/css"
