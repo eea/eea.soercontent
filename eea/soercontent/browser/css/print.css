@@ -1,11 +1,17 @@
 /* Hidden elements */
 .fiche-endnotes,
-.portal-logo {
+.portal-logo,
+#viewlet-above-content {
   display: none; }
 
+.eea-three-quarter {
+  max-width: 475px; }
+
+.eea-one-quarter {
+  min-width: 150pt; }
+
 /* body */
-.body-print,
-#viewlet-above-content {
+.body-print {
   background-color: transparent !important; }
 
 /* pdf header section */
@@ -20,6 +26,19 @@
   padding-top: 1em;
   padding-bottom: 1em;
   margin-bottom: 0.5em; }
+
+.pdf-fiche-title {
+  height: 150pt;
+  overflow: hidden; }
+
+.fiche-title {
+  font-size: 24pt;
+  font-weight: bold;
+  line-height: 0; }
+
+.fiche-section {
+  font-size: 18pt;
+  font-weight: normal; }
 
 .logo-header {
   position: absolute;
