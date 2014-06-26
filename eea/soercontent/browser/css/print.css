@@ -1,11 +1,12 @@
 /* Hidden elements */
 .fiche-endnotes,
 .portal-logo,
-#viewlet-above-content {
+#viewlet-above-content,
+#relatedItems {
   display: none; }
 
-.eea-three-quarter {
-  max-width: 475px; }
+.eea-three-quarters {
+  max-width: 460px; }
 
 .eea-one-quarter {
   min-width: 150pt; }
@@ -34,7 +35,7 @@
 .fiche-title {
   font-size: 24pt;
   font-weight: bold;
-  line-height: 0; }
+  line-height: 1.2; }
 
 .fiche-section {
   font-size: 18pt;
