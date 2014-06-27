@@ -11,10 +11,12 @@
   display: block !important;
   background: #f3f3f3;
   margin-bottom: 1em;
-  padding: 1em; }
+  padding: 1em;
+  overflow: hidden; }
 
 .qrbox > img {
-  width: inherit; }
+  width: inherit;
+  float: right; }
 
 /* END QR box */
 /* body */
