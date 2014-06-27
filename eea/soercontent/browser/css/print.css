@@ -32,22 +32,24 @@
   margin-bottom: 0.5em; }
 
 .pdf-fiche-title {
-  padding-top: 2em;
+  padding-top: 0em;
   overflow: hidden; }
 
 .fiche-title {
   font-size: 20pt;
   font-weight: bold;
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin: 0; }
 
 .fiche-section {
   font-size: 16pt;
+  margin-bottom: 0;
   font-weight: normal; }
 
 .logo-header {
   position: absolute;
   top: 0;
-  margin-top: 2px;
+  margin-top: 0;
   right: 0; }
 
 /* pdf Footer section */
@@ -59,7 +61,8 @@
 .documentFirstHeading {
   text-align: left;
   margin: 0;
-  padding: 0 0 1em 0; }
+  font-size: 16pt;
+  padding: 0.5em 0 1em 0; }
 
 .section-synthesis .pdf-fiche-page {
   background-color: #272b57; }
