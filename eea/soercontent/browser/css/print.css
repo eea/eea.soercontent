@@ -76,18 +76,18 @@
   font-size: 16pt;
   padding: 0.5em 0 1em 0; }
 
-.section-synthesis .pdf-fiche-page {
+.subsection-synthesis .pdf-fiche-page {
   background-color: #272b57; }
 
-.section-europe .pdf-fiche-page {
+.subsection-europe .pdf-fiche-page {
   background-color: #637e22; }
 
-.section-countries .pdf-fiche-page {
+.subsection-countries .pdf-fiche-page {
   background-color: #ba3c0d; }
 
-.section-global .pdf-fiche-page {
+.subsection-global .pdf-fiche-page {
   background-color: #733d85; }
 
-.section-countries-comparison .pdf-fiche-page {
+.subsection-countries-comparison .pdf-fiche-page {
   background-color: #007a86; }
 
