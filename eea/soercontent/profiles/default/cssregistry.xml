@@ -10,5 +10,6 @@
     <stylesheet
             id="eea_soercontent.css"
             expression="python:'/soer-2015' in request.URL0"
+            media="all"
             />
 </object>

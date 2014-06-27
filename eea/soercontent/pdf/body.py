@@ -18,20 +18,35 @@ class Body(PDFBody):
             description.extract()
         return soup.find_all('html')[0].decode()
 
+    def fix_body_class(self, html):
+        """ Append print body class
+        """
+        soup = BeautifulSoup(html)
+        body = soup.find('body')
+        body.attrs['class'].append('body-print')
+        return soup.find_all('html')[0].decode()
+
     def fix_title(self, html):
         """ Replace title
         """
         newTitle = queryMultiAdapter(
             (self.context, self.request), name='pdf.title')
-        newTitle = BeautifulSoup(newTitle())
+        # use the python default html.parser in order to
+        # avoid adding extra html and body tags which
+        # lxml would normally add in order to convert the
+        # title output to proper html which we don't need
+        # since we are replacing headers from the body
+        title_output = BeautifulSoup(newTitle())
+        title_output = title_output.find('body').contents[0]
         soup = BeautifulSoup(html)
         for title in soup.find_all('h1', {'class': 'documentFirstHeading'}):
-            title.replaceWith(newTitle)
+            title.replaceWith(title_output)
         return soup.find_all('html')[0].decode()
 
     def __call__(self, **kwargs):
         html = super(Body, self).__call__(**kwargs)
         try:
+            html = self.fix_body_class(html)
             html = self.fix_description(html)
             html = self.fix_title(html)
         except Exception, err:

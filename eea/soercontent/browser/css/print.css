@@ -1,3 +1,81 @@
-.fiche-endnotes {
-  display: none;
-}
+/* Hidden elements */
+.fiche-endnotes,
+.portal-logo,
+#viewlet-above-content,
+#relatedItems {
+  display: none; }
+
+.eea-three-quarters {
+  max-width: 425px; }
+
+.eea-one-quarter {
+  min-width: 180px; }
+
+/* body */
+.body-print {
+  background-color: transparent !important; }
+
+#portal-column-content {
+  padding: 0 !important; }
+
+/* pdf header section */
+.pdf-fiche-header {
+  font-size: 75%;
+  width: 630px;
+  margin: 0 auto;
+  height: 60px;
+  position: relative; }
+
+.pdf-header-title {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 0.5em; }
+
+.pdf-fiche-title {
+  padding-top: 0em;
+  overflow: hidden; }
+
+.fiche-title {
+  font-size: 20pt;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0; }
+
+.fiche-section {
+  font-size: 16pt;
+  margin-bottom: 0;
+  font-weight: normal; }
+
+.logo-header {
+  position: absolute;
+  top: 0;
+  margin-top: 0;
+  right: 0; }
+
+/* pdf Footer section */
+/* headers and description */
+.pdf-fiche-page {
+  padding: 2px 4px;
+  color: #FFF; }
+
+.documentFirstHeading {
+  text-align: left;
+  margin: 0;
+  font-size: 16pt;
+  padding: 0.5em 0 1em 0; }
+
+.section-synthesis .pdf-fiche-page {
+  background-color: #272b57; }
+
+.section-europe .pdf-fiche-page {
+  background-color: #637e22; }
+
+.section-countries .pdf-fiche-page {
+  background-color: #ba3c0d; }
+
+.section-global .pdf-fiche-page {
+  background-color: #733d85; }
+
+.section-countries-comparison .pdf-fiche-page {
+  background-color: #007a86; }
+
