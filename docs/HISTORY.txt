@@ -1,8 +1,8 @@
 Changelog
 =========
 
-2.5-dev - (unreleased)
-----------------------
+2.5 - (2014-06-30)
+------------------
 * Feature: enabled modern pdf theme for Fiche content type
   [ichim-david refs #19880]
 * Bug fix: title replacing no longer appends extra html tags which
