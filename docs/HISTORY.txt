@@ -1,6 +1,9 @@
 Changelog
 =========
 
+2.6-dev - (unreleased)
+----------------------
+
 2.5 - (2014-06-30)
 ------------------
 * Feature: enabled modern pdf theme for Fiche content type
