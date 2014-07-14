@@ -180,7 +180,6 @@ h1, h2, h3 {
 
 /* Base styles && base overrides */
 body {
-  background-color: &dtml-soerBackgroundColor;;
   box-sizing: border-box; }
 
 /* grids */
@@ -281,14 +280,6 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   padding: 1.5em; }
 
 /* Content Styles */
-/* #19536; negative margins used in order to move the breadcrumbs out of the region-content
-   which has the white background */
-#viewlet-above-content {
-  margin: -22px -18px 15px -18px;
-  background-color: #e8f0fb;
-  padding: 0em 1.5em 0em 1.5em;
-  min-width: 1000px;
-  height: 3em; }
 
 .template-soer2015_frontpage #viewlet-above-content {
   margin: 0; }
