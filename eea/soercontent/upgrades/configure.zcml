@@ -1,85 +1,97 @@
 <configure
-  xmlns="http://namespaces.zope.org/zope"
-  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-  i18n_domain="eea">
+        xmlns="http://namespaces.zope.org/zope"
+        xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+        i18n_domain="eea">
 
-  <genericsetup:upgradeSteps
-    source="2.2"
-    destination="2.3"
-    profile="eea.soercontent:default">
+    <genericsetup:upgradeSteps
+            source="2.3"
+            destination="2.6"
+            profile="eea.soercontent:default">
 
-    <genericsetup:upgradeDepends
-      title="Install eea.pdf add-on"
-      import_profile="eea.pdf:default"
-      />
+        <genericsetup:upgradeDepends
+                title="Add eea_soercontent_screen.css"
+                import_profile="eea.soercontent:upgrade_260"
+                />
 
-    <genericsetup:upgradeDepends
-      title="Import changes: pdf.xml"
-      import_steps="pdf.xml"
-      />
+    </genericsetup:upgradeSteps>
 
-  </genericsetup:upgradeSteps>
+    <genericsetup:upgradeSteps
+            source="2.2"
+            destination="2.3"
+            profile="eea.soercontent:default">
 
-  <genericsetup:upgradeSteps
-    source="2.1"
-    destination="2.2"
-    profile="eea.soercontent:default">
+        <genericsetup:upgradeDepends
+                title="Install eea.pdf add-on"
+                import_profile="eea.pdf:default"
+                />
 
-    <genericsetup:upgradeDepends
-      title="Import changes: skins cssregistry"
-      import_steps="skins cssregistry"
-      />
+        <genericsetup:upgradeDepends
+                title="Import changes: pdf.xml"
+                import_steps="pdf.xml"
+                />
 
-  </genericsetup:upgradeSteps>
+    </genericsetup:upgradeSteps>
 
-  <genericsetup:upgradeSteps
-    source="2.0"
-    destination="2.1"
-    profile="eea.soercontent:default">
+    <genericsetup:upgradeSteps
+            source="2.1"
+            destination="2.2"
+            profile="eea.soercontent:default">
 
-    <genericsetup:upgradeDepends
-      title="Import changes: content rules"
-      import_steps="contentrules"
-      />
+        <genericsetup:upgradeDepends
+                title="Import changes: skins cssregistry"
+                import_steps="skins cssregistry"
+                />
 
-  </genericsetup:upgradeSteps>
+    </genericsetup:upgradeSteps>
 
-  <genericsetup:upgradeSteps
-    source="1.9"
-    destination="2.0"
-    profile="eea.soercontent:default">
+    <genericsetup:upgradeSteps
+            source="2.0"
+            destination="2.1"
+            profile="eea.soercontent:default">
 
-    <genericsetup:upgradeDepends
-      title="Remove unneeded eeacharlimit plugin"
-      import_profile="eea.soercontent:upgrade_200"
-      />
+        <genericsetup:upgradeDepends
+                title="Import changes: content rules"
+                import_steps="contentrules"
+                />
 
-  </genericsetup:upgradeSteps>
+    </genericsetup:upgradeSteps>
 
-  <genericsetup:upgradeSteps
-    source="1.8"
-    destination="1.9"
-    profile="eea.soercontent:default">
+    <genericsetup:upgradeSteps
+            source="1.9"
+            destination="2.0"
+            profile="eea.soercontent:default">
 
-    <genericsetup:upgradeStep
-      title="#18825: Upgrade summary and endnotes mimetype for existing Fiches"
-      handler="eea.soercontent.upgrades.evolve19.fix_mimetypes"
-      />
+        <genericsetup:upgradeDepends
+                title="Remove unneeded eeacharlimit plugin"
+                import_profile="eea.soercontent:upgrade_200"
+                />
 
-  </genericsetup:upgradeSteps>
+    </genericsetup:upgradeSteps>
 
-  <genericsetup:upgradeSteps
-    source="1.7"
-    destination="1.8"
-    profile="eea.soercontent:default">
+    <genericsetup:upgradeSteps
+            source="1.8"
+            destination="1.9"
+            profile="eea.soercontent:default">
 
-    <genericsetup:upgradeDepends
-      title="Import steps with changes: skins and tinymce"
-      import_profile="eea.soercontent:default"
-      import_steps="skins tinymce_settings"
-      />
+        <genericsetup:upgradeStep
+                title="#18825: Upgrade summary and endnotes mimetype for existing Fiches"
+                handler="eea.soercontent.upgrades.evolve19.fix_mimetypes"
+                />
 
-  </genericsetup:upgradeSteps>
+    </genericsetup:upgradeSteps>
+
+    <genericsetup:upgradeSteps
+            source="1.7"
+            destination="1.8"
+            profile="eea.soercontent:default">
+
+        <genericsetup:upgradeDepends
+                title="Import steps with changes: skins and tinymce"
+                import_profile="eea.soercontent:default"
+                import_steps="skins tinymce_settings"
+                />
+
+    </genericsetup:upgradeSteps>
 
     <genericsetup:upgradeSteps
             source="1.6"
@@ -106,54 +118,54 @@
     </genericsetup:upgradeSteps>
 
     <!-- 1.4 -->
-  <genericsetup:upgradeSteps
-    source="1.2"
-    destination="1.4"
-    profile="eea.soercontent:default">
+    <genericsetup:upgradeSteps
+            source="1.2"
+            destination="1.4"
+            profile="eea.soercontent:default">
 
-    <genericsetup:upgradeStep
-      title="#17128: Make SOER ctypes folderish"
-      handler="eea.soercontent.upgrades.evolve14.migrate2folderish"
-      />
+        <genericsetup:upgradeStep
+                title="#17128: Make SOER ctypes folderish"
+                handler="eea.soercontent.upgrades.evolve14.migrate2folderish"
+                />
 
-    <genericsetup:upgradeDepends
-      title="Import steps with changes: typeinfo"
-      import_profile="eea.soercontent:default"
-      import_steps="typeinfo"
-      />
+        <genericsetup:upgradeDepends
+                title="Import steps with changes: typeinfo"
+                import_profile="eea.soercontent:default"
+                import_steps="typeinfo"
+                />
 
-  </genericsetup:upgradeSteps>
+    </genericsetup:upgradeSteps>
 
     <!-- 1.2 -->
-  <genericsetup:upgradeSteps
-    source="1.1"
-    destination="1.2"
-    profile="eea.soercontent:default">
+    <genericsetup:upgradeSteps
+            source="1.1"
+            destination="1.2"
+            profile="eea.soercontent:default">
 
-    <genericsetup:upgradeDepends
-      title="Import steps with changes: actions"
-      import_profile="eea.soercontent:default"
-      import_steps="actions"
-      />
+        <genericsetup:upgradeDepends
+                title="Import steps with changes: actions"
+                import_profile="eea.soercontent:default"
+                import_steps="actions"
+                />
 
-  </genericsetup:upgradeSteps>
+    </genericsetup:upgradeSteps>
 
-  <!-- 1.1 -->
-  <genericsetup:upgradeSteps
-    source="1.0"
-    destination="1.1"
-    profile="eea.soercontent:default">
+    <!-- 1.1 -->
+    <genericsetup:upgradeSteps
+            source="1.0"
+            destination="1.1"
+            profile="eea.soercontent:default">
 
-    <genericsetup:upgradeDepends
-      title="Import all steps from collective.sendaspdf"
-      import_profile="collective.sendaspdf:default"
-      />
+        <genericsetup:upgradeDepends
+                title="Import all steps from collective.sendaspdf"
+                import_profile="collective.sendaspdf:default"
+                />
 
-    <genericsetup:upgradeDepends
-      title="Import all steps from eea.soercontent"
-      import_profile="eea.soercontent:default"
-      />
+        <genericsetup:upgradeDepends
+                title="Import all steps from eea.soercontent"
+                import_profile="eea.soercontent:default"
+                />
 
-  </genericsetup:upgradeSteps>
+    </genericsetup:upgradeSteps>
 
 </configure>
