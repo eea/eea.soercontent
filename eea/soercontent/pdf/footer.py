@@ -1,11 +1,14 @@
 """ PDF Views
 """
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from eea.pdf.utils import getApplicationRoot
 from Products.Five.browser import BrowserView
 
 class Footer(BrowserView):
     """ PDF Footer
     """
+    template = ViewPageTemplateFile('footer.pt')
+
     def breadcrumbs(self):
         """ Breadcrumbs
         """
@@ -18,3 +21,6 @@ class Footer(BrowserView):
             parent = parent.getParentNode()
             breadcrumbs.append(parent.Title())
         return reversed(breadcrumbs)
+
+    def __call__(self, **kwargs):
+        return self.template()

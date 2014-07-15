@@ -1,11 +1,14 @@
 """ PDF View
 """
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from eea.pdf.themes.classical.cover import Cover
 from eea.pdf.utils import getApplicationRoot
 
 class Title(Cover):
     """ Custom PDF body
     """
+    template = ViewPageTemplateFile('title.pt')
+
     @property
     def root(self):
         """ Navigation root

@@ -3,6 +3,8 @@ Changelog
 
 2.6-dev - (unreleased)
 ----------------------
+* Bug fix: Fix Fiche PDF title
+  [voineali]
 
 2.5 - (2014-06-30)
 ------------------

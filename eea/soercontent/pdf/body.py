@@ -3,12 +3,15 @@
 from logging import getLogger
 from bs4 import BeautifulSoup
 from zope.component import queryMultiAdapter
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from eea.pdf.themes.classical.body import Body as PDFBody
 logger = getLogger('eea.soercontent')
 
 class Body(PDFBody):
     """ Custom PDF body
     """
+    template = ViewPageTemplateFile('body.pt')
+
     def fix_description(self, html):
         """ Remove description
         """
