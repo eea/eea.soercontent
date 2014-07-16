@@ -3,12 +3,12 @@
     <div class="pdf-fiche-title" tal:define="parent nocall:view/parent">
 
         <div class="eea-three-quarters pull-left">
-            <h2 class="fiche-section" tal:content="parent/Title">Parent title</h2>
+            <div class="fiche-section" tal:content="parent/Title">Parent title</div>
             <h1 class="text-left fiche-title" tal:content="context/Title">Context Title</h1>
         </div>
 
         <div class="eea-one-quarter pull-right">
-            <img tal:attributes="src string:${context/absolute_url}/image_preview" class="cover-logo2" />
+            <img tal:attributes="src string:${context/absolute_url}/image_mini" class="cover-logo2" />
         </div>
 
     </div>
