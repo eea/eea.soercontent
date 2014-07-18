@@ -3,6 +3,9 @@ Changelog
 
 2.7-dev - (unreleased)
 ----------------------
+* Change: prefixed overrides with section classes in order to prevent
+  situations where css order will disrupt the styles of this package
+  [ichimdav refs #20453]
 
 2.6 - (2014-07-16)
 ------------------

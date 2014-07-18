@@ -214,26 +214,24 @@ body {
   width: 25%; }
 
 /* Overrides */
-div.width-3\:4 {
+.section-soer-2015 div.width-3\:4 {
   width: 62.2%; }
-
-.width-3\:4.position-0 {
+.section-soer-2015 .width-3\:4.position-0 {
   margin-left: -100%; }
-
-#portal-column-content {
+.section-soer-2015 #portal-column-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #FFF;
   padding: 1.5em; }
+.section-soer-2015 #content {
+  margin: 0; }
+.section-soer-2015 #portal-column-two {
+  margin-top: 35px; }
 
 .template-soer2015_frontpage #portal-column-content {
   padding: 0;
   background-color: transparent; }
-
-#content {
-  margin: 0; }
-
 .template-soer2015_frontpage #content.wf-state-visible {
   background: none; }
 
@@ -261,9 +259,6 @@ div.width-3\:4 {
 #content-core .portletItem {
   margin: 0em; }
 
-#portal-column-two {
-  margin-top: 35px; }
-
 /* portlet style overrides */
 #portal-column-two .portlet {
   padding: 15px; }
@@ -280,7 +275,6 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   padding: 1.5em; }
 
 /* Content Styles */
-
 .template-soer2015_frontpage #viewlet-above-content {
   margin: 0; }
 
