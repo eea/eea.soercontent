@@ -290,38 +290,38 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
     padding-top: 2em; }
 
 /* eea-tabs-soer theme style */
-#visual-portal-wrapper .eea-tabs-soer {
+#visual-portal-wrapper .eea-tabs.eea-tabs-soer {
   background-color: transparent;
   padding: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0; }
-  #visual-portal-wrapper .eea-tabs-soer > li {
+  #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li {
     width: 19.5%;
     text-align: center;
     height: 65px;
     background-color: transparent;
     margin-right: 5px; }
-    #visual-portal-wrapper .eea-tabs-soer > li.last-child {
+    #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li.last-child {
       width: 19.9%;
       margin-right: 0; }
-    #visual-portal-wrapper .eea-tabs-soer > li:first-child > a {
+    #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li:first-child > a {
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       -ms-border-radius: 0;
       border-radius: 0; }
-    #visual-portal-wrapper .eea-tabs-soer > li > a {
+    #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li > a {
       height: 40px;
       padding: 0.8em 2em 1em 0.8em;
       white-space: normal;
       word-wrap: break-word;
       text-shadow: 0 0;
       color: #FFF; }
-      #visual-portal-wrapper .eea-tabs-soer > li > a:hover, #visual-portal-wrapper .eea-tabs-soer > li > a.current, #visual-portal-wrapper .eea-tabs-soer > li > a.current:hover {
+      #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li > a:hover, #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li > a.current, #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li > a.current:hover {
         color: #FFF !important;
         text-shadow: 1px 1px #000; }
-  #visual-portal-wrapper .eea-tabs-soer .eea-icon {
+  #visual-portal-wrapper .eea-tabs.eea-tabs-soer .eea-icon {
     float: left;
     display: block;
     line-height: 1.5;
@@ -364,14 +364,15 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
     border-top-color: &dtml-soerRegionsSectionFullColor;; }
 
 /* eea-tabs-panels-soer */
-.eea-tabs-panels-soer, .eea-tabs-panels-soer .eea-tabs-panel {
+.eea-tabs-panels.eea-tabs-panels-soer,
+.eea-tabs-panels.eea-tabs-panels-soer .eea-tabs-panel {
   background-color: transparent;
   border: 0;
   padding: 1em 0 1em 1em; }
 
-.eea-tabs-panels-soer .eea-tabs-panel {
+.eea-tabs-panels.eea-tabs-panels-soer .eea-tabs-panel {
   overflow: hidden; }
-  .eea-tabs-panels-soer .eea-tabs-panel a {
+  .eea-tabs-panels.eea-tabs-panels-soer .eea-tabs-panel a {
     font-weight: bold; }
 
 /* eea-accordion-panels-soer */
@@ -383,12 +384,12 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   .eea-accordion-panels-soer .eea-accordion-title-manual-icons {
     color: #FFF; }
 
-.eea-accordion-panels-soer .pane {
+.eea-accordion-panels.eea-accordion-panels-soer .pane {
   padding: 15px; }
-.eea-accordion-panels-soer a {
+.eea-accordion-panels.eea-accordion-panels-soer a {
   color: #000;
   font-weight: bold; }
-  .eea-accordion-panels-soer a:hover {
+  .eea-accordion-panels.eea-accordion-panels-soer a:hover {
     text-decoration: underline; }
 
 /* media queries rules */
@@ -403,4 +404,3 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 /* </dtml-with> */
 /* </dtml-with> */
 
-/*# sourceMappingURL=eea_soercontent.css.dtml.map */
