@@ -20,7 +20,10 @@ class Footer(BrowserView):
         while parent is not root:
             parent = parent.getParentNode()
             breadcrumbs.append(parent.Title())
-        return reversed(breadcrumbs)
+        breadcrumbs.reverse()
+        if len(breadcrumbs) > 3:
+            breadcrumbs = breadcrumbs[-3:]
+        return breadcrumbs
 
     def __call__(self, **kwargs):
         return self.template()
