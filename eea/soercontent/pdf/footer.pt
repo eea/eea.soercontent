@@ -5,19 +5,26 @@
   lang="en"
   i18n:domain="eea">
 <head>
-     <metal:styles metal:use-macro="context/@@pdf.macros/styles"></metal:styles>
+    <metal:styles metal:use-macro="context/@@pdf.macros/styles"></metal:styles>
 </head>
 <body tal:define="
 plone_view nocall:context/@@plone;
-body_class python:plone_view.bodyClass(template, view);"
-        tal:attributes="class python: body_class + ' body-print'" >
+body_class python:plone_view.bodyClass(template, view);
+page python:request.get('page') or 1;
+total_pages python: request.get('topage') or 1;
+last_page python:page == total_pages;"
+        tal:attributes="class python: body_class + ' body-print' if not last_page else body_class + ' body-print last-page'">
 <div id="region-content">
-        <div class="pdf-fiche-header">
-            <h5 class="pdf-fiche-breadcrumbs pull-left" tal:define="breadcrumbs view/breadcrumbs;">
+        <div class="pdf-fiche-header"
+                tal:define="page_class python: 'pdf-fiche-page page ';
+                            even_page python: int(page) % 2 == 0;
+                            page_number_class python: page_class + 'pull-left' if even_page else page_class + 'pull-right'">
+
+            <div class="qrbox" tal:condition="python:page == total_pages" tal:content="structure context/qrbox"></div>
+            <h5 tal:attributes="class python:'pdf-fiche-breadcrumbs pull-left' if not even_page else 'pdf-fiche-breadcrumbs pull-right'" tal:define="breadcrumbs view/breadcrumbs;">
                 <span tal:content="structure python:' &gt; '.join(breadcrumbs)" />
             </h5>
-            <p class="pdf-fiche-page page pull-right"></p>
-
+            <p tal:attributes="class page_number_class;"></p>
         </div>
 
         <script type="text/javascript">
