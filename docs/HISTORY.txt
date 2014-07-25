@@ -3,6 +3,11 @@ Changelog
 
 2.7-dev - (unreleased)
 ----------------------
+* Change: footer title on even pages the page number is float left
+  and path section on the right
+  [ichimdav refs #19972]
+* Change: footer section path will only display a maximum of 3 levels
+  [ichimdav refs #19972]
 * Change: prefixed overrides with section classes in order to prevent
   situations where css order will disrupt the styles of this package
   [ichimdav refs #20453]
