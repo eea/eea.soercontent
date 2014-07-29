@@ -24,9 +24,14 @@
     </p>
   </div>
 
-  <metal:field use-macro="python:context.widget('summary', mode='view')">
-      Long summary and key messages
-  </metal:field>
+  <div class="fiche-summary"
+      tal:define="summary context/getSummary|string:"
+      tal:condition="python:summary.strip()">
+    <h2 i18n:translate="">Key messages (Summary)</h2>
+    <div class="keyFact">
+      <metal:field use-macro="python:context.widget('summary', mode='view')" />
+    </div>
+  </div>
 
   <metal:field use-macro="python:context.widget('text', mode='view')">
       Body text

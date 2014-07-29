@@ -3,6 +3,13 @@ Changelog
 
 2.7-dev - (unreleased)
 ----------------------
+* Upgrade step: (manual) Remove **div class="keyFact" ..** from all Fiches
+  items. Use 0maintenance > .findFiches script to list all Fiche items. Also
+  remove hardcoded **h2 Key messages (Summary)** heading.
+  [voineali refs #20463]
+* Change: Removed the hardcoded div keyFact from the fiches summary field and
+  use the view template
+  [voineali refs #20463]
 * Change: footer title on even pages the page number is float left
   and path section on the right
   [ichimdav refs #19972]
