@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-04-04 15:19+0000\n"
+"POT-Creation-Date: 2014-08-06 14:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,6 +39,10 @@ msgstr ""
 
 #: ../../soercontent/content/schema.py:39
 msgid "Image used for cover, thumbnail and listings"
+msgstr ""
+
+#: ../../soercontent/browser/zpt/fiche_view.pt:30
+msgid "Key messages (Summary)"
 msgstr ""
 
 #: ../../soercontent/content/schema.py:18

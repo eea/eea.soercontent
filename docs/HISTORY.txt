@@ -7,6 +7,8 @@ Changelog
   items. Use 0maintenance > .findFiches script to list all Fiche items. Also
   remove hardcoded **h2 Key messages (Summary)** heading.
   [voineali refs #20463]
+* Bug fix: Include i18n translations
+  [avoinea]
 * Change: Removed the hardcoded div keyFact from the fiches summary field and
   use the view template
   [voineali refs #20463]
