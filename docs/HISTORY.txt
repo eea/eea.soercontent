@@ -1,8 +1,8 @@
 Changelog
 =========
 
-2.7-dev - (unreleased)
-----------------------
+2.7 - (2014-08-12)
+------------------
 * Upgrade step: (manual) Remove **div class="keyFact" ..** from all Fiches
   items. Use 0maintenance > .findFiches script to list all Fiche items. Also
   remove hardcoded **h2 Key messages (Summary)** heading.
