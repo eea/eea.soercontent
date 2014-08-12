@@ -1,6 +1,9 @@
 Changelog
 =========
 
+2.8-dev - (unreleased)
+----------------------
+
 2.7 - (2014-08-12)
 ------------------
 * Upgrade step: (manual) Remove **div class="keyFact" ..** from all Fiches
