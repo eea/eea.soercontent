@@ -13,9 +13,8 @@ body {
 #viewlet-above-content {
   margin: -22px -18px 15px -18px;
   background-color:  &dtml-soerBackgroundColor;;
-  padding: 0em 1.5em 0em 1.5em;
-  min-width: 1000px;
-  height: 3em; }
+  padding: 0 1.5em 1.5em 1.5em;
+}
 
 /* </dtml-with> */
 /* </dtml-with> */

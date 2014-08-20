@@ -3,6 +3,9 @@ Changelog
 
 2.8-dev - (unreleased)
 ----------------------
+* Bug fix: fixed appearance of viewlet-above-content when the plone-lock-status
+  box was present
+  [ichimdav refs #20732]
 
 2.7 - (2014-08-12)
 ------------------
