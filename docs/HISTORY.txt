@@ -3,6 +3,8 @@ Changelog
 
 2.8-dev - (unreleased)
 ----------------------
+* Change: removed keyfacts/summary header, it is implicit.
+  [demarant]
 * Bug fix: fixed appearance of viewlet-above-content when the plone-lock-status
   box was present
   [ichimdav refs #20732]
