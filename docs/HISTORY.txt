@@ -1,6 +1,9 @@
 Changelog
 =========
 
+2.9-dev - (unreleased)
+----------------------
+
 2.8 - (2014-08-27)
 ------------------
 * Change: removed keyfacts/summary header, it is implicit.
