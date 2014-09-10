@@ -18,6 +18,17 @@
   width: inherit;
   float: right; }
 
+.qrbox-text {
+  float: left;
+  width: 80%;
+  padding-right: 0.5em; }
+
+.qrbox-text strong {
+  padding: 0 1pt; }
+
+#content .qrbox-text > p {
+  margin: 0 0 0.2em 0; }
+
 /* END QR box */
 /* body */
 .body-print {
