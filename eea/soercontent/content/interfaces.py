@@ -4,6 +4,7 @@
    >>> sandbox = portal['sandbox']
 
 """
+from zope.interface import Interface
 from Products.ATContentTypes.interfaces import IATDocument
 
 class ISoerContent(IATDocument):
@@ -18,4 +19,8 @@ class IFiche(ISoerContent):
         >>> doc
         <Fiche at...>
 
+    """
+
+class ICountryFiche(Interface):
+    """ Marker interface for Country Fiches
     """

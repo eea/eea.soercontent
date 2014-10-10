@@ -2,6 +2,7 @@
 """
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.layout.viewlets import common
+from eea.soercontent.interfaces import ICountryFiche
 
 
 class Disclaimer(common.ViewletBase):
@@ -13,12 +14,6 @@ class Disclaimer(common.ViewletBase):
     def available(self):
         """ Available
         """
-        if getattr(self.context, 'portal_type', '') != 'Fiche':
-            return False
-
-        field = self.context.getField('disableDisclaimer')
-        disabled =  field.getAccessor(self.context)() if field else False
-        if disabled:
-            return False
-
-        return True
+        if ICountryFiche.providedBy(self.context):
+            return True
+        return False
