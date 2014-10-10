@@ -27,11 +27,20 @@
     allowed_interface="eea.epub.browser.interfaces.IExportView"
     />
 
-    <browser:page
-            for="*"
-            name="soercontent_view"
-            class="eea.soercontent.browser.app.view.SOERContentView"
-            allowed_attributes="content"
-            permission="zope.Public"
-            />
+  <browser:page
+    for="*"
+    name="soercontent_view"
+    class="eea.soercontent.browser.app.view.SOERContentView"
+    allowed_attributes="content"
+    permission="zope.Public"
+    />
+
+  <browser:viewlet
+    name="eea.soercontent.disclaimer"
+    layer="eea.soercontent.browser.interfaces.ILayer"
+    manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+    class=".viewlets.Disclaimer"
+    permission="zope2.View"
+    />
+
 </configure>

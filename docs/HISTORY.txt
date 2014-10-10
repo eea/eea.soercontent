@@ -3,6 +3,15 @@ Changelog
 
 2.9-dev - (unreleased)
 ----------------------
+* Upgrade step: (optional) Reorder eea.soercontent.disclaimer viewlet within
+  @@manage-viewlets
+  [voineali refs #21183]
+* Upgrade step: (optional) Enable country disclaimer for country Fiches
+  soer-2015/countries/<country-fiche>/edit > Settings > Disable disclaimer
+  [voineali refs #21183]
+* Feature: Added country disclaimer viewlet for Fiche content-type. Disabled
+  by default and can be enabled per Fiche within Edit > Settings
+  [voineali refs #21183]
 
 2.8 - (2014-08-27)
 ------------------

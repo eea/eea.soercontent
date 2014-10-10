@@ -1,0 +1,10 @@
+<metal:subsection define-macro="disclaimer">
+  <div class="disclaimer" tal:condition="view/available">
+    <b i18n:translate="">Disclaimer</b>
+    <p class="discreet" i18n:translate="">
+      The country assessments are the sole responsibility of the EEA member
+      and cooperating countries supported by the EEA through guidance,
+      translation and editing.
+    </p>
+  </div>
+</metal:subsection>
