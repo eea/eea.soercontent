@@ -1,6 +1,9 @@
 Changelog
 =========
 
+3.0-dev - (unreleased)
+----------------------
+
 2.9 - (2014-10-15)
 ------------------
 * Changed: condition to display soercontent css has changed to take into account
