@@ -3,6 +3,9 @@ Changelog
 
 2.9-dev - (unreleased)
 ----------------------
+* Changed: condition to display soercontent css has changed to take into account
+  portal_url + soer-2015
+  [ichim-david refs #21420]
 * Upgrade step: (optional) Reorder eea.soercontent.disclaimer viewlet within
   @@manage-viewlets
   [voineali refs #21183]

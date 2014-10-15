@@ -9,13 +9,13 @@
 
     <stylesheet
             id="eea_soercontent.css"
-            expression="python:'/soer-2015' in request.URL0"
+            expression="python:request.URL.startswith(object.portal_url()+'/soer-2015')"
             media="all"
             />
 
     <stylesheet
             id="eea_soercontent_screen.css"
-            expression="python:'/soer-2015' in request.URL0"
+            expression="python:request.URL.startswith(object.portal_url()+'/soer-2015')"
             media="screen"
             insert-after="eea_soercontent.css"
            />
