@@ -3,6 +3,9 @@ Changelog
 
 3.0-dev - (unreleased)
 ----------------------
+* Change: minor css adjustments. description color must be consistent
+  across eea website.
+  [demarant]
 
 2.9 - (2014-10-15)
 ------------------

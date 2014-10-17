@@ -31,8 +31,8 @@ h1, h2, h3 {
   border-bottom: none; }
 
 /* @group Section color overrides */
-/* headers and description */
-.subsection-synthesis #region-content h1, .subsection-synthesis #region-content h2, .subsection-synthesis #region-content h3, .subsection-synthesis #region-content h4, .subsection-synthesis #region-content h5, .subsection-synthesis #region-content h6, .subsection-synthesis #region-content .documentDescription, .subsection-synthesis #region-content #description {
+/* headers */
+.subsection-synthesis #region-content h1, .subsection-synthesis #region-content h2, .subsection-synthesis #region-content h3, .subsection-synthesis #region-content h4, .subsection-synthesis #region-content h5, .subsection-synthesis #region-content h6 {
   color: &dtml-soerSynthesysSectionFullColor;; }
 .subsection-synthesis #region-content .documentFirstHeading {
   border-bottom: 1px solid &dtml-soerSynthesysSectionFullColor;; }
@@ -40,7 +40,7 @@ h1, h2, h3 {
 .subsection-synthesis #viewlet-below-content h2 {
   color: &dtml-soerSynthesysSectionFullColor;; }
 
-.subsection-europe #region-content h1, .subsection-europe #region-content h2, .subsection-europe #region-content h3, .subsection-europe #region-content h4, .subsection-europe #region-content h5, .subsection-europe #region-content h6, .subsection-europe #region-content .documentDescription, .subsection-europe #region-content #description {
+.subsection-europe #region-content h1, .subsection-europe #region-content h2, .subsection-europe #region-content h3, .subsection-europe #region-content h4, .subsection-europe #region-content h5, .subsection-europe #region-content h6 {
   color: &dtml-soerThematicSectionFullColor;; }
 .subsection-europe #region-content .documentFirstHeading {
   border-bottom: 1px solid &dtml-soerThematicSectionFullColor;; }
@@ -48,7 +48,7 @@ h1, h2, h3 {
 .subsection-europe #viewlet-below-content h2 {
   color: &dtml-soerThematicSectionFullColor;; }
 
-.subsection-countries #region-content h1, .subsection-countries #region-content h2, .subsection-countries #region-content h3, .subsection-countries #region-content h4, .subsection-countries #region-content h5, .subsection-countries #region-content h6, .subsection-countries #region-content .documentDescription, .subsection-countries #region-content #description {
+.subsection-countries #region-content h1, .subsection-countries #region-content h2, .subsection-countries #region-content h3, .subsection-countries #region-content h4, .subsection-countries #region-content h5, .subsection-countries #region-content h6 {
   color: &dtml-soerRegionsSectionFullColor;; }
 .subsection-countries #region-content .documentFirstHeading {
   border-bottom: 1px solid &dtml-soerRegionsSectionFullColor;; }
@@ -56,7 +56,7 @@ h1, h2, h3 {
 .subsection-countries #viewlet-below-content h2 {
   color: &dtml-soerRegionsSectionFullColor;; }
 
-.subsection-global #region-content h1, .subsection-global #region-content h2, .subsection-global #region-content h3, .subsection-global #region-content h4, .subsection-global #region-content h5, .subsection-global #region-content h6, .subsection-global #region-content .documentDescription, .subsection-global #region-content #description {
+.subsection-global #region-content h1, .subsection-global #region-content h2, .subsection-global #region-content h3, .subsection-global #region-content h4, .subsection-global #region-content h5, .subsection-global #region-content h6 {
   color: &dtml-soerMegatrendsSectionFullColor;; }
 .subsection-global #region-content .documentFirstHeading {
   border-bottom: 1px solid &dtml-soerMegatrendsSectionFullColor;; }
@@ -64,7 +64,7 @@ h1, h2, h3 {
 .subsection-global #viewlet-below-content h2 {
   color: &dtml-soerMegatrendsSectionFullColor;; }
 
-.subsection-countries-comparison #region-content h1, .subsection-countries-comparison #region-content h2, .subsection-countries-comparison #region-content h3, .subsection-countries-comparison #region-content h4, .subsection-countries-comparison #region-content h5, .subsection-countries-comparison #region-content h6, .subsection-countries-comparison #region-content .documentDescription, .subsection-countries-comparison #region-content #description {
+.subsection-countries-comparison #region-content h1, .subsection-countries-comparison #region-content h2, .subsection-countries-comparison #region-content h3, .subsection-countries-comparison #region-content h4, .subsection-countries-comparison #region-content h5, .subsection-countries-comparison #region-content h6 {
   color: &dtml-soerCountrySectionFullColor;; }
 .subsection-countries-comparison #region-content .documentFirstHeading {
   border-bottom: 1px solid &dtml-soerCountrySectionFullColor;; }
@@ -238,9 +238,6 @@ body {
 #parent-fieldname-title {
   padding: 0;
   margin: 0; }
-
-#content .documentDescription, #content #description {
-  color: #5e6464; }
 
 .column-area {
   width: 65%; }
