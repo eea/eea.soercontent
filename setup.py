@@ -36,7 +36,7 @@ setup(name=NAME,
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'eea.pdf',
+          'eea.pdf > 4.3',
           'eea.vocab',
           'eea.forms',
           'eea.converter',
