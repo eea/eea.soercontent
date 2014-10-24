@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object name="portal_pdf">
- <object name="modern">
+ <object name="page">
    <property name="types">
      <element value="Fiche"/>
    </property>
