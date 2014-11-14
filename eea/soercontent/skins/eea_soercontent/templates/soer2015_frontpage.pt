@@ -10,30 +10,30 @@ i18n:domain="plone">
 <metal:content-core fill-slot="main">
 <metal:content-core define-macro="main"
         tal:define="cview nocall:context/@@soercontent_view;">
-    <div id="parent-title">
+    <div id="parent-title"  style="background:url(http://www.eea.europa.eu/draft.png);">
         <h1 id="parent-fieldname-title" class="documentFirstHeading">
-            SOER 2015 - The European environment - State and Outlook
+            SOER 2015 — The European environment — state and outlook 2015
         </h1>
 
-        <div class="documentDescription">A set of assessments of the current state of Europe's environment
+        <div class="documentDescription">Global, European and country-level assessment of the European environment
         </div>
     </div>
-    <div id="content-core">
+    <div id="content" class="documentContent wf-state-visible">
         <!--? SOER2015 Template-->
         <!--? Tabbed navigation -->
         <div class="top-highlights">
             <ul class="eea-tabs eea-tabs-soer">
-                <li><a href="#tab-synthesis-report" id="tab-synthesis-report"><span class="eea-icon eea-icon-clipboard eea-icon-2x"></span> Synthesis report</a></li>
-                <li><a href="#tab-global-megatrends" id="tab-global-megatrends"><span class="eea-icon eea-icon-globe eea-icon-2x"></span> Global megatrends</a></li>
-                <li><a href="#tab-thematic-briefing" id="tab-thematic-briefing"><span class="eea-icon eea-icon-flask eea-icon-2x"></span> Thematic briefings</a></li>
-                <li><a href="#tab-cross-country-comparisons" id="tab-cross-country-comparisons"><span class="eea-icon eea-icon-bar-chart-o eea-icon-2x"></span> Cross-country comparisons</a></li>
-                <li><a href="#tab-regions-countries" id="tab-regions-countries"><span class="eea-icon eea-icon-map-marker eea-icon-2x"></span> Country<br>briefings</a></li>
+                <li><a href="#tab-synthesis-report" id="tab-synthesis-report"><span class="eea-icon eea-icon-clipboard eea-icon-2x"></span>Synthesis report</a></li>
+                <li><a href="#tab-global-megatrends" id="tab-global-megatrends"><span class="eea-icon eea-icon-globe eea-icon-2x"></span>Global megatrends</a></li>
+                <li><a href="#tab-thematic-briefing" id="tab-thematic-briefing"><span class="eea-icon eea-icon-flask eea-icon-2x"></span>European briefings</a></li>
+                <li><a href="#tab-cross-country-comparisons" id="tab-cross-country-comparisons"><span class="eea-icon eea-icon-bar-chart-o eea-icon-2x"></span>Cross-country comparisons</a></li>
+                <li><a href="#tab-regions-countries" id="tab-regions-countries"><span class="eea-icon eea-icon-map-marker eea-icon-2x"></span>Countries<br>and regions</a></li>
             </ul>
             <div class="eea-row">
                 <div class="column-area">
                     <div class="eea-tabs-panels eea-tabs-panels-soer">
                         <div class="eea-tabs-panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci animi aperiam assumenda at corporis earum eum magni! Ab aliquam animi asperiores eaque esse facere fugit officia quo repellendus voluptatibus.</p>
+                            <p>SOER 2015 Synthesis provides a comprehensive overview of the key environmental challenges Europe is facing today, their links to the economy and the society, policy responses, and possible ways to facilitate long-term transition. It draws on all the other parts of SOER 2015.</p>
                             <ul>
                                 <li>
                                 <a tal:attributes="href string:$portal_url/soer/synthesis/synthesis/contents" class="state-published" title="SOER 2010 table of contents">
@@ -112,7 +112,7 @@ i18n:domain="plone">
                                <p class="pull-left">Download Synthesis report</p> <a class="download-pdf pull-left fancybox" href="#pdf-language-choice"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left fancybox" href="#epub-language-choice"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
                         </div>
                         <div class="eea-tabs-panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores cum cumque debitis delectus excepturi, illum ipsum itaque nam omnis placeat, quod ratione repellat suscipit tempore voluptas voluptatum. Asperiores, modi.</p>
+                            <p>These 11 global megatrends provide a backdrop for understanding the global forces at play affecting the environment in Europe in a longer-term and global context.</p>
 
                              <tal:global tal:define="results python:cview.content(parent_id='soer-2015', object_id='global')">
                                  <ul>
@@ -127,7 +127,7 @@ i18n:domain="plone">
                             <div class="eea-footer-right visualClear pull-right"><p class="pull-left">Download all Global megatrends</p> <a class="download-pdf pull-left" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
                         </div>
                        <div class="eea-tabs-panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid beatae blanditiis esse, est itaque libero nostrum numquam odio quia sit, voluptate voluptatem! Architecto et quas quos recusandae? Quisquam, unde.</p>
+                            <p>European briefings present the state, recent trends and prospects in 25 key environmental themes, grouped in three clusters: environmental themes; socio-economic dimensions; and systemic perspectives.</p>
 
                             <tal:europe tal:define="results python:cview.content(parent_id='soer-2015', object_id='europe');
                                            results_length python:len(results);
@@ -154,7 +154,7 @@ i18n:domain="plone">
                         </div>
 
                         <div class="eea-tabs-panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam cumque dolore eos quibusdam repudiandae sint tempore. Corporis doloribus dolorum error facilis, libero mollitia quaerat veritatis vitae voluptatem voluptatibus, voluptatum?</p>
+                            <p>Cross-country comparisons provide a deeper analysis around selected topics. They are based on EEA indicators covering a number of EEA countries.</p>
 
                             <tal:countries-comparison tal:define="results python:cview.content(parent_id='soer-2015', object_id='countries-comparison')">
                                 <ul>
@@ -170,7 +170,7 @@ i18n:domain="plone">
                         </div>
      
                         <div class="eea-tabs-panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam cumque dolore eos quibusdam repudiandae sint tempore. Corporis doloribus dolorum error facilis, libero mollitia quaerat veritatis vitae voluptatem voluptatibus, voluptatum?</p>
+                            <p>Country briefings provide an overview of state of the environment across 39 European countries, based on national state-of-environment reports. Regional briefings address region-specific environmental issues affecting several EEA countries.</p>
 
                             <tal:countries tal:define="results python:cview.content(parent_id='soer-2015', object_id='countries');
                                     results_length python:len(results);
@@ -1431,39 +1431,33 @@ i18n:domain="plone">
                         <dd class="portletItem lastItem">
                         <ul class="navTree navTreeLevel0">
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-global">
-                            <a tal:attributes="href string:$portal_url/soer-2015/global"
+                            <a tal:attributes="href string:$portal_url/soer-2015/about"
                                 class=" navTreeFolderish contenttype-folder" title="">
-                                <span>Global megatrends</span>
+                                <span>About SOER</span>
                             </a>
                             </li>
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-europe">
-                            <a tal:attributes="href string:$portal_url/soer-2015/europe"
+                            <a tal:attributes="href string:$portal_url/soer-2015/for-journalists"
                                 class=" navTreeFolderish contenttype-folder" title="">
-                                <span>European thematic briefings</span>
+                                <span>For journalists</span>
                             </a>
                             </li>
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-countries-comparison">
-                            <a tal:attributes="href string:$portal_url/soer-2015/countries-comparison"
+                            <a tal:attributes="href string:$portal_url/soer-2015/events"
                                 class=" navTreeFolderish contenttype-folder" title="">
-                                <span>Cross-country comparisons</span>
+                                <span>Events</span>
                             </a>
                             </li>
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-countries">
-                            <a tal:attributes="href string:$portal_url/soer-2015/countries"
+                            <a tal:attributes="href string:$portal_url/soer-2015/feedback"
                                 class=" navTreeFolderish contenttype-folder" title="">
-                                <span>Country briefings</span>
+                                <span>Feedback</span>
                             </a>
                             </li>
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-progress-monitoring">
-                            <a tal:attributes="href string:$portal_url/soer-2015/progress-monitoring"
+                            <a tal:attributes="href string:$portal_url/soer-2015/photos-and-videos"
                                 class=" navTreeFolderish contenttype-folder" title="">
-                                <span>Workflow progress monitoring</span>
-                            </a>
-                            </li>
-                            <li class="navTreeItem visualNoMarker navTreeFolderish section-help">
-                            <a tal:attributes="href string:$portal_url/soer-2015/help"
-                                class=" navTreeFolderish contenttype-folder" title="">
-                                <span>Help</span>
+                                <span>Photos and videos</span>
                             </a>
                             </li>
                         </ul>
