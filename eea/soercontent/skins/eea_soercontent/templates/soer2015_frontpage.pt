@@ -134,34 +134,43 @@ i18n:domain="plone">
                                            one_column python: results_length <= 10;
                                            two_column python: results_length >= 20;
                                             ">
-                               <ul class="eea-list-columns eea-three-columns">
-                                   <h4><strong>Environmental themes</strong></h4>
-                                   <li tal:repeat="result python:results if one_column else results[0:10]">
-                                       <a tal:attributes="href result/url">
-                                           <span tal:content="result/title">Countries Comparison</span>
-                                       </a>
-                                   </li>
-                               </ul>
-                                <ul class="eea-list-columns eea-three-columns" tal:condition="python:two_column">
-                                    <h4><strong>Socio-economic dimensions</strong></h4>
-                                    <tal:defines tal:define="res python:results[10:20]">
-                                    <li tal:repeat="result res">
-                                        <a tal:attributes="href result/url">
-                                            <span tal:content="result/title">Countries Comparison</span>
-                                        </a>
-                                    </li>
-                                    </tal:defines>
-                                </ul>
-                                <ul class="eea-list-columns eea-three-columns" tal:condition="python:results_length > 20">
-                                    <tal:defines tal:define="res python:results[20:]">
-                                        <h4><strong>Systemic perspectives</strong></h4>
-                                        <li tal:repeat="result res">
+                                <div class="eea-list-columns eea-three-columns">
+                                    <h4><strong>Environmental themes</strong></h4>
+                                    <ul>
+                                        <li tal:repeat="result python:results if one_column else results[0:10]">
                                             <a tal:attributes="href result/url">
                                                 <span tal:content="result/title">Countries Comparison</span>
                                             </a>
                                         </li>
-                                    </tal:defines>
-                                </ul>
+                                    </ul>
+                                </div>
+
+                                <div class="eea-list-columns eea-three-columns" tal:condition="python:two_column">
+                                    <h4><strong>Socio-economic dimensions</strong></h4>
+                                    <ul>
+                                        <tal:defines tal:define="res python:results[10:20]">
+                                            <li tal:repeat="result res">
+                                                <a tal:attributes="href result/url">
+                                                    <span tal:content="result/title">Countries Comparison</span>
+                                                </a>
+                                            </li>
+                                        </tal:defines>
+                                    </ul>
+                                </div>
+
+                                <div class="eea-list-columns eea-three-columns" tal:condition="python:results_length > 20">
+                                    <h4><strong>Systemic perspectives</strong></h4>
+                                    <ul>
+                                        <tal:defines tal:define="res python:results[20:]">
+                                            <li tal:repeat="result res">
+                                                <a tal:attributes="href result/url">
+                                                    <span tal:content="result/title">Countries Comparison</span>
+                                                </a>
+                                            </li>
+                                        </tal:defines>
+                                    </ul>
+                                </div>
+
                             </tal:europe>
 
                             <div class="eea-footer-right visualClear pull-right"><p class="pull-left">Download all Thematic briefing fiches</p> <a class="download-pdf pull-left" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
@@ -195,7 +204,7 @@ i18n:domain="plone">
                                     two_column python: results_length <= double_ratio;
                                     three_column python: results_length > double_ratio;
                                     column_class python: 'eea-list-columns eea-three-columns' if three_column else 'eea-list-columns eea-two-columns'">
-                                <h4><strong>Countries briefings</strong></h4>
+                                <h4>Countries briefings</h4>
                                 <ul tal:attributes="class column_class">
                                     <li tal:repeat="result python:results if one_column else results[0:ratio]">
                                         <a tal:attributes="href result/url">
@@ -213,26 +222,26 @@ i18n:domain="plone">
                                         </li>
                                     </tal:defines>
                                 </ul>
+                                <div tal:attributes="class column_class" tal:condition="python:not two_column">
+                                    <ul>
+                                        <tal:defines tal:define="res python:results[double_ratio:last_three]">
+                                            <li tal:repeat="result res">
+                                                <a tal:attributes="href result/url">
+                                                    <span tal:content="result/title">Countries Comparison</span>
+                                                </a>
+                                            </li>
+                                        </tal:defines>
 
-                                <ul tal:attributes="class column_class" tal:condition="python:not two_column">
-                                    <tal:defines tal:define="res python:results[double_ratio:last_three]">
-                                        <li tal:repeat="result res">
-                                            <tal:regional tal:condition="python:result['title'] == 'Arctic'">
-                                            </tal:regional>
-                                            <a tal:attributes="href result/url">
-                                                <span tal:content="result/title">Countries Comparison</span>
-                                            </a>
-                                        </li>
-                                    </tal:defines>
+                                    </ul>
                                     <h4>Regional briefings</h4>
-                                    <tal:defines tal:define="res python:results[last_three:]">
+                                    <ul tal:define="res python:results[last_three:]">
                                         <li tal:repeat="result res">
                                             <a tal:attributes="href result/url">
                                                 <span tal:content="result/title">Countries Comparison</span>
                                             </a>
                                         </li>
-                                    </tal:defines>
-                                </ul>
+                                    </ul>
+                                </div>
                             </tal:countries>
 
                             <div class="eea-footer-right visualClear pull-right"><p class="pull-left">Download all country briefings</p> <a class="download-pdf pull-left" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
