@@ -1,7 +1,7 @@
 /* <dtml-with base_properties> */
 /* <dtml-with soer_properties>   */
 /* <dtml-call "REQUEST.set('portal_url', portal_url())"> */
-/* helper classes */
+/* helper classes  */
 .border-box, .eea-list-columns {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -31,7 +31,7 @@ h1, h2, h3 {
   border-bottom: none; }
 
 /* @group Section color overrides */
-/* headers */
+/* headers and description */
 .subsection-synthesis #region-content h1, .subsection-synthesis #region-content h2, .subsection-synthesis #region-content h3, .subsection-synthesis #region-content h4, .subsection-synthesis #region-content h5, .subsection-synthesis #region-content h6 {
   color: &dtml-soerSynthesysSectionFullColor;; }
 .subsection-synthesis #region-content .documentFirstHeading {
@@ -197,12 +197,15 @@ body {
 
 /* column sizes for eea-tabs panels */
 .eea-list-columns {
-  padding: 0 1em 0 1.5em;
+  padding: 0 1em;
   float: left; }
 
 #region-content .eea-list-columns,
 #region-content .navTreeLevel0 {
   margin: 0; }
+
+#region-content .eea-list-columns ul {
+  list-style-position: outside; }
 
 .eea-two-columns {
   width: 50%; }
@@ -389,6 +392,10 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   .eea-accordion-panels.eea-accordion-panels-soer a:hover {
     text-decoration: underline; }
 
+/* 21869 add margin-top to download links
+.eea-footer-right {
+  margin-top: 1em;
+}
 /* media queries rules */
 /* shrink the right column when screen size is smaller than 1280px
    avoiding the columns from overlapping */
