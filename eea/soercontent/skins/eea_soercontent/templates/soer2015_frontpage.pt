@@ -129,46 +129,55 @@ i18n:domain="plone">
                        <div class="eea-tabs-panel">
                             <p>European briefings present the state, recent trends and prospects in 25 key environmental themes, grouped in three clusters: environmental themes; socio-economic dimensions; and systemic perspectives.</p>
 
-                            <tal:europe tal:define="results python:cview.content(parent_id='soer-2015', object_id='europe');
-                                           results_length python:len(results);
-                                           one_column python: results_length <= 10;
-                                           two_column python: results_length >= 20;
-                                            ">
-                                <div class="eea-list-columns eea-three-columns">
-                                    <h4><strong>Environmental themes</strong></h4>
-                                    <ul>
-                                        <li tal:repeat="result python:results if one_column else results[0:10]">
-                                            <a tal:attributes="href result/url">
-                                                <span tal:content="result/title">Countries Comparison</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
 
-                                <div class="eea-list-columns eea-three-columns" tal:condition="python:two_column">
-                                    <h4><strong>Socio-economic dimensions</strong></h4>
-                                    <ul>
-                                        <tal:defines tal:define="res python:results[10:20]">
-                                            <li tal:repeat="result res">
-                                                <a tal:attributes="href result/url">
-                                                    <span tal:content="result/title">Countries Comparison</span>
+                            <tal:europe>
+                                <div class="eea-list-columns eea-three-columns"
+                                    tal:define="collection python:context.restrictedTraverse('collections/environmental-themes', None);"
+                                    tal:condition="nocall:collection">
+                                    <tal:results tal:define="results python:collection.queryCatalog()"
+                                                 tal:condition="results">
+                                        <h4>Environmental themes</h4>
+                                        <ul>
+                                            <li tal:repeat="result results">
+                                                <a tal:attributes="href result/getURL">
+                                                    <span tal:content="result/Title">Title</span>
                                                 </a>
                                             </li>
-                                        </tal:defines>
-                                    </ul>
+                                        </ul>
+                                    </tal:results>
                                 </div>
 
-                                <div class="eea-list-columns eea-three-columns" tal:condition="python:results_length > 20">
-                                    <h4><strong>Systemic perspectives</strong></h4>
-                                    <ul>
-                                        <tal:defines tal:define="res python:results[20:]">
-                                            <li tal:repeat="result res">
-                                                <a tal:attributes="href result/url">
-                                                    <span tal:content="result/title">Countries Comparison</span>
+                                <div class="eea-list-columns eea-three-columns"
+                                        tal:define="collection python:context.restrictedTraverse('collections/socio-economic-dimensions', None);"
+                                        tal:condition="nocall:collection">
+                                    <tal:results tal:define="results python:collection.queryCatalog()"
+                                                 tal:condition="results">
+                                        <h4>Socio-economic dimensions</h4>
+                                        <ul>
+                                            <li tal:repeat="result results">
+                                                <a tal:attributes="href result/getURL">
+                                                    <span tal:content="result/Title">Title</span>
                                                 </a>
                                             </li>
-                                        </tal:defines>
-                                    </ul>
+                                        </ul>
+                                    </tal:results>
+                                </div>
+
+                                <div class="eea-list-columns eea-three-columns"
+                                        tal:define="collection python:context.restrictedTraverse('collections', None);"
+                                        tal:condition="nocall:collection">
+                                    <tal:results tal:define="results python:collection.queryCatalog()"
+                                                 tal:condition="results">
+                                        <h4>Systemic perspectives</h4>
+                                        <ul>
+                                            <li tal:content="results"></li>
+                                            <li tal:repeat="result results">
+                                                <a tal:attributes="href result/getURL">
+                                                    <span tal:content="result/Title">Title</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </tal:results>
                                 </div>
 
                             </tal:europe>

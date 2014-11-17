@@ -199,6 +199,8 @@ body {
 .eea-list-columns {
   padding: 0 1em;
   float: left; }
+  .eea-list-columns li {
+    display: list-item; }
 
 #region-content .eea-list-columns,
 #region-content .navTreeLevel0 {
