@@ -188,6 +188,7 @@ i18n:domain="plone">
 
                             <tal:countries tal:define="results python:cview.content(parent_id='soer-2015', object_id='countries');
                                     results_length python:len(results);
+                                    last_three python:results_length - 3;
                                     ratio python: results_length / 3;
                                     double_ratio python: ratio * 2;
                                     one_column python: results_length <= ratio;
@@ -214,7 +215,7 @@ i18n:domain="plone">
                                 </ul>
 
                                 <ul tal:attributes="class column_class" tal:condition="python:not two_column">
-                                    <tal:defines tal:define="res python:results[double_ratio:39]">
+                                    <tal:defines tal:define="res python:results[double_ratio:last_three]">
                                         <li tal:repeat="result res">
                                             <tal:regional tal:condition="python:result['title'] == 'Arctic'">
                                             </tal:regional>
@@ -224,7 +225,7 @@ i18n:domain="plone">
                                         </li>
                                     </tal:defines>
                                     <h4>Regional briefings</h4>
-                                    <tal:defines tal:define="res python:results[39:]">
+                                    <tal:defines tal:define="res python:results[last_three:]">
                                         <li tal:repeat="result res">
                                             <a tal:attributes="href result/url">
                                                 <span tal:content="result/title">Countries Comparison</span>
