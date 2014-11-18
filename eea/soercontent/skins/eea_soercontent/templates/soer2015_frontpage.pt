@@ -36,106 +36,107 @@ i18n:domain="plone">
                             <p>SOER 2015 Synthesis provides a comprehensive overview of the key environmental challenges Europe is facing today, their links to the economy and the society, policy responses, and possible ways to facilitate long-term transition. It draws on all the other parts of SOER 2015.</p>
                             <ul>
                                 <li>
-                                <a tal:attributes="href string:$portal_url/soer/synthesis/synthesis/contents" class="state-published" title="SOER 2010 table of contents">
-                                    <span>SOER 2015 table of contents</span>
-                                </a>
+                                    <a tal:attributes="href string:$portal_url/soer/synthesis/synthesis/contents" class="state-published" title="SOER 2010 table of contents">
+                                        <span>SOER 2015 table of contents</span>
+                                    </a>
                                 </li>
                                 <li>
-                                <a tal:attributes="href string:$portal_url/soer/synthesis/synthesis/key-messages-1" class="state-published" title="Key messages">
-                                    <span>Key messages</span>
-                                </a>
+                                    <a tal:attributes="href string:$portal_url/soer/synthesis/synthesis/key-messages-1" class="state-published" title="Key messages">
+                                        <span>Key messages</span>
+                                    </a>
                                 </li>
                                 <li>
                                 <span class="link-xhtml"><a tal:attributes="href string:$portal_url/soer/synthesis/synthesis/chapter1.xhtml" class="state-published" title="Chapter 1: the state of the environment in Europe">
-                                        <span>Chapter 1: the state of the environment in Europe</span>
+                                    <span>Chapter 1: the state of the environment in Europe</span>
                                 </a></span>
                                 </li>
                                 <li>
                                 <span class="link-xhtml"><a tal:attributes="href string:$portal_url/soer/synthesis/synthesis/chapter2.xhtml" class="state-published" title="Chapter 2: climate change">
-                                        <span>Chapter 2: climate change</span>
+                                    <span>Chapter 2: climate change</span>
                                 </a></span>
                                 </li>
                                 <li>
                                 <span class="link-xhtml"><a tal:attributes="href string:$portal_url/soer/synthesis/synthesis/chapter3.xhtml" class="state-published" title="Chapter 3: nature and biodiversity">
-                                        <span>Chapter 3: nature and biodiversity</span>
+                                    <span>Chapter 3: nature and biodiversity</span>
                                 </a></span>
                                 </li>
                                 <li>
                                 <span class="link-xhtml"><a tal:attributes="href string:$portal_url/soer/synthesis/synthesis/chapter4.xhtml" class="state-published" title="Chapter 4: natural resources and waste">
-                                        <span>Chapter 4: natural resources and waste</span>
+                                    <span>Chapter 4: natural resources and waste</span>
                                 </a></span>
                                 </li>
                                 <li>
                                 <span class="link-xhtml"><a tal:attributes="href string:$portal_url/soer/synthesis/synthesis/chapter5.xhtml" class="state-published" title="Chapter 5: environment, health and quality of life">
-                                        <span>Chapter 5: environment, health and quality of life</span>
+                                    <span>Chapter 5: environment, health and quality of life</span>
                                 </a></span>
                                 </li>
                                 <li>
                                 <span class="link-xhtml"><a tal:attributes="href string:$portal_url/soersynthesis/synthesis/chapter6.xhtml" class="state-published" title="Chapter 6: links between environmental challenges">
-                                        <span>Chapter 6: links between environmental challenges</span>
+                                    <span>Chapter 6: links between environmental challenges</span>
                                 </a></span>
                                 </li>
                                 <li>
                                 <span class="link-xhtml"><a tal:attributes="href string:$portal_url/soer/synthesis/synthesis/chapter7.xhtml" class="state-published" title="Chapter 7: environmental challenges in a global context">
-                                        <span>Chapter 7: environmental challenges in a global context</span>
+                                    <span>Chapter 7: environmental challenges in a global context</span>
                                 </a></span>
                                 </li>
                                 <li>
                                 <span class="link-xhtml"><a tal:attributes="href string:$portal_url/soer/synthesis/synthesis/chapter8.xhtml" class="state-published" title="Chapter 8: future environmental priorities: some reflections">
-                                        <span>Chapter 8: future environmental priorities: some reflections</span>
+                                    <span>Chapter 8: future environmental priorities: some reflections</span>
                                 </a></span>
                                 </li>
                                 <li>
                                 <span class="link-xhtml"><a tal:attributes="href string:$portal_url/soer/synthesis/synthesis/list_of_abbreviations.xhtml" class="state-published" title="List of abbreviations">
-                                        <span>List of abbreviations</span>
+                                    <span>List of abbreviations</span>
                                 </a></span>
                                 </li>
                                 <li>
                                 <span class="link-xhtml"><a tal:attributes="href string:$portal_url/soer/synthesis/synthesis/references.xhtml" class="state-published" title="Endnotes">
-                                        <span>Endnotes</span>
+                                    <span>Endnotes</span>
                                 </a></span>
                                 </li>
                             </ul>
 
                             <div class="eea-footer-right visualClear pull-right">
-                               <div class="visualHidden">
-                                 <div id="pdf-language-choice">
-                                     <span class="eea-icon eea-icon-language eea-icon-2x"></span>Here we display the list of Synthesis PDF in different languages.
-                                 </div>
-                               </div>
                                 <div class="visualHidden">
-                                 <div id="epub-language-choice">
-                                     <span class="eea-icon eea-icon-language eea-icon-2x"></span>Here we display the list of Synthesis Epub in different languages.
-                                 </div>
-                               </div>
-  
-                               <p class="pull-left">Download Synthesis report</p> <a class="download-pdf pull-left fancybox" href="#pdf-language-choice"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left fancybox" href="#epub-language-choice"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
+                                    <div id="pdf-language-choice">
+                                        <span class="eea-icon eea-icon-language eea-icon-2x"></span>Here we display the list of Synthesis PDF in different languages.
+                                    </div>
+                                </div>
+                                <div class="visualHidden">
+                                    <div id="epub-language-choice">
+                                        <span class="eea-icon eea-icon-language eea-icon-2x"></span>Here we display the list of Synthesis Epub in different languages.
+                                    </div>
+                                </div>
+
+                                <p class="pull-left">Download Synthesis report</p> <a class="download-pdf pull-left fancybox" href="#pdf-language-choice"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left fancybox" href="#epub-language-choice"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
+                            </div>
                         </div>
                         <div class="eea-tabs-panel">
                             <p>These 11 global megatrends provide a backdrop for understanding the global forces at play affecting the environment in Europe in a longer-term and global context.</p>
 
-                             <tal:global tal:define="results python:cview.content(parent_id='soer-2015', object_id='global')">
-                                 <ul>
-                                     <li tal:repeat="result results">
-                                         <a tal:attributes="href result/url">
-                                             <span tal:content="result/title">Global</span>
-                                         </a>
-                                     </li>
-                                 </ul>
-                             </tal:global>
+                            <tal:global tal:define="results python:cview.content(parent_id='soer-2015', object_id='global')">
+                                <ul>
+                                    <li tal:repeat="result results">
+                                        <a tal:attributes="href result/url">
+                                            <span tal:content="result/title">Global</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </tal:global>
 
                             <div class="eea-footer-right visualClear pull-right"><p class="pull-left">Download all Global megatrends</p> <a class="download-pdf pull-left" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
                         </div>
-                       <div class="eea-tabs-panel">
+                        <div class="eea-tabs-panel">
                             <p>European briefings present the state, recent trends and prospects in 25 key environmental themes, grouped in three clusters: environmental themes; socio-economic dimensions; and systemic perspectives.</p>
 
 
                             <tal:europe>
                                 <div class="eea-list-columns eea-three-columns"
-                                    tal:define="collection python:context.restrictedTraverse('collections/environmental-themes', None);"
-                                    tal:condition="nocall:collection">
+                                        tal:define="collection python:context.restrictedTraverse('collections/environmental-themes', None);"
+                                        tal:condition="nocall:collection">
                                     <tal:results tal:define="results python:collection.queryCatalog()"
-                                                 tal:condition="results">
+                                            tal:condition="results">
                                         <h4>Environmental themes</h4>
                                         <ul>
                                             <li tal:repeat="result results">
@@ -151,7 +152,7 @@ i18n:domain="plone">
                                         tal:define="collection python:context.restrictedTraverse('collections/socio-economic-dimensions', None);"
                                         tal:condition="nocall:collection">
                                     <tal:results tal:define="results python:collection.queryCatalog()"
-                                                 tal:condition="results">
+                                            tal:condition="results">
                                         <h4>Socio-economic dimensions</h4>
                                         <ul>
                                             <li tal:repeat="result results">
@@ -167,7 +168,7 @@ i18n:domain="plone">
                                         tal:define="collection python:context.restrictedTraverse('collections', None);"
                                         tal:condition="nocall:collection">
                                     <tal:results tal:define="results python:collection.queryCatalog()"
-                                                 tal:condition="results">
+                                            tal:condition="results">
                                         <h4>Systemic perspectives</h4>
                                         <ul>
                                             <li tal:content="results"></li>
@@ -200,58 +201,54 @@ i18n:domain="plone">
 
                             <div class="eea-footer-right visualClear pull-right"><p class="pull-left">Download all cross-country comparisons</p> <a class="download-pdf pull-left" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
                         </div>
-     
+
                         <div class="eea-tabs-panel">
                             <p>Country briefings provide an overview of state of the environment across 39 European countries, based on national state-of-environment reports. Regional briefings address region-specific environmental issues affecting several EEA countries.</p>
-
-                            <tal:countries tal:define="results python:cview.content(parent_id='soer-2015', object_id='countries');
-                                    results_length python:len(results);
-                                    last_three python:results_length - 3;
-                                    ratio python: results_length / 3;
-                                    double_ratio python: ratio * 2;
-                                    one_column python: results_length <= ratio;
-                                    two_column python: results_length <= double_ratio;
-                                    three_column python: results_length > double_ratio;
-                                    column_class python: 'eea-list-columns eea-three-columns' if three_column else 'eea-list-columns eea-two-columns'">
-                                <h4>Countries briefings</h4>
-                                <ul tal:attributes="class column_class">
-                                    <li tal:repeat="result python:results if one_column else results[0:ratio]">
-                                        <a tal:attributes="href result/url">
-                                            <span tal:content="result/title">Countries Comparison</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                <ul tal:attributes="class column_class" tal:condition="python:not one_column">
-                                    <tal:defines tal:define="res python:results[ratio:] if two_column else results[ratio:double_ratio]">
-                                        <li tal:repeat="result res">
-                                            <a tal:attributes="href result/url">
-                                                <span tal:content="result/title">Countries Comparison</span>
-                                            </a>
-                                        </li>
-                                    </tal:defines>
-                                </ul>
-                                <div tal:attributes="class column_class" tal:condition="python:not two_column">
-                                    <ul>
-                                        <tal:defines tal:define="res python:results[double_ratio:last_three]">
-                                            <li tal:repeat="result res">
-                                                <a tal:attributes="href result/url">
-                                                    <span tal:content="result/title">Countries Comparison</span>
+                            <h4>Countries briefings</h4>
+                            <div tal:define="collection python:context.restrictedTraverse('collections/country-briefings', None);" tal:condition="nocall:collection">
+                                <tal:results tal:define="results python:collection.queryCatalog()"
+                                        tal:condition="results">
+                                    <tal:countries tal:define="results_length python:len(results);
+                                                               ratio python: results_length / 3;
+                                                               double_ratio python: ratio * 2;">
+                                        <ul class='eea-list-columns eea-three-columns'>
+                                            <li tal:repeat="result python:results[0:ratio]">
+                                                <a tal:attributes="href result/getURL">
+                                                    <span tal:content="result/Title">Title</span>
                                                 </a>
                                             </li>
-                                        </tal:defines>
+                                        </ul>
+                                        <ul class='eea-list-columns eea-three-columns'>
+                                            <li tal:repeat="result python:results[ratio:double_ratio]">
+                                                <a tal:attributes="href result/getURL">
+                                                    <span tal:content="result/Title">Title</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class='eea-list-columns eea-three-columns'>
+                                            <ul>
+                                                <li tal:repeat="result python:results[double_ratio:]">
+                                                    <a tal:attributes="href result/getURL">
+                                                        <span tal:content="result/Title">Title</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
 
-                                    </ul>
-                                    <h4>Regional briefings</h4>
-                                    <ul tal:define="res python:results[last_three:]">
-                                        <li tal:repeat="result res">
-                                            <a tal:attributes="href result/url">
-                                                <span tal:content="result/title">Countries Comparison</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </tal:countries>
+                                            <div tal:define="collection python:context.restrictedTraverse('collections/country-briefings', None);"
+                                                    tal:condition="nocall:collection">
+                                                <h4>Regional briefings</h4>
+                                                <ul tal:define="res python:collection.queryCatalog()">
+                                                    <li tal:repeat="result res">
+                                                        <a tal:attributes="href result/getURL">
+                                                            <span tal:content="result/Title">Title</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </tal:countries>
+                                </tal:results>
+                            </div>
 
                             <div class="eea-footer-right visualClear pull-right"><p class="pull-left">Download all country briefings</p> <a class="download-pdf pull-left" href="#"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left" href="#"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a></div>
                         </div>
