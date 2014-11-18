@@ -165,13 +165,12 @@ i18n:domain="plone">
                                 </div>
 
                                 <div class="eea-list-columns eea-three-columns"
-                                        tal:define="collection python:context.restrictedTraverse('collections', None);"
+                                        tal:define="collection python:context.restrictedTraverse('collections/systemic-perspectives', None);"
                                         tal:condition="nocall:collection">
                                     <tal:results tal:define="results python:collection.queryCatalog()"
                                             tal:condition="results">
                                         <h4>Systemic perspectives</h4>
                                         <ul>
-                                            <li tal:content="results"></li>
                                             <li tal:repeat="result results">
                                                 <a tal:attributes="href result/getURL">
                                                     <span tal:content="result/Title">Title</span>
@@ -209,7 +208,7 @@ i18n:domain="plone">
                                 <tal:results tal:define="results python:collection.queryCatalog(batch=False)"
                                         tal:condition="results">
                                     <tal:countries tal:define="results_length python:len(results);
-                                                               ratio python: (results_length + 3) / 3;
+                                                               ratio python: (results_length + 6) / 3;
                                                                double_ratio python: ratio * 2;">
                                         <ul class='eea-list-columns eea-three-columns'>
                                             <li tal:repeat="result python:results[:ratio]">
