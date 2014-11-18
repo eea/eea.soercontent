@@ -259,7 +259,7 @@ body {
   box-sizing: border-box; }
 
 #content-core .portletItem {
-  margin: 0em; }
+  margin: 0; }
 
 /* portlet style overrides */
 #portal-column-two .portlet {
@@ -394,10 +394,10 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   .eea-accordion-panels.eea-accordion-panels-soer a:hover {
     text-decoration: underline; }
 
-/* 21869 add margin-top to download links
+/* 21869 add margin-top to download links */
 .eea-footer-right {
-  margin-top: 1em;
-}
+  margin-top: 1em; }
+
 /* media queries rules */
 /* shrink the right column when screen size is smaller than 1280px
    avoiding the columns from overlapping */
