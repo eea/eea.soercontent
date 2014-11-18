@@ -206,13 +206,13 @@ i18n:domain="plone">
                             <p>Country briefings provide an overview of state of the environment across 39 European countries, based on national state-of-environment reports. Regional briefings address region-specific environmental issues affecting several EEA countries.</p>
                             <h4>Countries briefings</h4>
                             <div tal:define="collection python:context.restrictedTraverse('collections/country-briefings', None);" tal:condition="nocall:collection">
-                                <tal:results tal:define="results python:collection.queryCatalog()"
+                                <tal:results tal:define="results python:collection.queryCatalog(batch=False)"
                                         tal:condition="results">
                                     <tal:countries tal:define="results_length python:len(results);
-                                                               ratio python: results_length / 3;
+                                                               ratio python: (results_length + 3) / 3;
                                                                double_ratio python: ratio * 2;">
                                         <ul class='eea-list-columns eea-three-columns'>
-                                            <li tal:repeat="result python:results[0:ratio]">
+                                            <li tal:repeat="result python:results[:ratio]">
                                                 <a tal:attributes="href result/getURL">
                                                     <span tal:content="result/Title">Title</span>
                                                 </a>
@@ -234,7 +234,7 @@ i18n:domain="plone">
                                                 </li>
                                             </ul>
 
-                                            <div tal:define="collection python:context.restrictedTraverse('collections/country-briefings', None);"
+                                            <div tal:define="collection python:context.restrictedTraverse('collections/regional-briefings', None);"
                                                     tal:condition="nocall:collection">
                                                 <h4>Regional briefings</h4>
                                                 <ul tal:define="res python:collection.queryCatalog()">
