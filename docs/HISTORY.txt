@@ -3,6 +3,9 @@ Changelog
 
 3.1-dev - (unreleased)
 ----------------------
+* Change: lowered padding and margin size of qrbox in order to better fit Fiche
+  content on 4 pages whe using the pdf export feature
+  [ichimdav refs #22604]
 
 3.0 - (2014-11-20)
 ------------------
