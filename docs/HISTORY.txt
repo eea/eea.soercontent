@@ -3,6 +3,8 @@ Changelog
 
 3.1-dev - (unreleased)
 ----------------------
+* Change: Removed border bottom from discreet paragraphs when printing Fiches
+  [ichimdav refs #22660]
 * Change: lowered padding and margin size of qrbox in order to better fit Fiche
   content on 4 pages whe using the pdf export feature
   [ichimdav refs #22604]

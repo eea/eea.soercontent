@@ -8,11 +8,14 @@
 /* PDF visible elements */
 /* Enable SOER QR box */
 .body-print .qrbox {
-  display: block !important;
-  background: #f3f3f3;
-  margin-bottom: 0;
-  padding: 0.5em;
-  overflow: hidden; }
+ display: block !important;
+ background: #f3f3f3;
+ margin-bottom: 0;
+ padding: 0.5em;
+ overflow: hidden; }
+/* #22660 removed border-bottom from discreet for briefings */
+.body-print p.discreet {
+  border-bottom: 0; }
 
 .qrbox > img {
   width: inherit;
@@ -105,3 +108,4 @@
 .subsection-countries-comparison .pdf-fiche-page {
   background-color: #007a86; }
 
+/*# sourceMappingURL=print.css.dtml.map */
