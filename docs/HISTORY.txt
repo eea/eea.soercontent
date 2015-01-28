@@ -3,6 +3,8 @@ Changelog
 
 3.1-dev - (unreleased)
 ----------------------
+* Change: Added history external method used by soer_stats scripts
+  [voineali refs #22691]
 * Change: Removed border bottom from discreet paragraphs when printing Fiches
   [ichimdav refs #22660]
 * Change: lowered padding and margin size of qrbox in order to better fit Fiche
