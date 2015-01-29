@@ -11,6 +11,20 @@
     />
 
   <browser:page
+    name="pdf.soer2015.cover"
+    for="zope.interface.Interface"
+    class=".cover.Cover"
+    permission="zope2.View"
+    />
+
+ <browser:page
+   name="pdf.soer2015.cover.back"
+   for="zope.interface.Interface"
+   class=".cover.BackCover"
+   permission="zope2.View"
+   />
+
+  <browser:page
     name="pdf.title"
     for="eea.soercontent.interfaces.IFiche"
     class=".title.Title"
