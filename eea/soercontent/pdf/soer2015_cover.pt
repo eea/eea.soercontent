@@ -40,6 +40,15 @@
 
 
             <div class="cover-body">
+
+                <div class="cover-themes">
+                    <div tal:repeat="theme view/themes">
+                        <a tal:attributes="href theme/url">
+                            <img tal:attributes="src theme/image; title theme/title; alt theme/title" />
+                        </a>
+                    </div>
+                </div>
+
                 <div class="cover-image" tal:define="exists_cover_image exists:context/coverImage; has_cover_image python:exists_cover_image and context.coverImage.getSize() != (0,0)">
                     <a tal:define="here_url context/@@plone_context_state/object_url"
                             tal:attributes="href string:$here_url/image_view_fullscreen">
@@ -52,14 +61,6 @@
                             </tal:depiction>
                         </tal:image>
                     </a>
-                </div>
-
-                <div class="cover-themes">
-                    <div tal:repeat="theme view/themes">
-                        <a tal:attributes="href theme/url">
-                            <img tal:attributes="src theme/image; title theme/title; alt theme/title" />
-                        </a>
-                    </div>
                 </div>
 
             </div>
