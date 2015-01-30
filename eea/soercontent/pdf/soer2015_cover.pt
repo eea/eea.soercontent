@@ -40,16 +40,22 @@
 
 
             <div class="cover-body">
-
-                <div class="cover-themes">
-                    <div tal:repeat="theme view/themes">
+                <div class="cover-theme">
+                    <div tal:repeat="theme view/themes" class="eea-block-columns eea-three-columns">
                         <a tal:attributes="href theme/url">
                             <img tal:attributes="src theme/image; title theme/title; alt theme/title" />
                         </a>
                     </div>
                 </div>
+                <div class="cover-backgrounds clear-both">
+                    <div class="eea-block-columns eea-five-columns bg-soer-synthesis">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-megatrends">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-thematic">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-country">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-regions">&nbsp;</div>
+                </div>
 
-                <div class="cover-image" tal:define="exists_cover_image exists:context/coverImage; has_cover_image python:exists_cover_image and context.coverImage.getSize() != (0,0)">
+                <div class="cover-image" tal:define="exists_cover_image exists:context/coverImage; has_cover_image python:exists_cover_image and context.coverImage.getSize() != (0,0)" tal:replace="nothing">
                     <a tal:define="here_url context/@@plone_context_state/object_url"
                             tal:attributes="href string:$here_url/image_view_fullscreen">
                         <tal:maincover tal:condition="has_cover_image">
@@ -65,19 +71,12 @@
 
             </div>
 
-            <div class="cover-logo"
-                    tal:condition="exists:context/++resource++eea.translations.images/pdflogo-en.png">
+            <div class="cover-logo">
                 <img tal:define="
                         lang  context/@@plone_portal_state/language;
-                        logo python:'++resource++eea.translations.images/pdflogo-%s.png' % lang"
+                        logo python:'++resource++eea.translations.images/logo-%s.png' % lang if lang != 'en' else 'logo.gif'"
                         tal:attributes="src string:${portal_url}/${logo}" />
             </div>
-
-            <div class="cover-logo"
-                    tal:condition="not:exists:context/++resource++eea.translations.images/pdflogo-en.png">
-                <img tal:attributes="src string:${portal_url}/++resource++plone-logo.png" />
-            </div>
-
 
         </div>
 

@@ -7,6 +7,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.clear-both {
+  clear: both; }
+
 /* twitter boostrap classes */
 .pull-left {
   float: left; }
@@ -212,6 +215,10 @@ body {
   #region-content .eea-list-columns ul {
     list-style-position: outside; }
 
+.eea-block-columns {
+  display: inline-block;
+  margin-right: -3px; }
+
 .eea-two-columns {
   width: 50%; }
 
@@ -220,6 +227,9 @@ body {
 
 .eea-four-columns {
   width: 25%; }
+
+.eea-five-columns {
+  width: 20%; }
 
 /* Overrides */
 .section-soer-2015 div.width-3\:4 {
@@ -413,3 +423,4 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 /* </dtml-with> */
 /* </dtml-with> */
 
+/*# sourceMappingURL=eea_soercontent.css.dtml.map */

@@ -1,0 +1,11 @@
+.template-pdf-soer2015-cover {
+  background: #272b57; }
+  .template-pdf-soer2015-cover #content {
+    background: #272b57; }
+
+.cover-body {
+  background: transparent;
+  border: 0;
+  height: 100%; }
+
+/*# sourceMappingURL=soer2015_pdf_theme.css.dtml.map */
