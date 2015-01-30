@@ -11,14 +11,14 @@
     />
 
   <browser:page
-    name="pdf.soer2015.cover"
+    name="soer.pdf.cover"
     for="zope.interface.Interface"
     class=".cover.Cover"
     permission="zope2.View"
     />
 
  <browser:page
-   name="pdf.soer2015.cover.back"
+   name="soer.pdf.cover.back"
    for="zope.interface.Interface"
    class=".cover.BackCover"
    permission="zope2.View"

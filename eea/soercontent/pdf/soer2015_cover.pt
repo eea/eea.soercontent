@@ -41,11 +41,17 @@
 
             <div class="cover-body">
                 <div class="cover-theme">
-                    <div tal:repeat="theme view/themes" class="eea-block-columns eea-three-columns">
-                        <a tal:attributes="href theme/url">
-                            <img tal:attributes="src theme/image; title theme/title; alt theme/title" />
-                        </a>
-                    </div>
+                    <tal:defines define="has_own_cover view/has_cover_image;
+                                        cover_objs python:[context] if has_own_cover else view.get_children_cover_images();
+                                        image_url python:'coverImage_large' if has_own_cover else 'image_large'">
+                        <div tal:repeat="obj cover_objs" class="python:'cover-image' if has_own_cover else 'eea-block-columns eea-three-columns'">
+                            <tal:defines define="url obj/absolute_url; title obj/title">
+                                <a tal:attributes="href url">
+                                    <img tal:attributes="src string:${url}/${image_url}; title title; alt title" />
+                                </a>
+                            </tal:defines>
+                        </div>
+                    </tal:defines>
                 </div>
                 <div class="cover-backgrounds clear-both">
                     <div class="eea-block-columns eea-five-columns bg-soer-synthesis">&nbsp;</div>

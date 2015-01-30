@@ -1,6 +1,9 @@
-.template-pdf-soer2015-cover {
+.subsection-europe #region-content h1 {
+  color: #FFF; }
+
+.template-soer-pdf-cover {
   background: #272b57; }
-  .template-pdf-soer2015-cover #content {
+  .template-soer-pdf-cover #content {
     background: #272b57; }
 
 .cover-body {
