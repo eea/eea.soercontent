@@ -2,13 +2,30 @@
   color: #FFF; }
 
 .template-soer-pdf-cover {
-  background: #272b57; }
+  background: #272b57;
+  height: 822pt;
+  width: 595pt; }
   .template-soer-pdf-cover #content {
     background: #272b57; }
+
+.cover-theme img {
+  width: 100%; }
+
+.cover-logo img {
+  height: 100%; }
+
+.cover-header {
+  height: 100pt; }
 
 .cover-body {
   background: transparent;
   border: 0;
   height: 100%; }
+
+.cover-logo {
+  position: absolute;
+  margin: 0;
+  bottom: 2%;
+  right: 0; }
 
 /*# sourceMappingURL=soer2015_pdf_theme.css.dtml.map */
