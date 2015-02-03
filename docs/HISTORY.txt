@@ -1,8 +1,8 @@
 Changelog
 =========
 
-3.1-dev - (unreleased)
-----------------------
+3.1 - (2015-02-03)
+------------------
 * Change: Added history external method used by soer_stats scripts
   [voineali refs #22691]
 * Change: Removed border bottom from discreet paragraphs when printing Fiches
