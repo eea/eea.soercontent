@@ -19,35 +19,41 @@
 
         <div class="back-cover">
 
-            <div class="back-cover-isbn"></div>
-            <div class="cover-backgrounds clear-both">
-                <div class="eea-block-columns eea-five-columns bg-soer-synthesis">&nbsp;</div>
-                <div class="eea-block-columns eea-five-columns bg-soer-megatrends">&nbsp;</div>
-                <div class="eea-block-columns eea-five-columns bg-soer-thematic">&nbsp;</div>
-                <div class="eea-block-columns eea-five-columns bg-soer-country">&nbsp;</div>
-                <div class="eea-block-columns eea-five-columns bg-soer-regions">&nbsp;</div>
+            <div class="back-cover-isbn">
+                <p>TH-01-15-001-EN-N</p>
+                <p>doi: <span>10.2800/944899</span></p>
+            </div>
+            <div class="one-third clear-both">
+                <div class="cover-backgrounds">
+                    <div class="eea-block-columns eea-five-columns bg-soer-synthesis">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-megatrends">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-thematic">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-country">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-regions">&nbsp;</div>
+                </div>
             </div>
 
-            <div class="back-cover-info pull-left">
-                <p>
-                    European Environment Agency
-                    <br />
-                    Kongens Nytorv 6
-                    <br />
-                    1050 Copenhagen K
-                    <br />
-                    Denmark
-                </p>
-                <p>
-                    +45 33 36 71 00
-                    <br />
-                    www.eea.europa.eu
-                </p>
+            <div class="back-cover pdf-footer">
+                <div class="back-cover-info pull-left">
+                    <p>
+                        European Environment Agency
+                        <br />
+                        Kongens Nytorv 6
+                        <br />
+                        1050 Copenhagen K
+                        <br />
+                        Denmark
+                    </p>
+                    <p>
+                        +45 33 36 71 00
+                        <br />
+                        www.eea.europa.eu
+                    </p>
+                </div>
 
-            </div>
-
-            <div class="back-cover-logo pull-right">
-                <img tal:attributes="src string:${portal_url}/logo.gif" />
+                <div class="back-cover-logo pull-right">
+                    <img tal:attributes="src string:${portal_url}/logo.gif" />
+                </div>
             </div>
 
         </div>

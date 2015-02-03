@@ -6,11 +6,15 @@
 .back-cover {
   background: #272b57;
   height: 842pt;
-  width: 595pt; }
+  width: 595pt;
+  color: #FFF; }
   .template-soer-pdf-cover #content,
   .template-soer-pdf-cover-back #content,
   .back-cover #content {
     background: #272b57; }
+
+.back-cover {
+  height: 100%; }
 
 /*.cover-theme {
   line-height: 0;
@@ -35,5 +39,27 @@
 .section-soer-2015 #portal-column-content {
   background-color: transparent;
   padding: 0; }
+
+/* back cover */
+.back-cover {
+  font-size: 13.66pt; }
+
+.one-third {
+  height: 33%; }
+
+.back-cover-info {
+  margin-left: 4em; }
+
+.back-cover-isbn {
+  float: right;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  margin: 6em 2em 20em 2em; }
+
+.pdf-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: initial; }
 
 /*# sourceMappingURL=soer2015_pdf_theme.css.dtml.map */
