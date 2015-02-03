@@ -122,6 +122,26 @@ h1, h2, h3 {
 .bg-soer-country.current {
   background-color: &dtml-soerCountrySectionFullColor;; }
 
+.bg-synthesis,
+.bg-synthesis.current {
+  background-color: &dtml-soerSynthesysSectionFullColor;; }
+
+.bg-europe,
+.bg-europe.current {
+  background-color: &dtml-soerThematicSectionFullColor;; }
+
+.bg-countries,
+.bg-countries.current {
+  background-color: &dtml-soerRegionsSectionFullColor;; }
+
+.bg-global,
+.bg-global.current {
+  background-color: &dtml-soerMegatrendsSectionFullColor;; }
+
+.bg-countries-comparison,
+.bg-countries-comparison.current {
+  background-color: &dtml-soerCountrySectionFullColor;; }
+
 .bg-soer-synthesis-medium,
 .bg-soer-synthesis-medium.current {
   background-color: &dtml-soerSynthesysSectionMediumColor;; }
