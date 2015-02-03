@@ -7,14 +7,12 @@
   background: #272b57;
   height: 842pt;
   width: 595pt;
-  color: #FFF; }
+  color: #FFF;
+  border: 0; }
   .template-soer-pdf-cover #content,
   .template-soer-pdf-cover-back #content,
   .back-cover #content {
     background: #272b57; }
-
-.back-cover {
-  height: 100%; }
 
 /*.cover-theme {
   line-height: 0;
@@ -27,8 +25,7 @@
 
 .cover-body {
   background: transparent;
-  border: 0;
-  height: 100%; }
+  border: 0; }
 
 .cover-logo {
   position: absolute;
@@ -41,6 +38,9 @@
   padding: 0; }
 
 /* back cover */
+.contain-floats {
+  overflow: hidden; }
+
 .back-cover {
   font-size: 13.66pt; }
 

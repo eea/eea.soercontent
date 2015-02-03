@@ -1,0 +1,33 @@
+<metal:page define-macro="master"
+        tal:define="
+        plone_view context/@@plone;
+        portal_state context/@@plone_portal_state;
+        portal_url portal_state/portal_url;">
+
+    <head>
+        <metal:resources metal:define-macro="resources">
+
+            <metal:styleslot define-slot="style_slot">
+                <link rel="stylesheet"
+                        tal:attributes="href string:${portal_url}/print.css">
+                <link rel="stylesheet" tal:condition="exists:portal/pdf.print.css" type="text/css"
+                        tal:attributes="href string:${portal_url}/pdf.print.css">
+                <link rel="stylesheet" type="text/css"
+                        tal:attributes="href string:${portal_url}/eea_soercontent.css">
+                <link rel="stylesheet" type="text/css"
+                        tal:attributes="href string:${portal_url}/++resource++eea.soercontent.print.css">
+            </metal:styleslot>
+
+            <metal:cssslot define-slot="css_slot"/>
+        </metal:resources>
+    </head>
+
+    <body tal:define="body_class python:plone_view.bodyClass(template, view);"
+            tal:attributes="class body_class">
+    <div id="content-core">
+        <metal:text define-slot="content-core" tal:content="nothing">
+
+        </metal:text>
+    </div>
+    </body>
+</metal:page>

@@ -1,18 +1,15 @@
-<tal:block tal:define="disabledLeft python:request.set('disable_plone.leftcolumn', 1)"/>
-<tal:block tal:define="disabledRight python:request.set('disable_plone.rightcolumn', 1)"/>
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       lang="en"
-        metal:use-macro="context/main_template/macros/master"
-        i18n:domain="eea">
-
+      metal:use-macro="context/print_main_template/macros/master"
+      i18n:domain="eea">
+<metal:cssslot metal:fill-slot="css_slot">
+    <link rel="stylesheet"
+            tal:attributes="href string:${portal_url}/soer2015_pdf_theme.css">
+</metal:cssslot>
 <body>
-
-<metal:title fill-slot="content-title"></metal:title>
-<metal:description fill-slot="content-description"></metal:description>
 
 <metal:content-core fill-slot="content-core">
     <metal:content-core define-macro="content-core">
@@ -21,6 +18,7 @@
 
             <div class="back-cover-isbn">
                 <p>TH-01-15-001-EN-N</p>
+
                 <p>doi: <span>10.2800/944899</span></p>
             </div>
             <div class="one-third clear-both">
@@ -33,20 +31,21 @@
                 </div>
             </div>
 
-            <div class="back-cover pdf-footer">
+            <div class="back-cover pdf-footer contain-floats">
                 <div class="back-cover-info pull-left">
                     <p>
                         European Environment Agency
-                        <br />
+                        <br/>
                         Kongens Nytorv 6
-                        <br />
+                        <br/>
                         1050 Copenhagen K
-                        <br />
+                        <br/>
                         Denmark
                     </p>
+
                     <p>
                         +45 33 36 71 00
-                        <br />
+                        <br/>
                         www.eea.europa.eu
                     </p>
                 </div>

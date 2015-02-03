@@ -217,7 +217,7 @@ body {
 
 .eea-block-columns {
   display: inline-block;
-  margin-right: -3px; }
+  margin-right: -4px; }
 
 .eea-two-columns {
   width: 50%; }
