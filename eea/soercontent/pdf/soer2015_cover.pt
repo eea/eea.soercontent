@@ -17,9 +17,6 @@
         <div class="cover">
 
             <div class="cover-header">
-                <!--?<span tal:content="context/Type">Content Type</span>-->
-                <!--?<span>|</span>-->
-                <!--?<span tal:content="view/header">Navigation Root Title</span>-->
             </div>
 
 
@@ -63,11 +60,12 @@
             </div>
 
             <div class="cover-bellow-header">
-                <h1 class="cover-title" tal:content="context/Title">
+                <h1 tal:content="view/header" class="cover-title">Navigation Root Title</h1>
+                <h1 class="cover-subtitle" tal:content="context/Title">
                     Document Title
                 </h1>
 
-                <h2 class="cover-subtitle" tal:define="
+                <h2 class="cover-title-type" tal:define="
                         description context/Description;
                                 description python:view.truncate(description)"
                         tal:content="description">

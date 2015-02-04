@@ -19,6 +19,26 @@
 .cover-theme img {
   width: 100%; }
 
+.cover-bellow-header {
+  text-align: right;
+  margin: 0 5%; }
+
+.cover-title {
+  font-size: 34pt;
+  font-weight: 700;
+  margin-bottom: 0; }
+
+.cover-subtitle {
+  font-size: 37pt;
+  margin-top: -5pt;
+  letter-spacing: 2pt;
+  word-spacing: 2pt;
+  font-weight: 400; }
+
+.cover-title-type {
+  font-size: 26pt;
+  font-weight: 400; }
+
 .cover-header {
   height: 100pt; }
 
