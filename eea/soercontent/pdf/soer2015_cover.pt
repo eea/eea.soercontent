@@ -36,11 +36,11 @@
                     </tal:defines>
                 </div>
                 <div class="cover-backgrounds clear-both">
-                    <div class="eea-block-columns eea-five-columns bg-soer-synthesis">&nbsp;</div>
-                    <div class="eea-block-columns eea-five-columns bg-soer-megatrends">&nbsp;</div>
-                    <div class="eea-block-columns eea-five-columns bg-soer-thematic">&nbsp;</div>
-                    <div class="eea-block-columns eea-five-columns bg-soer-country">&nbsp;</div>
-                    <div class="eea-block-columns eea-five-columns bg-soer-regions">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-synthesis eea-full-object">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-megatrends eea-full-object">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-thematic eea-full-object">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-country eea-full-object">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-regions eea-full-object">&nbsp;</div>
                 </div>
 
                 <div class="cover-image" tal:define="exists_cover_image exists:context/coverImage; has_cover_image python:exists_cover_image and context.coverImage.getSize() != (0,0)" tal:replace="nothing">

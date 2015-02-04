@@ -5,9 +5,10 @@
 .template-soer-pdf-cover-back,
 .back-cover {
   height: 842pt;
-  width: 595pt;
+  width: 600pt;
   color: #FFF;
-  border: 0; }
+  border: 0;
+  margin: 0; }
   .template-soer-pdf-cover #content,
   .template-soer-pdf-cover-back #content,
   .back-cover #content {
@@ -16,8 +17,19 @@
 /*.cover-theme {
   line-height: 0;
 }*/
+.cover-backgrounds {
+  height: 20pt; }
+
+.cover-theme {
+  height: 180pt;
+  text-align: center; }
+
 .cover-theme img {
-  width: 100%; }
+  width: auto;
+  height: 100%;
+  position: relative;
+  left: 100%;
+  margin-left: -200%; }
 
 .cover-bellow-header {
   text-align: right;
@@ -31,8 +43,6 @@
 .cover-subtitle {
   font-size: 37pt;
   margin-top: -5pt;
-  letter-spacing: 2pt;
-  word-spacing: 2pt;
   font-weight: 400; }
 
 .cover-title-type {

@@ -130,6 +130,10 @@ h1, h2, h3 {
 .bg-europe.current {
   background-color: &dtml-soerThematicSectionFullColor;; }
 
+.bg-europe-david,
+.bg-europe-david.current {
+  background-color: &dtml-soerThematicSectionFullColor;; }
+
 .bg-countries,
 .bg-countries.current {
   background-color: &dtml-soerRegionsSectionFullColor;; }
@@ -235,9 +239,12 @@ body {
   #region-content .eea-list-columns ul {
     list-style-position: outside; }
 
+.eea-full-object {
+  height: 100%; }
+
 .eea-block-columns {
-  display: inline-block;
-  margin-right: -4px; }
+  float: left;
+  overflow: hidden; }
 
 .eea-two-columns {
   width: 50%; }
