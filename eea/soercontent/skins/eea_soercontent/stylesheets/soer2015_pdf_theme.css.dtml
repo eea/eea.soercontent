@@ -3,6 +3,7 @@
 
 .template-soer-pdf-cover,
 .template-soer-pdf-cover-back,
+.eea-pdf-section-image,
 .back-cover {
   height: 842pt;
   width: 600pt;
@@ -11,6 +12,7 @@
   margin: 0; }
   .template-soer-pdf-cover #content,
   .template-soer-pdf-cover-back #content,
+  .eea-pdf-section-image #content,
   .back-cover #content {
     background: #272b57; }
 
@@ -21,10 +23,13 @@
   height: 20pt; }
 
 .cover-theme {
-  height: 180pt;
+  height: 180pt; }
+
+.image-full-container {
+  overflow: hidden;
   text-align: center; }
 
-.cover-theme img {
+.image-full-portrait {
   width: auto;
   height: 100%;
   position: relative;

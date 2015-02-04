@@ -10,6 +10,14 @@
     permission="zope2.View"
     />
 
+    <browser:page
+        name="soer.pdf.body"
+        for="zope.interface.Interface"
+        class=".body.Soer2015Body"
+        template="soer2015_body.pt"
+        permission="zope2.View"
+        />
+
   <browser:page
     name="soer.pdf.cover"
     for="zope.interface.Interface"
