@@ -7,6 +7,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.clear-both {
+  clear: both; }
+
 /* twitter boostrap classes */
 .pull-left {
   float: left; }
@@ -119,6 +122,30 @@ h1, h2, h3 {
 .bg-soer-country.current {
   background-color: &dtml-soerCountrySectionFullColor;; }
 
+.bg-synthesis,
+.bg-synthesis.current {
+  background-color: &dtml-soerSynthesysSectionFullColor;; }
+
+.bg-europe,
+.bg-europe.current {
+  background-color: &dtml-soerThematicSectionFullColor;; }
+
+.bg-europe-david,
+.bg-europe-david.current {
+  background-color: &dtml-soerThematicSectionFullColor;; }
+
+.bg-countries,
+.bg-countries.current {
+  background-color: &dtml-soerRegionsSectionFullColor;; }
+
+.bg-global,
+.bg-global.current {
+  background-color: &dtml-soerMegatrendsSectionFullColor;; }
+
+.bg-countries-comparison,
+.bg-countries-comparison.current {
+  background-color: &dtml-soerCountrySectionFullColor;; }
+
 .bg-soer-synthesis-medium,
 .bg-soer-synthesis-medium.current {
   background-color: &dtml-soerSynthesysSectionMediumColor;; }
@@ -212,6 +239,13 @@ body {
   #region-content .eea-list-columns ul {
     list-style-position: outside; }
 
+.eea-full-object {
+  height: 100%; }
+
+.eea-block-columns {
+  float: left;
+  overflow: hidden; }
+
 .eea-two-columns {
   width: 50%; }
 
@@ -220,6 +254,9 @@ body {
 
 .eea-four-columns {
   width: 25%; }
+
+.eea-five-columns {
+  width: 20%; }
 
 /* Overrides */
 .section-soer-2015 div.width-3\:4 {
@@ -413,3 +450,4 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 /* </dtml-with> */
 /* </dtml-with> */
 
+/*# sourceMappingURL=eea_soercontent.css.dtml.map */

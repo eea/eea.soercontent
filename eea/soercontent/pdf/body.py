@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from zope.component import queryMultiAdapter
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from eea.pdf.themes.page.body import Body as PDFBody
+from eea.pdf.themes.book.folder import Body as FolderBody
 logger = getLogger('eea.soercontent')
 
 class Body(PDFBody):
@@ -55,3 +56,9 @@ class Body(PDFBody):
         except Exception, err:
             logger.exception(err)
         return html
+
+
+class Soer2015Body(FolderBody):
+    """ Soer2015 folder custom body
+    """
+    template = ViewPageTemplateFile('soer2015_body.pt')

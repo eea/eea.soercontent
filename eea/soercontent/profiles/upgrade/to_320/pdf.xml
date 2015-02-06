@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object name="portal_pdf">
-    <object name="page">
-        <property name="types">
-            <element value="Fiche"/>
-        </property>
-    </object>
 
     <object name="soertheme" meta_type="PDFTheme">
         <property name="title">SOER 2015 theme</property>
         <property name="cover">soer.pdf.cover</property>
         <property name="disclaimer">pdf.disclaimer</property>
         <property name="body">soer.pdf.body</property>
-        <property name="backcover">soer.cover.back</property>
+        <property name="backcover">soer.pdf.cover.back</property>
         <property name="header">pdf.header</property>
         <property name="footer">pdf.footer</property>
         <property name="toc">pdf.toc</property>
+        <property name="javascriptdelay">300</property>
         <property name="offset">2</property>
     </object>
 

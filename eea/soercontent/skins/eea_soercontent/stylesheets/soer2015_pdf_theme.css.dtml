@@ -1,0 +1,99 @@
+.subsection-europe #region-content h1 {
+  color: #FFF; }
+
+.template-soer-pdf-cover,
+.template-soer-pdf-cover-back,
+.eea-pdf-section-image,
+.back-cover {
+  height: 842pt;
+  width: 600pt;
+  color: #FFF;
+  border: 0;
+  margin: 0; }
+  .template-soer-pdf-cover #content,
+  .template-soer-pdf-cover-back #content,
+  .eea-pdf-section-image #content,
+  .back-cover #content {
+    background: #272b57; }
+
+/*.cover-theme {
+  line-height: 0;
+}*/
+.cover-backgrounds {
+  height: 20pt; }
+
+.cover-theme {
+  height: 180pt; }
+
+.image-full-container {
+  overflow: hidden;
+  text-align: center; }
+
+.image-full-portrait {
+  width: auto;
+  height: 100%;
+  position: relative;
+  left: 100%;
+  margin-left: -200%; }
+
+.cover-bellow-header {
+  text-align: right;
+  margin: 0 5%; }
+
+.cover-title {
+  font-size: 34pt;
+  font-weight: 700;
+  margin-bottom: 0; }
+
+.cover-subtitle {
+  font-size: 37pt;
+  margin-top: -5pt;
+  font-weight: 400; }
+
+.cover-title-type {
+  font-size: 26pt;
+  font-weight: 400; }
+
+.cover-header {
+  height: 100pt; }
+
+.cover-body {
+  background: transparent;
+  border: 0; }
+
+.cover-logo {
+  position: absolute;
+  margin: 0;
+  bottom: 2%;
+  right: 0; }
+
+.section-soer-2015 #portal-column-content {
+  background-color: transparent;
+  padding: 0; }
+
+/* back cover */
+.contain-floats {
+  overflow: hidden; }
+
+.back-cover {
+  font-size: 13.66pt; }
+
+.one-third {
+  height: 33%; }
+
+.back-cover-info {
+  margin-left: 4em; }
+
+.back-cover-isbn {
+  float: right;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  margin: 6em 2em 20em 2em; }
+
+.pdf-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: initial; }
+
+/*# sourceMappingURL=soer2015_pdf_theme.css.dtml.map */

@@ -1,0 +1,90 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/print_main_template/macros/master"
+      i18n:domain="eea">
+<metal:cssslot metal:fill-slot="css_slot">
+    <link rel="stylesheet"
+            tal:attributes="href string:${portal_url}/soer2015_pdf_theme.css">
+</metal:cssslot>
+<body>
+
+<metal:content-core fill-slot="content-core">
+    <metal:content-core define-macro="content-core">
+
+        <div class="cover">
+
+            <div class="cover-header">
+            </div>
+
+
+
+            <div class="cover-body">
+                <div class="cover-theme image-full-container">
+                    <tal:defines define="has_own_cover view/has_cover_image;
+                                        cover_objs python:[context] if has_own_cover else view.get_children_cover_images();
+                                        image_url python:'coverImage_large' if has_own_cover else 'image_large'">
+                        <div tal:repeat="obj cover_objs" tal:attributes="class python:'main-cover-image' if has_own_cover else 'eea-block-columns eea-three-columns'">
+                            <tal:defines define="url obj/absolute_url; title obj/title">
+                                <a tal:attributes="href url">
+                                    <img tal:attributes="src string:${url}/${image_url}; title title; alt title"
+                                            class="image-full-portrait" />
+                                </a>
+                            </tal:defines>
+                        </div>
+                    </tal:defines>
+                </div>
+                <div class="cover-backgrounds clear-both">
+                    <div class="eea-block-columns eea-five-columns bg-soer-synthesis eea-full-object">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-megatrends eea-full-object">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-thematic eea-full-object">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-country eea-full-object">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-regions eea-full-object">&nbsp;</div>
+                </div>
+
+                <div class="cover-image" tal:define="exists_cover_image exists:context/coverImage; has_cover_image python:exists_cover_image and context.coverImage.getSize() != (0,0)" tal:replace="nothing">
+                    <a tal:define="here_url context/@@plone_context_state/object_url"
+                            tal:attributes="href string:$here_url/image_view_fullscreen">
+                        <tal:maincover tal:condition="has_cover_image">
+                            <img tal:attributes="src string:$here_url/coverImage_large" />
+                        </tal:maincover>
+                        <tal:image tal:condition="not:has_cover_image">
+                            <tal:depiction tal:condition="exists:context/image_large">
+                                <img tal:attributes="src string:$here_url/image_large" />
+                            </tal:depiction>
+                        </tal:image>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="cover-bellow-header">
+                <h1 tal:content="view/header" class="cover-title">Navigation Root Title</h1>
+                <h1 class="cover-subtitle" tal:content="context/Title">
+                    Document Title
+                </h1>
+
+                <h2 class="cover-title-type" tal:define="
+                        description context/Description;
+                                description python:view.truncate(description)"
+                        tal:content="description">
+                    Document Subtitle
+                </h2>
+            </div>
+
+            <div class="cover-logo">
+                <img tal:define="
+                        lang  context/@@plone_portal_state/language;
+                        logo python:'++resource++eea.translations.images/logo-%s.png' % lang if lang != 'en' else 'logo.gif'"
+                        tal:attributes="src string:${portal_url}/${logo}" />
+            </div>
+
+        </div>
+
+    </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/print_main_template/macros/master"
+      i18n:domain="eea">
+<metal:cssslot metal:fill-slot="css_slot">
+    <link rel="stylesheet"
+            tal:attributes="href string:${portal_url}/soer2015_pdf_theme.css">
+</metal:cssslot>
+<body>
+
+<metal:content-core fill-slot="content-core">
+    <metal:content-core define-macro="content-core">
+
+        <div class="back-cover">
+
+            <div class="back-cover-isbn">
+                <p>TH-01-15-001-EN-N</p>
+
+                <p>doi: <span>10.2800/944899</span></p>
+            </div>
+            <div class="one-third clear-both">
+                <div class="cover-backgrounds">
+                    <div class="eea-block-columns eea-five-columns bg-soer-synthesis">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-megatrends">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-thematic">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-country">&nbsp;</div>
+                    <div class="eea-block-columns eea-five-columns bg-soer-regions">&nbsp;</div>
+                </div>
+            </div>
+
+            <div class="back-cover pdf-footer contain-floats">
+                <div class="back-cover-info pull-left">
+                    <p>
+                        European Environment Agency
+                        <br/>
+                        Kongens Nytorv 6
+                        <br/>
+                        1050 Copenhagen K
+                        <br/>
+                        Denmark
+                    </p>
+
+                    <p>
+                        +45 33 36 71 00
+                        <br/>
+                        www.eea.europa.eu
+                    </p>
+                </div>
+
+                <div class="back-cover-logo pull-right">
+                    <img tal:attributes="src string:${portal_url}/logo.gif" />
+                </div>
+            </div>
+
+        </div>
+
+    </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
