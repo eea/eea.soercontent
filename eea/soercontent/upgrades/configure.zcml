@@ -4,6 +4,18 @@
         i18n_domain="eea">
 
     <genericsetup:upgradeSteps
+        source="2.6"
+        destination="3.2"
+        profile="eea.soercontent:default">
+
+        <genericsetup:upgradeDepends
+            title="Add Soer2015 pdf theme"
+            import_profile="eea.soercontent:upgrade_320"
+            />
+
+    </genericsetup:upgradeSteps>
+
+    <genericsetup:upgradeSteps
             source="2.3"
             destination="2.6"
             profile="eea.soercontent:default">

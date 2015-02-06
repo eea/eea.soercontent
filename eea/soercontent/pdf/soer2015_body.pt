@@ -13,15 +13,14 @@
 
 <metal:content-core fill-slot="content-core">
     <metal:content-core define-macro="content-core">
-        <h1>David</h1>
         <tal:defines tal:define="brains view/brains">
 
         <div tal:repeat="pdf view/pdfs" class="pdf-collection-item">
             <tal:defines tal:define="pdf_index repeat/pdf/index;
                 brain python:brains[pdf_index]">
-                <div class="eea-pdf-section-image image-full-container">
-                    <img tal:attributes="src string:${brain/getURL}/image_large;" class="image-full-portrait" />
-                </div>
+                <!--?<div class="eea-pdf-section-image image-full-container">-->
+                    <!--?<img tal:attributes="src string:${brain/getURL}/image_large;" class="image-full-portrait" />-->
+                <!--?</div>-->
             </tal:defines>
             <tal:pdf tal:replace="structure pdf" />
         </div>
