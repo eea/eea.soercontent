@@ -1,14 +1,14 @@
 <configure
-  xmlns:browser="http://namespaces.zope.org/browser"
-  i18n_domain="eea">
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="eea">
 
-  <browser:page
-    name="pdf.body"
-    layer="eea.soercontent.interfaces.ILayer"
-    for="eea.soercontent.interfaces.IFiche"
-    class=".body.Body"
-    permission="zope2.View"
-    />
+    <browser:page
+        name="pdf.body"
+        layer="eea.soercontent.interfaces.ILayer"
+        for="eea.soercontent.interfaces.IFiche"
+        class=".body.Body"
+        permission="zope2.View"
+        />
 
     <browser:page
         name="soer.pdf.body"
@@ -18,46 +18,60 @@
         permission="zope2.View"
         />
 
-  <browser:page
-    name="soer.pdf.cover"
-    for="zope.interface.Interface"
-    class=".cover.Cover"
-    permission="zope2.View"
-    />
+    <browser:page
+        name="soer.pdf.cover"
+        for="zope.interface.Interface"
+        class=".cover.Cover"
+        permission="zope2.View"
+        />
 
- <browser:page
-   name="soer.pdf.cover.back"
-   for="zope.interface.Interface"
-   class=".cover.BackCover"
-   permission="zope2.View"
-   />
+    <browser:page
+        name="soer.pdf.cover.back"
+        for="zope.interface.Interface"
+        class=".cover.BackCover"
+        permission="zope2.View"
+        />
 
-  <browser:page
-    name="pdf.title"
-    for="eea.soercontent.interfaces.IFiche"
-    class=".title.Title"
-    permission="zope2.View"
-    />
+    <browser:page
+        name="pdf.title"
+        for="eea.soercontent.interfaces.IFiche"
+        class=".title.Title"
+        permission="zope2.View"
+        />
 
-  <browser:page
-    name="pdf.footer"
-    for="eea.soercontent.interfaces.IFiche"
-    class=".footer.Footer"
-    permission="zope.Public"
-    />
+    <browser:page
+        name="pdf.footer"
+        for="eea.soercontent.interfaces.IFiche"
+        class=".footer.Footer"
+        permission="zope.Public"
+        />
 
-  <browser:page
-    name="pdf.header"
-    for="eea.soercontent.interfaces.IFiche"
-    class=".header.Header"
-    permission="zope.Public"
-    />
+    <browser:page
+        name="soer.pdf.footer"
+        for="*"
+        class=".footer.Footer"
+        permission="zope.Public"
+        />
 
-  <browser:page
-    for="*"
-    name="pdf.macros"
-    template="macros.pt"
-    permission="zope.Public"
-    />
+    <browser:page
+        name="pdf.header"
+        for="eea.soercontent.interfaces.IFiche"
+        class=".header.Header"
+        permission="zope.Public"
+        />
+
+    <browser:page
+        name="soer.pdf.header"
+        for="*"
+        class=".header.Header"
+        permission="zope.Public"
+        />
+
+    <browser:page
+        for="*"
+        name="pdf.macros"
+        template="macros.pt"
+        permission="zope.Public"
+        />
 
 </configure>
