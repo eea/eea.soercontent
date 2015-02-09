@@ -6,6 +6,8 @@ Changelog
 * Change: Do not merge soercontent.print.css in order to easily
   reuse it within epub export
   [voineali refs #22686]
+* Feature: Added Soer2015 pdf theme
+  [ichimdav refs #22442]
 
 3.1 - (2015-02-03)
 ------------------
