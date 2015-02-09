@@ -3,7 +3,7 @@
 
   <stylesheet
     id="++resource++eea.soercontent.print.css"
-    media="print"
+    media="print" cookable="False"
     expression="python:context.portal_type in ['Fiche']"
     />
 
