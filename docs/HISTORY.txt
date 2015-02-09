@@ -3,6 +3,9 @@ Changelog
 
 3.2.dev0 - (unreleased)
 -----------------------
+* Change: pdf.header title returns first match before a emdashes if found
+  in order to render only an acronym for the pdf output
+  [ichimdav refs #22966]
 * Change: Do not merge soercontent.print.css in order to easily
   reuse it within epub export
   [voineali refs #22686]

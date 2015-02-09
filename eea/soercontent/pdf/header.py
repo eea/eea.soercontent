@@ -13,7 +13,13 @@ class Header(BrowserView):
         """ Root title
         """
         root = getApplicationRoot(self.context)
-        return root.Title()
+        title = root.Title()
+        # split title on em dashes if matched
+        # else returns original string wrapped
+        # within a list
+        splitted_title = title.split("\xe2\x80\x94")
+        stripped_title = splitted_title[0].strip()
+        return stripped_title
 
     def __call__(self, **kwargs):
         return self.template()
