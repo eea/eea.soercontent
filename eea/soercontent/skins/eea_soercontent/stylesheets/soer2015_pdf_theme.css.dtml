@@ -1,25 +1,13 @@
-.subsection-europe #region-content h1 {
-  color: #FFF; }
-
 .template-soer-pdf-cover,
 .template-soer-pdf-cover-back,
+.eea-pdf-section-image,
 .back-cover {
   height: 842pt;
   width: 600pt;
   color: #FFF;
   border: 0;
   margin: 0; }
-  .template-soer-pdf-cover #content,
-  .template-soer-pdf-cover-back #content,
-  .back-cover #content {
-    background: #272b57; }
 
-.eea-pdf-section-image {
-  height: 850pt;
-  width: 600pt; }
-
-@page {
-  margin: 5pt; }
 /*.cover-theme {
   line-height: 0;
 }*/
@@ -31,15 +19,13 @@
 
 .image-full-container {
   overflow: hidden;
-  text-align: center;
-  margin: -3em; }
+  text-align: center; }
 
 .image-full-portrait {
   width: auto;
   height: 100%;
   position: relative;
   left: 100%;
-  max-width: inherit !important;
   margin-left: -200%; }
 
 .cover-bellow-header {
