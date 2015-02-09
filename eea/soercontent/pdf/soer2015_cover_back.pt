@@ -16,10 +16,8 @@
 
         <div class="back-cover">
 
-            <div class="back-cover-isbn">
-                <p>TH-01-15-001-EN-N</p>
-
-                <p>doi: <span>10.2800/944899</span></p>
+            <div class="back-cover-qrcode">
+                <img class="qr" tal:attributes="src string:http://chart.apis.google.com/chart?cht=qr&chld=H|0&chs=70x70&chl=${context/absolute_url}" />
             </div>
             <div class="one-third clear-both">
                 <div class="cover-backgrounds">
