@@ -11,6 +11,7 @@
         <genericsetup:upgradeDepends
             title="Import steps with changes: cssregistry"
             import_steps="cssregistry"
+            />
 
         <genericsetup:upgradeDepends
             title="Add Soer2015 pdf theme"
