@@ -3,6 +3,7 @@
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from eea.pdf.themes.page.cover import Cover as PDFCover
 from eea.pdf.themes.page.cover import BackCover as PDFBackCover
+from eea.soercontent.pdf.utils import split_root_title
 
 
 class Cover(PDFCover):
@@ -27,6 +28,15 @@ class Cover(PDFCover):
              "sort_on": "getObjPositionInParent"})
         briefings = [b.getObject() for b in briefings]
         return briefings
+
+    @property
+    def header(self):
+        """
+        :rtype : object
+        """
+        return split_root_title(self.context, start_slice_from=1)
+
+
 
 
 class BackCover(PDFBackCover):

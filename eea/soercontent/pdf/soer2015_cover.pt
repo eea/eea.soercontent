@@ -60,17 +60,20 @@
 
             </div>
 
-            <div class="cover-bellow-header">
-                <h1 tal:content="view/header" class="cover-title">Navigation Root Title</h1>
-                <h1 class="cover-subtitle" tal:content="context/Title">
-                    Document Title
-                </h1>
+            <div class="cover-below-header">
 
-                <h2 class="cover-title-type" tal:define="
-                        description context/Description;
-                                description python:view.truncate(description)"
-                        tal:content="description">
-                    Document Subtitle
+                <tal:header tal:define="header view/header; header_str python: isinstance(header, str)">
+                    <h1 tal:content="header" class="cover-title" tal:condition="header_str">Navigation Root Title</h1>
+                    <tal:hlist tal:condition="python: not header_str" tal:repeat="head header">
+                        <tal:defines tal:define="hindex python:repeat['head'].index">
+                            <h1 tal:content="head" class="cover-title" tal:condition="python:hindex == 0"></h1>
+                            <h2 tal:content="head" tal:attributes="class python:'cover-subtitle'" tal:condition="python: hindex != 0"></h2>
+                        </tal:defines>
+                    </tal:hlist>
+                </tal:header>
+
+                <h2 class="cover-context-title" tal:content="context/Title">
+                    Document Title
                 </h2>
             </div>
 

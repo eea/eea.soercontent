@@ -1,3 +1,6 @@
+body {
+  position: relative; }
+
 .template-soer-pdf-cover,
 .template-soer-pdf-cover-back,
 .eea-pdf-section-image,
@@ -28,9 +31,10 @@
   left: 100%;
   margin-left: -200%; }
 
-.cover-bellow-header {
+.cover-below-header {
   text-align: right;
-  margin: 0 5%; }
+  margin: 0 5%;
+  text-transform: uppercase; }
 
 .cover-title {
   font-size: 34pt;
@@ -39,11 +43,11 @@
 
 .cover-subtitle {
   font-size: 37pt;
-  margin-top: -5pt;
+  margin: 0;
   font-weight: 400; }
 
-.cover-title-type {
-  font-size: 26pt;
+.cover-context-title {
+  font-size: 18pt;
   font-weight: 400; }
 
 .cover-header {
