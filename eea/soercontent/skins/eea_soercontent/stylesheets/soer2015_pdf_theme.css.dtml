@@ -34,7 +34,7 @@ body {
   position: relative;
   left: 100%;
   max-width: initial;
-  margin-left: -200%; }
+  margin-left: -160%; }
 
 .cover-below-header {
   text-align: right;
