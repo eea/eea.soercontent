@@ -1,5 +1,6 @@
 body {
-  position: relative; }
+  position: relative;
+  box-sizing: border-box; }
 
 .template-soer-pdf-cover,
 .template-soer-pdf-cover-back,
@@ -11,6 +12,10 @@ body {
   border: 0;
   margin: 0; }
 
+.eea-pdf-section-image {
+  height: 820pt;
+  width: 600pt; }
+
 /*.cover-theme {
   line-height: 0;
 }*/
@@ -21,14 +26,14 @@ body {
   height: 180pt; }
 
 .image-full-container {
-  overflow: hidden;
-  text-align: center; }
+  overflow: hidden; }
 
 .image-full-portrait {
   width: auto;
   height: 100%;
   position: relative;
   left: 100%;
+  max-width: initial;
   margin-left: -200%; }
 
 .cover-below-header {
@@ -43,7 +48,7 @@ body {
 
 .cover-subtitle {
   font-size: 37pt;
-  margin: 0;
+  margin: -10pt 0 0 0;
   font-weight: 400; }
 
 .cover-context-title {

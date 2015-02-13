@@ -6,6 +6,10 @@
         metal:use-macro="context/main_template/macros/master"
         i18n:domain="eea">
 
+<metal:cssslot metal:fill-slot="css_slot">
+    <link rel="stylesheet"
+            tal:attributes="href string:${portal_url}/soer2015_pdf_theme.css">
+</metal:cssslot>
 <body>
 
 <metal:title fill-slot="content-title"></metal:title>
@@ -18,9 +22,9 @@
         <div tal:repeat="pdf view/pdfs" class="pdf-collection-item">
             <tal:defines tal:define="pdf_index repeat/pdf/index;
                 brain python:brains[pdf_index]">
-                <!--?<div class="eea-pdf-section-image image-full-container">-->
-                    <!--?<img tal:attributes="src string:${brain/getURL}/image_large;" class="image-full-portrait" />-->
-                <!--?</div>-->
+                <div class="eea-pdf-section-image image-full-container">
+                    <img tal:attributes="src string:${brain/getURL}/image_print;" class="image-full-portrait" />
+                </div>
             </tal:defines>
             <tal:pdf tal:replace="structure pdf" />
         </div>
