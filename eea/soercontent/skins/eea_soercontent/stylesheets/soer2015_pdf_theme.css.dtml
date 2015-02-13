@@ -4,7 +4,6 @@ body {
 
 .template-soer-pdf-cover,
 .template-soer-pdf-cover-back,
-.eea-pdf-section-image,
 .back-cover {
   height: 842pt;
   width: 600pt;
@@ -13,8 +12,9 @@ body {
   margin: 0; }
 
 .eea-pdf-section-image {
-  height: 820pt;
-  width: 600pt; }
+  height: 645pt;
+  width: auto;
+  page-break-after: always; }
 
 /*.cover-theme {
   line-height: 0;
