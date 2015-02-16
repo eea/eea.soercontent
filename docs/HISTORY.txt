@@ -1,6 +1,9 @@
 Changelog
 =========
 
+3.3.dev0 - (unreleased)
+-----------------------
+
 3.2 - (2015-02-16)
 ------------------
 * Change: pdf.header title returns first match before a emdashes if found
