@@ -1,8 +1,8 @@
 Changelog
 =========
 
-3.2.dev0 - (unreleased)
------------------------
+3.2 - (2015-02-16)
+------------------
 * Change: pdf.header title returns first match before a emdashes if found
   in order to render only an acronym for the pdf output
   [ichimdav refs #22966]
