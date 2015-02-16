@@ -36,12 +36,12 @@ setup(name=NAME,
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'eea.pdf > 4.3',
-          'eea.vocab',
-          'eea.forms',
-          'eea.converter',
-          'eea.epub',
-          'eea.annotator',
+          'eea.pdf > 4.9',
+          'eea.vocab > 4.5',
+          'eea.forms > 6.2',
+          'eea.converter > 8.6',
+          'eea.epub > 5.9',
+          'eea.annotator > 2.9',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

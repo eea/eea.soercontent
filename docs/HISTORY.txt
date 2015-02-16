@@ -3,6 +3,8 @@ Changelog
 
 3.3.dev0 - (unreleased)
 -----------------------
+* Cleanup: Cleanup obsolete epub_view view
+  [voineali refs #22971]
 
 3.2 - (2015-02-16)
 ------------------
