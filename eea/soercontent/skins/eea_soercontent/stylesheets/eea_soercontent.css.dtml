@@ -28,6 +28,8 @@
     display: list-item; }
     .block-list > li > a {
       display: block; }
+  .block-list .eea-icon:before {
+    margin: 0 1px 0 -10px; }
 
 /* SOER-2015 section styles */
 h1, h2, h3 {
@@ -128,10 +130,6 @@ h1, h2, h3 {
 
 .bg-europe,
 .bg-europe.current {
-  background-color: &dtml-soerThematicSectionFullColor;; }
-
-.bg-europe-david,
-.bg-europe-david.current {
   background-color: &dtml-soerThematicSectionFullColor;; }
 
 .bg-countries,
