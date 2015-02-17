@@ -48,6 +48,7 @@ class Body(PDFBody):
         return soup.find_all('html')[0].decode()
 
     def __call__(self, **kwargs):
+        self.request.set('skipRelations', 1)
         html = super(Body, self).__call__(**kwargs)
         try:
             html = self.fix_body_class(html)
