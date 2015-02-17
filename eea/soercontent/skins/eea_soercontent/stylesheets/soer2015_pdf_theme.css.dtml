@@ -34,7 +34,8 @@ body {
   position: relative;
   left: 100%;
   max-width: initial;
-  margin-left: -160%; }
+  /* #23150; fiche image had empty space which bumped the margin from 160 to 150 in order to fill the space */
+  margin-left: -150%; }
 
 .cover-below-header {
   text-align: right;

@@ -10,19 +10,21 @@
 
 <metal:content-core fill-slot="content-core">
 <metal:content-core define-macro="content-core">
-<div class="fiche-body">
+<div class="fiche-body" tal:define="isPrint isPrint|python:1 if ('pdf.' in request['URL0'] or '.pdf' in request['URL0']) else 0">
 
-  <div class="figure-plus-container fiche-thumbnail" tal:condition="context/getImage|nothing">
-    <div class="figure-image fiche-image" tal:define="here_url context/@@plone_context_state/object_url">
-      <img tal:attributes="src string:$here_url/image/image_large" />
-    </div>
-    <p class="figure-source-copyright fiche-copyright" tal:condition="context/getImageCopyright|nothing">
-      &copy;
-      <tal:copyright tal:content="context/getImageCopyright">
-        Additional source and copyright information
-      </tal:copyright>
-    </p>
-  </div>
+    <metal:print tal:condition="python: not isPrint">
+        <div class="figure-plus-container fiche-thumbnail" tal:condition="context/getImage|nothing">
+            <div class="figure-image fiche-image" tal:define="here_url context/@@plone_context_state/object_url">
+                <img tal:attributes="src string:$here_url/image/image_large" />
+            </div>
+            <p class="figure-source-copyright fiche-copyright" tal:condition="context/getImageCopyright|nothing">
+                &copy;
+                <tal:copyright tal:content="context/getImageCopyright">
+                    Additional source and copyright information
+                </tal:copyright>
+            </p>
+        </div>
+    </metal:print>
 
   <div class="fiche-summary"
       tal:define="summary context/getSummary|string:"
