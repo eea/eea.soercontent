@@ -26,27 +26,17 @@
            <span class="eea-icon eea-icon-clipboard eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
-            <ul class="block-list">
-                <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015">
-                        <span>Key messages</span>
-                    </a>
-                </li>
-                <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015">
-                        <span>Chapter 1: the state of the environment in Europe</span>
-                    </a>
-                </li>
-                <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015">
-                        <span>Chapter 2: climate change</span>
-                    </a>
-                </li>
-                <li>
-                    <a tal:attributes="href string:$portal_url/soer-2015">
-                        <span>Chapter ...</span>
-                    </a>
-                </li>
+            <ul class="block-list"
+                    tal:define="collection python:context.restrictedTraverse('collections/synthesis', None);"
+                    tal:condition="nocall:collection">
+                <tal:results tal:define="results python:collection.queryCatalog()"
+                        tal:condition="results">
+                    <li tal:repeat="result results">
+                        <a tal:attributes="href result/getURL">
+                            <span tal:content="result/Title">Title</span>
+                        </a>
+                    </li>
+                </tal:results>
             </ul>
         </div>
     </div>

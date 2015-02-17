@@ -3,6 +3,9 @@ Changelog
 
 3.3.dev0 - (unreleased)
 -----------------------
+* Change: updated soer2015_frontpage and portlet_soer_sections_navigation
+  templates with latest logic found on production
+  [ichimdav refs #23150]
 * Cleanup: Cleanup obsolete epub_view view
   [voineali refs #22971]
 
