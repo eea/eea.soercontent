@@ -6,9 +6,16 @@
         portal_url portal_state/portal_url;
         view nocall:plone_view;
         body_class python:plone_view.bodyClass(template, view);
+        current_url context/absolute_url;
         cview nocall:context/@@soercontent_view;">
 
-
+    <metal:currentlink metal:define-macro="current_link"
+            tal:define="href href|nothing;
+                        title title|nothing;
+                        isCurrent python:href and href in current_url">
+        <span class="eea-icon eea-icon-chevron-right"  tal:condition="isCurrent" tal:content="title"></span>
+        <span tal:condition="not:isCurrent" tal:content="title"></span>
+    </metal:currentlink>
 
     <dt class="portletHeader">
         <span class="portletTopLeft"></span>
@@ -32,8 +39,8 @@
                 <tal:results tal:define="results python:collection.queryCatalog()"
                         tal:condition="results">
                     <li tal:repeat="result results">
-                        <a tal:attributes="href result/getURL">
-                            <span tal:content="result/Title">Title</span>
+                        <a tal:define="href result/getURL; title result/Title" tal:attributes="href href">
+                            <metal:showCurrent metal:use-macro="context/portlet_soer_sections_navigation/macros/current_link" />
                         </a>
                     </li>
                 </tal:results>
@@ -52,8 +59,8 @@
             <ul class="block-list"
                 tal:define="results python:cview.content(parent_id='soer-2015', object_id='global')">
                 <li tal:repeat="result results">
-                    <a tal:attributes="href result/url">
-                        <span tal:content="result/title">Global</span>
+                    <a tal:define="href result/url; title result/title" tal:attributes="href href">
+                        <metal:showCurrent metal:use-macro="context/portlet_soer_sections_navigation/macros/current_link" />
                     </a>
                 </li>
             </ul>
@@ -72,8 +79,8 @@
             <ul class="block-list"
                 tal:define="results python:cview.content(parent_id='soer-2015', object_id='europe')">
                 <li tal:repeat="result results">
-                    <a tal:attributes="href result/url">
-                        <span tal:content="result/title">Air</span>
+                    <a tal:define="href result/url; title result/title" tal:attributes="href href">
+                        <metal:showCurrent metal:use-macro="context/portlet_soer_sections_navigation/macros/current_link" />
                     </a>
                 </li>
             </ul>
@@ -91,8 +98,8 @@
             <ul class="block-list"
                 tal:define="results python:cview.content(parent_id='soer-2015', object_id='countries-comparison')">
                 <li tal:repeat="result results">
-                    <a tal:attributes="href result/url">
-                        <span tal:content="result/title">Countries Comparison</span>
+                    <a tal:define="href result/url; title result/title" tal:attributes="href href">
+                        <metal:showCurrent metal:use-macro="context/portlet_soer_sections_navigation/macros/current_link" />
                     </a>
                 </li>
             </ul>
@@ -111,8 +118,8 @@
             <ul class="block-list"
                 tal:define="results python:cview.content(parent_id='soer-2015', object_id='countries')">
                 <li tal:repeat="result results">
-                    <a tal:attributes="href result/url">
-                        <span tal:content="result/title">Countries Comparison</span>
+                    <a tal:define="href result/url; title result/title" tal:attributes="href href">
+                        <metal:showCurrent metal:use-macro="context/portlet_soer_sections_navigation/macros/current_link" />
                     </a>
                 </li>
             </ul>

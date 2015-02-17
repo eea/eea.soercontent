@@ -3,6 +3,8 @@ Changelog
 
 3.3.dev0 - (unreleased)
 -----------------------
+* Change: prefixed the fiche_view.pt fiche-image with the large image scale
+  [ichimdav refs #23150]
 * Change: updated soer2015_frontpage and portlet_soer_sections_navigation
   templates with latest logic found on production
   [ichimdav refs #23150]

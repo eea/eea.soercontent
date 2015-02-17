@@ -14,7 +14,7 @@
 
   <div class="figure-plus-container fiche-thumbnail" tal:condition="context/getImage|nothing">
     <div class="figure-image fiche-image" tal:define="here_url context/@@plone_context_state/object_url">
-      <img tal:attributes="src string:$here_url/image" style="min-width: 100%; width: 100%;" />
+      <img tal:attributes="src string:$here_url/image/image_large" />
     </div>
     <p class="figure-source-copyright fiche-copyright" tal:condition="context/getImageCopyright|nothing">
       &copy;
