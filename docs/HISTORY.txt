@@ -3,6 +3,9 @@ Changelog
 
 3.3.dev0 - (unreleased)
 -----------------------
+* Bug fix: changed condition for main cover image to check for size of image
+  instead of width in order to avoid a false positive in some situations
+  [ichimdav refs #23150]
 * Change: fiche-image is no longer displayed when printing since it was hidden
   on pdf print
   [ichimdav refs #23090]

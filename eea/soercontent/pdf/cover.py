@@ -16,7 +16,7 @@ class Cover(PDFCover):
         :return:
         :rtype:
         """
-        return self.context.coverImage.width
+        return self.context.coverImage.get_size() != 0
 
     def get_children_cover_images(self):
         """
