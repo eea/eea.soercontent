@@ -3,6 +3,9 @@ Changelog
 
 3.3.dev0 - (unreleased)
 -----------------------
+* Change: added a margin bottom to parent-fieldname-title in order to keep
+  consistency with the design from other parts of the Site
+  [ichimdav refs #23150]
 * Bug fix: changed condition for main cover image to check for size of image
   instead of width in order to avoid a false positive in some situations
   [ichimdav refs #23150]

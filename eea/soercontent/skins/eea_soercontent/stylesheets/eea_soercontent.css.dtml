@@ -280,7 +280,7 @@ body {
 
 #parent-fieldname-title {
   padding: 0;
-  margin: 0; }
+  margin: 0 0 0.67em 0; }
 
 .column-area {
   width: 65%; }
