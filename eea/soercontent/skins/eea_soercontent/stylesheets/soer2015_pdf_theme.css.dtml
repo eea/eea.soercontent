@@ -33,7 +33,7 @@ body {
   height: 100%;
   position: relative;
   left: 100%;
-  max-width: initial;
+  max-width: initial !important;
   /* #23150; fiche image had empty space which bumped the margin from 160 to 150 in order to fill the space */
   margin-left: -150%; }
 
