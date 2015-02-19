@@ -3,6 +3,10 @@ Changelog
 
 3.3.dev0 - (unreleased)
 -----------------------
+* Change: optimized pdf output of soer and soer2015 pdf generation by getting
+  rid of the BeautifulSoup transforms and the rendering of content that was
+  hidden by css such as portal-column-two
+  [ichimdav refs #23090]
 * Change: added a margin bottom to parent-fieldname-title in order to keep
   consistency with the design from other parts of the Site
   [ichimdav refs #23150]
