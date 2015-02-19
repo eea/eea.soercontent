@@ -10,9 +10,24 @@
 
 <metal:content-core fill-slot="main">
     <h1 class="documentFirstHeading" tal:replace="structure context/pdf.title"></h1>
-<metal:field use-macro="python:context.widget('text', mode='view')">
-     Body text
-    </metal:field>
+
+    <div id="content-core">
+        <div class="fiche-body">
+            <div class="fiche-summary">
+                <div class="keyFact">
+                    <metal:keyFacts use-macro="python:context.widget('summary', mode='view')">
+                        Body text
+                    </metal:keyFacts>
+                </div>
+            </div>
+            <metal:field use-macro="python:context.widget('text', mode='view')">
+                Body text
+            </metal:field>
+            <div class="qrbox featured">
+                <metal:qrbox tal:replace="structure context/qrbox"></metal:qrbox>
+            </div>
+        </div>
+    </div>
 </metal:content-core>
 
 </body>
