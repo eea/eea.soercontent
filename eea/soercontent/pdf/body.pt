@@ -28,6 +28,7 @@
             </div>
         </div>
     </div>
+    <metal:columntwo metal:fill-slot="column_two_slot"></metal:columntwo>
 </metal:content-core>
 
 </body>

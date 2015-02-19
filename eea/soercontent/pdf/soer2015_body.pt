@@ -31,6 +31,7 @@
 
         </tal:defines>
 
+        <metal:columntwo metal:fill-slot="column_two_slot"></metal:columntwo>
     </metal:content-core>
 </metal:content-core>
 
