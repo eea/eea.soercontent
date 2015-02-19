@@ -6,7 +6,6 @@
 
     <head>
         <metal:resources metal:define-macro="resources">
-
             <metal:styleslot define-slot="style_slot">
                 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
                 <link rel="stylesheet"
@@ -24,7 +23,7 @@
     </head>
 
     <body tal:define="body_class python:plone_view.bodyClass(template, view);"
-            tal:attributes="class python:body_class + ' body-print bg-' + context.id">
+            tal:attributes="class python:body_class + ' bg-' + context.id">
     <div id="content-core">
         <metal:text define-slot="content-core" tal:content="nothing">
 
