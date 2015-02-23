@@ -3,6 +3,9 @@ Changelog
 
 3.3.dev0 - (unreleased)
 -----------------------
+* Bugfix: display content for collections not just folders and have the cover
+  background color be the default EEA Blue
+  [ichimdav refs #23305]
 * Change: optimized pdf output of soer and soer2015 pdf generation by getting
   rid of the BeautifulSoup transforms and the rendering of content that was
   hidden by css such as portal-column-two
