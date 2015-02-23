@@ -207,6 +207,16 @@ h1, h2, h3 {
 body {
   box-sizing: border-box; }
 
+/* #23324 move qrcode within the pdf.disclaimer page */
+.template-pdf-disclaimer .qrbox {
+  position: absolute;
+  top: 50%;
+  margin: 0 40pt 0 108pt; }
+
+/* #23324; hide qrcode from soer2015 theme */
+.template-soer-pdf-body .qrbox {
+  display: none !important; }
+
 /* grids */
 .eea-row {
   margin-left: -15px; }
@@ -313,6 +323,14 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 .featured, .portlet {
   background-color: white;
   padding: 1.5em; }
+
+/* hide soer sections from navigation since we have the soer_navigation */
+.portletNavigationTree .section-synthesis,
+.portletNavigationTree .section-global,
+.portletNavigationTree .section-europe,
+.portletNavigationTree .section-countries-comparison,
+.portletNavigationTree .section-countries {
+  display: none; }
 
 /* Content Styles */
 .template-soer2015_frontpage #viewlet-above-content {

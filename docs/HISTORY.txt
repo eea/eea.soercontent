@@ -3,6 +3,12 @@ Changelog
 
 3.3.dev0 - (unreleased)
 -----------------------
+* Change: hid the qrbox from soer.pdf.body since the qrbox will show up on the
+  disclaimer page
+  [ichimdav refs #23324]
+* Change: hid navigation sections since they show up within
+  portlet_soer_sections_navigation
+  [ichimdav]
 * Bugfix: display content for collections not just folders and have the cover
   background color be the default EEA Blue
   [ichimdav refs #23305]
