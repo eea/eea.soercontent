@@ -10,7 +10,7 @@
         <property name="header">soer.pdf.header</property>
         <property name="footer">soer.pdf.footer</property>
         <property name="toc">pdf.toc</property>
-        <property name="javascriptdelay">300</property>
+        <property name="javascriptdelay">3</property>
         <property name="offset">2</property>
     </object>
 

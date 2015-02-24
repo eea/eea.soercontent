@@ -2,20 +2,22 @@
 .fiche-endnotes,
 .portal-logo,
 #viewlet-above-content,
-#relatedItems {
+#relatedItems,
+.eea-available-version {
   display: none; }
 
 /* PDF visible elements */
 /* Enable SOER QR box */
-.body-print .qrbox {
- display: block !important;
- background: #f3f3f3;
- margin-bottom: 0;
- padding: 0.5em;
- overflow: hidden; }
-/* #22660 removed border-bottom from discreet for briefings */
-.body-print p.discreet {
-  border-bottom: 0; }
+.body-print {
+  /* #22660 removed border-bottom from discreet for briefings */ }
+  .body-print .qrbox {
+    display: block !important;
+    background: #f3f3f3;
+    margin-bottom: 0;
+    padding: 0.5em;
+    overflow: hidden; }
+  .body-print p.discreet {
+    border-bottom: 0; }
 
 .qrbox > img {
   width: inherit;

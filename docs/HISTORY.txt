@@ -3,6 +3,9 @@ Changelog
 
 3.3.dev0 - (unreleased)
 -----------------------
+* Change: use the higher resolution logo.png for the eea white logo for cover
+  and back cover
+  [ichimdav refs #23324]
 * Change: hid the qrbox from soer.pdf.body since the qrbox will show up on the
   disclaimer page
   [ichimdav refs #23324]

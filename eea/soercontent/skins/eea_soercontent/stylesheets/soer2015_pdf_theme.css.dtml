@@ -66,7 +66,7 @@ body {
 
 .cover-logo {
   position: absolute;
-  margin: 0;
+  margin: 0 5%;
   bottom: 2%;
   right: 0; }
 
@@ -84,8 +84,16 @@ body {
 .one-third {
   height: 33%; }
 
+.back-cover-logo > img,
+.cover-logo > img {
+  height: 70px;
+  width: auto; }
+
+.back-cover-logo {
+  margin-right: 2em; }
+
 .back-cover-info {
-  margin-left: 4em; }
+  margin-left: 3em; }
 
 .back-cover-qrcode {
   float: right;

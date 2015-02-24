@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="back-cover-logo pull-right">
-                    <img tal:attributes="src string:${portal_url}/logo.gif" />
+                    <img tal:attributes="src string:${portal_url}/logo.png" />
                 </div>
             </div>
 

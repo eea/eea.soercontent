@@ -80,7 +80,7 @@
             <div class="cover-logo">
                 <img tal:define="
                         lang  context/@@plone_portal_state/language;
-                        logo python:'++resource++eea.translations.images/logo-%s.png' % lang if lang != 'en' else 'logo.gif'"
+                        logo python:'++resource++eea.translations.images/logo-%s.png' % lang if lang != 'en' else 'logo.png'"
                         tal:attributes="src string:${portal_url}/${logo}" />
             </div>
 
