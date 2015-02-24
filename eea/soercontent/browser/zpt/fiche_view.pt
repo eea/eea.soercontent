@@ -14,15 +14,11 @@
 
     <metal:print tal:condition="python: not isPrint">
         <div class="figure-plus-container fiche-thumbnail" tal:condition="context/getImage|nothing">
-            <div class="figure-image fiche-image" tal:define="here_url context/@@plone_context_state/object_url">
-                <img tal:attributes="src string:$here_url/image/image_large" />
+            <div class="figure-image fiche-image" tal:define="here_url context/@@plone_context_state/object_url;
+                                                             copyright context/getImageCopyright|nothing;">
+                <img tal:attributes="src string:$here_url/image_large;
+                                     title python: 'Image credits: &copy; ' + copyright if copyright else ''" />
             </div>
-            <p class="figure-source-copyright fiche-copyright" tal:condition="context/getImageCopyright|nothing">
-                &copy;
-                <tal:copyright tal:content="context/getImageCopyright">
-                    Additional source and copyright information
-                </tal:copyright>
-            </p>
         </div>
     </metal:print>
 

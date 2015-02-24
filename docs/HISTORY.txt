@@ -3,6 +3,9 @@ Changelog
 
 3.3.dev0 - (unreleased)
 -----------------------
+* Change: fiche_view image copyright is now added as title on image in order
+  to display the information only on hover
+  [ichimdav]
 * Change: use the higher resolution logo.png for the eea white logo for cover
   and back cover
   [ichimdav refs #23324]
