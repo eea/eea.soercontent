@@ -23,7 +23,7 @@
 
             <div class="cover-body">
                 <div class="cover-theme image-full-container">
-                    <tal:defines define="has_own_cover view/has_cover_image;
+                    <tal:defines define="has_own_cover view/has_cover_image|python:False;
                                         cover_objs python:[context] if has_own_cover else view.get_children_cover_images();
                                         image_url python:'coverImage_large' if has_own_cover else 'image_large'">
                         <div tal:repeat="obj cover_objs" tal:attributes="class python:'main-cover-image' if has_own_cover else 'eea-block-columns eea-three-columns'">
