@@ -1,6 +1,9 @@
 Changelog
 =========
 
+3.5.dev0 - (unreleased)
+-----------------------
+
 3.4 - (2015-02-26)
 ------------------
 * Change: updated soer2015_frontpage and portlet_soer_sections_navigation links
