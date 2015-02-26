@@ -3,6 +3,8 @@ Changelog
 
 3.5.dev0 - (unreleased)
 -----------------------
+* Change: merged soer2015_frontage and eea_soercontent.css from custom
+  [ghicaale refs #23271]
 
 3.4 - (2015-02-26)
 ------------------

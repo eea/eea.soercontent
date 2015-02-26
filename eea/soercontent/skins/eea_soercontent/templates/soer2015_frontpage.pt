@@ -37,11 +37,11 @@ i18n:domain="plone">
                             <div class="eea-list-columns"
                                         tal:define="collection python:context.restrictedTraverse('soer-2015/collections/synthesis', None);"
                                         tal:condition="nocall:collection">
-                                    <tal:results tal:define="results python:collection.queryCatalog()"
+                                     <tal:results tal:define="results python:collection.queryCatalog()"
                                             tal:condition="results">
                                         <ul>
                                             <li tal:repeat="result results">
-                                                <a tal:attributes="href result/getURL; title result/Description;">
+                                                <a tal:attributes="href result/getURL">
                                                     <span tal:content="result/Title">Title</span>
                                                 </a>
                                             </li>
@@ -64,7 +64,7 @@ i18n:domain="plone">
                                     </div>
                                 </div>
 
-                                <p class="pull-left">Download Synthesis report</p> <a class="download-pdf pull-left fancybox" title="download PDF" href="#pdf-choice-synthesis"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left fancybox" title="download EPUB" href="#epub-choice-synthesis"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
+                                <p class="pull-left">Synthesis report in several languages</p> <a class="download-pdf pull-left fancybox" title="download PDF" href="#pdf-choice-synthesis"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left fancybox" title="download EPUB" href="#epub-choice-synthesis"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
                             </div>
                         </div>
                         <div class="eea-tabs-panel">
@@ -73,8 +73,8 @@ i18n:domain="plone">
                             <tal:global tal:define="results python:cview.content(parent_id='soer-2015', object_id='global')">
                                 <ul>
                                     <li tal:repeat="result results">
-                                        <a tal:attributes="href result/getURL; title result/Description;">
-                                            <span tal:content="result/Title">Global</span>
+                                        <a tal:attributes="href result/getURL">
+                                            <span tal:content="result/title">Global</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -108,7 +108,7 @@ i18n:domain="plone">
                                         <h4>Environmental themes</h4>
                                         <ul>
                                             <li tal:repeat="result results">
-                                                <a tal:attributes="href result/getURL; title result/Description;">
+                                                <a tal:attributes="href result/getURL">
                                                     <span tal:content="result/Title">Title</span>
                                                 </a>
                                             </li>
@@ -124,7 +124,7 @@ i18n:domain="plone">
                                         <h4>Socio-economic dimensions</h4>
                                         <ul>
                                             <li tal:repeat="result results">
-                                                <a tal:attributes="href result/getURL; title result/Description;">
+                                                <a tal:attributes="href result/getURL">
                                                     <span tal:content="result/Title">Title</span>
                                                 </a>
                                             </li>
@@ -140,7 +140,7 @@ i18n:domain="plone">
                                         <h4>Systemic perspectives</h4>
                                         <ul>
                                             <li tal:repeat="result results">
-                                                <a tal:attributes="href result/getURL; title result/Description;">
+                                                <a tal:attributes="href result/getURL">
                                                     <span tal:content="result/Title">Title</span>
                                                 </a>
                                             </li>
@@ -172,8 +172,8 @@ i18n:domain="plone">
                             <tal:countries-comparison tal:define="results python:cview.content(parent_id='soer-2015', object_id='countries-comparison')">
                                 <ul>
                                     <li tal:repeat="result results">
-                                        <a tal:attributes="href result/getURL; title result/Description;">
-                                            <span tal:content="result/Title">Countries Comparison</span>
+                                        <a tal:attributes="href result/getURL">
+                                            <span tal:content="result/title">Countries Comparison</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -206,14 +206,14 @@ i18n:domain="plone">
                                                                double_ratio python: ratio * 2;">
                                         <ul class='eea-list-columns eea-three-columns'>
                                             <li tal:repeat="result python:results[:ratio]">
-                                                <a tal:attributes="href result/getURL; title result/Description;">
+                                                <a tal:attributes="href result/getURL">
                                                     <span tal:content="result/Title">Title</span>
                                                 </a>
                                             </li>
                                         </ul>
                                         <ul class='eea-list-columns eea-three-columns'>
                                             <li tal:repeat="result python:results[ratio:double_ratio]">
-                                                <a tal:attributes="href result/getURL; title result/Description;">
+                                                <a tal:attributes="href result/getURL">
                                                     <span tal:content="result/Title">Title</span>
                                                 </a>
                                             </li>
@@ -221,7 +221,7 @@ i18n:domain="plone">
                                         <div class='eea-list-columns eea-three-columns'>
                                             <ul>
                                                 <li tal:repeat="result python:results[double_ratio:]">
-                                                    <a tal:attributes="href result/getURL; title result/Description;">
+                                                    <a tal:attributes="href result/getURL">
                                                         <span tal:content="result/Title">Title</span>
                                                     </a>
                                                 </li>
@@ -232,7 +232,7 @@ i18n:domain="plone">
                                                 <h4>Regional briefings</h4>
                                                 <ul tal:define="res python:collection.queryCatalog()">
                                                     <li tal:repeat="result res">
-                                                        <a tal:attributes="href result/getURL; title result/Description;">
+                                                        <a tal:attributes="href result/getURL">
                                                             <span tal:content="result/Title">Title</span>
                                                         </a>
                                                     </li>
@@ -277,8 +277,9 @@ i18n:domain="plone">
                            <img width="100%" height="200px" src="http://www.eea.europa.eu/soer-2015/soer-explore-image/image_preview">
                         </a>
                         </dd>
-                        <dd class="portletItem odd">
+                        <dd class="portletItem odd" style="margin-top:0.5em;">
                         <!-- optional description to soer explore -->
+                        <a href="/soer-2015/explore-quick-facts-and-figures" title="Explore SOER 2015 via an interactive presentation (PDF)"><span class="eea-icon eea-icon-file-pdf-o"></span>Download the SOER 2015 presentation (PDF)</a>
                         </dd>
                     </dl>
                 </div>
@@ -293,9 +294,9 @@ i18n:domain="plone">
 
 
             <div id="boxes">
-		<div metal:define-macro="keyfacts-slider"
-		    tal:define="background_img_path background_img_path| python: context.getCanonical().absolute_url() + '/image_large'  "
-		     id="keyfacts-slider" class="figure keyFactsSlider">
+                <div metal:define-macro="keyfacts-slider"
+                    tal:define="background_img_path background_img_path| python: context.getCanonical().absolute_url() + '/image_large'  "
+                     id="keyfacts-slider" class="figure keyFactsSlider">
                        <div class="keyfactsImgContainer"><img class="keyfacts-bgimg" src=""
                         tal:attributes="src background_img_path"  /></div>
                        <div  tal:define="items context/soer2015_getAllKeyFacts">
@@ -303,18 +304,18 @@ i18n:domain="plone">
                                 <!-- all key facts and messages -->
                                 <dl
                                     class="portlet slidePortlet" >
-                                    <dt class="portletHeader" style="padding:5px;" i18n:translate="">Key messages</dt>
+                                    <dt class="portletHeader" style="padding:5px;" i18n:translate=""><a href="/soer-2015/collections/all-key-messages" style="color:white;" title="see all key messages">Key messages</a></dt>
                                      <dd class="portletItem" style="left: 650px;" tal:repeat="item items">
                                        <span>
                                           <a href="" title="Read more of the key fact"
                                               class="moreLink link-plain" style="font-size:100%;"
-                                              tal:attributes="href item/parent_url; title item/parent_title;"
+                                              tal:attributes="href item/parent_url;title item/parent_title;"
                                               i18n:attributes="title"
                                               i18n:translate="" tal:content="item/parent_title">more</a>:&nbsp;
                                           <span tal:replace="structure item/text"></span>
                                           <a href="" title="Read more of the key fact"
                                               class="moreLink link-plain" style="font-size:100%;"
-                                              tal:attributes="href item/parent_url; title item/parent_title;"
+                                              tal:attributes="href item/parent_url;title item/parent_title;"
                                               i18n:attributes="title"
                                               i18n:translate="">See briefing</a>
                                         </span>

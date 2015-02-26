@@ -210,7 +210,7 @@ body {
 /* #23324 move qrcode within the pdf.disclaimer page */
 .template-pdf-disclaimer .qrbox {
   position: absolute;
-  top: 50%;
+  top: 60%;
   margin: 0 40pt 0 108pt; }
 
 /* #23324; hide qrcode from soer2015 theme */
@@ -298,7 +298,7 @@ body {
 .right-column-area {
   width: 35%; }
   .right-column-area .portlet {
-    padding: 2em; }
+    padding: 3em 2em; }
 
 .column-area, .right-column-area {
   padding: 0 0 0 15px;
@@ -465,5 +465,3 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
     width: 35%; } }
 /* </dtml-with> */
 /* </dtml-with> */
-
-/*# sourceMappingURL=eea_soercontent.css.dtml.map */
