@@ -3,6 +3,9 @@ Changelog
 
 3.4.dev0 - (unreleased)
 -----------------------
+* Bug fix: check if context has coverImage since soer2015 theme can be
+  enabled on content other than folders
+  [ichimdav refs #23439]
 
 3.3 - (2015-02-25)
 ------------------
