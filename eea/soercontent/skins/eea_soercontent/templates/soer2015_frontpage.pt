@@ -74,7 +74,7 @@ i18n:domain="plone">
                                 <ul>
                                     <li tal:repeat="result results">
                                         <a tal:attributes="href result/getURL">
-                                            <span tal:content="result/title">Global</span>
+                                            <span tal:content="result/Title">Global</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -173,7 +173,7 @@ i18n:domain="plone">
                                 <ul>
                                     <li tal:repeat="result results">
                                         <a tal:attributes="href result/getURL">
-                                            <span tal:content="result/title">Countries Comparison</span>
+                                            <span tal:content="result/Title">Countries Comparison</span>
                                         </a>
                                     </li>
                                 </ul>
