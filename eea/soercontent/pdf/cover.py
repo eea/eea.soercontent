@@ -39,8 +39,6 @@ class Cover(PDFCover):
         return split_root_title(self.context, start_slice_from=1)
 
 
-
-
 class BackCover(PDFBackCover):
     """ PDF Back cover
     """
