@@ -45,23 +45,17 @@ class SOERContentView(BrowserView):
         :return: list of dicts with title and url of given ptypes
         :rtype: list
         """
-        res = []
         parent = self.get_parent(parent_id)
         if not parent:
-            return res
+            return []
         obj = parent[0].getObject().restrictedTraverse(object_id, None)
         if not obj:
-            return res
+            return []
         children = self.context.portal_catalog(
             {'path': '/'.join(obj.getPhysicalPath()), 'depth': 1},
             portal_type=ptype or 'Fiche',
             sort_on="getObjPositionInParent")
-        for brain in children:
-            res.append({
-                'url': brain.getURL(),
-                'title': brain.Title
-            })
-        return res
+        return children
 
 
 

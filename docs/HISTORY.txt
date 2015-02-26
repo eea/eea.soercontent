@@ -3,6 +3,13 @@ Changelog
 
 3.4.dev0 - (unreleased)
 -----------------------
+* Change: updated soer2015_frontpage and portlet_soer_sections_navigation links
+  to contain titles with the object description
+  [ichimdav]
+* Change: updated soer2015_frontpage with latest changes from production and
+  modified the soer view content logic to return the brain in order to be able
+  to retrieve any information from it just like we can from a collection
+  [ichimdav]
 * Bug fix: check if context has coverImage since soer2015 theme can be
   enabled on content other than folders
   [ichimdav refs #23439]
