@@ -1,8 +1,8 @@
 Changelog
 =========
 
-3.5.dev0 - (unreleased)
------------------------
+3.5 - (2015-02-27)
+------------------
 * Change: merged soer2015_frontage, portlet_soer_sections_navigation
   and eea_soercontent.css from custom
   [ghicaale refs #23271]
