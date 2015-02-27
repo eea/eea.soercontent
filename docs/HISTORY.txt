@@ -1,6 +1,9 @@
 Changelog
 =========
 
+3.6.dev0 - (unreleased)
+-----------------------
+
 3.5 - (2015-02-27)
 ------------------
 * Change: merged soer2015_frontage, portlet_soer_sections_navigation
