@@ -92,7 +92,8 @@ i18n:domain="plone">
                                     </div>
                                 </div>
                                  <p class="pull-left">Download all global megatrends</p>
-                                 <a class="download-pdf pull-left" href="/soer-2015/global/download.pdf"  title="download PDF"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left fancybox"  title="download EPUB" href="#epub-choice-global"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
+                                 <a class="download-pdf pull-left" href="/soer-2015/global/download.pdf"  title="download PDF"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
+                                 <a class="download-epub pull-left" title="download EPUB" href="/soer-2015/global/download.epub"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
                             </div>
                         </div>
                         <div class="eea-tabs-panel">
@@ -162,7 +163,8 @@ i18n:domain="plone">
                                     </div>
                                 </div>
                                  <p class="pull-left">Download all European briefings</p>
-                                 <a class="download-pdf pull-left" href="/soer-2015/europe/download.pdf"  title="download PDF"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left fancybox" href="#epub-choice-europe"  title="download EPUB"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
+                                 <a class="download-pdf pull-left" href="/soer-2015/europe/download.pdf"  title="download PDF"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
+                                 <a class="download-epub pull-left" href="/soer-2015/europe/download.epub"  title="download EPUB"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
                             </div>
                         </div>
 
@@ -191,7 +193,8 @@ i18n:domain="plone">
                                     </div>
                                 </div>
                                  <p class="pull-left">Download all cross-country comparisons</p>
-                                 <a class="download-pdf pull-left" href="/soer-2015/countries-comparison/download.pdf"  title="download PDF"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left fancybox" href="#epub-choice-cross"  title="download EPUB"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
+                                 <a class="download-pdf pull-left" href="/soer-2015/countries-comparison/download.pdf"  title="download PDF"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
+                                 <a class="download-epub pull-left" href="/soer-2015/countries-comparison/download.epub"  title="download EPUB"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
                             </div>
                         </div>
 
@@ -256,7 +259,8 @@ i18n:domain="plone">
                                     </div>
                                 </div>
                                  <p class="pull-left">Download all countries and regions</p>
-                                 <a class="download-pdf pull-left" href="/soer-2015/countries/download.pdf"  title="download PDF"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left fancybox" href="#epub-choice-countries" title="download EPUB"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
+                                 <a class="download-pdf pull-left" href="/soer-2015/countries/download.pdf"  title="download PDF"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
+                                 <a class="download-epub pull-left" href="/soer-2015/countries/download.epub" title="download EPUB"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
                             </div>
                           </div>
                     </div>
@@ -268,18 +272,21 @@ i18n:domain="plone">
                         <dt class="portletHeader">
                         <span class="portletTopLeft"></span>
                         <span>
-                            SOER 2015 — EXPLORE
+                            SOER 2015 presentation
                         </span>
                         <span class="portletTopRight"></span>
                         </dt>
                         <dd class="portletItem odd">
                         <a href="/soer-2015/explore-quick-facts-and-figures" title="Explore SOER 2015 via an interactive presentation (PDF)">
-                           <img width="100%" height="200px" src="http://www.eea.europa.eu/soer-2015/soer-explore-image/image_preview">
+                           <img width="100%" src="http://www.eea.europa.eu/soer-2015/explore-soer/image_preview">
                         </a>
                         </dd>
                         <dd class="portletItem odd" style="margin-top:0.5em;">
                         <!-- optional description to soer explore -->
-                        <a href="/soer-2015/explore-quick-facts-and-figures" title="Explore SOER 2015 via an interactive presentation (PDF)"><span class="eea-icon eea-icon-file-pdf-o"></span>Download the SOER 2015 presentation (PDF)</a>
+                        <a href="/soer-2015/explore-quick-facts-and-figures" title="Explore SOER 2015 via an interactive presentation (PDF)"><span class="eea-icon eea-icon-file-pdf-o"></span>Presentation of key facts and figures</a>
+                        </dd>
+                        <dd class="portletItem odd" style="margin-top:0.5em;">
+                           <a href="/soer-2015/collections/all-figures" title="Browse and search all charts and images in SOER 2015"><span class="eea-icon eea-icon-bar-chart-o"></span>Catalogue of all charts and images</a>
                         </dd>
                     </dl>
                 </div>
@@ -294,9 +301,9 @@ i18n:domain="plone">
 
 
             <div id="boxes">
-                <div metal:define-macro="keyfacts-slider"
-                    tal:define="background_img_path background_img_path| python: context.getCanonical().absolute_url() + '/image_large'  "
-                     id="keyfacts-slider" class="figure keyFactsSlider">
+    <div metal:define-macro="keyfacts-slider"
+        tal:define="background_img_path background_img_path| python: context.getCanonical().absolute_url() + '/image_large'  "
+         id="keyfacts-slider" class="figure keyFactsSlider">
                        <div class="keyfactsImgContainer"><img class="keyfacts-bgimg" src=""
                         tal:attributes="src background_img_path"  /></div>
                        <div  tal:define="items context/soer2015_getAllKeyFacts">
@@ -399,6 +406,7 @@ i18n:domain="plone">
 
 <!-- Next div is used by the PDF async mailer popup -->
 <div class="eea-pdf-viewlet" data-async="1"></div>
+<div class="eea-epub-viewlet" data-async="1"></div>
 </metal:content-core>
 </metal:content-core>
 </body>
