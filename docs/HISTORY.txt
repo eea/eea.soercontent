@@ -3,6 +3,8 @@ Changelog
 
 3.6.dev0 - (unreleased)
 -----------------------
+ * Change: updated soer2015_frontage with fixes for portlet-static-help
+   [ichimdav refs #23500]
 
 3.5 - (2015-02-27)
 ------------------

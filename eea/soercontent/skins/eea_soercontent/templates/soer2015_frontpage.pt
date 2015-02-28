@@ -271,7 +271,7 @@ i18n:domain="plone">
 
                         <dt class="portletHeader">
                         <span class="portletTopLeft"></span>
-                        <span>
+                        <span class="portlet-static-title">
                             SOER 2015 presentation
                         </span>
                         <span class="portletTopRight"></span>
@@ -301,9 +301,9 @@ i18n:domain="plone">
 
 
             <div id="boxes">
-    <div metal:define-macro="keyfacts-slider"
-        tal:define="background_img_path background_img_path| python: context.getCanonical().absolute_url() + '/image_large'  "
-         id="keyfacts-slider" class="figure keyFactsSlider">
+		<div metal:define-macro="keyfacts-slider"
+		    tal:define="background_img_path background_img_path| python: context.getCanonical().absolute_url() + '/image_large'  "
+		     id="keyfacts-slider" class="figure keyFactsSlider">
                        <div class="keyfactsImgContainer"><img class="keyfacts-bgimg" src=""
                         tal:attributes="src background_img_path"  /></div>
                        <div  tal:define="items context/soer2015_getAllKeyFacts">

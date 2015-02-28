@@ -298,7 +298,7 @@ body {
 .right-column-area {
   width: 35%; }
   .right-column-area .portlet {
-    padding: 3em 2em; }
+    padding: 2em; }
 
 .column-area, .right-column-area {
   padding: 0 0 0 15px;
@@ -454,6 +454,17 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 .eea-footer-right {
   margin-top: 1em; }
 
+/* 23500 position portlet title over image */
+.portlet-static-help {
+  position: relative; }
+
+.portlet-static-title {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  top: 60px;
+  left: 45px; }
+
 /* media queries rules */
 /* shrink the right column when screen size is smaller than 1280px
    avoiding the columns from overlapping */
@@ -465,3 +476,5 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
     width: 35%; } }
 /* </dtml-with> */
 /* </dtml-with> */
+
+/*# sourceMappingURL=eea_soercontent.css.dtml.map */
