@@ -267,7 +267,7 @@ i18n:domain="plone">
                     <!--? eea-tabs-panels -->
                 </div>
                 <div class="right-column-area">
-                    <dl class="portlet portletStaticText portlet-static-help">
+                    <dl class="portlet portletStaticText portlet-soer-presentation">
 
                         <dt class="portletHeader">
                         <span class="portletTopLeft"></span>

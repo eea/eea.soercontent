@@ -3,6 +3,9 @@ Changelog
 
 3.6.dev0 - (unreleased)
 -----------------------
+ * Bug fix: show tab arrows that was hidden behind portlet presentation.
+   give proper name to class.
+   [demarant refs #23500] 
  * Change: updated soer2015_frontage with fixes for portlet-static-help
    [ichimdav refs #23500]
 

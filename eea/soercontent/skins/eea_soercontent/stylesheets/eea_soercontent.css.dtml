@@ -455,8 +455,9 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   margin-top: 1em; }
 
 /* 23500 position portlet title over image */
-.portlet-static-help {
-  position: relative; }
+.portlet-soer-presentation {
+  position: relative; 
+  background-color: transparent !important; }
 
 .portlet-static-title {
   position: absolute;
