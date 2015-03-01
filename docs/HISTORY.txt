@@ -3,6 +3,8 @@ Changelog
 
 3.6.dev0 - (unreleased)
 -----------------------
+ * Change: add collections in soer frontpage menu.
+   [demarant refs #23500]
  * Change: add subtitle and link for the presentation heading.
    [demarant refs #23500]
  * Bug fix: show tab arrows that was hidden behind portlet presentation.

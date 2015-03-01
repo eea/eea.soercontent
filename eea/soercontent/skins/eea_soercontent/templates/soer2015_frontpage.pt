@@ -374,6 +374,13 @@ i18n:domain="plone">
                                 <span>Photos and videos</span>
                             </a>
                             </li>
+
+                            <li class="navTreeItem visualNoMarker navTreeFolderish section-collections">
+                            <a tal:attributes="href string:$portal_url/soer-2015/collections"
+                                class=" navTreeFolderish contenttype-folder" title="">
+                                <span>Collections</span>
+                            </a>
+                            </li>
                         </ul>
                         </dd>
                     </dl>
