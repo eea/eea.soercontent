@@ -271,22 +271,20 @@ i18n:domain="plone">
 
                         <dt class="portletHeader">
                         <span class="portletTopLeft"></span>
-                        <span class="portlet-static-title">
-                            SOER 2015 presentation
-                        </span>
+                        <a href="/soer-2015/explore-quick-facts-and-figures" class="presentation-link" title="Download the interactive presentation PDF">
+                           <span class="portlet-static-title">
+                            SOER 2015 presentation (PDF)<br/>
+                            <span class="portlet-static-subtitle">
+                            Key facts and figures
+                            </span>
+                           </span>
+                        </a>
                         <span class="portletTopRight"></span>
                         </dt>
                         <dd class="portletItem odd">
-                        <a href="/soer-2015/explore-quick-facts-and-figures" title="Explore SOER 2015 via an interactive presentation (PDF)">
+                        <a href="/soer-2015/explore-quick-facts-and-figures" title="Download the interactive presentation PDF">
                            <img width="100%" src="http://www.eea.europa.eu/soer-2015/explore-soer/image_preview">
                         </a>
-                        </dd>
-                        <dd class="portletItem odd" style="margin-top:0.5em;">
-                        <!-- optional description to soer explore -->
-                        <a href="/soer-2015/explore-quick-facts-and-figures" title="Explore SOER 2015 via an interactive presentation (PDF)"><span class="eea-icon eea-icon-file-pdf-o"></span>Presentation of key facts and figures</a>
-                        </dd>
-                        <dd class="portletItem odd" style="margin-top:0.5em;">
-                           <a href="/soer-2015/collections/all-figures" title="Browse and search all charts and images in SOER 2015"><span class="eea-icon eea-icon-bar-chart-o"></span>Catalogue of all charts and images</a>
                         </dd>
                     </dl>
                 </div>

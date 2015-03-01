@@ -3,6 +3,8 @@ Changelog
 
 3.6.dev0 - (unreleased)
 -----------------------
+ * Change: add subtitle and link for the presentation heading.
+   [demarant refs #23500]
  * Bug fix: show tab arrows that was hidden behind portlet presentation.
    give proper name to class.
    [demarant refs #23500] 

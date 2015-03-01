@@ -463,8 +463,20 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   position: absolute;
   z-index: 10;
   color: white;
-  top: 60px;
-  left: 45px; }
+  font-size: 80%;
+  top: 50px;
+  right: 40px; }
+
+a.presentation-link:link, 
+a.presentation-link:hover, 
+a.presentation-link:visited,
+a.presentation-link:active {
+    color: white; }
+
+.portlet-static-subtitle {
+    font-size:80%;
+    color: white;
+    float:right; }
 
 /* media queries rules */
 /* shrink the right column when screen size is smaller than 1280px
