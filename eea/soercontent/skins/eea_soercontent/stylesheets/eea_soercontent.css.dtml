@@ -267,18 +267,16 @@ body {
   width: 20%; }
 
 /* Overrides */
-.section-soer-2015 div.width-3\:4 {
-  width: 62.2%; }
-.section-soer-2015 .width-3\:4.position-0 {
-  margin-left: -100%; }
-.section-soer-2015 #portal-column-content {
+#portal-column-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #FFF;
-  padding: 1.5em; }
-.section-soer-2015 #content {
-  margin: 0; }
+  padding: 1.5em;
+  min-width: 635px !important;
+  margin-left: -100%; }
+
+.section-soer #portal-column-two,
 .section-soer-2015 #portal-column-two {
   margin-top: 35px; }
 
@@ -455,28 +453,21 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   margin-top: 1em; }
 
 /* 23500 position portlet title over image */
-.portlet-soer-presentation {
-  position: relative; 
-  background-color: transparent !important; }
+.portlet.portlet-soer-presentation {
+  position: relative;
+  background-color: transparent; }
 
 .portlet-static-title {
   position: absolute;
   z-index: 10;
-  color: white;
   font-size: 80%;
+  color: white;
   top: 50px;
   right: 40px; }
 
-a.presentation-link:link, 
-a.presentation-link:hover, 
-a.presentation-link:visited,
-a.presentation-link:active {
-    color: white; }
-
 .portlet-static-subtitle {
-    font-size:80%;
-    color: white;
-    float:right; }
+  font-size: 80%;
+  float: right; }
 
 /* media queries rules */
 /* shrink the right column when screen size is smaller than 1280px
