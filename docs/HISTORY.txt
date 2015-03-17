@@ -1,6 +1,9 @@
 Changelog
 =========
 
+3.7.dev0 - (unreleased)
+-----------------------
+
 3.6 - (2015-03-17)
 ------------------
 * Bug fix: fixed styling issues when visiting soer section instead of soer-2015
