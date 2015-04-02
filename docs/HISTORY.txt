@@ -10,7 +10,7 @@ Changelog
   [ichimdav refs #23944]
 * Change: Switched to curl in the jenkins build install script
   [olimpiurob refs #22402]
-* Change: Changed fetch url for jenkins build install script to the install 
+* Change: Changed fetch url for jenkins build install script to the install
   script from the main EEA CPB repository
   [olimpiurob refs #22402]
 * Change: add collections in soer frontpage menu.
@@ -19,7 +19,7 @@ Changelog
   [demarant refs #23500]
 * Bug fix: show tab arrows that was hidden behind portlet presentation.
   give proper name to class.
-  [demarant refs #23500] 
+  [demarant refs #23500]
 * Change: updated soer2015_frontage with fixes for portlet-static-help
   [ichimdav refs #23500]
 
