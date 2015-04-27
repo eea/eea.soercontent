@@ -9,22 +9,50 @@
 </head>
 <body tal:define="
 plone_view nocall:context/@@plone;
-body_class python:plone_view.bodyClass(template, view);
-page python:request.get('page') or 1;
-total_pages python: request.get('topage') or 1;
-last_page python:page == total_pages;"
-        tal:attributes="class python: body_class + ' body-print' if not last_page else body_class + ' body-print last-page'">
+body_class python:plone_view.bodyClass(template, view);"
+        tal:attributes="class python: body_class + ' body-print'">
 <div id="region-content">
         <div class="pdf-fiche-header"
-                tal:define="page_class python: 'pdf-fiche-page page ';
-                            even_page python: int(page) % 2 == 0;
-                            page_number_class python: page_class + 'pull-left' if even_page else page_class + 'pull-right'">
-
-            <h5 tal:attributes="class python:'pdf-fiche-breadcrumbs pull-left' if not even_page else 'pdf-fiche-breadcrumbs pull-right'" tal:define="breadcrumbs view/breadcrumbs;">
+                tal:define="page_class python: 'pdf-fiche-page page ';">
+            <h5 tal:attributes="class python:'pdf-fiche-breadcrumbs '" tal:define="breadcrumbs view/breadcrumbs;">
                 <span tal:content="structure python:' &gt; '.join(breadcrumbs)" />
             </h5>
-            <p tal:attributes="class page_number_class;" tal:content="page"></p>
+            <p tal:attributes="class page_class">Page number</p>
         </div>
 </div>
+
+<script type="text/javascript">
+    function subst(item_class) {
+        var vars={};
+        var x=document.location.search.substring(1).split('&');
+        var z;
+        for(var i in x) { z=x[i].split('=',2); vars[z[0]] = unescape(z[1]);}
+        var x=['page','subsection', 'topage', 'section'];
+        var y;
+        for(var i in x) {
+            y = document.getElementsByClassName(x[i]);
+            for(var j=0; j<y.length; ++j) y[j].textContent = vars[x[i]];
+        }
+
+        var page = vars[item_class];
+        var total_pages = vars['topage'];
+
+        var even = window.parseInt(page, 10) % 2 === 0;
+        var body_print;
+        // add last page class to the last page of pdf
+        if (page === total_pages) {
+            body_print = document.getElementsByClassName('body-print');
+            body_print.className += " last-page";
+        }
+
+        // switch pull classes for breadcrumbs and page numbers
+        var page_div = document.getElementsByClassName('page')[0];
+        var breadcrumb = document.getElementsByClassName('pdf-fiche-breadcrumbs')[0];
+        page_div.className += even ? 'pull-left': 'pull-right';
+        breadcrumb.className += even ? 'pull-right': 'pull-left';
+
+    }
+    subst('page');
+</script>
 </body>
 </html>

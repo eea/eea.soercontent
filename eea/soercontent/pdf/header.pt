@@ -17,20 +17,32 @@
 <div id="region-content"
         tal:define="page python:request.get('page')">
     <div class="pdf-header pdf-fiche-header">
-        <tal:nologo tal:condition="python: not page or page and page != '1'">
             <h2 class="pdf-header-title" tal:content="view/title">Header title</h2>
-        </tal:nologo>
-        <tal:logo tal:condition="python:page == '1'">
-            <h2 class="pdf-header-title documentFirstHeading" tal:content="view/title">Header title</h2>
             <img tal:define="
                     lang  context/@@plone_portal_state/language;
                     logo python:'++resource++eea.translations.images/pdflogo-%s.png' % lang"
                     tal:attributes="src string:${context/portal_url}/${logo}"
                     width="232" height="48"
-                    class="logo-header"  />
-        </tal:logo>
+                    class="logo-header" style="display:none;"  />
     </div>
 </div>
 
+<script type="text/javascript">
+    function subst(item_class) {
+        var vars={};
+        var x=document.location.search.substring(1).split('&');
+        var z;
+        for(var i in x) { z=x[i].split('=',2); vars[z[0]] = unescape(z[1]);}
+
+        var page = parseInt(vars[item_class], 10);
+        var header = document.getElementsByClassName('pdf-header-title')[0];
+        var logo = document.getElementsByClassName('logo-header')[0];
+        if (page === 1) {
+            header.className += " documentFirstHeading";
+            logo.style.display = "block";
+        }
+    }
+    subst('page');
+</script>
 </body>
 </html>

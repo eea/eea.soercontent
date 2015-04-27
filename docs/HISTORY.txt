@@ -3,6 +3,9 @@ Changelog
 
 3.7.dev0 - (unreleased)
 -----------------------
+* Change: modified header and footer templates in order to be usable when using
+  the static files option of eea.pdf
+  [ichimdav refs #23904]
 
 3.6 - (2015-03-17)
 ------------------
