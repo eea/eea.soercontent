@@ -368,7 +368,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
       -ms-border-radius: 0;
       border-radius: 0; }
     #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li > a {
-      height: 40px;
+      height: 65px;
       padding: 0.8em 2em 1em 0.8em;
       white-space: normal;
       word-wrap: break-word;
@@ -437,7 +437,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   border: 0; }
   .eea-accordion-panels-soer .portletHeader {
     padding-left: 10px; }
-  .eea-accordion-panels-soer .eea-accordion-title-manual-icons {
+  .eea-accordion-panels-soer .eea-accordion-title-manual-icons, .eea-accordion-panels-soer .eea-icon-right-container {
     color: #FFF; }
 
 .eea-accordion-panels.eea-accordion-panels-soer .pane {
