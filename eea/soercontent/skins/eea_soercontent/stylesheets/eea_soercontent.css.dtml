@@ -267,13 +267,13 @@ body {
   width: 20%; }
 
 /* Overrides */
-#portal-column-content {
+.section-soer-2015 #portal-column-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #FFF;
   padding: 1.5em;
-  min-width: 635px !important;
+  min-width: 635px;
   margin-left: -100%; }
 
 .section-soer #portal-column-two,
