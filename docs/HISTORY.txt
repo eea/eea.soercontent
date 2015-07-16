@@ -3,6 +3,8 @@ Changelog
 
 3.8.dev0 - (unreleased)
 -----------------------
+* Change: layout proof of pdf output after we added bootstrap to our site
+  [ichimdav refs #27437]
 * Change: accordion h2 color is now white as well, this is done in order to keep
   the same design with the small accordion found on the sections navigation
   [ichimdav refs #26378]

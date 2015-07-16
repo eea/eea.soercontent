@@ -32,7 +32,8 @@
 .qrbox-text strong {
   padding: 0 1pt; }
 
-#content .qrbox-text > p {
+#content .qrbox-text > p,
+#content .qrbox-text > p:last-child {
   margin: 0 0 0.2em 0; }
 
 /* END QR box */
