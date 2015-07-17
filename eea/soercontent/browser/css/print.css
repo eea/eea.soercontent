@@ -32,9 +32,10 @@
 .qrbox-text strong {
   padding: 0 1pt; }
 
-#content .qrbox-text > p,
-#content .qrbox-text > p:last-child {
-  margin: 0 0 0.2em 0; }
+.qrbox-text > p,
+.qrbox-text > p:last-child {
+  margin: 0 0 0.2em 0 !important;
+  /* important in order to override the overly qualified #content .featured p:last */ }
 
 /* END QR box */
 /* body */
