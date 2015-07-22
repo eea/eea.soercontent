@@ -38,6 +38,15 @@ body {
   /* #23150; fiche image had empty space which bumped the margin from 160 to 150 in order to fill the space */
   margin-left: -150%; }
 
+.image-full-copyright {
+  color: #000;
+  position: relative;
+  margin-top: -3em;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 1em;
+  max-width: 60%; }
+
 .cover-below-header {
   text-align: right;
   margin: 0 5%;

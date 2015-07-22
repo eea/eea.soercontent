@@ -24,6 +24,7 @@
                 brain python:brains[pdf_index]">
                 <div class="eea-pdf-section-image image-full-container">
                     <img tal:attributes="src string:${brain/getURL}/image_print;" class="image-full-portrait" />
+                    <div tal:define="image_copyright python:getattr(context, 'imageCopyright', '')" i18n:translate="cover-photo" class="image-full-copyright" tal:condition="image_copyright">Cover photo: © <tal:image replace="python:image_copyright" i18n:name="copyright-name"/></div>
                 </div>
             </tal:defines>
             <tal:pdf tal:replace="structure pdf" />
