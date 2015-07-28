@@ -1,8 +1,8 @@
 Changelog
 =========
 
-3.9.dev0 - (unreleased)
------------------------
+3.9 - (2015-07-28)
+------------------
 * Change: layout proof of pdf output after we added bootstrap to our site
   [ichimdav refs #27437]
 
