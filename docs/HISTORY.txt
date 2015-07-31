@@ -3,6 +3,8 @@ Changelog
 
 4.0.dev0 - (unreleased)
 -----------------------
+* Change: soer accordion title are now white
+  [ichimdav refs #27215]
 
 3.9 - (2015-07-28)
 ------------------

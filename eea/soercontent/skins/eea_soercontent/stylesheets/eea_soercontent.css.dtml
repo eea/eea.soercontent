@@ -437,7 +437,8 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   border: 0; }
   .eea-accordion-panels-soer .portletHeader {
     padding-left: 10px; }
-  .eea-accordion-panels-soer .eea-accordion-title-manual-icons, .eea-accordion-panels-soer .eea-icon-right-container {
+  .eea-accordion-panels-soer .eea-accordion-title-manual-icons, .eea-accordion-panels-soer .eea-icon-right-container,
+  .eea-accordion-panels-soer .eea-accordion-title {
     color: #FFF; }
 
 .eea-accordion-panels.eea-accordion-panels-soer .pane {
