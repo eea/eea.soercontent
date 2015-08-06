@@ -319,7 +319,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   background-color: transparent; }
 
 .featured, .portlet {
-  background-color: white;
+  background-color: #FFF;
   padding: 1.5em; }
 
 /* hide soer sections from navigation since we have the soer_navigation */
@@ -335,12 +335,12 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   margin: 0; }
 
 #parent-title {
-  background-color: white;
+  background-color: #FFF;
   padding: 2em; }
 
 .top-highlights {
   margin-bottom: 2em;
-  background-color: white;
+  background-color: #FFF;
   overflow: hidden; }
   .top-highlights .portlet {
     padding-top: 2em; }
@@ -469,6 +469,13 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 .portlet-static-subtitle {
   font-size: 80%;
   float: right; }
+
+/* print fixes */
+.MYFIG {
+  margin-top: 1em; }
+
+.body-print .qrbox {
+  clear: both; }
 
 /* media queries rules */
 /* shrink the right column when screen size is smaller than 1280px

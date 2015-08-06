@@ -3,6 +3,9 @@ Changelog
 
 4.0.dev0 - (unreleased)
 -----------------------
+* Bug fix: fixed print styles for fiches when printing and qrbox is next to a
+  floated element
+  [ichimdav refs #27537]
 * Change: soer accordion title are now white
   [ichimdav refs #27215]
 
