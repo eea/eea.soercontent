@@ -1,6 +1,9 @@
 Changelog
 =========
 
+4.1.dev0 - (unreleased)
+-----------------------
+
 4.0 - (2015-08-18)
 ------------------
 * Bug fix: fixed print styles for fiches when printing and qrbox is next to a
