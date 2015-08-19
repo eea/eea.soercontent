@@ -26,12 +26,12 @@ i18n:domain="plone">
                 <li><a href="#tab-global-megatrends" id="tab-global-megatrends"><span class="eea-icon eea-icon-globe eea-icon-2x"></span>Global megatrends</a></li>
                 <li><a href="#tab-thematic-briefing" id="tab-thematic-briefing"><span class="eea-icon eea-icon-leaf eea-icon-2x"></span>European briefings</a></li>
                 <li><a href="#tab-cross-country-comparisons" id="tab-cross-country-comparisons"><span class="eea-icon eea-icon-bar-chart-o eea-icon-2x"></span>Cross-country comparisons</a></li>
-                <li><a href="#tab-regions-countries" id="tab-regions-countries"><span class="eea-icon eea-icon-map-marker eea-icon-2x"></span>Countries<br>and regions</a></li>
+                <li><a href="#tab-regions-countries" id="tab-regions-countries"><span class="eea-icon eea-icon-map-marker eea-icon-2x"></span>Countries and regions</a></li>
             </ul>
             <div class="eea-row">
                 <div class="column-area">
                     <div class="eea-tabs-panels eea-tabs-panels-soer">
-                        <div class="eea-tabs-panel">
+                        <div class="eea-tabs-panel" id="panel-tab-synthesis-report">
                             <p>The synthesis report informs future European environmental policy in general and its implementation between 2015 and 2020 in particular. It includes a reflection on the European environment in a global context, as well as chapters summarising the state of, trends in, and prospects for the environment in Europe.</p>
 
                             <div class="eea-list-columns"
@@ -53,9 +53,9 @@ i18n:domain="plone">
                             <div class="eea-footer-right visualClear pull-right">
                                 <div class="visualHidden">
                                     <div id="pdf-choice-synthesis">
-                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/synthesis/report/action-download-pdf">Download report (PDF)</a> - on 3rd of March.
+                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/synthesis/report/action-download-pdf">Download report (PDF)</a>
                                         <br />
-                                        <span class="eea-icon eea-icon-globe eea-icon-2x"></span> <a href="/soer-2015/synthesis/folder_listing">Synthesis in more languages (PDF)</a> - on 3rd of March.
+                                        <span class="eea-icon eea-icon-globe eea-icon-2x"></span> <a href="/soer-2015/synthesis/folder_listing">Synthesis in more languages (PDF)</a>
                                     </div>
                                 </div>
                                 <div class="visualHidden">
@@ -67,7 +67,7 @@ i18n:domain="plone">
                                 <p class="pull-left">Synthesis report in several languages</p> <a class="download-pdf pull-left fancybox" title="download PDF" href="#pdf-choice-synthesis"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left fancybox" title="download EPUB" href="#epub-choice-synthesis"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
                             </div>
                         </div>
-                        <div class="eea-tabs-panel">
+                        <div class="eea-tabs-panel" id="panel-tab-global-megatrends">
                             <p>The global megatrends report assesses 11 global megatrends (GMT) of importance for Europe’s environment in the long term. In assessing key drivers, trends and implications for Europe, it aims to provide an improved basis for strategic European environmental policymaking.</p>
 
                             <tal:global tal:define="results python:cview.content(parent_id='soer-2015', object_id='global')">
@@ -96,7 +96,7 @@ i18n:domain="plone">
                                  <a class="download-epub pull-left" title="download EPUB" href="/soer-2015/global/download.epub"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
                             </div>
                         </div>
-                        <div class="eea-tabs-panel">
+                        <div class="eea-tabs-panel" id="panel-tab-thematic-briefing">
                             <p>European briefings present the state, recent trends and prospects in 25 key environmental themes, grouped in three clusters: environment; socio-economic; and systemic perspectives.</p>
 
 
@@ -168,7 +168,7 @@ i18n:domain="plone">
                             </div>
                         </div>
 
-                        <div class="eea-tabs-panel">
+                        <div class="eea-tabs-panel" id="panel-tab-cross-country-comparisons">
                             <p>Cross-country comparisons provide an analysis of progress across European countries for selected topics. They are based on EEA and Eurostat indicators.</p>
 
                             <tal:countries-comparison tal:define="results python:cview.content(parent_id='soer-2015', object_id='countries-comparison')">
@@ -198,7 +198,7 @@ i18n:domain="plone">
                             </div>
                         </div>
 
-                        <div class="eea-tabs-panel">
+                        <div class="eea-tabs-panel" id="panel-tab-regions-countries">
                             <p>Country briefings provide an overview of state of the environment across 39 European countries, based on national state of environment reports. Regional briefings cover three regions, identified as priority areas in the EU's 7th Environmental Action Programme.</p>
                             <h4>Countries briefings</h4>
                             <div tal:define="collection python:context.restrictedTraverse('soer-2015/collections/country-briefings', None);" tal:condition="nocall:collection">
@@ -245,7 +245,7 @@ i18n:domain="plone">
                                     </tal:countries>
                                 </tal:results>
                             </div>
-                            <div class="pull-left"><p class="discreet" style="margin-top:0.5em;">*under the UN SCR 1244/99</p>
+                            <div class="pull-left"><p class="discreet">*under the UN SCR 1244/99</p>
                             </div>
                             <div class="eea-footer-right visualClear pull-right">
                                 <div class="visualHidden">
@@ -309,17 +309,17 @@ i18n:domain="plone">
                                 <!-- all key facts and messages -->
                                 <dl
                                     class="portlet slidePortlet" >
-                                    <dt class="portletHeader" style="padding:5px;" i18n:translate=""><a href="/soer-2015/collections/all-key-messages" style="color:white;" title="see all key messages">Key messages</a></dt>
-                                     <dd class="portletItem" style="left: 650px;" tal:repeat="item items">
+                                    <dt class="portletHeader" i18n:translate=""><a href="/soer-2015/collections/all-key-messages" title="see all key messages">Key messages</a></dt>
+                                     <dd class="portletItem" tal:repeat="item items">
                                        <span>
                                           <a href="" title="Read more of the key fact"
-                                              class="moreLink link-plain" style="font-size:100%;"
+                                              class="moreLink link-plain"
                                               tal:attributes="href item/parent_url;title item/parent_title;"
                                               i18n:attributes="title"
                                               i18n:translate="" tal:content="item/parent_title">more</a>:&nbsp;
                                           <span tal:replace="structure item/text"></span>
                                           <a href="" title="Read more of the key fact"
-                                              class="moreLink link-plain" style="font-size:100%;"
+                                              class="moreLink link-plain"
                                               tal:attributes="href item/parent_url;title item/parent_title;"
                                               i18n:attributes="title"
                                               i18n:translate="">See briefing</a>

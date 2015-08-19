@@ -3,6 +3,8 @@ Changelog
 
 4.1.dev0 - (unreleased)
 -----------------------
+* Change: cleaned soer2015_frontpage.pt of inline styles
+  [ichimdav refs #27220]
 
 4.0 - (2015-08-18)
 ------------------
