@@ -1,6 +1,9 @@
 Changelog
 =========
 
+4.2.dev0 - (unreleased)
+-----------------------
+
 4.1 - (2015-09-10)
 ------------------
 * Change: cleaned soer2015_frontpage.pt of inline styles
