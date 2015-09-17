@@ -1,7 +1,6 @@
 body {
   position: relative;
-  box-sizing: border-box;
-  background-color: #006699; }
+  box-sizing: border-box; }
 
 .template-soer-pdf-cover,
 .template-soer-pdf-cover-back,

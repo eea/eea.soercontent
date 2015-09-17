@@ -3,6 +3,9 @@ Changelog
 
 4.2.dev0 - (unreleased)
 -----------------------
+* Bug fix: remove blue background from soer2015_theme which shows up when
+  using the theme on a section different from soer
+  [ichimdav refs #28694]
 
 4.1 - (2015-09-10)
 ------------------
