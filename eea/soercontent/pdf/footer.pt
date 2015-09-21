@@ -17,7 +17,7 @@ body_class python:plone_view.bodyClass(template, view);"
             <h5 tal:attributes="class python:'pdf-fiche-breadcrumbs '" tal:define="breadcrumbs view/breadcrumbs;">
                 <span tal:content="structure python:' &gt; '.join(breadcrumbs)" />
             </h5>
-            <p tal:attributes="class page_class">Page number</p>
+            <h5 tal:attributes="class page_class">Page number</h5>
         </div>
 </div>
 
