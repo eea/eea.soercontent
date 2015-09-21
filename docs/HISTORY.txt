@@ -3,6 +3,8 @@ Changelog
 
 4.2.dev0 - (unreleased)
 -----------------------
+* Bug fix: pdf-fiche-page is no longer white expect for the section pages
+  [ichimdav refs #28694]
 * Bug fix: remove blue background from soer2015_theme which shows up when
   using the theme on a section different from soer
   [ichimdav refs #28694]

@@ -88,8 +88,7 @@
 /* pdf Footer section */
 /* headers and description */
 .pdf-fiche-page {
-  padding: 2px 4px;
-  color: #FFF; }
+  padding: 2px 4px; }
 
 .documentFirstHeading {
   text-align: left;
@@ -98,18 +97,23 @@
   padding: 0.5em 0 1em 0; }
 
 .subsection-synthesis .pdf-fiche-page {
-  background-color: #272b57; }
+  background-color: #272b57;
+  color: #FFF; }
 
 .subsection-europe .pdf-fiche-page {
-  background-color: #637e22; }
+  background-color: #637e22;
+  color: #FFF; }
 
 .subsection-countries .pdf-fiche-page {
-  background-color: #ba3c0d; }
+  background-color: #ba3c0d;
+  color: #FFF; }
 
 .subsection-global .pdf-fiche-page {
-  background-color: #733d85; }
+  background-color: #733D85;
+  color: #FFF; }
 
 .subsection-countries-comparison .pdf-fiche-page {
-  background-color: #007a86; }
+  background-color: #007a86;
+  color: #FFF; }
 
 /*# sourceMappingURL=print.css.dtml.map */
