@@ -8,7 +8,7 @@
 
 <metal:cssslot metal:fill-slot="css_slot">
     <link rel="stylesheet"
-            tal:attributes="href string:${portal_url}/soer2015_pdf_theme.css">
+            tal:attributes="href string:${portal_url}/soer2015_pdf_theme.css" />
 </metal:cssslot>
 <body>
 
@@ -21,11 +21,13 @@
 
         <div tal:repeat="pdf view/pdfs" class="pdf-collection-item">
             <tal:defines tal:define="pdf_index repeat/pdf/index;
-                brain python:brains[pdf_index]">
+                brain python:brains[pdf_index];
+                brain_url brain/getURL;"
+                tal:condition="python: 'SITE/soer' in brain_url">
                 <div class="eea-pdf-section-image image-full-container">
-                    <img tal:attributes="src string:${brain/getURL}/image_print;" class="image-full-portrait" />
+                    <img tal:attributes="src string:${brain_url}/image_print;" class="image-full-portrait" />
                 </div>
-                <div tal:define="image_copyright python:getattr(brain.getObject(), 'imageCopyright', '')" i18n:translate="cover-photo" class="image-full-copyright discreet" tal:condition="image_copyright">Cover photo: © <tal:image replace="python:image_copyright" i18n:name="copyright-name"/></div>
+                <div tal:define="image_copyright python:getattr(brain, 'getImageCopyright', '')" i18n:translate="cover-photo" class="image-full-copyright discreet" tal:condition="image_copyright">Cover photo: © <tal:image replace="python:image_copyright" i18n:name="copyright-name"/></div>
             </tal:defines>
             <tal:pdf tal:replace="structure pdf" />
         </div>
