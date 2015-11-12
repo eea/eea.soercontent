@@ -34,9 +34,9 @@
         </h3>
         <div class="pane">
             <ul class="block-list"
-                    tal:define="collection python:context.restrictedTraverse('collections/synthesis', None);"
+                    tal:define="collection python:context.restrictedTraverse('/www/SITE/soer-2015/collections/synthesis', None);"
                     tal:condition="nocall:collection">
-                <tal:results tal:define="results python:collection.queryCatalog()"
+                <tal:results tal:define="results python:collection.queryCatalog(Language='all')"
                         tal:condition="results">
                     <li tal:repeat="result results">
                         <a tal:define="href result/getURL; title result/Title" tal:attributes="href href; title result/Description">

@@ -52,7 +52,8 @@ class SOERContentView(BrowserView):
         if not obj:
             return []
         children = self.context.portal_catalog(
-            {'path': '/'.join(obj.getPhysicalPath()), 'depth': 1},
+            path={'query': '/'.join(obj.getPhysicalPath()), 'depth': 1},
+            Language="all",
             portal_type=ptype or 'Fiche',
             sort_on="getObjPositionInParent")
         return children

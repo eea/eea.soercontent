@@ -3,6 +3,9 @@ Changelog
 
 4.3.dev0 - (unreleased)
 -----------------------
+* Bug fix: Fixed portlet_soer_section_navigation query results when
+  used outside of the soer2015 parent folder
+  [ichimdav refs #30333]
 
 4.2 - (2015-10-05)
 ------------------
