@@ -5,6 +5,7 @@ body {
 .template-soer-pdf-cover,
 .template-soer-pdf-cover-back,
 .back-cover {
+  background-color: #006699;
   height: 842pt;
   width: 600pt;
   color: #FFF;

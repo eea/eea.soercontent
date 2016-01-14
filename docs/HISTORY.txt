@@ -3,6 +3,9 @@ Changelog
 
 4.4.dev0 - (unreleased)
 -----------------------
+* Bug fix: add EEA Blue background on cover pages of the Soer2015 theme
+  removed in 4.2
+  [ichimdav refs #67936]
 
 4.3 - (2015-11-16)
 ------------------
