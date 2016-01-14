@@ -3,6 +3,9 @@ Changelog
 
 4.4.dev0 - (unreleased)
 -----------------------
+* Bug fix: pdf-fiche-page now sets important for it's color in order to
+  avoid override by other styles from eea_soercontent.css
+  [ichimdav refs #67936]
 * Bug fix: add EEA Blue background on cover pages of the Soer2015 theme
   removed in 4.2
   [ichimdav refs #67936]

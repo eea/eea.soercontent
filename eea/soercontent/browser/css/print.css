@@ -96,24 +96,25 @@
   font-size: 16pt;
   padding: 0.5em 0 1em 0; }
 
+.pdf-fiche-page {
+  /* important because footer or header fiche-page should be white
+   * and we need to override https://github.com/eea/eea.soercontent/commit/35315a693ba3ea446c66416836463f1a33e7dcaa
+   */
+  color: #FFF !important; }
+
 .subsection-synthesis .pdf-fiche-page {
-  background-color: #272b57;
-  color: #FFF; }
+  background-color: #272b57; }
 
 .subsection-europe .pdf-fiche-page {
-  background-color: #637e22;
-  color: #FFF; }
+  background-color: #637e22; }
 
 .subsection-countries .pdf-fiche-page {
-  background-color: #ba3c0d;
-  color: #FFF; }
+  background-color: #ba3c0d; }
 
 .subsection-global .pdf-fiche-page {
-  background-color: #733D85;
-  color: #FFF; }
+  background-color: #733D85; }
 
 .subsection-countries-comparison .pdf-fiche-page {
-  background-color: #007a86;
-  color: #FFF; }
+  background-color: #007a86; }
 
 /*# sourceMappingURL=print.css.dtml.map */
