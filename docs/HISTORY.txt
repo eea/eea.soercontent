@@ -1,8 +1,8 @@
 Changelog
 =========
 
-4.4.dev0 - (unreleased)
------------------------
+4.4 - (2016-01-19)
+------------------
 * Bug fix: pdf-fiche-page now sets important for it's color in order to
   avoid override by other styles from eea_soercontent.css
   [ichimdav refs #67936]
