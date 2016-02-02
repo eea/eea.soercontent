@@ -9,6 +9,11 @@ from eea.soercontent.config import EEAMessageFactory as _
 from eea.soercontent.interfaces import ILayer, ICountryFiche
 
 
+class EEABooleanField(ExtensionField, BooleanField):
+    """ Schema extender blob field
+    """
+
+
 class EEADisableBooleanField(ExtensionField, BooleanField):
     """ BooleanField for schema extender
     """
@@ -46,6 +51,20 @@ class EEASchemaExtender(object):
                 description=_("Hide country disclaimer for this context"),
             )
         ),
+
+        EEABooleanField(
+            name='pdfShowEndnotes',
+            schemata='settings',
+            required=False,
+            default=False,
+            searchable=False,
+            languageIndependent=True,
+            widget=BooleanWidget(
+                label=_(u'PDF references and endnotes'),
+                description=_(u"If enabled, references, endnotes, footnotes "
+                              u"will show up when exporting content as PDF")
+            )
+        )
     )
 
     def __init__(self, context):

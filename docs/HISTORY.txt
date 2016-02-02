@@ -3,6 +3,10 @@ Changelog
 
 4.5.dev0 - (unreleased)
 -----------------------
+* Feature: added pdfShowEndnotes setting for Fiche content type in order
+  to have the ability to conditionaly show references and endnotes, hidden
+  by default in order to preserve backwards compatibility
+  [ichimdav refs #68000]
 
 4.4 - (2016-01-19)
 ------------------

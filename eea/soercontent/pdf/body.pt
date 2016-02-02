@@ -23,6 +23,12 @@
             <metal:field use-macro="python:context.widget('text', mode='view')">
                 Body text
             </metal:field>
+
+            <div class="fiche-endnotes" tal:condition="python:getattr(context, 'pdfShowEndnotes', None) and context.pdfShowEndnotes">
+                <metal:field use-macro="python:context.widget('endnotes', mode='view')">
+                    References and endnotes
+                </metal:field>
+            </div>
             <div class="qrbox featured">
                 <metal:qrbox tal:replace="structure context/qrbox"></metal:qrbox>
             </div>
