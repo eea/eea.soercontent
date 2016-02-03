@@ -1,6 +1,9 @@
 Changelog
 =========
 
+4.6.dev0 - (unreleased)
+-----------------------
+
 4.5 - (2016-02-03)
 ------------------
 * Feature: added pdfShowEndnotes setting for Fiche content type in order
