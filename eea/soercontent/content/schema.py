@@ -2,6 +2,7 @@
 """
 from zope.interface import implements
 from Products.Archetypes import atapi
+from plone.app.blob.field import ImageField
 from eea.soercontent.config import EEAMessageFactory as _
 from Products.GenericSetup.interfaces import IDAVAware
 from Products.ATContentTypes.content import folder
@@ -30,7 +31,8 @@ SCHEMA = atapi.Schema((
                             u'abbreviations and definitions'),
               rows=25)
     ),
-    atapi.ImageField(
+
+    ImageField(
         name="image",
         schemata="default",
         sizes=None,
