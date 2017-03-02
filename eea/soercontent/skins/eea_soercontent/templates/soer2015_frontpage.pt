@@ -282,8 +282,8 @@ i18n:domain="plone">
                         <span class="portletTopRight"></span>
                         </dt>
                         <dd class="portletItem odd">
-                        <a href="/soer-2015/explore-quick-facts-and-figures" title="Download the interactive presentation PDF">
-                           <img width="100%" src="http://www.eea.europa.eu/soer-2015/explore-soer/image_preview">
+                        <a tal:attributes="href string:$portal_url/soer-2015/explore-quick-facts-and-figures" title="Download the interactive presentation PDF">
+                           <img width="100%" tal:attributes="src string:$portal_url/soer-2015/explore-soer/image_preview">
                         </a>
                         </dd>
                     </dl>
