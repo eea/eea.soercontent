@@ -1,8 +1,8 @@
 Changelog
 =========
 
-4.7.dev0 - (unreleased)
------------------------
+4.7 - (2017-03-02)
+------------------
 * Bug fix: Get QR codes and resources over https
   [avoinea refs #82562]
 
