@@ -2,15 +2,13 @@
 """
 from logging import getLogger
 from Acquisition import aq_base
-
+from Products.CMFPlone.utils import safe_hasattr
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-
 from eea.pdf.themes.page.body import Body as PDFBody
 from eea.pdf.themes.book.folder import Body as FolderBody
 
 
 logger = getLogger('eea.soercontent')
-from Products.CMFPlone.utils import safe_hasattr
 
 
 class Body(PDFBody):
@@ -36,4 +34,3 @@ class Soer2015Body(FolderBody):
             return self.context.queryCatalog(batch=False)[:self.maxbreadth]
         else:
             return self.context.getFolderContents()[:self.maxbreadth]
-

@@ -2,10 +2,9 @@
 """
 
 from eea.soercontent import config
-
+from eea.soercontent import content
 from Products.Archetypes import atapi
 from Products.CMFCore import utils
-from eea.soercontent import content
 
 
 def initialize(context):
@@ -24,4 +23,3 @@ def initialize(context):
             permission=config.ADD_PERMISSION,
             extra_constructors=(constructor,),
             ).initialize(context)
-

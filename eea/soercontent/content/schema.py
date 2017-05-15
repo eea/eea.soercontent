@@ -2,11 +2,11 @@
 """
 from zope.interface import implements
 from Products.Archetypes import atapi
-from plone.app.blob.field import ImageField
-from eea.soercontent.config import EEAMessageFactory as _
 from Products.GenericSetup.interfaces import IDAVAware
 from Products.ATContentTypes.content import folder
 from Products.ATContentTypes.content import document
+from plone.app.blob.field import ImageField
+from eea.soercontent.config import EEAMessageFactory as _
 from eea.soercontent.content.interfaces import ISoerContent
 
 

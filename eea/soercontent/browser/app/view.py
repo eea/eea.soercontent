@@ -57,6 +57,3 @@ class SOERContentView(BrowserView):
             portal_type=ptype or 'Fiche',
             sort_on="getObjPositionInParent")
         return children
-
-
-
