@@ -33,6 +33,9 @@
                 <metal:qrbox tal:replace="structure context/qrbox"></metal:qrbox>
             </div>
         </div>
+        <div metal:use-macro="here/eea_dates/macros/pdfPublishDate" tal:condition="exists:context/eea_dates">
+            pdf publish date
+        </div>
     </div>
     <metal:columntwo metal:fill-slot="column_two_slot"></metal:columntwo>
 </metal:content-core>
