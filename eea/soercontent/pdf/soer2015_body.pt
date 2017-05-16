@@ -17,9 +17,8 @@
 
 <metal:content-core fill-slot="content-core">
     <metal:content-core define-macro="content-core">
-        <tal:defines tal:define="brains view/brains">
-
-        <div tal:repeat="pdf view/pdfs" class="pdf-collection-item">
+        <tal:defines tal:define="brains view/brains; pdfs view/pdfs;">
+        <div tal:repeat="pdf pdfs" class="pdf-collection-item">
             <tal:defines tal:define="pdf_index repeat/pdf/index;
                 brain python:brains[pdf_index];
                 brain_url brain/getURL;"
@@ -29,7 +28,7 @@
                 </div>
                 <div tal:define="image_copyright python:getattr(brain, 'getImageCopyright', '')" i18n:translate="cover-photo" class="image-full-copyright discreet" tal:condition="image_copyright">Cover photo: © <tal:image replace="python:image_copyright" i18n:name="copyright-name"/></div>
             </tal:defines>
-            <tal:pdf tal:replace="structure pdf" />
+            <tal:pdf tal:replace="structure pdfbody" tal:define="pdfbody python:pdf[1];" />
         </div>
 
         </tal:defines>
