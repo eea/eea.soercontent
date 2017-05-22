@@ -1,6 +1,9 @@
 Changelog
 =========
 
+5.1.dev0 - (unreleased)
+-----------------------
+
 5.0 - (2017-05-22)
 ------------------
 * Change: modified soer2015_body after changes done in the original eea.pdf
