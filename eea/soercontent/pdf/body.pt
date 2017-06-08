@@ -10,6 +10,9 @@
 
 <metal:content-core fill-slot="main">
     <h1 class="documentFirstHeading" tal:replace="structure context/pdf.title"></h1>
+    <metal:description use-macro="python:context.widget('description', mode='view')">
+        description text
+    </metal:description>
 
     <div id="content-core">
         <div class="fiche-body">

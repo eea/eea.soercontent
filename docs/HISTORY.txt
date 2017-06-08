@@ -3,6 +3,8 @@ Changelog
 
 5.1.dev0 - (unreleased)
 -----------------------
+* Changed: added description to pdf render of Fiche content types
+  [ichim-david refs #85602]
 
 5.0 - (2017-05-22)
 ------------------
