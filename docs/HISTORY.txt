@@ -1,6 +1,9 @@
 Changelog
 =========
 
+5.2.dev0 - (unreleased)
+-----------------------
+
 5.1 - (2017-06-12)
 ------------------
 * Changed: added description to pdf render of Fiche content types
