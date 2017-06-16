@@ -3,6 +3,9 @@ Changelog
 
 5.2.dev0 - (unreleased)
 -----------------------
+* Change: added content-core to soer2015_frontpage since screentimeAnalytics
+  is called on this id
+  [ichim-david refs #86049]
 
 5.1 - (2017-06-12)
 ------------------
