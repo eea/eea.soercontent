@@ -17,7 +17,8 @@
             <div class="figure-image fiche-image" tal:define="here_url context/@@plone_context_state/object_url;
                                                              copyright context/getImageCopyright|nothing;">
                 <img tal:attributes="src string:$here_url/image_large;
-                                     title python: 'Image credits: &copy; ' + copyright if copyright else ''" />
+                                     title python: 'Image credits: &copy; ' + copyright if copyright else '';
+                                     alt context/Title" />
             </div>
         </div>
     </metal:print>

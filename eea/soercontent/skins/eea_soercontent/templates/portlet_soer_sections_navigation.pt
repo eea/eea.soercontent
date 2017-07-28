@@ -17,13 +17,13 @@
         <span tal:condition="not:isCurrent" tal:content="title"></span>
     </metal:currentlink>
 
-    <dt class="portletHeader">
+    <div class="portletHeader">
         <span class="portletTopLeft"></span>
         <span>
           <a class="eea-icon eea-icon-home eea-icon-lg" tal:attributes="href string:$portal_url/soer-2015">SOER 2015</a>
         </span>
         <span class="portletTopRight"></span>
-    </dt>
+    </div>
 
     <!--? Synthesis report -->
     <div class="eea-accordion-panel bg-soer-synthesis-medium">
