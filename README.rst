@@ -1,10 +1,8 @@
 ======================
 EEA SOER Content-Types
 ======================
-.. image:: http://ci.eionet.europa.eu/job/eea.soercontent-www/badge/icon
-  :target: http://ci.eionet.europa.eu/job/eea.soercontent-www/lastBuild
-.. image:: http://ci.eionet.europa.eu/job/eea.soercontent-plone4/badge/icon
-  :target: http://ci.eionet.europa.eu/job/eea.soercontent-plone4/lastBuild
+.. image:: http://ci.eionet.europa.eu/job/eea/job/eea.soercontent/job/master/badge/icon
+  :target: http://ci.eionet.europa.eu/job/eea/job/eea.soercontent/job/master/display/redirect
 
 SOER 2015 related content-types
 
