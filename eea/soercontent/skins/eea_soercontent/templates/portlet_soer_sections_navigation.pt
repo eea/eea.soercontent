@@ -20,7 +20,7 @@
     <div class="portletHeader">
         <span class="portletTopLeft"></span>
         <span>
-          <a class="eea-icon eea-icon-home eea-icon-lg" tal:attributes="href string:$portal_url/soer-2015">SOER 2015</a>
+          <a class="eea-icon eea-icon-home eea-icon-lg" tal:attributes="href string:$portal_url/soer-2015" i18n:translate="">SOER 2015</a>
         </span>
         <span class="portletTopRight"></span>
     </div>
@@ -29,7 +29,7 @@
     <div class="eea-accordion-panel bg-soer-synthesis-medium">
         <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-synthesis '"
             tal:attributes="class python:klass + 'current' if 'section-synthesis' in body_class else klass">
-        <span class="title">Synthesis report</span>
+        <span class="title" i18n:translate="">Synthesis report</span>
            <span class="eea-icon eea-icon-clipboard eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
@@ -52,7 +52,7 @@
     <div class="eea-accordion-panel bg-soer-megatrends-medium">
         <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-megatrends '"
             tal:attributes="class python:klass + 'current' if 'section-global' in body_class else klass">
-            <span class="title">Global megatrends</span>
+            <span class="title" i18n:translate="">Global megatrends</span>
             <span class="eea-icon eea-icon-globe eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
@@ -72,7 +72,7 @@
     <div class="eea-accordion-panel bg-soer-thematic-medium">
         <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-thematic '"
             tal:attributes="class python:klass + 'current' if 'section-europe' in body_class else klass">
-            <span class="title">European briefings</span>
+            <span class="title" i18n:translate="">European briefings</span>
             <span class="eea-icon eea-icon-leaf eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
@@ -91,7 +91,7 @@
     <div class="eea-accordion-panel bg-soer-country-medium">
         <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-country '"
             tal:attributes="class python:klass + 'current' if 'section-countries-comparison' in body_class else klass">
-            <span class="title">Cross-country comparisons</span>
+            <span class="title" i18n:translate="">Cross-country comparisons</span>
             <span class="eea-icon eea-icon-bar-chart-o eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
@@ -111,7 +111,7 @@
     <div class="eea-accordion-panel bg-soer-regions-medium">
         <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-regions '"
             tal:attributes="class python:klass + 'current' if 'section-countries ' in body_class else klass">
-            <span class="title">Countries and regions</span>
+            <span class="title" i18n:translate="">Countries and regions</span>
             <span class="eea-icon eea-icon-map-marker eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
