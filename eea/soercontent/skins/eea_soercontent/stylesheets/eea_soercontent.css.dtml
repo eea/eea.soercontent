@@ -254,10 +254,8 @@ body {
 #region-content .navTreeLevel0 {
   margin: 0; }
 
-#region-content .eea-list-columns {
+#region-content .eea-list-columns ul {
   list-style: square outside url(//www.eea.europa.eu/bullet.gif); }
-  #region-content .eea-list-columns ul {
-    list-style-position: outside; }
 
 .eea-full-object {
   height: 100%; }
