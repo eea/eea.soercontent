@@ -217,6 +217,18 @@ body {
 .template-soer-pdf-body .qrbox {
   display: none !important; }
 
+.template-soer2015_frontpage #content {
+  margin: 1em 0 2em 0; }
+
+.template-soer2015_frontpage #region-content {
+  background-color: transparent;
+  margin: 0; }
+
+.template-soer2015_frontpage #portlet-followus {
+  margin: 2em;
+  padding: 0;
+  background: none; }
+
 /* grids */
 .eea-row {
   margin-left: -15px; }
@@ -243,7 +255,7 @@ body {
   margin: 0; }
 
 #region-content .eea-list-columns {
-  list-style-position: outside; }
+  list-style: square outside url(//www.eea.europa.eu/bullet.gif); }
   #region-content .eea-list-columns ul {
     list-style-position: outside; }
 
@@ -267,24 +279,18 @@ body {
   width: 20%; }
 
 /* Overrides */
-.section-soer-2015 #portal-column-content {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #FFF;
-  padding: 1.5em;
-  min-width: 635px;
-  margin-left: -100%; }
-
-.section-soer #portal-column-two,
-.section-soer-2015 #portal-column-two {
-  margin-top: 35px; }
-
-.template-soer2015_frontpage #portal-column-content {
+.template-soer2015_frontpage #portal-column-content,
+.template-soer2015_frontpage #region-content {
   padding: 0;
   background-color: transparent; }
+.template-soer2015_frontpage #region-content {
+  margin: 0; }
+.template-soer2015_frontpage #content {
+  margin: 1em 0 2em 0; }
 .template-soer2015_frontpage #content.wf-state-visible {
   background: none; }
+.template-soer2015_frontpage #portlet-followus {
+  margin: 2em; }
 
 #parent-fieldname-title {
   padding: 0;
@@ -294,23 +300,15 @@ body {
   width: 65%; }
 
 .right-column-area {
-  width: 35%; }
+  width: 35%;
+  padding: 0 0 0 15px; }
   .right-column-area .portlet {
     padding: 1.2em 2em; }
-
-.column-area, .right-column-area {
-  padding: 0 0 0 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
 
 #content-core .portletItem {
   margin: 0; }
 
 /* portlet style overrides */
-#portal-column-two .portlet {
-  padding: 15px; }
-
 #firstHeader {
   display: none;
   /* navigation title doesn't appear within new soer design */ }
@@ -356,6 +354,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   #visual-portal-wrapper .eea-tabs.eea-tabs-soer > li {
     width: 19.5%;
     text-align: center;
+    float: left;
     height: 65px;
     background-color: transparent;
     margin-right: 5px; }
@@ -386,37 +385,25 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
 #visual-portal-wrapper .current {
   position: relative; }
 
-.eea-tabs-soer .current:after {
-  top: 100%;
-  left: 50%;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border: 15px solid transparent;
-  border-top-color: &dtml-soerSynthesysSectionFullColor;;
-  margin-left: -10px; }
-
 #visual-portal-wrapper #tab-synthesis-report {
   background-color: &dtml-soerSynthesysSectionFullColor;; }
-  #visual-portal-wrapper #tab-synthesis-report.current:after {
+  #visual-portal-wrapper #tab-synthesis-report.current::after, #visual-portal-wrapper #tab-synthesis-report:hover::after {
     border-top-color: &dtml-soerSynthesysSectionFullColor;; }
 #visual-portal-wrapper #tab-global-megatrends {
   background-color: &dtml-soerMegatrendsSectionFullColor;; }
-  #visual-portal-wrapper #tab-global-megatrends.current:after {
+  #visual-portal-wrapper #tab-global-megatrends.current::after, #visual-portal-wrapper #tab-global-megatrends:hover::after {
     border-top-color: &dtml-soerMegatrendsSectionFullColor;; }
 #visual-portal-wrapper #tab-cross-country-comparisons {
   background-color: &dtml-soerCountrySectionFullColor;; }
-  #visual-portal-wrapper #tab-cross-country-comparisons.current:after {
+  #visual-portal-wrapper #tab-cross-country-comparisons.current::after, #visual-portal-wrapper #tab-cross-country-comparisons:hover::after {
     border-top-color: &dtml-soerCountrySectionFullColor;; }
 #visual-portal-wrapper #tab-thematic-briefing {
   background-color: &dtml-soerThematicSectionFullColor;; }
-  #visual-portal-wrapper #tab-thematic-briefing.current:after {
+  #visual-portal-wrapper #tab-thematic-briefing.current::after, #visual-portal-wrapper #tab-thematic-briefing:hover::after {
     border-top-color: &dtml-soerThematicSectionFullColor;; }
 #visual-portal-wrapper #tab-regions-countries {
   background-color: &dtml-soerRegionsSectionFullColor;; }
-  #visual-portal-wrapper #tab-regions-countries.current:after {
+  #visual-portal-wrapper #tab-regions-countries.current::after, #visual-portal-wrapper #tab-regions-countries:hover::after {
     border-top-color: &dtml-soerRegionsSectionFullColor;; }
 
 /* eea-tabs-panels-soer */
