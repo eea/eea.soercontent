@@ -29,7 +29,7 @@ i18n:domain="plone">
                 <li><a href="#tab-cross-country-comparisons" id="tab-cross-country-comparisons" i18n:translate=""><span i18n:name="icon" class="eea-icon eea-icon-bar-chart-o eea-icon-2x"></span>Cross-country comparisons</a></li>
                 <li><a href="#tab-regions-countries" id="tab-regions-countries" i18n:translate=""><span i18n:name="icon" class="eea-icon eea-icon-map-marker eea-icon-2x"></span>Countries and regions</a></li>
             </ul>
-            <div class="eea-row">
+            <div class="eea-rows">
                 <div class="column-area">
                     <div class="eea-tabs-panels eea-tabs-panels-soer">
                         <div class="eea-tabs-panel" id="panel-tab-synthesis-report">
@@ -294,9 +294,9 @@ i18n:domain="plone">
         </div>
         <!--? END Tabbed navigation -->
         <!--? Gallery & Navigation -->
-        <div class="lower-highlights">
+        <div class="lower-highlights clearfix">
             <!--? Key facts -->
-            <div class="eea-row">
+            <div class="region-area">
                 <div class="column-area">
 
 
