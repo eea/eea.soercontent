@@ -320,14 +320,6 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   background-color: #FFF;
   padding: 1.5em; }
 
-/* hide soer sections from navigation since we have the soer_navigation */
-.portletNavigationTree .section-synthesis,
-.portletNavigationTree .section-global,
-.portletNavigationTree .section-europe,
-.portletNavigationTree .section-countries-comparison,
-.portletNavigationTree .section-countries {
-  display: none; }
-
 /* Content Styles */
 .template-soer2015_frontpage #viewlet-above-content {
   margin: 0; }
