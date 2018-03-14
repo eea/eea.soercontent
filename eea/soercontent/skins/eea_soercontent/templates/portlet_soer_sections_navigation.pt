@@ -13,7 +13,10 @@
             tal:define="href href|nothing;
                         title title|nothing;
                         isCurrent python:href and href in current_url">
-        <span class="eea-icon eea-icon-chevron-right"  tal:condition="isCurrent" tal:content="title"></span>
+        <metal:condition tal:condition="isCurrent">
+            <span class="eea-icon eea-icon-chevron-right"></span>
+            <span tal:content="title" tal:omit-tag=""></span>
+        </metal:condition>
         <span tal:condition="not:isCurrent" tal:content="title"></span>
     </metal:currentlink>
 

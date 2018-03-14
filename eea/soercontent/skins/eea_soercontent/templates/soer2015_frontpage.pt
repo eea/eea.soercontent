@@ -29,7 +29,7 @@ i18n:domain="plone">
                 <li><a href="#tab-cross-country-comparisons" id="tab-cross-country-comparisons" i18n:translate=""><span i18n:name="icon" class="eea-icon eea-icon-bar-chart-o eea-icon-2x"></span>Cross-country comparisons</a></li>
                 <li><a href="#tab-regions-countries" id="tab-regions-countries" i18n:translate=""><span i18n:name="icon" class="eea-icon eea-icon-map-marker eea-icon-2x"></span>Countries and regions</a></li>
             </ul>
-            <div class="eea-row">
+            <div class="eea-rows">
                 <div class="column-area">
                     <div class="eea-tabs-panels eea-tabs-panels-soer">
                         <div class="eea-tabs-panel" id="panel-tab-synthesis-report">
@@ -294,9 +294,9 @@ i18n:domain="plone">
         </div>
         <!--? END Tabbed navigation -->
         <!--? Gallery & Navigation -->
-        <div class="lower-highlights">
+        <div class="lower-highlights clearfix">
             <!--? Key facts -->
-            <div class="eea-row">
+            <div class="region-area">
                 <div class="column-area">
 
 
@@ -315,13 +315,13 @@ i18n:domain="plone">
                                      <dd class="portletItem" tal:repeat="item items">
                                        <span>
                                           <a href="" title="Read more of the key fact"
-                                              class="moreLink link-plain"
+                                              class="link-plain"
                                               tal:attributes="href item/parent_url;title item/parent_title;"
                                               i18n:attributes="title"
                                               i18n:translate="" tal:content="item/parent_title">more</a>:&nbsp;
                                           <span tal:replace="structure item/text"></span>
                                           <a href="" title="Read more of the key fact"
-                                              class="moreLink link-plain"
+                                              class="link-plain"
                                               tal:attributes="href item/parent_url;title item/parent_title;"
                                               i18n:attributes="title"
                                               i18n:translate="">See briefing</a>
@@ -387,24 +387,7 @@ i18n:domain="plone">
                     </dl>
                 </div>
                 <div class="right-column-area pull-right">
-                    <dl id="portlet-followus">
-                        <dt class="portletHeader" i18n:translate="">Follow us</dt>
-                        <dd>
-                        <a id="twitter-link" title="Follow us on Twitter" href="http://twitter.com/euenvironment" i18n:attributes="title">&nbsp;</a>
-                        </dd>
-                        <dd>
-                        <a id="facebook-link" title="Follow us on Facebook" href="http://www.facebook.com/European.Environment.Agency" i18n:attributes="title">&nbsp;</a>
-                        </dd>
-                        <dd>
-                        <a id="youtube-link" title="Follow us on YouTube" href="http://www.youtube.com/user/EEAvideos" i18n:attributes="title">&nbsp;</a>
-                        </dd>
-                        <dd>
-                        <a id="rss-link" title="Subscribe to RSS Feed" class="link-plain" tal:attributes="href string:$portal_url/subscription/news-feeds" i18n:attributes="title">&nbsp;</a>
-                        </dd>
-                        <dd>
-                        <a id="email-link" title="Subscribe by email" href="#subscribe-popup" class="fancybox" i18n:attributes="title">&nbsp;</a>
-                        </dd>
-                    </dl>
+                    <metal:follow metal:use-macro="context/portlet_social_links/macros/portlet"></metal:follow>
                 </div>
             </div>
         </div>
