@@ -210,7 +210,7 @@ body {
 /* #23324 move qrcode within the pdf.disclaimer page */
 .template-pdf-disclaimer .qrbox {
   position: absolute;
-  top: 60%;
+  top: 70%;
   margin: 0 40pt 0 108pt; }
 
 /* #23324; hide qrcode from soer2015 theme */
