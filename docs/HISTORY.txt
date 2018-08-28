@@ -3,6 +3,8 @@ Changelog
 
 5.7-dev0 - (unreleased)
 ---------------------
+* Change: Align PDF CSS with upgraded wkhtmltopdf 0.12.4
+  [avoinea refs #97586]
 * Change: updated URLs pointing to eea.europa.eu with https://
   [alecghica refs #95849]
 
