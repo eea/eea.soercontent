@@ -1,7 +1,7 @@
 Changelog
 =========
 
-5.7-dev0 - (unreleased)
+5.7 - (2018-08-28)
 ---------------------
 * Change: Align PDF CSS with upgraded wkhtmltopdf 0.12.4
   [avoinea refs #97586]
