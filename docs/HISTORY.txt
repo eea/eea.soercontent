@@ -1,6 +1,9 @@
 Changelog
 =========
 
+5.8-dev0 - (unreleased)
+---------------------
+
 5.7 - (2018-08-28)
 ---------------------
 * Change: Align PDF CSS with upgraded wkhtmltopdf 0.12.4
@@ -428,4 +431,3 @@ Changelog
 ------------------
 * Initial release
   [voineali refs #14900]
-
