@@ -1,7 +1,7 @@
 Changelog
 =========
 
-5.8-dev0 - (unreleased)
+5.8 - (2018-09-06)
 ---------------------
 * Cleanup: Remove eea.epub dependency
   [avoinea refs #96114]
