@@ -3,6 +3,8 @@ Changelog
 
 5.8-dev0 - (unreleased)
 ---------------------
+* Cleanup: Remove eea.epub dependency
+  [avoinea refs #96114]
 
 5.7 - (2018-08-28)
 ---------------------
