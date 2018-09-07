@@ -59,13 +59,9 @@ i18n:domain="plone">
                                         <span class="eea-icon eea-icon-globe eea-icon-2x"></span> <a href="/soer-2015/synthesis/folder_listing" i18n:translate="">Synthesis in more languages (PDF)</a>
                                     </div>
                                 </div>
-                                <div class="visualHidden">
-                                    <div id="epub-choice-synthesis">
-                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/synthesis/report/action-download-epub" i18n:translate="">Download report (EPUB)</a>
-                                    </div>
-                                </div>
 
-                                <p class="pull-left" i18n:translate="">Synthesis report in several languages</p> <a class="download-pdf pull-left fancybox" title="download PDF" href="#pdf-choice-synthesis" i18n:attributes="title"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a> <a class="download-epub pull-left fancybox" title="download EPUB" href="#epub-choice-synthesis" i18n:attributes="title"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
+                                <p class="pull-left" i18n:translate="">Synthesis report in several languages</p>
+                                <a class="download-pdf pull-left fancybox" title="download PDF" href="#pdf-choice-synthesis" i18n:attributes="title"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
                             </div>
                         </div>
                         <div class="eea-tabs-panel" id="panel-tab-global-megatrends">
@@ -88,14 +84,8 @@ i18n:domain="plone">
                                         <tal:block i18n:translate="">- Use username/password received via email.</tal:block>
                                     </div>
                                 </div>
-                                <div class="visualHidden">
-                                    <div id="epub-choice-global">
-                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/global/download.epub" i18n:translate="">Download report (EPUB)</a>
-                                    </div>
-                                </div>
                                  <p class="pull-left" i18n:translate="">Download all global megatrends</p>
                                  <a class="download-pdf pull-left" href="/soer-2015/global/download.pdf"  title="download PDF" i18n:attributes="title"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
-                                 <a class="download-epub pull-left" title="download EPUB" href="/soer-2015/global/download.epub" i18n:attributes="title"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
                             </div>
                         </div>
                         <div class="eea-tabs-panel" id="panel-tab-thematic-briefing">
@@ -159,14 +149,8 @@ i18n:domain="plone">
                                         <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/europe/download.pdf" i18n:translate="">Download report (PDF)</a>
                                     </div>
                                 </div>
-                                <div class="visualHidden">
-                                    <div id="epub-choice-europe">
-                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/europe/action-download-epub" i18n:translate="">Download report (EPUB)</a>
-                                    </div>
-                                </div>
                                  <p class="pull-left" i18n:translate="">Download all European briefings</p>
                                  <a class="download-pdf pull-left" href="/soer-2015/europe/download.pdf"  title="download PDF" i18n:attributes="title"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
-                                 <a class="download-epub pull-left" href="/soer-2015/europe/download.epub"  title="download EPUB" i18n:attributes="title"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
                             </div>
                         </div>
 
@@ -189,14 +173,8 @@ i18n:domain="plone">
                                         <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/countries-comparison/download.pdf" i18n:translate="">Download report (PDF)</a>
                                     </div>
                                 </div>
-                                <div class="visualHidden">
-                                    <div id="epub-choice-cross">
-                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/countries-comparison/action-download-epub" i18n:translate="">Download report (EPUB)</a>
-                                    </div>
-                                </div>
                                  <p class="pull-left" i18n:translate="">Download all cross-country comparisons</p>
                                  <a class="download-pdf pull-left" href="/soer-2015/countries-comparison/download.pdf"  title="download PDF" i18n:attributes="title"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
-                                 <a class="download-epub pull-left" href="/soer-2015/countries-comparison/download.epub"  title="download EPUB" i18n:attributes="title"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
                             </div>
                         </div>
 
@@ -255,14 +233,8 @@ i18n:domain="plone">
                                         <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/countries/download.pdf" i18n:translate="">Download report (PDF)</a>
                                     </div>
                                 </div>
-                                <div class="visualHidden">
-                                    <div id="epub-choice-countries">
-                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/countries/action-download-epub" i18n:translate="">Download report (EPUB)</a>
-                                    </div>
-                                </div>
                                  <p class="pull-left" i18n:translate="">Download all countries and regions</p>
                                  <a class="download-pdf pull-left" href="/soer-2015/countries/download.pdf"  title="download PDF" i18n:attributes="title"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
-                                 <a class="download-epub pull-left" href="/soer-2015/countries/download.epub" title="download EPUB" i18n:attributes="title"><span class="eea-icon eea-icon-mobile-phone eea-icon-3x"></span></a>
                             </div>
                           </div>
                     </div>
@@ -395,7 +367,6 @@ i18n:domain="plone">
 
 <!-- Next div is used by the PDF async mailer popup -->
 <div class="eea-pdf-viewlet" data-async="1"></div>
-<div class="eea-epub-viewlet" data-async="1"></div>
 </div>
 </metal:content-core>
 </metal:content-core>

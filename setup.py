@@ -41,7 +41,6 @@ setup(name=NAME,
           'eea.vocab > 4.5',
           'eea.forms > 6.2',
           'eea.converter > 8.6',
-          'eea.epub > 5.9',
           'eea.annotator > 2.9',
           # -*- Extra requirements: -*-
       ],
