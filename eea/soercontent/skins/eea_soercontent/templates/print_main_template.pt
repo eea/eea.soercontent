@@ -7,7 +7,7 @@
     <head>
         <metal:resources metal:define-macro="resources">
             <metal:styleslot define-slot="style_slot">
-                <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+                <link tal:attributes="href python:portal_url + '/googlefonts-opensans.css'" href="" rel='stylesheet' type='text/css'>
                 <link rel="stylesheet"
                         tal:attributes="href string:${portal_url}/print.css">
                 <link rel="stylesheet" tal:condition="exists:portal/pdf.print.css" type="text/css"
