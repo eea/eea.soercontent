@@ -127,7 +127,7 @@ pipeline {
     stage('Report') {
       when {
         allOf {
-          environment name: 'CHANGE_ID', value: ''
+          branch 'develop'
         }
       }
       steps {
