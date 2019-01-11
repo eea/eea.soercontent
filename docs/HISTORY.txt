@@ -1,6 +1,11 @@
 Changelog
 =========
 
+5.9 - (2019-01-11)
+---------------------
+* Feature: load Google open fonts from our servers
+  [alecghica refs #101210]
+
 5.8 - (2018-09-06)
 ---------------------
 * Cleanup: Remove eea.epub dependency
