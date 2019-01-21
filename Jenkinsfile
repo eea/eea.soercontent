@@ -124,7 +124,7 @@ pipeline {
       }
     }
 
-    stage('Report') {
+    stage('Report to Sonarqube') {
       when {
         allOf {
           branch 'develop'
