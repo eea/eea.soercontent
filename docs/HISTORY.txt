@@ -3,6 +3,8 @@ Changelog
 
 6.2-dev0 - (unreleased)
 ---------------------
+* Change: removed soer background color now that eea has a redesign
+  [ichim-david]
 
 6.1 - (2019-01-28)
 ---------------------

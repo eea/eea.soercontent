@@ -225,7 +225,9 @@ body {
   margin: 0; }
 
 .template-soer2015_frontpage #portlet-followus {
-  margin: 2em;
+  border: 0;
+  margin: 2em 0;
+  width: 335px;
   padding: 0;
   background: none; }
 
