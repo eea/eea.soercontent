@@ -3,6 +3,8 @@ Changelog
 
 6.2-dev0 - (unreleased)
 ---------------------
+* Change: font tweaks after increase of body base font size
+  [ichim-david refs #106884]
 * Change: removed soer background color now that eea has a redesign
   [ichim-david]
 
