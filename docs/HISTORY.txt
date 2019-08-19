@@ -1,6 +1,9 @@
 Changelog
 =========
 
+6.3-dev0 - (unreleased)
+---------------------------
+
 6.2 - (2019-08-16)
 --------------------------
 * Change: font tweaks after increase of body base font size
