@@ -3,16 +3,12 @@
 /* <dtml-call "REQUEST.set('portal_url', portal_url())"> */
 
 /* Base styles && base overrides */
-body {
-  background-color: &dtml-soerBackgroundColor;;
-}
 
 /* Content Styles */
 /* #19536; negative margins used in order to move the breadcrumbs out of the region-content
    which has the white background */
 #viewlet-above-content {
   margin: -22px -18px 15px -18px;
-  background-color:  &dtml-soerBackgroundColor;;
   padding: 0 1.5em 1.5em 1.5em;
 }
 
