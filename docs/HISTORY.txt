@@ -3,6 +3,9 @@ Changelog
 
 6.4-dev0 - (unreleased)
 ---------------------------
+* Change: removed negative margin for viewlet-above-content area after the latest
+  redesign
+  [ichim-david refs #111967]
 
 6.3 - (2019-11-26)
 ---------------------------
