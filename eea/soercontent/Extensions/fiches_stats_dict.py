@@ -29,7 +29,7 @@ def fichesStatsDict(context):
                              'review_state': ['web_editing',
                                              'ready_for_eionet_review',
                                              'visible','published_eionet'],
-                                             'path':'/www/SITE/soer-2015/',
+                                             'path':'/www/SITE/soer/2015/',
                                              'show_inactive': True,
                                               'language':'ALL'
     })

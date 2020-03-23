@@ -4,6 +4,8 @@ Changelog
 6.5-dev0 - (unreleased)
 ---------------------------
 * Upgrade step: Move soer content under /soer, specifically soer-2015, soer-2020
+  Second upgrade step for some content tweaking. Updated templates and css with
+  the new folder structure
   [iulianpetchesi refs #111954]
 * Bug fix: fixed colors and position of portal-column-two headers
   [ichim-david refs #111968]
