@@ -41,6 +41,11 @@ def move_soer_content(context):
     default_page = context.restrictedTraverse("/www/SITE/soer/2020/soer-2020")
     default_page = content.move(default_page, soer, 'soer-2020')
 
+    # set default page
+    soer.default_page = 'soer-2020'
+    soer._p_changed = True
+    soer.reindexObject()
+
     paths = ["/www/SITE/soer/2015", "/www/SITE/soer/2020", "/www/SITE/soer/soer-2020"]
     for path in paths:
         brains = ctool.searchResults(path=path, Language="all")
