@@ -1,7 +1,7 @@
 Changelog
 =========
 
-6.5-dev0 - (unreleased)
+6.5 - (2020-03-26)
 ---------------------------
 * Upgrade step: Move soer content under /soer, specifically soer-2015, soer-2020
   Second upgrade step for some content tweaking. Updated templates and css with
