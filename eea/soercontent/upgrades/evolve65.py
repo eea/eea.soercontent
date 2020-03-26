@@ -36,8 +36,8 @@ def move_soer_content(context):
             else:
                 vers_dict.update({obj.id: version_id})
 
-    new_soer_2015 = content.move(soer_2015, soer, '2015')
-    new_soer_2020 = content.move(soer_2020, soer, '2020')
+    content.move(soer_2015, soer, '2015')
+    content.move(soer_2020, soer, '2020')
     default_page = context.restrictedTraverse("/www/SITE/soer/2020/soer-2020")
     default_page = content.move(default_page, soer, 'soer-2020')
 
@@ -59,7 +59,7 @@ def move_soer_content(context):
                 else:
                     logger.info('BAD OBJECT %s' % obj.absolute_url())
                     control.setVersionId(vers_dict.get(obj.id))
-                    boj._p_changed = True
+                    obj._p_changed = True
                     obj.reindexObject()
                     transaction.commit()
 
@@ -76,7 +76,7 @@ def tweak_moved_items(context):
         for query in collection.query:
             if query.get('i', None) == 'path':
                 if 'soer-2015' in query['v']:
-                    logger.info('Replacing search location for %s' % collection.absolute_url)
+                    logger.info('Replacing search location for %s' % collection.absolute_url())
                     query.v = query.v.replace('soer-2015', 'soer/2015')
                     collection._p_changed = True
                     collection.reindexObject()
