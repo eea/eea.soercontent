@@ -43,6 +43,7 @@ setup(name=NAME,
           'eea.forms > 6.2',
           'eea.converter > 8.6',
           'eea.annotator > 2.9',
+          'eea.versions',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

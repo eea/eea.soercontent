@@ -23,21 +23,21 @@
     <div class="portletHeader">
         <span class="portletTopLeft"></span>
         <span>
-          <a class="eea-icon eea-icon-home eea-icon-lg" tal:attributes="href string:$portal_url/soer-2015" i18n:translate="">SOER 2015</a>
+          <a class="eea-icon eea-icon-home eea-icon-lg" tal:attributes="href string:$portal_url/soer/2015" i18n:translate="">SOER 2015</a>
         </span>
         <span class="portletTopRight"></span>
     </div>
 
     <!--? Synthesis report -->
     <div class="eea-accordion-panel bg-soer-synthesis-medium">
-        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-synthesis '"
+        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-synthesis no-anchor'"
             tal:attributes="class python:klass + 'current' if 'section-synthesis' in body_class else klass">
         <span class="title" i18n:translate="">Synthesis report</span>
            <span class="eea-icon eea-icon-clipboard eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
             <ul class="block-list"
-                    tal:define="collection python:context.restrictedTraverse('/www/SITE/soer-2015/collections/synthesis', None);"
+                    tal:define="collection python:context.restrictedTraverse('/www/SITE/soer/2015/collections/synthesis', None);"
                     tal:condition="nocall:collection">
                 <tal:results tal:define="results python:collection.queryCatalog(Language='all')"
                         tal:condition="results">
@@ -53,14 +53,14 @@
 
     <!--? Global megatrends -->
     <div class="eea-accordion-panel bg-soer-megatrends-medium">
-        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-megatrends '"
+        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-megatrends  no-anchor'"
             tal:attributes="class python:klass + 'current' if 'section-global' in body_class else klass">
             <span class="title" i18n:translate="">Global megatrends</span>
             <span class="eea-icon eea-icon-globe eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
             <ul class="block-list"
-                tal:define="results python:cview.content(parent_id='soer-2015', object_id='global')">
+                tal:define="results python:cview.content(parent_id='2015', object_id='global')">
                 <li tal:repeat="result results">
                     <a tal:define="href result/getURL; title result/Title" tal:attributes="href href; title result/Description">
                         <metal:showCurrent metal:use-macro="context/portlet_soer_sections_navigation/macros/current_link" />
@@ -73,14 +73,14 @@
 
     <!--? european thematic -->
     <div class="eea-accordion-panel bg-soer-thematic-medium">
-        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-thematic '"
+        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-thematic  no-anchor'"
             tal:attributes="class python:klass + 'current' if 'section-europe' in body_class else klass">
             <span class="title" i18n:translate="">European briefings</span>
             <span class="eea-icon eea-icon-leaf eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
             <ul class="block-list"
-                tal:define="results python:cview.content(parent_id='soer-2015', object_id='europe')">
+                tal:define="results python:cview.content(parent_id='2015', object_id='europe')">
                 <li tal:repeat="result results">
                     <a tal:define="href result/getURL; title result/Title" tal:attributes="href href; title result/Description">
                         <metal:showCurrent metal:use-macro="context/portlet_soer_sections_navigation/macros/current_link" />
@@ -92,14 +92,14 @@
 
     <!--? Cross country -->
     <div class="eea-accordion-panel bg-soer-country-medium">
-        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-country '"
+        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-country  no-anchor'"
             tal:attributes="class python:klass + 'current' if 'section-countries-comparison' in body_class else klass">
             <span class="title" i18n:translate="">Cross-country comparisons</span>
             <span class="eea-icon eea-icon-bar-chart-o eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
             <ul class="block-list"
-                tal:define="results python:cview.content(parent_id='soer-2015', object_id='countries-comparison')">
+                tal:define="results python:cview.content(parent_id='2015', object_id='countries-comparison')">
                 <li tal:repeat="result results">
                     <a tal:define="href result/getURL; title result/Title" tal:attributes="href href; title result/Description">
                         <metal:showCurrent metal:use-macro="context/portlet_soer_sections_navigation/macros/current_link" />
@@ -112,14 +112,14 @@
 
     <!--? countries -->
     <div class="eea-accordion-panel bg-soer-regions-medium">
-        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-regions '"
+        <h3 tal:define="klass python:'eea-accordion-title-manual-icons bg-soer-regions  no-anchor'"
             tal:attributes="class python:klass + 'current' if 'section-countries ' in body_class else klass">
             <span class="title" i18n:translate="">Countries and regions</span>
             <span class="eea-icon eea-icon-map-marker eea-icon-lg eea-icon-right eea-icon-fw"></span>
         </h3>
         <div class="pane">
             <ul class="block-list"
-                tal:define="results python:cview.content(parent_id='soer-2015', object_id='countries')">
+                tal:define="results python:cview.content(parent_id='2015', object_id='countries')">
                 <li tal:repeat="result results">
                     <a tal:define="href result/getURL; title result/Title" tal:attributes="href href; title result/Description">
                         <metal:showCurrent metal:use-macro="context/portlet_soer_sections_navigation/macros/current_link" />

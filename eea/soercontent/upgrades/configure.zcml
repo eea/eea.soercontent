@@ -4,6 +4,30 @@
         i18n_domain="eea">
 
     <genericsetup:upgradeSteps
+            source="6.5"
+            destination="6.5.1"
+            profile="eea.soercontent:default">
+
+        <genericsetup:upgradeStep
+                title="#111954: Tweak moved soer content"
+                handler="eea.soercontent.upgrades.evolve65.tweak_moved_items"
+                />
+
+    </genericsetup:upgradeSteps>
+
+    <genericsetup:upgradeSteps
+            source="3.2"
+            destination="6.5"
+            profile="eea.soercontent:default">
+
+        <genericsetup:upgradeStep
+                title="#111954: Move soer content"
+                handler="eea.soercontent.upgrades.evolve65.move_soer_content"
+                />
+
+    </genericsetup:upgradeSteps>
+
+    <genericsetup:upgradeSteps
             source="2.6"
             destination="3.2"
             profile="eea.soercontent:default">
