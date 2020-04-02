@@ -11,7 +11,7 @@ i18n:domain="plone">
 <metal:content-core define-macro="main"
         tal:define="cview nocall:context/@@soercontent_view;">
     <div id="content-core">
-    <div class="box box--full bg-blue"><span class="eea-icon eea-icon-warning eea-icon-2x eea-icon-anim-flash animated"></span> The latest "State of the Environment" report can be found here: <a href="/soer/2020">The European environment — state and outlook 2020</a></div>
+    <div class="box box--full bg-blue" i18n:translate=""><span class="eea-icon eea-icon-warning eea-icon-2x eea-icon-anim-flash animated"></span> The latest "State of the Environment" report can be found here: <a href="/soer/2020" i18n:translate="">The European environment — state and outlook 2020</a></div>
     <div id="parent-title">
         <h1 id="parent-fieldname-title" class="documentFirstHeading" i18n:translate="">
             SOER 2015 — The European environment — state and outlook 2015
