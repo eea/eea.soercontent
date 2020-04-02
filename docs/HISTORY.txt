@@ -3,6 +3,9 @@ Changelog
 
 6.6-dev0 - (unreleased)
 ---------------------------
+* Change: Modified the upgrade step in 6.5 so that the 'intro' object is set
+  as default page
+  [iulianpetchesi refs #111954]
 
 6.5 - (2020-03-26)
 ---------------------------

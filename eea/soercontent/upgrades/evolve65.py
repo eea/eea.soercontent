@@ -17,7 +17,7 @@ def move_soer_content(context):
     soer_2020 = context.restrictedTraverse("/www/SITE/soer-2020")
     soer = context.restrictedTraverse("/www/SITE/soer") 
 
-    paths = ["/www/SITE/soer-2015", "/www/SITE/soer-2020"]
+    paths = ["/www/SITE/soer"]
     vers_dict = {}
     for path in paths:
         brains = ctool.searchResults(path=path, Language="all")
@@ -38,15 +38,15 @@ def move_soer_content(context):
 
     content.move(soer_2015, soer, '2015')
     content.move(soer_2020, soer, '2020')
-    default_page = context.restrictedTraverse("/www/SITE/soer/2020/soer-2020")
-    default_page = content.move(default_page, soer, 'soer-2020')
+    soer_2020_intro = context.restrictedTraverse("/www/SITE/soer/2020/intro")
+    content.copy(soer_2020_intro, soer)
 
     # set default page
-    soer.default_page = 'soer-2020'
+    soer.default_page = 'intro'
     soer._p_changed = True
     soer.reindexObject()
 
-    paths = ["/www/SITE/soer/2015", "/www/SITE/soer/2020", "/www/SITE/soer/soer-2020"]
+    paths = ["/www/SITE/soer"]
     for path in paths:
         brains = ctool.searchResults(path=path, Language="all")
 
@@ -71,6 +71,7 @@ def move_soer_content(context):
     logger.info('Finished moving soer content ... DONE')
     return 'Done moving'
 
+
 def tweak_moved_items(context):
     """ Minor fixes to the moved soer items above
     """
@@ -85,5 +86,6 @@ def tweak_moved_items(context):
                     query.v = query.v.replace('soer-2015', 'soer/2015')
                     collection._p_changed = True
                     collection.reindexObject()
+
     logger.info('Finished tweaking soer content ... DONE')
     return 'Done tweaking'
