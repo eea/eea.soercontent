@@ -1,6 +1,9 @@
 Changelog
 =========
 
+6.7-dev0 - (unreleased)
+---------------------------
+
 6.6 - (2020-04-02)
 ---------------------------
 * Change: Modified the upgrade step in 6.5 so that the 'intro' object is set
