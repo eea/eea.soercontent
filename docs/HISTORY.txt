@@ -1,6 +1,12 @@
 Changelog
 =========
 
+6.6 - (2020-04-02)
+---------------------------
+* Change: Modified the upgrade step in 6.5 so that the 'intro' object is set
+  as default page
+  [iulianpetchesi refs #111954]
+
 6.5 - (2020-03-26)
 ---------------------------
 * Upgrade step: Move soer content under /soer, specifically soer-2015, soer-2020
