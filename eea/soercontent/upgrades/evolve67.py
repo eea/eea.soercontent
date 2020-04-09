@@ -84,7 +84,6 @@ def tweaks(context):
     """
     soer_2010 = context.restrictedTraverse("/www/SITE/soer/2010-1")
     soer_2015 = context.restrictedTraverse("/www/SITE/soer/2015")
-    soer_intro = context.restrictedTraverse("/www/SITE/soer/intro")
 
     # set default page
     soer_2010.default_page = '2010'
