@@ -1,7 +1,7 @@
 Changelog
 =========
 
-6.7-dev0 - (unreleased)
+6.7 - (2020-04-09)
 ---------------------------
 * Upgrade step: Move additional soer content under /soer
   [iulianpetchesi refs #111954]
