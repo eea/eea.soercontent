@@ -43,13 +43,14 @@ def move_content_in_soer(context):
                     'soer-structure-overview', 'unpublished-content', 
                     'latest-changes', 'published-future', 
                     'part-c-content-monitoring', 'all-key-facts']
+    created_2015 = ['previous-version']
     ignore = [soer_2010, soer_2015, soer_2020, soer_intro]
     for soer_content in soer.listFolderContents():
         if soer_content in ignore:
             continue
         if '2010' in soer_content.id or '2010' in soer_content.title or soer_content.id in created_2010:
             content.move(soer_content, soer_2010)
-        elif '2015' in soer_content.id or '2015' in soer_content.title:
+        elif '2015' in soer_content.id or '2015' in soer_content.title or soer_content.id in created_2015:
             content.move(soer_content, soer_2015)
         elif '2020' in soer_content.id or '2020' in soer_content.title:
             content.move(soer_content, soer_2020)
