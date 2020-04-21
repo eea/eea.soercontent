@@ -1,6 +1,11 @@
 Changelog
 =========
 
+6.7 - (2020-04-09)
+---------------------------
+* Upgrade step: Move additional soer content under /soer
+  [iulianpetchesi refs #111954]
+
 6.6 - (2020-04-02)
 ---------------------------
 * Change: Modified the upgrade step in 6.5 so that the 'intro' object is set
