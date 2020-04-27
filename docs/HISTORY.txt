@@ -3,6 +3,8 @@ Changelog
 
 6.8-dev0 - (unreleased)
 ---------------------------
+* Upgrade step: Soer content tweaks for 2010 folder
+  [iulianpetchesi refs #111954]
 
 6.7 - (2020-04-09)
 ---------------------------
