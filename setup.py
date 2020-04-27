@@ -44,6 +44,7 @@ setup(name=NAME,
           'eea.converter > 8.6',
           'eea.annotator > 2.9',
           'eea.versions',
+          'eea.geotags',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
