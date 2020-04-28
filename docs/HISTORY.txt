@@ -1,6 +1,9 @@
 Changelog
 =========
 
+6.9-dev0 - (unreleased)
+---------------------------
+
 6.8 - (2020-04-28)
 ---------------------------
 * Upgrade step: Soer content tweaks for 2010 folder
