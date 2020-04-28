@@ -1,4 +1,4 @@
-""" Evolve to version 6.5
+""" Evolve to version 6.7
 """
 import logging
 import transaction
