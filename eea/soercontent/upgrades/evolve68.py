@@ -63,5 +63,11 @@ def tweaks(context):
     soer = context.restrictedTraverse("/www/SITE/soer")
     content.transition(obj=soer, transition='publish')
 
+    soer_2020 = context.restrictedTraverse("/www/SITE/soer/2020")
+    soer_2020.setExpirationDate(None)
+    soer_2020._p_changed = True
+    soer_2020.reindexObject()
+    catalog.reindexObject(soer_2020, update_metadata=True)
+
     logger.info('Finished tweaking moved soer content ... DONE')
     return 'Done moving'
