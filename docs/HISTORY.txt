@@ -1,6 +1,9 @@
 Changelog
 =========
 
+7.0-dev0 - (unreleased)
+---------------------------
+
 6.9 - (2020-04-30)
 ---------------------------
 * Change: Remove expiration date from soer 2020 folder in latest upgrade step
