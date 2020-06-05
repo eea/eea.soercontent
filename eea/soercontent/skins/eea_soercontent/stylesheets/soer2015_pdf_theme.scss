@@ -1,0 +1,132 @@
+$debug: false;
+$eeaBlue: #004B87;
+body {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.template-soer-pdf-cover,
+.template-soer-pdf-cover-back,
+.back-cover {
+  background-color: $eeaBlue;
+  height: 842pt;
+  width: 600pt;
+  color: #FFF;
+  border: 0;
+  margin: 0;
+}
+
+.eea-pdf-section-image {
+  height: 630pt;
+  width: auto;
+  page-break-after: always;
+}
+
+
+
+@if $debug {
+  @media print and (max-height:11in) { /* resize your window until the event is triggered */
+    * { border: 1px solid red;
+    } /* Roughly 12px font */
+  }
+}
+
+.cover-backgrounds {
+  height: 20pt;
+}
+.cover-theme {
+  height: 180pt;
+}
+.image-full-container {
+  overflow: hidden;
+}
+.image-full-portrait {
+  width: auto;
+  height: 100%;
+  position: relative;
+  left: 100%;
+  max-width: initial !important;
+  /* #23150; fiche image had empty space which bumped the margin from 160 to 150 in order to fill the space */
+  margin-left: -150%;}
+
+.image-full-copyright {
+  color: #000;
+  position: relative;
+  margin-top: -3.5em;
+  text-align: left;
+  padding: 0.5em;
+  float: right;
+
+}
+
+.cover-below-header {
+  text-align: right;
+  margin: 0 5%;
+  text-transform: uppercase;
+}
+
+.cover-title {
+  font-size: 34pt;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.cover-subtitle {
+  font-size: 37pt;
+  margin: -10pt 0 0 0;
+  font-weight: 400;
+}
+.cover-context-title {
+  font-size: 18pt;
+  font-weight: 400;
+}
+.cover-header {
+  height: 100pt;
+}
+.cover-body {
+  background: transparent;
+  border: 0;
+}
+.cover-logo {
+  position: absolute;
+  margin: 0 5%;
+  bottom: 2%;
+  right: 0;
+}
+.section-soer-2015 #portal-column-content {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* back cover */
+.contain-floats {
+  overflow: hidden;
+}
+.back-cover {
+  font-size: 13.66pt;
+}
+.one-third {
+  height: 33%;
+}
+
+.back-cover-logo > img,
+.cover-logo > img {
+  height: 70px;
+  width: auto;
+}
+.back-cover-logo {
+  margin-right: 2em;
+}
+.back-cover-info {
+  margin-left: 3em;
+}
+.back-cover-qrcode {
+  float: right;
+  margin: 6em 2em 20em 2em;
+}
+
+.pdf-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: initial;
+}
