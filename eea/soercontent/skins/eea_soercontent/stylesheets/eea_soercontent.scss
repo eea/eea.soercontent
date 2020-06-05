@@ -1,0 +1,497 @@
+@import 'init';
+@import 'mixins';
+/*! <dtml-with base_properties> */
+/*! <dtml-with soer_properties> */
+/*! <dtml-call "REQUEST.set('portal_url', portal_url())"> */
+
+$section: "subsection-2015";
+.border-box {
+  @include box-sizing;
+}
+
+.clear-both {
+  clear: both;
+}
+
+
+/* twitter boostrap classes */
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* CSS OBJECTS for greater style reusability */
+.block-list {
+  list-style: none none;
+  margin-left: 0;
+  > li {
+    display: list-item;
+    > a {
+      display:block;
+    }
+  }
+  .eea-icon:before {
+    margin: 0 1px 0 -10px;
+  }
+}
+
+/* SOER-2015 section styles */
+h1, h2, h3 {
+  border-bottom: none;
+}
+/* @group Section color overrides */
+$sections: (
+        #{$section}-synthesis: $synthesys-full-color,
+        #{$section}-europe: $thematic-full-color,
+        #{$section}-countries:   $regions-full-color,
+        #{$section}-global: $megatrends-full-color,
+        #{$section}-countries-comparison: $country-full-color );
+
+/* headers and description */
+@each $section, $color in $sections {
+  .#{$section} #region-content {
+
+    %color {
+      color: $color;
+    }
+    @each $header in h1, h2, h3, h4, h5, h6 {
+      #{$header}
+      {
+        @extend %color;
+      }
+    }
+
+  }
+}
+
+/* portal messages */
+$sections_box_bg: (
+        #{$section}-synthesis: $synthesys-box-color,
+        #{$section}-europe: $thematic-box-color,
+        #{$section}-countries: $regions-box-color,
+        #{$section}-global: $megatrends-box-color,
+        #{$section}-countries-comparison: $country-box-color );
+@each $section, $boxcolor in $sections_box_bg {
+  .#{$section} {
+    .keyFact {
+      background-color: $boxcolor;
+    }
+  }
+}
+/* @end @group Section color overrides */
+
+$brands-full: (
+        soer-synthesis: $synthesys-full-color,
+        soer-thematic: $thematic-full-color,
+        soer-regions:   $regions-full-color,
+        soer-megatrends: $megatrends-full-color,
+        soer-country: $country-full-color,
+        synthesis: $synthesys-full-color,
+        europe: $thematic-full-color,
+        countries: $regions-full-color,
+        global: $megatrends-full-color,
+        countries-comparison: $country-full-color
+
+);
+@each $brand, $color in $brands-full {
+  .bg-#{$brand},
+  .bg-#{$brand}.current {
+    background-color: $color;
+  }
+}
+
+
+$brands-medium: (
+        soer-synthesis: $synthesys-medium-color,
+        soer-thematic: $thematic-medium-color,
+        soer-regions:   $regions-medium-color,
+        soer-megatrends: $megatrends-medium-color,
+        soer-country: $country-medium-color);
+
+@each $brand, $color in $brands-medium {
+  .bg-#{$brand}-medium,
+  .bg-#{$brand}-medium.current {
+    background-color: $color;
+  }
+}
+
+$brands-light: (
+        soer-synthesis: $synthesys-light-color,
+        soer-thematic: $thematic-light-color,
+        soer-regions:   $regions-light-color,
+        soer-megatrends: $megatrends-light-color,
+        soer-country: $country-light-color );
+
+@each $brand, $color in $brands-light {
+  .bg-#{$brand}-light,
+  .bg-#{$brand}-light.current {
+    background-color: $color;
+  }
+}
+
+$brands-box: (
+        soer-thematic: $thematic-box-color,
+        soer-regions:   $regions-box-color,
+        soer-megatrends: $megatrends-box-color,
+        soer-country: $country-box-color );
+
+@each $brand, $color in $brands-box {
+  .bg-#{$brand}-box,
+  .bg-#{$brand}-box.current {
+    background-color: $color;
+  }
+}
+
+.left-gutter {
+  margin-left: $base-spacing-unit;
+}
+
+/* Base styles && base overrides */
+body {
+  box-sizing: border-box;
+}
+
+/* #23324 move qrcode within the pdf.disclaimer page */
+.template-pdf-disclaimer .qrbox {
+  position: absolute;
+  top: 70%;
+  margin: 0 40pt 0 108pt;
+}
+/* #23324; hide qrcode from soer2015 theme */
+.template-soer-pdf-body .qrbox {
+  display: none !important;
+}
+
+.template-soer2015_frontpage #content {
+  margin: 1em 0 2em 0;
+}
+.template-soer2015_frontpage #region-content {
+  background-color: transparent;
+  margin: 0;
+}
+.template-soer2015_frontpage #portlet-followus {
+  margin: 2em;
+  padding: 0;
+  background: none;
+}
+
+/* grids */
+.eea-row {
+  margin-left: -$base-spacing-unit;
+}
+
+.eea-three-quarters {
+  width: 75%;
+}
+.eea-two-quarters {
+  width: 50%;
+}
+.eea-one-quarter {
+  width: 25%;
+}
+
+/* column sizes for eea-tabs panels */
+.eea-list-columns {
+  @extend .border-box;
+  padding: 0 1em;
+  float: left;
+}
+.eea-list-columns li {
+  display: list-item;
+}
+
+
+#region-content .eea-list-columns,
+#region-content .navTreeLevel0 {
+  margin: 0;
+}
+#region-content .eea-list-columns  {
+  list-style: square outside url(//www.eea.europa.eu/bullet.gif);
+  & ul {
+    list-style: square outside url(//www.eea.europa.eu/bullet.gif);
+  }
+}
+
+.eea-full-object {
+  height: 100%;
+}
+.eea-block-columns {
+  float: left;
+  overflow: hidden;
+}
+.eea-two-columns {
+  width: 50%;
+}
+.eea-three-columns {
+  width: 33.3%;
+}
+.eea-four-columns {
+  width: 25%;
+}
+
+.eea-five-columns {
+  width: 20%;
+}
+
+
+.#{$tpl}  {
+  #portal-column-content,
+  #region-content {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  #region-content {
+    margin: 0;
+  }
+
+  #content {
+    margin: 1em 0 2em 0;
+  }
+
+  #content.wf-state-visible {
+    background: none;
+  }
+
+  #portlet-followus {
+    margin: 2em;
+  }
+}
+
+.column-area {
+  width: 65%;
+}
+
+.right-column-area {
+  width: 35%;
+  padding: 0 0 0 $base-spacing-unit;
+  .portlet {
+    padding: 1.2em 2em;
+  }
+}
+
+#content-core .portletItem {
+  margin: 0;
+}
+
+
+/* portlet style overrides */
+#firstHeader {
+  display:none; /* navigation title doesn't appear within new soer design */
+}
+
+dl.portlet dt, div.portletAssignments div.portletHeader {
+  background-color: transparent;
+}
+.featured, .portlet {
+  background-color: $title-color;
+  padding: 1.5em;
+}
+
+/* Content Styles */
+.#{$tpl} #viewlet-above-content {
+  margin: 0;
+}
+#parent-title {
+  background-color: $title-color;
+  padding: 2em;
+}
+
+.top-highlights {
+  margin-bottom: 2em;
+  background-color: $title-color;
+  overflow: hidden;
+  .portlet {
+    padding-top: 2em;
+  }
+}
+/* eea-tabs-soer theme style */
+#visual-portal-wrapper .eea-tabs.eea-tabs-soer {
+  background-color: transparent;
+  padding: 0;
+  @include border-radius(0);
+  > li {
+    width: 19.5%;
+    text-align: center;
+    float: left;
+    height: 65px;
+    background-color: transparent;
+    margin-right: 5px;
+    &.last-child {
+      width: 19.9%;
+      margin-right: 0;
+    }
+    &:first-child > a {
+      @include border-radius(0);
+    }
+    > a {
+      max-width: 100%;
+      height: 65px;
+      padding: 0.8em 2em 1em 0.8em;
+      white-space: normal;
+      word-wrap: break-word;
+      text-shadow: 0 0;
+      color: #FFF;
+      &:hover, &.current, &.current:hover {
+        color: #FFF !important;
+        text-shadow: 1px 1px #000;
+      }
+    }
+  }
+  .eea-icon {
+    float: left;
+    display: block;
+    line-height: 1.5;
+    opacity: 0.8;
+  }
+}
+
+#visual-portal-wrapper .current {
+  position: relative;
+}
+
+
+#visual-portal-wrapper {
+  #tab-synthesis-report {
+    background-color: $synthesys-full-color;
+    &.current::after,
+    &:hover::after {
+      border-top-color: $synthesys-full-color;
+    }
+  }
+
+  #tab-global-megatrends {
+    background-color: $megatrends-full-color;
+    &.current::after,
+    &:hover::after {
+      border-top-color: $megatrends-full-color;
+    }
+  }
+
+  #tab-cross-country-comparisons {
+    background-color: $country-full-color;
+    &.current::after,
+    &:hover::after {
+      border-top-color: $country-full-color;
+    }
+  }
+
+  #tab-thematic-briefing {
+    background-color: $thematic-full-color;
+    &.current::after,
+    &:hover::after {
+      border-top-color: $thematic-full-color;
+    }
+  }
+
+  #tab-regions-countries {
+    background-color: $regions-full-color;
+    &.current::after,
+    &:hover::after {
+      border-top-color: $regions-full-color;
+    }
+  }
+}
+/* eea-tabs-panels-soer */
+.eea-tabs-panels.eea-tabs-panels-soer,
+.eea-tabs-panels.eea-tabs-panels-soer .eea-tabs-panel {
+  background-color: transparent;
+  border: 0;
+  padding: 1em 0 1em 1em;
+}
+
+.eea-tabs-panels.eea-tabs-panels-soer .eea-tabs-panel {
+  overflow: hidden;
+  a {
+    font-weight: bold;
+  }
+}
+
+/* eea-accordion-panels-soer */
+.eea-accordion-panels-soer {
+  margin-bottom: 1em;
+  border: 0;
+  .portletHeader {
+    padding-left: 10px;
+  }
+  .eea-accordion-title-manual-icons, .eea-icon-right-container,
+  .eea-accordion-title {
+    color: #FFF;
+  }
+}
+
+.eea-accordion-panels.eea-accordion-panels-soer {
+  .pane {
+    padding: $base-spacing-unit $base-spacing-unit $base-spacing-unit 30px;
+    border: 0;
+  }
+  a {
+    color: #346f83;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+/* 21869 add margin-top to download links */
+.eea-footer-right {
+  margin-top: 1em;
+}
+
+/* 23500 position portlet title over image */
+.portlet.portlet-soer-presentation {
+     position: relative;
+     background-color: transparent;
+     border:0
+}
+
+.portlet-static-title {
+    position: absolute;
+    z-index: 10;
+    font-size:80%;
+    color: white;
+    top: 50px;
+    right: 40px;
+}
+
+.portlet-static-subtitle {
+    font-size:80%;
+    float:right;
+}
+
+/* print fixes */
+.MYFIG {
+  margin-top: 1em;
+}
+.body-print .qrbox {
+  clear: both;
+}
+
+/* media queries rules */
+/* shrink the right column when screen size is smaller than 1280px
+   avoiding the columns from overlapping */
+//@media (max-width: 1140px) {
+//  div.position-3\:4 {
+//    margin-left: -35.1%;
+//  }
+//  div.width-1\:4 {
+//    width: 35%;
+//  }
+//}
+
+@media screen and (min-width: 768px){
+    .right-column-area.pull-right{
+        display:flex;
+        flex:1;
+        justify-content:flex-end;
+        margin-top:-3em
+    }
+}
+/*! </dtml-with> */
+/*! </dtml-with> */

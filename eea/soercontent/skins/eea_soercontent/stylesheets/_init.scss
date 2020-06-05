@@ -1,0 +1,81 @@
+// booleans
+
+$use-dtml-names: true !default;
+
+// sizes
+$base-spacing-unit: 15px;
+$base-font-size: 14px;
+$half-spacing-unit: $base-spacing-unit / 2;
+
+// soer categories colors
+$soer-bg-color: #e8f0fb;
+$main-header-color: #007a86;
+@if $use-dtml-names {
+  $soer-bg-color: unquote("&dtml-soerBackgroundColor;");
+  $main-header-color: unquote("&dtml-soerLinkColor;");
+}
+
+$synthesys-full-color: #272b57;
+$megatrends-full-color: #733D85;
+$country-full-color: #{$main-header-color};
+$thematic-full-color: #637e22;
+$regions-full-color: #ba3c0d;
+@if $use-dtml-names {
+  $synthesys-full-color: unquote("&dtml-soerSynthesysSectionFullColor;");
+  $megatrends-full-color: unquote("&dtml-soerMegatrendsSectionFullColor;");
+  $country-full-color: unquote("&dtml-soerCountrySectionFullColor;");
+  $thematic-full-color: unquote("&dtml-soerThematicSectionFullColor;");
+  $regions-full-color: unquote("&dtml-soerRegionsSectionFullColor;");
+}
+
+$synthesys-medium-color: #959fd1;
+$megatrends-medium-color: #c3a2c6;
+$country-medium-color: #86c1c4;
+$thematic-medium-color: #c3da9c;
+$regions-medium-color: #f9ae8d;
+@if $use-dtml-names {
+  $synthesys-medium-color: unquote("&dtml-soerSynthesysSectionMediumColor;");
+  $megatrends-medium-color: unquote("&dtml-soerMegatrendsSectionMediumColor;");
+  $country-medium-color: unquote("&dtml-soerCountrySectionMediumColor;");
+  $thematic-medium-color: unquote("&dtml-soerThematicSectionMediumColor;");
+  $regions-medium-color: unquote("&dtml-soerRegionsSectionMediumColor;");
+}
+
+$synthesys-light-color: #c6ccea;
+$megatrends-light-color: #e0cde2;
+$country-light-color: #bfdfdf;
+$thematic-light-color: #e0ecca;
+$regions-light-color: #fcd5c1;
+@if $use-dtml-names {
+  $synthesys-light-color: unquote("&dtml-soerSynthesysSectionLightColor;");
+  $megatrends-light-color: unquote("&dtml-soerMegatrendsSectionLightColor;");
+  $country-light-color: unquote("&dtml-soerCountrySectionLightColor;");
+  $thematic-light-color: unquote("&dtml-soerThematicSectionLightColor;");
+  $regions-light-color: unquote("&dtml-soerRegionsSectionLightColor;");
+}
+
+$synthesys-box-color: #B7C2E0;
+$megatrends-box-color: #d1b7d4;
+$country-box-color: #a2cfd1;
+$thematic-box-color: #d1e3b2;
+$regions-box-color: #fbc2a6;
+@if $use-dtml-names {
+  $synthesys-box-color: unquote("&dtml-soerSynthesysSectionBoxColor;");
+  $megatrends-box-color: unquote("&dtml-soerMegatrendsSectionBoxColor;");
+  $country-box-color: unquote("&dtml-soerCountrySectionBoxColor;");
+  $thematic-box-color: unquote("&dtml-soerThematicSectionBoxColor;");
+  $regions-box-color: unquote("&dtml-soerRegionsSectionBoxColor;");
+}
+
+// site colors
+$font-color: #333;
+$title-color: #FFF;
+$base-color: #007385;
+$description-text: #5e6464;
+// footer colors
+$gradient-start-color: #008ea6;
+$gradient-end-color: #017084;
+
+// content names
+$tpl: "template-soer2015_frontpage";
+$pt: "section-soer-2015";

@@ -1,0 +1,56 @@
+// mixins
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+
+@mixin prefix($map, $vendors: webkit moz ms o) {
+  @each $prop, $value in $map {
+    @if $vendors {
+      @each $vendor in $vendors {
+        #{'-' + $vendor + '-' + $prop}: #{$value};
+      }
+    }
+    // Dump regular property anyway
+    #{$prop}: #{$value};
+  }
+}
+
+$breakpoints: (
+        'tiny':   (max-width:  767px),
+        'small':  (min-width:  768px),
+        'medium': (min-width:  992px),
+        'large':  (min-width: 1200px),
+        'custom': (min-height:  40em)
+);
+
+@mixin breakpoint($name) {
+  @if map-has-key($breakpoints, $name) {
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "Couldn't find a breakpoint named `#{$name}`.";
+  }
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@function calc-percent($target, $container) {
+  @return ($target / $container) * 100%;
+}
+
+
+
