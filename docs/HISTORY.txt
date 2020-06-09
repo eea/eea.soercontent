@@ -3,6 +3,8 @@ Changelog
 
 7.1-dev0 - (unreleased)
 ---------------------------
+* Change: added content-core class to pdf templates for content-core id
+  [ichim-david refs #118582]
 
 7.0 - (2020-06-05)
 ---------------------------
