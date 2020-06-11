@@ -32,9 +32,11 @@
   </metal:field>
 
   <div class="fiche-endnotes" tal:condition="python:getattr(context, 'pdfShowEndnotes', None) and context.pdfShowEndnotes or not isPrint">
+    <div class="eea-accordion-panels eea-accordion-panels-plain non-exclusive">
       <metal:field use-macro="python:context.widget('endnotes', mode='view')">
-          References and endnotes
+        References and endnotes
       </metal:field>
+    </div>
   </div>
 
 </div>
