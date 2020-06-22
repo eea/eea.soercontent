@@ -1,6 +1,9 @@
 Changelog
 =========
 
+7.2-dev0 - (unreleased)
+---------------------------
+
 7.1 - (2020-06-22)
 ---------------------------
 * Change: added content-core class to pdf templates for content-core id
