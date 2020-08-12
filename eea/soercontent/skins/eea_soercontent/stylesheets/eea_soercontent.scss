@@ -338,6 +338,8 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
       word-wrap: break-word;
       text-shadow: 0 0;
       color: #FFF;
+      display: flex;
+      align-items: center;
       &:hover, &.current, &.current:hover {
         color: #FFF !important;
         text-shadow: 1px 1px #000;
@@ -420,8 +422,8 @@ dl.portlet dt, div.portletAssignments div.portletHeader {
   .portletHeader {
     padding-left: 10px;
   }
-  .eea-accordion-title-manual-icons, .eea-icon-right-container,
-  .eea-accordion-title {
+  .eea-accordion-title-manual-icons, .eea-icon-right-container
+   {
     color: #FFF;
   }
 }
