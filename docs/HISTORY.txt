@@ -1,7 +1,7 @@
 Changelog
 =========
 
-7.2-dev0 - (unreleased)
+7.2 - (2020-10-08)
 ---------------------------
 * Change: use image validators for Fiche image field
   [ichim-david refs #121137]
