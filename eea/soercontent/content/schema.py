@@ -40,7 +40,7 @@ SCHEMA = atapi.Schema((
         sizes=None,
         widget=atapi.ImageWidget(
             label=_("Image"),
-            description=_("Image used for cover, thumbnail and listings"),
+            description=_("Image used for cover, thumbnail and listings, image width should be of minimum 1920px"),
             i18n_domain='eea',
         ),
         validators=(
