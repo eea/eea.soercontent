@@ -1,8 +1,50 @@
 Changelog
 =========
 
-6.5-dev0 - (unreleased)
+7.2-dev0 - (unreleased)
 ---------------------------
+* Bug fix: soer 2015 frontpage fixes after briefing redesign
+  [ichim-david refs #120397]
+7.1 - (2020-06-22)
+---------------------------
+* Change: added content-core class to pdf templates for content-core id
+  [ichim-david refs #118582]
+
+7.0 - (2020-06-05)
+---------------------------
+* Change: modified some soer 2015 styling such as keyFacts and pdf.disclaier
+  qrcode position now that soer uses the redesigned theme
+  [ichim-david refs #117294]
+* Change: added scss files for soer2015 theme
+  [ichim-david]
+
+6.9 - (2020-04-30)
+---------------------------
+* Change: Remove expiration date from soer 2020 folder in latest upgrade step
+  [iulianpetchesi refs #111954]
+
+6.8 - (2020-04-28)
+---------------------------
+* Upgrade step: Soer content tweaks for 2010 folder
+  [iulianpetchesi refs #111954]
+
+6.7 - (2020-04-09)
+---------------------------
+* Upgrade step: Move additional soer content under /soer
+  [iulianpetchesi refs #111954]
+
+6.6 - (2020-04-02)
+---------------------------
+* Change: Modified the upgrade step in 6.5 so that the 'intro' object is set
+  as default page
+  [iulianpetchesi refs #111954]
+
+6.5 - (2020-03-26)
+---------------------------
+* Upgrade step: Move soer content under /soer, specifically soer-2015, soer-2020
+  Second upgrade step for some content tweaking. Updated templates and css with
+  the new folder structure
+  [iulianpetchesi refs #111954]
 * Bug fix: fixed colors and position of portal-column-two headers
   [ichim-david refs #111968]
 

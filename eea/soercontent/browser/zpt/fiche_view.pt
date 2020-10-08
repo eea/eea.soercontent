@@ -12,7 +12,7 @@
 <metal:content-core define-macro="content-core">
 <div class="fiche-body" tal:define="isPrint isPrint|python:1 if ('pdf.' in request['URL0'] or '.pdf' in request['URL0']) else 0">
 
-    <metal:print tal:condition="python: not isPrint">
+    <metal:print tal:condition="python: not isPrint" metal:fill-slot="content-header-image">
       <div class="fullwidth-img-container" tal:define="here_url context/@@plone_context_state/object_url;
           copyright context/getImageCopyright|nothing;">
           <div class="fullwidth-img-bg" tal:attributes="style python:'background-image:url(' + here_url + '/image_panoramic' + ')'; title python: 'Image credits: &copy; ' + copyright if copyright else '';"></div>
@@ -22,7 +22,7 @@
   <div class="fiche-summary"
       tal:define="summary context/getSummary|string:"
       tal:condition="python:summary.strip()">
-    <div class="keyFact">
+    <div class="keyFact keyFact--enlarged">
       <metal:field use-macro="python:context.widget('summary', mode='view')" />
     </div>
   </div>
@@ -32,9 +32,11 @@
   </metal:field>
 
   <div class="fiche-endnotes" tal:condition="python:getattr(context, 'pdfShowEndnotes', None) and context.pdfShowEndnotes or not isPrint">
+    <div class="fiche-endnotes-body">
       <metal:field use-macro="python:context.widget('endnotes', mode='view')">
-          References and endnotes
+        References and endnotes
       </metal:field>
+    </div>
   </div>
 
 </div>

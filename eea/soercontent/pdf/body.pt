@@ -14,7 +14,7 @@
         description text
     </metal:description>
 
-    <div id="content-core">
+    <div id="content-core" class="content-core">
         <div class="fiche-body">
             <div class="fiche-summary">
                 <div class="keyFact">

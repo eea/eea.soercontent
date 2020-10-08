@@ -11,6 +11,7 @@ i18n:domain="plone">
 <metal:content-core define-macro="main"
         tal:define="cview nocall:context/@@soercontent_view;">
     <div id="content-core">
+    <div class="portalMessage warningMessage" i18n:translate="">The latest "State of the Environment" report can be found here: <a href="/soer/2020" i18n:translate="">The European environment — state and outlook 2020</a></div>
     <div id="parent-title">
         <h1 id="parent-fieldname-title" class="documentFirstHeading" i18n:translate="">
             SOER 2015 — The European environment — state and outlook 2015
@@ -36,7 +37,7 @@ i18n:domain="plone">
                             <p i18n:translate="">The synthesis report informs future European environmental policy in general and its implementation between 2015 and 2020 in particular. It includes a reflection on the European environment in a global context, as well as chapters summarising the state of, trends in, and prospects for the environment in Europe.</p>
 
                             <div class="eea-list-columns"
-                                        tal:define="collection python:context.restrictedTraverse('soer-2015/collections/synthesis', None);"
+                                        tal:define="collection python:context.restrictedTraverse('/www/SITE/soer/2015/collections/synthesis', None);"
                                         tal:condition="nocall:collection">
                                      <tal:results tal:define="results python:collection.queryCatalog()"
                                             tal:condition="results">
@@ -54,9 +55,9 @@ i18n:domain="plone">
                             <div class="eea-footer-right visualClear pull-right">
                                 <div class="visualHidden">
                                     <div id="pdf-choice-synthesis">
-                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/synthesis/report/action-download-pdf" i18n:translate="">Download report (PDF)</a>
+                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer/2015/synthesis/report/action-download-pdf" i18n:translate="">Download report (PDF)</a>
                                         <br />
-                                        <span class="eea-icon eea-icon-globe eea-icon-2x"></span> <a href="/soer-2015/synthesis/folder_listing" i18n:translate="">Synthesis in more languages (PDF)</a>
+                                        <span class="eea-icon eea-icon-globe eea-icon-2x"></span> <a href="/soer/2015/synthesis/folder_listing" i18n:translate="">Synthesis in more languages (PDF)</a>
                                     </div>
                                 </div>
 
@@ -67,7 +68,7 @@ i18n:domain="plone">
                         <div class="eea-tabs-panel" id="panel-tab-global-megatrends">
                             <p i18n:translate="">The global megatrends report assesses 11 global megatrends (GMT) of importance for Europe’s environment in the long term. In assessing key drivers, trends and implications for Europe, it aims to provide an improved basis for strategic European environmental policymaking.</p>
 
-                            <tal:global tal:define="results python:cview.content(parent_id='soer-2015', object_id='global')">
+                            <tal:global tal:define="results python:cview.content(parent_id='2015', object_id='global')">
                                 <ul>
                                     <li tal:repeat="result results">
                                         <a tal:attributes="href result/getURL">
@@ -80,12 +81,12 @@ i18n:domain="plone">
                             <div class="eea-footer-right visualClear pull-right">
                                 <div class="visualHidden">
                                     <div id="pdf-choice-global">
-                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/global/action-download-pdf" i18n:translate="">Download report (PDF)</a>
+                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer/2015/global/action-download-pdf" i18n:translate="">Download report (PDF)</a>
                                         <tal:block i18n:translate="">- Use username/password received via email.</tal:block>
                                     </div>
                                 </div>
                                  <p class="pull-left" i18n:translate="">Download all global megatrends</p>
-                                 <a class="download-pdf pull-left" href="/soer-2015/global/download.pdf"  title="download PDF" i18n:attributes="title"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
+                                 <a class="download-pdf pull-left" href="/soer/2015/global/download.pdf"  title="download PDF" i18n:attributes="title"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
                             </div>
                         </div>
                         <div class="eea-tabs-panel" id="panel-tab-thematic-briefing">
@@ -94,7 +95,7 @@ i18n:domain="plone">
 
                             <tal:europe>
                                 <div class="eea-list-columns eea-three-columns"
-                                        tal:define="collection python:context.restrictedTraverse('soer-2015/collections/environmental-themes', None);"
+                                        tal:define="collection python:context.restrictedTraverse('soer/2015/collections/environmental-themes', None);"
                                         tal:condition="nocall:collection">
                                     <tal:results tal:define="results python:collection.queryCatalog()"
                                             tal:condition="results">
@@ -110,7 +111,7 @@ i18n:domain="plone">
                                 </div>
 
                                 <div class="eea-list-columns eea-three-columns"
-                                        tal:define="collection python:context.restrictedTraverse('soer-2015/collections/socio-economic-dimensions', None);"
+                                        tal:define="collection python:context.restrictedTraverse('soer/2015/collections/socio-economic-dimensions', None);"
                                         tal:condition="nocall:collection">
                                     <tal:results tal:define="results python:collection.queryCatalog()"
                                             tal:condition="results">
@@ -126,7 +127,7 @@ i18n:domain="plone">
                                 </div>
 
                                 <div class="eea-list-columns eea-three-columns"
-                                        tal:define="collection python:context.restrictedTraverse('soer-2015/collections/systemic-perspectives', None);"
+                                        tal:define="collection python:context.restrictedTraverse('soer/2015/collections/systemic-perspectives', None);"
                                         tal:condition="nocall:collection">
                                     <tal:results tal:define="results python:collection.queryCatalog()"
                                             tal:condition="results">
@@ -146,18 +147,18 @@ i18n:domain="plone">
                             <div class="eea-footer-right visualClear pull-right">
                                 <div class="visualHidden">
                                     <div id="pdf-choice-europe">
-                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/europe/download.pdf" i18n:translate="">Download report (PDF)</a>
+                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer/2015/europe/download.pdf" i18n:translate="">Download report (PDF)</a>
                                     </div>
                                 </div>
                                  <p class="pull-left" i18n:translate="">Download all European briefings</p>
-                                 <a class="download-pdf pull-left" href="/soer-2015/europe/download.pdf"  title="download PDF" i18n:attributes="title"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
+                                 <a class="download-pdf pull-left" href="/soer/2015/europe/download.pdf"  title="download PDF" i18n:attributes="title"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
                             </div>
                         </div>
 
                         <div class="eea-tabs-panel" id="panel-tab-cross-country-comparisons">
                             <p i18n:translate="">Cross-country comparisons provide an analysis of progress across European countries for selected topics. They are based on EEA and Eurostat indicators.</p>
 
-                            <tal:countries-comparison tal:define="results python:cview.content(parent_id='soer-2015', object_id='countries-comparison')">
+                            <tal:countries-comparison tal:define="results python:cview.content(parent_id='2015', object_id='countries-comparison')">
                                 <ul>
                                     <li tal:repeat="result results">
                                         <a tal:attributes="href result/getURL">
@@ -170,18 +171,18 @@ i18n:domain="plone">
                             <div class="eea-footer-right visualClear pull-right">
                                 <div class="visualHidden">
                                     <div id="pdf-choice-cross">
-                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/countries-comparison/download.pdf" i18n:translate="">Download report (PDF)</a>
+                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer/2015/countries-comparison/download.pdf" i18n:translate="">Download report (PDF)</a>
                                     </div>
                                 </div>
                                  <p class="pull-left" i18n:translate="">Download all cross-country comparisons</p>
-                                 <a class="download-pdf pull-left" href="/soer-2015/countries-comparison/download.pdf"  title="download PDF" i18n:attributes="title"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
+                                 <a class="download-pdf pull-left" href="/soer/2015/countries-comparison/download.pdf"  title="download PDF" i18n:attributes="title"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
                             </div>
                         </div>
 
                         <div class="eea-tabs-panel" id="panel-tab-regions-countries">
                             <p i18n:translate="">Country briefings provide an overview of state of the environment across 39 European countries, based on national state of environment reports. Regional briefings cover three regions, identified as priority areas in the EU's 7th Environmental Action Programme.</p>
                             <h4 i18n:translate="">Countries briefings</h4>
-                            <div tal:define="collection python:context.restrictedTraverse('soer-2015/collections/country-briefings', None);" tal:condition="nocall:collection">
+                            <div tal:define="collection python:context.restrictedTraverse('soer/2015/collections/country-briefings', None);" tal:condition="nocall:collection">
                                 <tal:results tal:define="results python:collection.queryCatalog(batch=False)"
                                         tal:condition="results">
                                     <tal:countries tal:define="results_length python:len(results);
@@ -210,7 +211,7 @@ i18n:domain="plone">
                                                 </li>
                                             </ul>
 
-                                            <div tal:define="collection python:context.restrictedTraverse('soer-2015/collections/regional-briefings', None);"
+                                            <div tal:define="collection python:context.restrictedTraverse('soer/2015/collections/regional-briefings', None);"
                                                     tal:condition="nocall:collection">
                                                 <h4 i18n:translate="">Regional briefings</h4>
                                                 <ul tal:define="res python:collection.queryCatalog()">
@@ -230,11 +231,11 @@ i18n:domain="plone">
                             <div class="eea-footer-right visualClear pull-right">
                                 <div class="visualHidden">
                                     <div id="pdf-choice-countries">
-                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer-2015/countries/download.pdf" i18n:translate="">Download report (PDF)</a>
+                                        <span class="eea-icon eea-icon-download eea-icon-2x"></span> <a href="/soer/2015/countries/download.pdf" i18n:translate="">Download report (PDF)</a>
                                     </div>
                                 </div>
                                  <p class="pull-left" i18n:translate="">Download all countries and regions</p>
-                                 <a class="download-pdf pull-left" href="/soer-2015/countries/download.pdf"  title="download PDF" i18n:attributes="title"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
+                                 <a class="download-pdf pull-left" href="/soer/2015/countries/download.pdf"  title="download PDF" i18n:attributes="title"><span class="eea-icon eea-icon-file-pdf-o eea-icon-2x"></span></a>
                             </div>
                           </div>
                     </div>
@@ -245,7 +246,7 @@ i18n:domain="plone">
 
                         <dt class="portletHeader">
                         <span class="portletTopLeft"></span>
-                        <a href="/soer-2015/explore-quick-facts-and-figures" class="presentation-link" title="Download the interactive presentation PDF" i18n:attributes="title">
+                        <a href="/soer/2015/explore-quick-facts-and-figures" class="presentation-link" title="Download the interactive presentation PDF" i18n:attributes="title">
                            <span class="portlet-static-title" i18n:translate="">
                             SOER 2015 presentation (PDF)<br/>
                             <span class="portlet-static-subtitle" i18n:translate="">
@@ -256,8 +257,8 @@ i18n:domain="plone">
                         <span class="portletTopRight"></span>
                         </dt>
                         <dd class="portletItem odd">
-                        <a tal:attributes="href string:$portal_url/soer-2015/explore-quick-facts-and-figures" title="Download the interactive presentation PDF" i18n:attributes="title">
-                           <img width="100%" tal:attributes="src string:$portal_url/soer-2015/explore-soer/image_preview">
+                        <a tal:attributes="href string:$portal_url/soer/2015/explore-quick-facts-and-figures" title="Download the interactive presentation PDF" i18n:attributes="title">
+                           <img width="100%" tal:attributes="src string:$portal_url/soer/2015/explore-soer/image_preview">
                         </a>
                         </dd>
                     </dl>
@@ -278,12 +279,12 @@ i18n:domain="plone">
 		     id="keyfacts-slider" class="figure keyFactsSlider">
                        <div class="keyfactsImgContainer"><img class="keyfacts-bgimg" src=""
                         tal:attributes="src background_img_path"  /></div>
-                       <div  tal:define="items context/soer2015_getAllKeyFacts">
+                       <div tal:define="items context/soer2015_getAllKeyFacts">
                             <div id="soer-top-area">
                                 <!-- all key facts and messages -->
                                 <dl
                                     class="portlet slidePortlet" >
-                                    <dt class="portletHeader" i18n:translate=""><a href="/soer-2015/collections/all-key-messages" title="see all key messages" i18n:attributes="title">Key messages</a></dt>
+                                    <dt class="portletHeader" i18n:translate=""><a href="/www/SITE/soer/2015/collections/all-key-messages" title="see all key messages" i18n:attributes="title">Key messages</a></dt>
                                      <dd class="portletItem" tal:repeat="item items">
                                        <span>
                                           <a href="" title="Read more of the key fact"
@@ -310,7 +311,7 @@ i18n:domain="plone">
                 <div class="right-column-area">
                     <dl class="portlet portletNavigationTree">
                         <dt class="portletHeader" id="firstHeader">
-                        <a tal:attributes="href string:$portal_url/soer-2015" i18n:translate="">SOER 2015 - The European environment - State and Outlook</a>
+                        <a tal:attributes="href string:$portal_url/soer/2015" i18n:translate="">SOER 2015 - The European environment - State and Outlook</a>
                         </dt>
                         <dt class="portletSubMenuHeader">
                         <span class="title eea-icon-right-container" i18n:translate="">Menu</span>
@@ -318,38 +319,38 @@ i18n:domain="plone">
                         <dd class="portletItem lastItem">
                         <ul class="navTree navTreeLevel0">
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-global">
-                            <a tal:attributes="href string:$portal_url/soer-2015/about"
+                            <a tal:attributes="href string:$portal_url/soer/2015/about"
                                 class=" navTreeFolderish contenttype-folder" title="">
                                 <span i18n:translate="">About SOER 2015</span>
                             </a>
                             </li>
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-europe">
-                            <a tal:attributes="href string:$portal_url/soer-2015/for-journalists"
+                            <a tal:attributes="href string:$portal_url/soer/2015/for-journalists"
                                 class=" navTreeFolderish contenttype-folder" title="">
                                 <span i18n:translate="">For journalists</span>
                             </a>
                             </li>
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-countries-comparison">
-                            <a tal:attributes="href string:$portal_url/soer-2015/events"
+                            <a tal:attributes="href string:$portal_url/soer/2015/events"
                                 class=" navTreeFolderish contenttype-folder" title="">
                                 <span i18n:translate="">Events</span>
                             </a>
                             </li>
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-countries">
-                            <a tal:attributes="href string:$portal_url/soer-2015/feedback"
+                            <a tal:attributes="href string:$portal_url/soer/2015/feedback"
                                 class=" navTreeFolderish contenttype-folder" title="">
                                 <span i18n:translate="">Feedback</span>
                             </a>
                             </li>
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-progress-monitoring">
-                            <a tal:attributes="href string:$portal_url/soer-2015/photos-and-videos"
+                            <a tal:attributes="href string:$portal_url/soer/2015/photos-and-videos"
                                 class=" navTreeFolderish contenttype-folder" title="">
                                 <span i18n:translate="">Photos and videos</span>
                             </a>
                             </li>
 
                             <li class="navTreeItem visualNoMarker navTreeFolderish section-collections">
-                            <a tal:attributes="href string:$portal_url/soer-2015/collections"
+                            <a tal:attributes="href string:$portal_url/soer/2015/collections"
                                 class=" navTreeFolderish contenttype-folder" title="">
                                 <span i18n:translate="">Collections</span>
                             </a>

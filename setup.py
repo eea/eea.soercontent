@@ -43,8 +43,14 @@ setup(name=NAME,
           'eea.forms > 6.2',
           'eea.converter > 8.6',
           'eea.annotator > 2.9',
-          # -*- Extra requirements: -*-
+          'eea.versions',
+          'eea.geotags',
       ],
+      extras_require={
+          'test': [
+              'plone.app.testing',
+          ],
+      },
       entry_points="""
       # -*- entry_points -*-
       [z3c.autoinclude.plugin]
