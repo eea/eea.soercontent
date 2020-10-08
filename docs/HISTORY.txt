@@ -3,8 +3,11 @@ Changelog
 
 7.2-dev0 - (unreleased)
 ---------------------------
+* Change: use image validators for Fiche image field
+  [ichim-david refs #121137]
 * Bug fix: soer 2015 frontpage fixes after briefing redesign
   [ichim-david refs #120397]
+
 7.1 - (2020-06-22)
 ---------------------------
 * Change: added content-core class to pdf templates for content-core id

@@ -5,6 +5,7 @@ from Products.Archetypes import atapi
 from Products.GenericSetup.interfaces import IDAVAware
 from Products.ATContentTypes.content import folder
 from Products.ATContentTypes.content import document
+from Products.validation import V_REQUIRED
 from plone.app.blob.field import ImageField
 from eea.soercontent.config import EEAMessageFactory as _
 from eea.soercontent.content.interfaces import ISoerContent
@@ -19,7 +20,8 @@ SCHEMA = atapi.Schema((
               label=_(u'Key messages (summary)'),
               description=_(u'Please provide a summary, '
                             u'including the key messages, in this section.'),
-              rows=10)
+              rows=10),
+
     ),
     atapi.TextField("endnotes",
           schemata="default",
@@ -38,9 +40,15 @@ SCHEMA = atapi.Schema((
         sizes=None,
         widget=atapi.ImageWidget(
             label=_("Image"),
-            description=_("Image used for cover, thumbnail and listings")),
+            description=_("Image used for cover, thumbnail and listings"),
             i18n_domain='eea',
         ),
+        validators=(
+            ('isNonEmptyFile', V_REQUIRED),
+            ('imageMinSize', V_REQUIRED),
+            ('checkFileMaxSize', V_REQUIRED),
+        )
+    ),
     atapi.StringField(
         name='imageCopyright',
         schemata="default",
